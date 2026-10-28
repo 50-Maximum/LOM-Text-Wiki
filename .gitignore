@@ -1,0 +1,126 @@
+# 构建产物与本地缓存
+build/
+build_v07/
+build_tmp/
+build_tmp_v06/
+dist/
+dist_build/
+dist_build_v06/
+dist_build_v07/
+release/
+__pycache__/
+*.pyc
+*.pyo
+*.spec.bak
+
+# 归档与安装包
+*.rar
+*.7z
+版本/
+
+# 游戏资源与解包中间产物（体积大，不入库）
+data/raw/
+data/decomp/
+data/assets/
+data/bundles/
+data/_tmp/
+
+# 研究笔记（人工考据过程，不发布）
+data/research/
+data/dossier_char/
+data/read/
+data/summary/
+data/ref_wiki/
+data/art_dump/
+data/guide/
+data/ledger/
+data/probe/
+data/mod_res/
+data/*.md
+data/待定地点清单*.txt
+data/_map_evt_todo.*
+data/_place_tiers.txt
+data/_duopo.txt
+data/_intro_src.txt
+data/_show.txt
+data/_map_report.txt
+
+# 人工订正表（逐条改名/归属/阶段判定，不发布）
+data/chars_fix.json
+data/chars_prefix.json
+data/chars_title.json
+data/chars_hidden.json
+data/char_sections.json
+data/factions_fix.json
+data/places_fix.json
+data/place_edits.json
+data/place_audit*.json
+data/place_infer*.json
+data/place_logic.json
+data/place_manual.json
+data/place_override.json
+data/scene_place_infer.json
+data/notes_patch.json
+data/title_override.json
+data/type_fixes.json
+data/time_override.json
+data/extra_factions.json
+data/extra_persons.json
+data/arc_mismatch.json
+data/demo_only.json
+data/lean_phrases.json
+
+# 本地试验库
+data/wiki_public.db*
+data/wiki_test.db
+
+# 工作过程临时清单与校验文件
+data/_*.txt
+data/_*.js
+data/*_check.txt
+data/alias_*.txt
+data/routes_dossier.json
+data/arc_by_vote.json
+data/place_weak_audit.md
+
+# 考据/取证脚本（非运行时代码）
+src/apply_research.py
+src/verify_research.py
+src/build_dossiers.py
+src/build_dossiers2.py
+src/dossier.py
+src/dossier2.py
+src/export_dossier2.py
+src/patch_place_edits.py
+src/verify_place_edits.py
+src/_tables.py
+src/build_public_db.py
+src/build_public_db2.py
+src/public_empty_tables.py
+src/conv_webp_fast.py
+src/patch_char_sections.py
+
+# lite 版资源（不发布）
+web_lite/
+
+
+# 数据库（体积大且每次重建都会变，走 Release 分发）
+data/wiki.db
+data/wiki.db-*
+data/wiki.db.bak*
+data/*.db-wal
+data/*.db-shm
+
+# 运行期日志与更新缓存
+logs/
+_update/
+_updtest/
+*.log
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+data/portraits/
