@@ -1,0 +1,87 @@
+{
+ "Door_02_N_01": [
+  "door_001",
+  "door_free_001",
+  "door_girl_05_001",
+  "door_work_001"
+ ],
+ "Section_01_07_02_E_01": [
+  "section_01_free_07_02_501"
+ ],
+ "Section_01_07_02_E_02": [
+  "section_01_free_07_02_502"
+ ],
+ "Section_01_07_02_E_04": [
+  "section_01_free_07_02_504"
+ ],
+ "Section_01_07_02_S_03": [
+  "section_01_free_07_02_303"
+ ],
+ "Travel_F_01": [
+  "travel_result_001_101",
+  "travel_result_002_101",
+  "travel_result_302_101",
+  "travel_result_601_101"
+ ],
+ "Travel_F_02": [
+  "travel_result_001_102",
+  "travel_result_302_102",
+  "travel_result_601_102"
+ ],
+ "Travel_F_03": [
+  "travel_result_001_103",
+  "travel_result_302_103",
+  "travel_result_601_103"
+ ],
+ "Travel_M_01": [
+  "travel_result_001_901",
+  "travel_result_002_901",
+  "travel_result_302_901",
+  "travel_result_601_901"
+ ],
+ "Travel_N_01": [
+  "travel_result_001_001",
+  "travel_result_002_001",
+  "travel_result_302_001"
+ ],
+ "Travel_M_02": [
+  "travel_result_002_902",
+  "travel_result_302_902",
+  "travel_result_601_902"
+ ],
+ "Travel_N_02": [
+  "travel_result_002_002"
+ ],
+ "Travel_E_01": [
+  "travel_result_310_501",
+  "travel_result_401_501",
+  "travel_result_501_501",
+  "travel_result_601_501"
+ ],
+ "Travel_E_02": [
+  "travel_result_310_502",
+  "travel_result_401_502",
+  "travel_result_501_502",
+  "travel_result_601_502"
+ ],
+ "Travel_E_03": [
+  "travel_result_310_503",
+  "travel_result_401_503"
+ ],
+ "Travel_E_04": [
+  "travel_result_401_504",
+  "travel_result_601_504"
+ ],
+ "Travel_M_03": [
+  "travel_result_601_903"
+ ],
+ "Travel_M_04": [
+  "travel_result_601_904"
+ ],
+ "Travel_M_05": [
+  "travel_result_601_905"
+ ],
+ "Travel_M_06": [
+  "travel_result_601_906"
+ ]
+}

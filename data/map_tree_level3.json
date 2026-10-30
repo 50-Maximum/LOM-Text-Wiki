@@ -1,0 +1,1030 @@
+[
+{
+"d": 0,
+"n": "MainMap",
+"p": "MainMap",
+"ap": [],
+"sd": [],
+"tid": 3566
+},
+{
+"d": 1,
+"n": "Mall",
+"p": "MainMap/Mall",
+"ap": [],
+"sd": [],
+"tid": 3540
+},
+{
+"d": 2,
+"n": "Collider",
+"p": "MainMap/Mall/Collider",
+"ap": [],
+"sd": [],
+"tid": 3524
+},
+{
+"d": 2,
+"n": "Tooltip_Mall",
+"p": "MainMap/Mall/Tooltip_Mall",
+"ap": [
+2.1,
+0.7
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7872
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Mall/Tooltip_Mall/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7898
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Mall/Tooltip_Mall/Back/Icon",
+"ap": [
+12.4,
+-17.7
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7901
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Mall/Tooltip_Mall/Back/Title",
+"ap": [
+77.6,
+-18.7
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7903
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Mall/Tooltip_Mall/Back/Desc",
+"ap": [
+91.1,
+-45.9
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7867
+},
+{
+"d": 2,
+"n": "HoverParticle_Mall",
+"p": "MainMap/Mall/HoverParticle_Mall",
+"ap": [],
+"sd": [],
+"tid": 3595
+},
+{
+"d": 1,
+"n": "Forge",
+"p": "MainMap/Forge",
+"ap": [],
+"sd": [],
+"tid": 3536
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Forge/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3560
+},
+{
+"d": 2,
+"n": "Collider (2)",
+"p": "MainMap/Forge/Collider (2)",
+"ap": [],
+"sd": [],
+"tid": 3561
+},
+{
+"d": 2,
+"n": "Collider (3)",
+"p": "MainMap/Forge/Collider (3)",
+"ap": [],
+"sd": [],
+"tid": 3567
+},
+{
+"d": 2,
+"n": "Collider (4)",
+"p": "MainMap/Forge/Collider (4)",
+"ap": [],
+"sd": [],
+"tid": 3538
+},
+{
+"d": 2,
+"n": "Tooltip_Forge",
+"p": "MainMap/Forge/Tooltip_Forge",
+"ap": [
+0.7,
+1.4
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7902
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Forge/Tooltip_Forge/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7865
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Forge/Tooltip_Forge/Back/Icon",
+"ap": [
+15.5,
+-17.1
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7870
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Forge/Tooltip_Forge/Back/Title",
+"ap": [
+78.1,
+-20.0
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7871
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Forge/Tooltip_Forge/Back/Desc",
+"ap": [
+90.5,
+-46.9
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7900
+},
+{
+"d": 2,
+"n": "HoverParticle_Forge",
+"p": "MainMap/Forge/HoverParticle_Forge",
+"ap": [],
+"sd": [],
+"tid": 3556
+},
+{
+"d": 1,
+"n": "BackMountain",
+"p": "MainMap/BackMountain",
+"ap": [],
+"sd": [],
+"tid": 3526
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/BackMountain/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3546
+},
+{
+"d": 2,
+"n": "Tooltip_Back",
+"p": "MainMap/BackMountain/Tooltip_Back",
+"ap": [
+1.4,
+1.4
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7893
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/BackMountain/Tooltip_Back/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7866
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/BackMountain/Tooltip_Back/Back/Icon",
+"ap": [
+22.0,
+-19.9
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7863
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/BackMountain/Tooltip_Back/Back/Title",
+"ap": [
+95.1,
+-19.3
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7864
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/BackMountain/Tooltip_Back/Back/Desc",
+"ap": [
+90.4,
+-44.9
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7899
+},
+{
+"d": 2,
+"n": "HoverParticle_Back",
+"p": "MainMap/BackMountain/HoverParticle_Back",
+"ap": [],
+"sd": [],
+"tid": 3594
+},
+{
+"d": 1,
+"n": "Alchemy",
+"p": "MainMap/Alchemy",
+"ap": [],
+"sd": [],
+"tid": 3569
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Alchemy/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3543
+},
+{
+"d": 2,
+"n": "Tooltip_Alchemy",
+"p": "MainMap/Alchemy/Tooltip_Alchemy",
+"ap": [
+2.1,
+0.5
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 6753
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Alchemy/Tooltip_Alchemy/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 6822
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Alchemy/Tooltip_Alchemy/Back/Icon",
+"ap": [
+8.4,
+-24.2
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 6812
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Alchemy/Tooltip_Alchemy/Back/Title",
+"ap": [
+77.9,
+-19.5
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 6809
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Alchemy/Tooltip_Alchemy/Back/Desc",
+"ap": [
+86.3,
+-44.9
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 6756
+},
+{
+"d": 2,
+"n": "HoverParticle_Alchemy",
+"p": "MainMap/Alchemy/HoverParticle_Alchemy",
+"ap": [],
+"sd": [],
+"tid": 3596
+},
+{
+"d": 1,
+"n": "Study",
+"p": "MainMap/Study",
+"ap": [],
+"sd": [],
+"tid": 3527
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Study/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3537
+},
+{
+"d": 2,
+"n": "Tooltip_Study",
+"p": "MainMap/Study/Tooltip_Study",
+"ap": [
+2.1,
+0.7
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7895
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Study/Tooltip_Study/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7869
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Study/Tooltip_Study/Back/Icon",
+"ap": [
+15.0,
+-17.9
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7862
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Study/Tooltip_Study/Back/Title",
+"ap": [
+76.3,
+-18.7
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7860
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Study/Tooltip_Study/Back/Desc",
+"ap": [
+90.5,
+-45.1
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7897
+},
+{
+"d": 2,
+"n": "HoverParticle_Study",
+"p": "MainMap/Study/HoverParticle_Study",
+"ap": [],
+"sd": [],
+"tid": 3593
+},
+{
+"d": 1,
+"n": "Room",
+"p": "MainMap/Room",
+"ap": [],
+"sd": [],
+"tid": 3547
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Room/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3521
+},
+{
+"d": 2,
+"n": "Tooltip_Room",
+"p": "MainMap/Room/Tooltip_Room",
+"ap": [
+1.5,
+0.5
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7880
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Room/Tooltip_Room/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7885
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Room/Tooltip_Room/Back/Icon",
+"ap": [
+12.4,
+-14.4
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7891
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Room/Tooltip_Room/Back/Title",
+"ap": [
+59.9,
+-19.7
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7892
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Room/Tooltip_Room/Back/Desc",
+"ap": [
+89.9,
+-45.9
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7883
+},
+{
+"d": 2,
+"n": "HoverParticle_Room",
+"p": "MainMap/Room/HoverParticle_Room",
+"ap": [],
+"sd": [],
+"tid": 3597
+},
+{
+"d": 1,
+"n": "GirlRoom",
+"p": "MainMap/GirlRoom",
+"ap": [],
+"sd": [],
+"tid": 3523
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/GirlRoom/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3562
+},
+{
+"d": 2,
+"n": "Tooltip_GirlRoom",
+"p": "MainMap/GirlRoom/Tooltip_GirlRoom",
+"ap": [
+1.5,
+1.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7888
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/GirlRoom/Tooltip_GirlRoom/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7882
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/GirlRoom/Tooltip_GirlRoom/Back/Icon",
+"ap": [
+13.0,
+-15.6
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7878
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/GirlRoom/Tooltip_GirlRoom/Back/Title",
+"ap": [
+61.5,
+-18.7
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7877
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/GirlRoom/Tooltip_GirlRoom/Back/Desc",
+"ap": [
+91.1,
+-44.9
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7886
+},
+{
+"d": 2,
+"n": "HoverParticle_GirlRoom",
+"p": "MainMap/GirlRoom/HoverParticle_GirlRoom",
+"ap": [],
+"sd": [],
+"tid": 3588
+},
+{
+"d": 1,
+"n": "Kitchen",
+"p": "MainMap/Kitchen",
+"ap": [],
+"sd": [],
+"tid": 3525
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Kitchen/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3565
+},
+{
+"d": 2,
+"n": "Tooltip_Kitchen",
+"p": "MainMap/Kitchen/Tooltip_Kitchen",
+"ap": [
+2.2,
+0.4
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7884
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Kitchen/Tooltip_Kitchen/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7879
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Kitchen/Tooltip_Kitchen/Back/Icon",
+"ap": [
+20.3,
+-16.0
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7876
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Kitchen/Tooltip_Kitchen/Back/Title",
+"ap": [
+88.5,
+-18.7
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7875
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Kitchen/Tooltip_Kitchen/Back/Desc",
+"ap": [
+90.5,
+-44.6
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7890
+},
+{
+"d": 2,
+"n": "HoverParticle_Kitchen",
+"p": "MainMap/Kitchen/HoverParticle_Kitchen",
+"ap": [],
+"sd": [],
+"tid": 3592
+},
+{
+"d": 1,
+"n": "Door",
+"p": "MainMap/Door",
+"ap": [],
+"sd": [],
+"tid": 3550
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Door/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3564
+},
+{
+"d": 2,
+"n": "Tooltip_Door",
+"p": "MainMap/Door/Tooltip_Door",
+"ap": [
+1.7,
+1.4
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7887
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Door/Tooltip_Door/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7881
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Door/Tooltip_Door/Back/Icon",
+"ap": [
+17.8,
+-18.7
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7873
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Door/Tooltip_Door/Back/Title",
+"ap": [
+96.0,
+-19.0
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7874
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Door/Tooltip_Door/Back/Desc",
+"ap": [
+91.5,
+-45.6
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7889
+},
+{
+"d": 2,
+"n": "HoverParticle_Door",
+"p": "MainMap/Door/HoverParticle_Door",
+"ap": [],
+"sd": [],
+"tid": 3589
+},
+{
+"d": 1,
+"n": "Secret",
+"p": "MainMap/Secret",
+"ap": [],
+"sd": [],
+"tid": 3570
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Secret/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3545
+},
+{
+"d": 2,
+"n": "Collider (2)",
+"p": "MainMap/Secret/Collider (2)",
+"ap": [],
+"sd": [],
+"tid": 3552
+},
+{
+"d": 2,
+"n": "HoverParticle_Secret",
+"p": "MainMap/Secret/HoverParticle_Secret",
+"ap": [],
+"sd": [],
+"tid": 3591
+},
+{
+"d": 1,
+"n": "Center",
+"p": "MainMap/Center",
+"ap": [],
+"sd": [],
+"tid": 3522
+},
+{
+"d": 2,
+"n": "Collider (1)",
+"p": "MainMap/Center/Collider (1)",
+"ap": [],
+"sd": [],
+"tid": 3559
+},
+{
+"d": 2,
+"n": "Tooltip_Center",
+"p": "MainMap/Center/Tooltip_Center",
+"ap": [
+1.9,
+1.3
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7894
+},
+{
+"d": 3,
+"n": "Back",
+"p": "MainMap/Center/Tooltip_Center/Back",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+200.0,
+103.0
+],
+"tid": 7868
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "MainMap/Center/Tooltip_Center/Back/Icon",
+"ap": [
+17.4,
+-17.0
+],
+"sd": [
+70.0,
+70.0
+],
+"tid": 7861
+},
+{
+"d": 4,
+"n": "Title",
+"p": "MainMap/Center/Tooltip_Center/Back/Title",
+"ap": [
+79.6,
+-18.7
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7859
+},
+{
+"d": 4,
+"n": "Desc",
+"p": "MainMap/Center/Tooltip_Center/Back/Desc",
+"ap": [
+90.8,
+-44.9
+],
+"sd": [
+160.0,
+45.0
+],
+"tid": 7896
+},
+{
+"d": 2,
+"n": "HoverParticle_Center",
+"p": "MainMap/Center/HoverParticle_Center",
+"ap": [],
+"sd": [],
+"tid": 3590
+},
+{
+"d": 1,
+"n": "[Lights]",
+"p": "MainMap/[Lights]",
+"ap": [],
+"sd": [],
+"tid": 3544
+},
+{
+"d": 2,
+"n": "[Days]",
+"p": "MainMap/[Lights]/[Days]",
+"ap": [],
+"sd": [],
+"tid": 3539
+},
+{
+"d": 2,
+"n": "[Night]",
+"p": "MainMap/[Lights]/[Night]",
+"ap": [],
+"sd": [],
+"tid": 3557
+}
+]

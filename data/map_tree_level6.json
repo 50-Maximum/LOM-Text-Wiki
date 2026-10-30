@@ -1,0 +1,820 @@
+[
+{
+"d": 0,
+"n": "UI_World",
+"p": "UI_World",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+1774.0,
+998.0
+],
+"tid": 4029
+},
+{
+"d": 1,
+"n": "DialogBlackMask",
+"p": "UI_World/DialogBlackMask",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+1930.0,
+1090.0
+],
+"tid": 4018
+},
+{
+"d": 1,
+"n": "ActionButtonPanel",
+"p": "UI_World/ActionButtonPanel",
+"ap": [
+17.5,
+-7.4
+],
+"sd": [
+430.0,
+965.0
+],
+"tid": 3983
+},
+{
+"d": 2,
+"n": "Attack",
+"p": "UI_World/ActionButtonPanel/Attack",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4081
+},
+{
+"d": 3,
+"n": "Normal",
+"p": "UI_World/ActionButtonPanel/Attack/Normal",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4043
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Attack/Normal/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 3969
+},
+{
+"d": 3,
+"n": "Disable",
+"p": "UI_World/ActionButtonPanel/Attack/Disable",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4127
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Attack/Disable/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4061
+},
+{
+"d": 3,
+"n": "Hover",
+"p": "UI_World/ActionButtonPanel/Attack/Hover",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4025
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Attack/Hover/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4107
+},
+{
+"d": 3,
+"n": "Text (1)",
+"p": "UI_World/ActionButtonPanel/Attack/Text (1)",
+"ap": [
+-73.3,
+-32.5
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 4067
+},
+{
+"d": 3,
+"n": "Text (2)",
+"p": "UI_World/ActionButtonPanel/Attack/Text (2)",
+"ap": [
+-31.3,
+-66.8
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 3989
+},
+{
+"d": 2,
+"n": "Weapon",
+"p": "UI_World/ActionButtonPanel/Weapon",
+"ap": [
+160.0,
+-120.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3931
+},
+{
+"d": 3,
+"n": "Normal",
+"p": "UI_World/ActionButtonPanel/Weapon/Normal",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4002
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Weapon/Normal/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 3922
+},
+{
+"d": 3,
+"n": "Disable",
+"p": "UI_World/ActionButtonPanel/Weapon/Disable",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3930
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Weapon/Disable/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4009
+},
+{
+"d": 3,
+"n": "Hover",
+"p": "UI_World/ActionButtonPanel/Weapon/Hover",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4072
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Weapon/Hover/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4015
+},
+{
+"d": 3,
+"n": "Text (1)",
+"p": "UI_World/ActionButtonPanel/Weapon/Text (1)",
+"ap": [
+-77.8,
+-33.1
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 3923
+},
+{
+"d": 3,
+"n": "Text (2)",
+"p": "UI_World/ActionButtonPanel/Weapon/Text (2)",
+"ap": [
+-33.9,
+-68.3
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 3970
+},
+{
+"d": 2,
+"n": "Curse",
+"p": "UI_World/ActionButtonPanel/Curse",
+"ap": [
+0.0,
+-240.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3997
+},
+{
+"d": 3,
+"n": "Normal",
+"p": "UI_World/ActionButtonPanel/Curse/Normal",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3942
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Curse/Normal/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4134
+},
+{
+"d": 3,
+"n": "Disable",
+"p": "UI_World/ActionButtonPanel/Curse/Disable",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3937
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Curse/Disable/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 3972
+},
+{
+"d": 3,
+"n": "Hover",
+"p": "UI_World/ActionButtonPanel/Curse/Hover",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4027
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Curse/Hover/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4068
+},
+{
+"d": 3,
+"n": "Text (1)",
+"p": "UI_World/ActionButtonPanel/Curse/Text (1)",
+"ap": [
+-83.8,
+-37.6
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 4150
+},
+{
+"d": 3,
+"n": "Text (2)",
+"p": "UI_World/ActionButtonPanel/Curse/Text (2)",
+"ap": [
+-30.7,
+-37.6
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 4066
+},
+{
+"d": 2,
+"n": "Block",
+"p": "UI_World/ActionButtonPanel/Block",
+"ap": [
+160.0,
+-360.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3924
+},
+{
+"d": 3,
+"n": "Normal",
+"p": "UI_World/ActionButtonPanel/Block/Normal",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4145
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Block/Normal/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4035
+},
+{
+"d": 3,
+"n": "Disable",
+"p": "UI_World/ActionButtonPanel/Block/Disable",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 4141
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Block/Disable/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 3911
+},
+{
+"d": 3,
+"n": "Hover",
+"p": "UI_World/ActionButtonPanel/Block/Hover",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3907
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Block/Hover/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 3974
+},
+{
+"d": 3,
+"n": "Text (1)",
+"p": "UI_World/ActionButtonPanel/Block/Text (1)",
+"ap": [
+-79.9,
+-34.0
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 3961
+},
+{
+"d": 3,
+"n": "Text (2)",
+"p": "UI_World/ActionButtonPanel/Block/Text (2)",
+"ap": [
+-35.0,
+-74.8
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 4089
+},
+{
+"d": 2,
+"n": "Ultimate",
+"p": "UI_World/ActionButtonPanel/Ultimate",
+"ap": [
+0.0,
+-480.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3964
+},
+{
+"d": 3,
+"n": "Normal",
+"p": "UI_World/ActionButtonPanel/Ultimate/Normal",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3926
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Ultimate/Normal/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4142
+},
+{
+"d": 3,
+"n": "Disable",
+"p": "UI_World/ActionButtonPanel/Ultimate/Disable",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3980
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Ultimate/Disable/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 3960
+},
+{
+"d": 3,
+"n": "Hover",
+"p": "UI_World/ActionButtonPanel/Ultimate/Hover",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+240.0,
+240.0
+],
+"tid": 3950
+},
+{
+"d": 4,
+"n": "Icon",
+"p": "UI_World/ActionButtonPanel/Ultimate/Hover/Icon",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+130.0,
+130.0
+],
+"tid": 4053
+},
+{
+"d": 3,
+"n": "Text (1)",
+"p": "UI_World/ActionButtonPanel/Ultimate/Text (1)",
+"ap": [
+-76.9,
+-34.9
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 3910
+},
+{
+"d": 3,
+"n": "Text (2)",
+"p": "UI_World/ActionButtonPanel/Ultimate/Text (2)",
+"ap": [
+-34.4,
+-76.9
+],
+"sd": [
+60.0,
+60.0
+],
+"tid": 4013
+},
+{
+"d": 1,
+"n": "Sword",
+"p": "UI_World/Sword",
+"ap": [
+1.1,
+2.3
+],
+"sd": [
+250.0,
+815.7
+],
+"tid": 4041
+},
+{
+"d": 2,
+"n": "Scabbard",
+"p": "UI_World/Sword/Scabbard",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+110.0,
+424.0
+],
+"tid": 3956
+},
+{
+"d": 3,
+"n": "Mask",
+"p": "UI_World/Sword/Scabbard/Mask",
+"ap": [
+4.0,
+406.7
+],
+"sd": [
+177.0,
+300.0
+],
+"tid": 4040
+},
+{
+"d": 4,
+"n": "Body",
+"p": "UI_World/Sword/Scabbard/Mask/Body",
+"ap": [
+0.0,
+-101.5
+],
+"sd": [
+177.0,
+369.0
+],
+"tid": 3992
+},
+{
+"d": 2,
+"n": "ShineCircle",
+"p": "UI_World/Sword/ShineCircle",
+"ap": [
+10.8,
+33.9
+],
+"sd": [
+232.0,
+232.0
+],
+"tid": 4022
+},
+{
+"d": 3,
+"n": "ShineSmall",
+"p": "UI_World/Sword/ShineCircle/ShineSmall",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+1000.0,
+800.0
+],
+"tid": 4091
+},
+{
+"d": 3,
+"n": "ShineBig",
+"p": "UI_World/Sword/ShineCircle/ShineBig",
+"ap": [
+0.0,
+0.0
+],
+"sd": [
+1755.0,
+1500.0
+],
+"tid": 4020
+},
+{
+"d": 1,
+"n": "[ActionEffects]",
+"p": "UI_World/[ActionEffects]",
+"ap": [],
+"sd": [],
+"tid": 1946
+},
+{
+"d": 2,
+"n": "ActionEffect_Block",
+"p": "UI_World/[ActionEffects]/ActionEffect_Block",
+"ap": [],
+"sd": [],
+"tid": 2096
+},
+{
+"d": 2,
+"n": "ActionEffect_Curse",
+"p": "UI_World/[ActionEffects]/ActionEffect_Curse",
+"ap": [],
+"sd": [],
+"tid": 2095
+},
+{
+"d": 2,
+"n": "ActionEffect_Stab",
+"p": "UI_World/[ActionEffects]/ActionEffect_Stab",
+"ap": [],
+"sd": [],
+"tid": 2092
+},
+{
+"d": 2,
+"n": "ActionEffect_Ultimate",
+"p": "UI_World/[ActionEffects]/ActionEffect_Ultimate",
+"ap": [],
+"sd": [],
+"tid": 2094
+},
+{
+"d": 2,
+"n": "ActionEffect_Weapon",
+"p": "UI_World/[ActionEffects]/ActionEffect_Weapon",
+"ap": [],
+"sd": [],
+"tid": 2093
+}
+]

@@ -1,0 +1,20 @@
+{
+  "meeting_option_01": [
+    {
+      "kind": "选项",
+      "text": "我想去青城派留学",
+      "cond": "Meeting_Option_01_201_TEMP",
+      "reason": "该条件在全库 2147 个剧本里只被读取、从未被赋值，判定库里也没有定义，游戏中恒为假。这一项永远选不了，是没做完的占位。",
+      "evidence": "meeting_option_01.txt：meet[2] = Meeting_Option_01_201_TEMP and \"event+我想去青城派留学+0+0\" or \"~x\""
+    }
+  ],
+  "ch3_2_2": [
+    {
+      "kind": "分支",
+      "text": "switch1_2_result == 1（girl6 登场的那一支）",
+      "cond": "Ch_3_2_2_002_temp",
+      "reason": "临时开关只在本场被读取，全库没有任何地方给它赋值，取值恒为空，这一支不会进入。",
+      "evidence": "ch3_2_2.txt：local switch1_2_result = checkpointmanager.Switch(\"Ch_3_2_2_002_temp\")"
+    }
+  ]
+}

@@ -1,0 +1,5305 @@
+{
+ "S0003_01": [
+  "center",
+  "paddy"
+ ],
+ "S0003_01_01": [
+  "road1"
+ ],
+ "S0003_01_03": [
+  "road1"
+ ],
+ "S0003_01_05": [
+  "room"
+ ],
+ "S0003_02_01": [
+  "road1",
+  "black",
+  "road1_evening",
+  "inn2",
+  "inn1"
+ ],
+ "S0003_02_02": [
+  "road1_night",
+  "boat_night1"
+ ],
+ "S0003_02_02_break_01": [
+  "boat_night1"
+ ],
+ "S0003_02_03": [
+  "boat_night1",
+  "riverside_night1"
+ ],
+ "S0003_02_06_02_01": [
+  "boat_night1"
+ ],
+ "S0003_02_06_02_02": [
+  "boat_night1"
+ ],
+ "S0003_02_06_03": [
+  "boat_night1",
+  "black"
+ ],
+ "S0003_02_07": [
+  "forest_night",
+  "sky"
+ ],
+ "S0003_02_08": [
+  "boat_night1"
+ ],
+ "S0003_02_09": [
+  "boat_night1"
+ ],
+ "S0003_03_01": [
+  "black",
+  "road1"
+ ],
+ "S0003_03_02": [
+  "room"
+ ],
+ "S0003_03_break_01": [
+  "boat_night1"
+ ],
+ "S0012_01_01": [
+  "center",
+  "black"
+ ],
+ "S0012_01_02": [
+  "black",
+  "alchemy",
+  "center_evening",
+  "forest_night",
+  "center"
+ ],
+ "S0012_01_03": [
+  "black"
+ ],
+ "S0014_01_01": [
+  "room",
+  "guest1",
+  "farm1_dust"
+ ],
+ "S0014_01_02": [
+  "farm1_dust"
+ ],
+ "S0014_01_03": [
+  "farm1_dust",
+  "farm1_night"
+ ],
+ "S0014_01_04": [
+  "farm1_dust"
+ ],
+ "S0014_01_05": [
+  "forest_night"
+ ],
+ "S0014_01_05_break_start_01": [
+  "forest_night",
+  "farm1_night"
+ ],
+ "S0014_01_06": [
+  "farm1_night",
+  "forest_night"
+ ],
+ "S0017_01": [
+  "sky",
+  "kitchen",
+  "backmountain2"
+ ],
+ "S0017_01_01": [
+  "backmountain2"
+ ],
+ "S0017_02": [
+  "forest_dust",
+  "black",
+  "temple_night"
+ ],
+ "S0017_02_01": [
+  "temple_night",
+  "forest_night",
+  "black"
+ ],
+ "S0017_02_02": [
+  "temple_night",
+  "forest_night",
+  "black"
+ ],
+ "S0017_03": [
+  "temple_night",
+  "black",
+  "forest_night"
+ ],
+ "S0017_04": [
+  "temple_night"
+ ],
+ "S0017_04_break_start_01": [
+  "temple_night"
+ ],
+ "S0017_05": [
+  "temple_night"
+ ],
+ "S0017_06": [
+  "center"
+ ],
+ "S0018_01": [
+  "room",
+  "black"
+ ],
+ "S0018_02": [
+  "inn1"
+ ],
+ "S0018_02_01": [
+  "inn2",
+  "inn1",
+  "road1"
+ ],
+ "S0018_02_02": [
+  "inn2"
+ ],
+ "S0018_03": [
+  "mountain_road1"
+ ],
+ "S0018_04": [
+  "mountain_road1",
+  "center"
+ ],
+ "S0018_05": [
+  "center"
+ ],
+ "S0018_06": [
+  "center",
+  "tang_mall",
+  "road1_evening",
+  "room_night",
+  "black"
+ ],
+ "S0019_01": [
+  "inn_room1_night",
+  "section_100_night",
+  "forest_night"
+ ],
+ "S0020_01": [
+  "black",
+  "backmountain2"
+ ],
+ "S0020_02_03_01": [
+  "backmountain2"
+ ],
+ "S0020_02_04": [
+  "backmountain_road1"
+ ],
+ "S0020_02_04_part_3": [
+  "center",
+  "forest",
+  "fortress_dusk",
+  "room_night",
+  "section_100_mall",
+  "road2",
+  "fortress_night",
+  "black"
+ ],
+ "S0020_02_break_start_01": [
+  "backmountain2"
+ ],
+ "S0021_01": [
+  "room",
+  "black",
+  "backmountain2"
+ ],
+ "S0021_02_01": [
+  "backmountain2"
+ ],
+ "S0021_02_02": [
+  "backmountain2"
+ ],
+ "S0021_02_03": [
+  "backmountain2",
+  "white",
+  "black"
+ ],
+ "S0021_02_04": [
+  "alchemy_night"
+ ],
+ "S0021_03_01": [
+  "backmountain2",
+  "backmountain_road1",
+  "black"
+ ],
+ "S0021_03_01_break_start_01": [
+  "backmountain2"
+ ],
+ "S0021_03_05": [
+  "black",
+  "backmountain2_night"
+ ],
+ "S0022_01": [
+  "center",
+  "fortress"
+ ],
+ "S0022_01_02": [
+  "black",
+  "fortress",
+  "stream"
+ ],
+ "S0023_01": [
+  "teashop",
+  "fortress",
+  "road1"
+ ],
+ "S0023_01_02": [
+  "house1"
+ ],
+ "S0023_01_02_01": [
+  "house1",
+  "black",
+  "pharmacy1",
+  "temple_day"
+ ],
+ "S0023_01_03": [
+  "fortress"
+ ],
+ "S0023_01_03_03": [
+  "mountain_road1",
+  "fortress_dusk"
+ ],
+ "S0023_01_04": [
+  "fortress_dusk"
+ ],
+ "S0024_01": [
+  "room",
+  "center_evening",
+  "alchemy"
+ ],
+ "S0024_01_01": [
+  "center",
+  "fortress",
+  "champaign"
+ ],
+ "S0024_01_02": [
+  "fortress",
+  "black",
+  "fortress_night",
+  "road1_night",
+  "temple_night",
+  "tang_tower"
+ ],
+ "S0024_01_03": [
+  "inn1",
+  "center_evening",
+  "tang_mall",
+  "backmountain_road1"
+ ],
+ "S0025_01": [
+  "road1"
+ ],
+ "S0026_01": [
+  "road1",
+  "inn1",
+  "black"
+ ],
+ "S0026_01_01": [
+  "tang_mall",
+  "road1",
+  "stream"
+ ],
+ "S0026_01_02": [
+  "stream"
+ ],
+ "S0026_01_03": [
+  "road1"
+ ],
+ "S0026_01_04": [
+  "tang_mall"
+ ],
+ "S0026_01_05": [
+  "alchemy"
+ ],
+ "S0027_01": [
+  "fortress"
+ ],
+ "S0028_01": [
+  "alchemy",
+  "center"
+ ],
+ "S0028_02": [
+  "tang_mall",
+  "section_006",
+  "champaign",
+  "black"
+ ],
+ "S0028_02_01": [
+  "alchemy_night",
+  "forest_night",
+  "alchemy",
+  "center_evening"
+ ],
+ "S0028_02_02": [
+  "forest_night"
+ ],
+ "S0028_02_break_start_01": [
+  "tang_mall"
+ ],
+ "S0028_03": [
+  "center_evening",
+  "black",
+  "walled"
+ ],
+ "S0029_01": [
+  "cellar",
+  "black",
+  "center_evening"
+ ],
+ "S0029_01_01": [
+  "black"
+ ],
+ "S0029_01_02": [
+  "center_evening"
+ ],
+ "S0030_01": [
+  "center",
+  "center_evening",
+  "room"
+ ],
+ "S0031_01": [
+  "center",
+  "kitchen"
+ ],
+ "S0032_01": [
+  "center"
+ ],
+ "S0032_02": [
+  "pinball",
+  "center"
+ ],
+ "S0032_03": [
+  "center",
+  "black"
+ ],
+ "S0033_01": [
+  "room",
+  "forge",
+  "forge_dust"
+ ],
+ "S0033_02": [
+  "forge"
+ ],
+ "S0100_01": [
+  "study"
+ ],
+ "S0100_01_01": [
+  "center"
+ ],
+ "S0101_01": [
+  "inn1",
+  "guest1"
+ ],
+ "S0102_01": [
+  "room",
+  "center"
+ ],
+ "S0103_01": [
+  "room",
+  "center"
+ ],
+ "S0104_01": [
+  "room",
+  "center"
+ ],
+ "S0105_01": [
+  "tang_mall",
+  "fortress",
+  "mountain_road1"
+ ],
+ "S0105_01_01": [
+  "mountain_road1"
+ ],
+ "S0105_01_02": [
+  "mountain_road1"
+ ],
+ "S0106_01": [
+  "center"
+ ],
+ "S0106_01_01": [
+  "center"
+ ],
+ "S0106_01_02": [
+  "center"
+ ],
+ "S0106_01_03": [
+  "center"
+ ],
+ "S0106_02": [
+  "center",
+  "mountain_road1"
+ ],
+ "S0107_01": [
+  "center_evening",
+  "room_night"
+ ],
+ "S0108_01": [
+  "center"
+ ],
+ "S0109_01": [
+  "room"
+ ],
+ "S0111_01": [
+  "room",
+  "black"
+ ],
+ "S0120_01": [
+  "center"
+ ],
+ "S0121_01": [
+  "center"
+ ],
+ "S0121_01_01": [
+  "center",
+  "black"
+ ],
+ "S0200_01": [
+  "center"
+ ],
+ "S0202_01": [
+  "center_evening",
+  "room",
+  "black",
+  "alchemy"
+ ],
+ "S0202_02": [
+  "center"
+ ],
+ "S0202_02_01": [
+  "teashop",
+  "road1"
+ ],
+ "S0202_02_01_01": [
+  "prison",
+  "road1"
+ ],
+ "S0202_02_02": [
+  "road1",
+  "teashop"
+ ],
+ "S0202_02_03": [
+  "road1_evening",
+  "teashop",
+  "road1"
+ ],
+ "S0203_01": [
+  "center",
+  "mountain_road1",
+  "alchemy_night"
+ ],
+ "S0204_01": [
+  "room",
+  "backmountain_road1"
+ ],
+ "S0204_01_01": [
+  "black",
+  "pharmacy1"
+ ],
+ "S0204_01_01_01": [
+  "center",
+  "road1",
+  "black"
+ ],
+ "S0204_01_02": [
+  "forge",
+  "study",
+  "center",
+  "black"
+ ],
+ "S0204_01_03": [
+  "room",
+  "section_002"
+ ],
+ "S0204_01_03_01": [
+  "room",
+  "alchemy"
+ ],
+ "S0204_01_04_break_start_01": [
+  "alchemy"
+ ],
+ "S0205_01": [
+  "room"
+ ],
+ "S0206_01": [
+  "room",
+  "stream"
+ ],
+ "S0207_01": [
+  "room",
+  "center",
+  "backmountain_road1",
+  "forest",
+  "forest_night",
+  "black",
+  "road1"
+ ],
+ "S0208_01": [
+  "center_evening",
+  "forge_dust"
+ ],
+ "S0208_01_01": [
+  "backmountain_road2",
+  "backmountain2",
+  "stream_dusk",
+  "center_night"
+ ],
+ "S0208_01_02": [
+  "stream_dusk",
+  "stream_night"
+ ],
+ "S0208_02": [
+  "backmountain_road2_night"
+ ],
+ "S0208_02_01": [
+  "backmountain_road2_night"
+ ],
+ "S0208_02_02": [
+  "backmountain_road2_night",
+  "black"
+ ],
+ "S0208_02_03": [
+  "section_006",
+  "backmountain_road2_night"
+ ],
+ "S0208_02_04": [
+  "cliff_night",
+  "black"
+ ],
+ "S0208_03": [
+  "black",
+  "underground_lake_night"
+ ],
+ "S0208_03_01": [
+  "underground_lake"
+ ],
+ "S0208_04_01_01": [
+  "underground_lake"
+ ],
+ "S0208_04_01_04": [
+  "underground_lake"
+ ],
+ "S0208_04_01_07": [
+  "black",
+  "underworld",
+  "underground_lake"
+ ],
+ "S0208_04_02": [
+  "underground_lake"
+ ],
+ "S0208_04_03": [
+  "underground_lake",
+  "backmountain_road1"
+ ],
+ "S0208_04_break_start_01": [
+  "underground_lake",
+  "black"
+ ],
+ "S0208_05_01": [
+  "underground_lake",
+  "black",
+  "underworld",
+  "alchemy"
+ ],
+ "S0208_05_02": [
+  "section_room1"
+ ],
+ "S0208_05_03": [
+  "mall1"
+ ],
+ "S0208_05_04": [
+  "section_006"
+ ],
+ "S0208_05_05": [
+  "snow_road",
+  "styx_river",
+  "styx_river_dusk",
+  "white",
+  "black",
+  "underground_lake",
+  "dead"
+ ],
+ "S0208_06_01": [
+  "center_evening",
+  "alchemy_night"
+ ],
+ "S0208_06_02": [
+  "black",
+  "alchemy_night",
+  "center_night"
+ ],
+ "S0208_06_02_break_start_01": [
+  "alchemy_night"
+ ],
+ "S0209_01": [
+  "center_morning",
+  "room",
+  "black",
+  "alchemy",
+  "white",
+  "section_006",
+  "road1",
+  "center"
+ ],
+ "S0209_01_01": [
+  "alchemy",
+  "black"
+ ],
+ "S0209_01_05": [
+  "underground_lake"
+ ],
+ "S0209_01_06": [
+  "alchemy_night"
+ ],
+ "S0209_01_07": [
+  "black",
+  "backmountain2",
+  "backmountain2_night"
+ ],
+ "S0210_01": [
+  "center_night",
+  "mountain_road1_night"
+ ],
+ "S0210_01_01": [
+  "mountain_road1_night"
+ ],
+ "S0210_01_02": [
+  "forest_night",
+  "black",
+  "tang_mall",
+  "center",
+  "forest"
+ ],
+ "S0211_01": [
+  "alchemy",
+  "room",
+  "center",
+  "backmountain_road1",
+  "black"
+ ],
+ "S0212_01": [
+  "mountain_road1_dusk",
+  "black",
+  "mountain1_dust",
+  "alchemy"
+ ],
+ "S0213_01": [
+  "fortress",
+  "fortress_dusk"
+ ],
+ "S0213_02": [
+  "fortress_room2",
+  "black",
+  "fortress_room2_dusk",
+  "fortress_dusk"
+ ],
+ "S0214_01": [
+  "center_evening"
+ ],
+ "S0301_01": [
+  "inn_room1_night",
+  "guest1"
+ ],
+ "S0301_01_01": [
+  "guest1"
+ ],
+ "S0301_02": [
+  "guest1",
+  "mall1",
+  "champaign_night"
+ ],
+ "S0301_02_01": [
+  "champaign_night"
+ ],
+ "S0301_02_02": [
+  "black",
+  "forest_night"
+ ],
+ "S0301_03": [
+  "mall1"
+ ],
+ "S0302_01": [
+  "inn_room1",
+  "black"
+ ],
+ "S0302_01_01": [
+  "guest1",
+  "black"
+ ],
+ "S0303_01": [
+  "battlefield",
+  "black",
+  "forest"
+ ],
+ "S0304_01": [
+  "guest1"
+ ],
+ "S0305_01": [
+  "inn1",
+  "road2",
+  "inn_room1",
+  "guest1"
+ ],
+ "S0305_01_01": [
+  "road2"
+ ],
+ "S0305_02_01": [
+  "bamboo_villa",
+  "bamboo_villa_dusk",
+  "black",
+  "bamboo_villa_night"
+ ],
+ "S0305_02_04": [
+  "bamboo_villa_night"
+ ],
+ "S0305_02_04_01": [
+  "bamboo_villa_night",
+  "black"
+ ],
+ "S0401_01": [
+  "alchemy",
+  "inn_room1"
+ ],
+ "S0501_01": [
+  "black",
+  "backmountain2",
+  "room",
+  "road1",
+  "fortress",
+  "teashop_dust",
+  "champaign_dusk"
+ ],
+ "S0502_01": [
+  "backmountain2"
+ ],
+ "S0503_01": [
+  "room"
+ ],
+ "S0601_01": [
+  "kitchen"
+ ],
+ "S0602_01": [
+  "forge"
+ ],
+ "S0603_01": [
+  "fortress",
+  "forest"
+ ],
+ "S0603_02": [
+  "road1",
+  "teashop",
+  "inn1"
+ ],
+ "S0603_02_01": [
+  "road1",
+  "road1_evening",
+  "black",
+  "prison"
+ ],
+ "S0604_01": [
+  "forest"
+ ],
+ "S0604_01_01": [
+  "forest"
+ ],
+ "S0701_01": [
+  "backmountain2"
+ ],
+ "S0701_02_01": [
+  "backmountain2"
+ ],
+ "S0702_01": [
+  "center",
+  "outsideshop"
+ ],
+ "S0702_01_01": [
+  "outsideshop",
+  "road1",
+  "black"
+ ],
+ "S0702_01_03_break_start_01": [
+  "outsideshop"
+ ],
+ "S0703_01": [
+  "tang_mall"
+ ],
+ "S0703_01_01": [
+  "center",
+  "backmountain2"
+ ],
+ "S0801_01": [
+  "fortress"
+ ],
+ "S0801_02_01": [
+  "fortress"
+ ],
+ "S0801_02_02": [
+  "champaign",
+  "fortress",
+  "road1",
+  "inn2",
+  "inn1"
+ ],
+ "S0801_02_break_start_01": [
+  "fortress",
+  "fortress_dusk"
+ ],
+ "S0802_01": [
+  "backmountain2"
+ ],
+ "S0802_02_01": [
+  "backmountain2"
+ ],
+ "S0802_02_02": [
+  "backmountain2"
+ ],
+ "S0802_02_03": [
+  "backmountain2"
+ ],
+ "S0802_02_04": [
+  "backmountain2"
+ ],
+ "S0802_02_05": [
+  "backmountain2"
+ ],
+ "S0802_02_06": [
+  "backmountain2"
+ ],
+ "S0802_02_07": [
+  "backmountain2"
+ ],
+ "S0802_02_08": [
+  "backmountain2"
+ ],
+ "S0802_02_09": [
+  "backmountain2"
+ ],
+ "S0802_02_10": [
+  "backmountain2"
+ ],
+ "S0802_02_11": [
+  "backmountain2"
+ ],
+ "S0802_02_break_start_01": [
+  "backmountain2"
+ ],
+ "S2001_01": [
+  "center",
+  "study",
+  "alchemy"
+ ],
+ "S2001_01_01": [
+  "study"
+ ],
+ "S2001_01_02": [
+  "backmountain_road1",
+  "study",
+  "center_evening"
+ ],
+ "S2001_01_03": [
+  "center",
+  "black",
+  "forest"
+ ],
+ "S2002_01": [
+  "study"
+ ],
+ "S2002_01_01": [
+  "center"
+ ],
+ "S2002_02": [
+  "center"
+ ],
+ "S2002_03_01": [
+  "tang_mall"
+ ],
+ "S2002_03_break_start_01": [
+  "tang_mall"
+ ],
+ "S2002_04": [
+  "tang_mall",
+  "black"
+ ],
+ "S2100_01": [
+  "center",
+  "center_evening"
+ ],
+ "S2100_01_01": [
+  "center_evening"
+ ],
+ "S2100_01_02": [
+  "center_evening"
+ ],
+ "S2100_01_03": [
+  "center_evening"
+ ],
+ "S2100_02_01": [
+  "center_evening"
+ ],
+ "S2100_02_02": [
+  "center_evening",
+  "alchemy"
+ ],
+ "S2200_01": [
+  "guest1",
+  "inn_room1"
+ ],
+ "S2200_02": [
+  "section_001_center",
+  "guest1"
+ ],
+ "S2200_02_02": [
+  "section_001_center",
+  "forest"
+ ],
+ "S2200_02_03": [
+  "section_001_center",
+  "forest"
+ ],
+ "S2200_03": [
+  "section_001_center"
+ ],
+ "S2200_03_01": [
+  "section_001_center",
+  "forest"
+ ],
+ "S2200_03_02": [
+  "section_001_center",
+  "forest",
+  "black"
+ ],
+ "S2200_03_03": [
+  "section_001_center",
+  "forest"
+ ],
+ "S2200_03_04": [
+  "section_001_center"
+ ],
+ "S2200_04": [
+  "section_001_center",
+  "guest1",
+  "section_001_fist",
+  "section_001_cave"
+ ],
+ "S2201_01": [
+  "center"
+ ],
+ "S2300_01": [
+  "center",
+  "study",
+  "tang_mall"
+ ],
+ "S2300_02": [
+  "backmountain_road1",
+  "inn_room1",
+  "section_001_cliff",
+  "section_001_market",
+  "center"
+ ],
+ "S2300_02_01": [
+  "study",
+  "center"
+ ],
+ "S2301_01": [
+  "section_001_market"
+ ],
+ "S2310_01": [
+  "guest1",
+  "sky",
+  "inn_room1",
+  "section_001_market",
+  "nightmarket"
+ ],
+ "S2310_01_03": [
+  "house1"
+ ],
+ "S2310_01_04_01": [
+  "section_001_market"
+ ],
+ "S2310_01_05": [
+  "black",
+  "forge2",
+  "section_001_fist"
+ ],
+ "S2320_01": [
+  "section_001_cliff"
+ ],
+ "S2321_01": [
+  "forest_night",
+  "black"
+ ],
+ "S2321_02_01": [
+  "mountain_road1"
+ ],
+ "S2321_02_02": [
+  "mountain_road1"
+ ],
+ "S2321_02_03_02_01": [
+  "sixdao_scenic"
+ ],
+ "S2321_02_03_03": [
+  "mountain_road1"
+ ],
+ "S2321_02_03_break_01": [
+  "paddy"
+ ],
+ "S2321_02_04": [
+  "mountain_road1",
+  "gazebo_rainy",
+  "gazebo"
+ ],
+ "S2321_02_05_04": [
+  "citygate",
+  "house_dusk"
+ ],
+ "S2321_02_05_04_01": [
+  "house_dusk"
+ ],
+ "S2321_02_05_break_01": [
+  "gazebo"
+ ],
+ "S2321_03_01": [
+  "house_night"
+ ],
+ "S2321_03_03": [
+  "black",
+  "bamboo_villa",
+  "inn_room1"
+ ],
+ "S2321_04_01": [
+  "bamboo_villa2"
+ ],
+ "S2321_04_02_01_01": [
+  "bamboo_villa2"
+ ],
+ "S2321_04_02_07": [
+  "bamboo_villa2"
+ ],
+ "S2321_04_02_break_01": [
+  "bamboo_villa2"
+ ],
+ "S2321_04_03_01_02_01": [
+  "bamboo_villa"
+ ],
+ "S2321_04_03_01_03_01": [
+  "bamboo_villa"
+ ],
+ "S2321_04_03_02": [
+  "road2"
+ ],
+ "S2321_04_03_02_101_01": [
+  "road2"
+ ],
+ "S2321_04_03_break_01": [
+  "bamboo_villa"
+ ],
+ "S2321_05_01": [
+  "bamboo_villa",
+  "black",
+  "inn_room1",
+  "blossom_night"
+ ],
+ "S2321_06_01": [
+  "bamboo_villa",
+  "champaign_loop",
+  "carriage",
+  "champaign"
+ ],
+ "S2321_06_01_01": [
+  "carriage",
+  "champaign"
+ ],
+ "S2321_06_02": [
+  "center2"
+ ],
+ "S2321_06_03_01": [
+  "center2"
+ ],
+ "S2321_06_03_01_01": [
+  "center2"
+ ],
+ "S2321_06_03_02": [
+  "center2"
+ ],
+ "S2321_06_03_03": [
+  "tent1",
+  "center2",
+  "black",
+  "bamboo_villa"
+ ],
+ "S2321_06_03_break_01": [
+  "center2"
+ ],
+ "S2321_07_01": [
+  "gazebo"
+ ],
+ "S2321_07_02": [
+  "white",
+  "gazebo",
+  "inn_room1",
+  "bamboo_villa",
+  "gazebo_dusk",
+  "champaign_dusk",
+  "champaign_night",
+  "mountain_road1",
+  "center_evening",
+  "tang_mall"
+ ],
+ "S2321_07_02_break_01": [
+  "gazebo"
+ ],
+ "S2401_01": [
+  "forest"
+ ],
+ "S2402_01": [
+  "forest"
+ ],
+ "S2500_01": [
+  "kitchen",
+  "center",
+  "forest",
+  "black"
+ ],
+ "S2500_02": [
+  "study",
+  "tang_mall",
+  "center_evening",
+  "kitchen",
+  "forest",
+  "forest_night",
+  "center_morning"
+ ],
+ "S2501_01_travel": [
+  "mountain_road1"
+ ],
+ "S2502_01": [
+  "snow_road",
+  "snow_mountain"
+ ],
+ "S2502_01_01": [
+  "snow_mountain"
+ ],
+ "S2502_01_02": [
+  "snow_mountain",
+  "black"
+ ],
+ "S2503_break_start_01": [
+  "snow_mountain"
+ ],
+ "S2504_01": [
+  "inn_room1",
+  "snow_mountain_night"
+ ],
+ "S2504_02": [
+  "snow_mountain"
+ ],
+ "S2504_02_01": [
+  "snow_mountain",
+  "inn_room1",
+  "section_001_market",
+  "inn1",
+  "prison",
+  "section_001_door"
+ ],
+ "S2504_02_03": [
+  "snow_mountain"
+ ],
+ "S2504_02_04": [
+  "snow_mountain_night",
+  "black",
+  "mountain1_night"
+ ],
+ "S2504_02_05": [
+  "white",
+  "snow_mountain_night"
+ ],
+ "S2504_02_06": [
+  "snow_mountain",
+  "inn_room1",
+  "section_001_temple_mall",
+  "section_001_market",
+  "inn1",
+  "prison",
+  "section_001_door",
+  "snow_mountain_night"
+ ],
+ "S2504_02_07": [
+  "snow_mountain_night",
+  "black",
+  "snow_mountain_sum"
+ ],
+ "S2504_02_07_break_start_01": [
+  "snow_mountain_sum"
+ ],
+ "S2504_03": [
+  "center"
+ ],
+ "S2504_03_travel": [
+  "mountain_road1"
+ ],
+ "S2504_04": [
+  "center",
+  "forest"
+ ],
+ "S2504_04_travel": [
+  "mountain_road1"
+ ],
+ "S2510_01": [
+  "center",
+  "center_evening",
+  "forest",
+  "alchemy",
+  "black"
+ ],
+ "S2510_01_01": [
+  "center",
+  "black"
+ ],
+ "S2510_01_02": [
+  "alchemy",
+  "backmountain_road1"
+ ],
+ "S2600_01": [
+  "section_001_temple_mall"
+ ],
+ "S2600_01_03": [
+  "section_001_temple_mall"
+ ],
+ "S2600_02_02": [
+  "section_001_temple_mall",
+  "mountain_road1"
+ ],
+ "S2600_02_03_01": [
+  "section_001_center",
+  "farm1",
+  "forest"
+ ],
+ "S2600_02_04_01": [
+  "section_001_market"
+ ],
+ "S2600_02_05": [
+  "section_001_cliff"
+ ],
+ "S2700_01": [
+  "section_001_fist_01",
+  "forge2",
+  "section_001_fist_02"
+ ],
+ "S2700_01_01": [
+  "section_001_fist_dusk",
+  "forge2_dusk"
+ ],
+ "S2700_02_01": [
+  "section_001_market",
+  "section_001_fist_dusk"
+ ],
+ "S2700_02_02": [
+  "mountain_road1",
+  "forge2",
+  "black"
+ ],
+ "S2700_02_03": [
+  "section_001_market",
+  "mountain_road1"
+ ],
+ "S2700_02_03_01": [
+  "section_001_market",
+  "forge2_dusk",
+  "section_001_fist_dusk"
+ ],
+ "S2700_02_03_02": [
+  "section_001_market",
+  "mountain_road1"
+ ],
+ "S2800_01": [
+  "mall1",
+  "prison"
+ ],
+ "S2800_01_01": [
+  "prison_night"
+ ],
+ "S2800_01_02": [
+  "guest1"
+ ],
+ "S2800_02_break_start_01": [
+  "prison_night"
+ ],
+ "S2800_03": [
+  "prison"
+ ],
+ "S2800_03_05_01": [
+  "section_001_cliff"
+ ],
+ "S2800_03_05_02": [
+  "section_001_cliff"
+ ],
+ "S2800_03_06": [
+  "prison",
+  "section_001_fist_dusk",
+  "guest1"
+ ],
+ "S2900_01": [
+  "forge2"
+ ],
+ "S2900_02": [
+  "section_001_market"
+ ],
+ "S2900_03": [
+  "nightmarket",
+  "mountain_road1",
+  "section_001_market"
+ ],
+ "S2900_03_01": [
+  "mountain_road1",
+  "black"
+ ],
+ "S2901_01": [
+  "forge2"
+ ],
+ "S2901_02_travel": [
+  "mountain_road1"
+ ],
+ "S2901_03_01": [
+  "forest",
+  "road1"
+ ],
+ "S2901_03_01_01_01": [
+  "road1"
+ ],
+ "S2901_03_01_01_02": [
+  "black",
+  "road1"
+ ],
+ "S2901_03_01_03": [
+  "teashop",
+  "black",
+  "road1"
+ ],
+ "S2901_03_01_03_01": [
+  "black",
+  "road1"
+ ],
+ "S2901_03_01_04": [
+  "prison",
+  "road1"
+ ],
+ "S2901_03_01_05": [
+  "inn1",
+  "inn_room1"
+ ],
+ "S2901_03_01_06_01": [
+  "inn2"
+ ],
+ "S2901_03_01_06_02": [
+  "inn1"
+ ],
+ "S2901_03_01_07": [
+  "inn1_night",
+  "inn_room1_night"
+ ],
+ "S2901_03_01_08": [
+  "inn1_night"
+ ],
+ "S2901_03_01_08_01": [
+  "inn1_night",
+  "inn_room1",
+  "road1_night"
+ ],
+ "S2901_03_01_08_02": [
+  "road1_night",
+  "inn_room1",
+  "inn1_night"
+ ],
+ "S2901_03_01_break_start_01": [
+  "road1"
+ ],
+ "S2901_03_01_break_start_02": [
+  "inn_room1"
+ ],
+ "S2901_04_01": [
+  "inn1_night",
+  "road1_night",
+  "forest_night",
+  "black",
+  "section_001_fist",
+  "champaign",
+  "outsideshop",
+  "forest_dust",
+  "prison",
+  "sky"
+ ],
+ "S2901_04_02_break_start_01": [
+  "forest_night"
+ ],
+ "S2901_04_03": [
+  "forest",
+  "road1",
+  "mountain_road1"
+ ],
+ "S2901_05_travel": [
+  "mountain_road1"
+ ],
+ "S2901_06": [
+  "section_001_market",
+  "black",
+  "guest1"
+ ],
+ "S2902_01": [
+  "guest1"
+ ],
+ "S2910_01": [
+  "forge2",
+  "forge2_dusk",
+  "forge2_night",
+  "black",
+  "section_001_market"
+ ],
+ "S2910_02": [
+  "section_001_market"
+ ],
+ "S2911_01": [
+  "section_001_fist",
+  "forge2"
+ ],
+ "S2912_01": [
+  "guest1",
+  "section_001_center_top",
+  "section_001_center",
+  "black"
+ ],
+ "S2913_01": [
+  "forge2_cloudy_chaos",
+  "section_001_fist"
+ ],
+ "S2914_01": [
+  "study",
+  "center_night"
+ ],
+ "S2914_02": [
+  "forge"
+ ],
+ "S2914_03": [
+  "center",
+  "black"
+ ],
+ "S2914_03_01": [
+  "center"
+ ],
+ "S2914_03_03": [
+  "forge_dust",
+  "mountain_road1"
+ ],
+ "S2915_01": [
+  "section_001_fist"
+ ],
+ "S2915_02": [
+  "section_001_cave",
+  "black",
+  "section_001_cliff"
+ ],
+ "S2915_02_01": [
+  "prison"
+ ],
+ "S2916_01": [
+  "forge_dust"
+ ],
+ "S2917_01": [
+  "fortress_dusk",
+  "forest_night",
+  "black"
+ ],
+ "S2918_01": [
+  "forge"
+ ],
+ "S2919_01": [
+  "backmountain2"
+ ],
+ "S2920_01": [
+  "inn_room1",
+  "fortress_dusk",
+  "mountain_road1_dusk",
+  "black"
+ ],
+ "S2921_01": [
+  "fortress"
+ ],
+ "S2922_01": [
+  "forge",
+  "black",
+  "forge_dust",
+  "center_evening"
+ ],
+ "S2922_02": [
+  "center_evening",
+  "black"
+ ],
+ "S3001_01": [
+  "section_002",
+  "section_room1",
+  "mountain_road1"
+ ],
+ "S3002_01": [
+  "section_002_dusk"
+ ],
+ "S3003_01": [
+  "section_002_dusk"
+ ],
+ "S3004_01": [
+  "road3",
+  "black",
+  "inn1"
+ ],
+ "S3004_01_01": [
+  "inn1"
+ ],
+ "S3004_01_02": [
+  "inn1"
+ ],
+ "S3005_01": [
+  "section_room1_dusk",
+  "section_002_dusk",
+  "section_room1",
+  "section_room1_night"
+ ],
+ "S3006_01": [
+  "section_002"
+ ],
+ "S8200_01": [
+  "center",
+  "black"
+ ],
+ "S8200_01_01": [
+  "center"
+ ],
+ "S8300_01": [
+  "kitchen",
+  "black"
+ ],
+ "S8300_01_01": [
+  "black"
+ ],
+ "S8300_01_02": [
+  "room"
+ ],
+ "S8400_01": [
+  "center_evening"
+ ],
+ "S8400_01_01": [
+  "center_evening"
+ ],
+ "S8400_02": [
+  "backmountain2_night"
+ ],
+ "S8500_01": [
+  "paddy",
+  "white",
+  "princess _room1",
+  "black"
+ ],
+ "S8500_01_02": [
+  "white",
+  "black"
+ ],
+ "S8500_01_03": [
+  "black"
+ ],
+ "S8500_01_04": [
+  "black"
+ ],
+ "S8500_01_05": [
+  "black"
+ ],
+ "S9001_01": [
+  "room"
+ ],
+ "S9001_02": [
+  "center"
+ ],
+ "S9001_03": [
+  "study"
+ ],
+ "S9001_04": [
+  "kitchen",
+  "center",
+  "room",
+  "black"
+ ],
+ "S9100_01": [
+  "kitchen"
+ ],
+ "S9900_01": [
+  "center",
+  "kitchen",
+  "backmountain2",
+  "black"
+ ],
+ "S9901_01": [
+  "center"
+ ],
+ "S9903_01": [
+  "room"
+ ],
+ "S9903_01_01": [
+  "center_night",
+  "black"
+ ],
+ "S9904_01": [
+  "room",
+  "room_night",
+  "road1"
+ ],
+ "S9904_01_01": [
+  "forest",
+  "black"
+ ],
+ "S9904_01_02": [
+  "sky",
+  "center",
+  "black"
+ ],
+ "S9904_01_03": [
+  "center"
+ ],
+ "S9905_01": [
+  "room_night",
+  "black",
+  "backmountain2_night",
+  "forest_night",
+  "tang_mall",
+  "backmountain2"
+ ],
+ "S9905_01_01": [
+  "backmountain2_night"
+ ],
+ "S9906_01_01": [
+  "road1"
+ ],
+ "S9906_01_02": [
+  "temple_day"
+ ],
+ "S9906_01_03": [
+  "temple_day"
+ ],
+ "S9906_01_03_01": [
+  "forest"
+ ],
+ "S9906_01_03_option": [
+  "black"
+ ],
+ "S9907_01": [
+  "center"
+ ],
+ "act1": [
+  "black",
+  "inn1",
+  "tang_map",
+  "center",
+  "alchemy",
+  "forge",
+  "tang_tower"
+ ],
+ "act2_1": [
+  "tang_tower"
+ ],
+ "act2_2": [
+  "tang_tower"
+ ],
+ "act2_3": [
+  "tang_tower",
+  "backmountain2",
+  "black"
+ ],
+ "act2_3_1": [
+  "tang_tower"
+ ],
+ "act2_3_2": [
+  "tang_tower"
+ ],
+ "act2_3_3": [
+  "tang_tower"
+ ],
+ "act2_4": [
+  "tang_tower"
+ ],
+ "act3_1": [
+  "tang_tower"
+ ],
+ "act3_2": [
+  "tang_tower",
+  "backmountain2",
+  "black"
+ ],
+ "act3_3_1": [
+  "tang_tower"
+ ],
+ "act3_3_2": [
+  "tang_tower"
+ ],
+ "act3_3_3": [
+  "white",
+  "tang_tower"
+ ],
+ "act3_4": [
+  "tang_tower",
+  "black"
+ ],
+ "alchemy_001": [
+  "alchemy"
+ ],
+ "alchemy_work_901": [
+  "backmountain2"
+ ],
+ "alchemy_work_901_01": [
+  "center"
+ ],
+ "back_001": [
+  "backmountain2"
+ ],
+ "back_02_501_01": [
+  "backmountain2"
+ ],
+ "back_work_501": [
+  "backmountain_road1"
+ ],
+ "back_work_902": [
+  "backmountain_road1"
+ ],
+ "back_work_905_01": [
+  "backmountain2"
+ ],
+ "birth_02_01": [
+  "alchemy",
+  "mall1"
+ ],
+ "brith_01_01": [
+  "section_001_fist_dusk",
+  "black",
+  "princess _room1",
+  "forge2"
+ ],
+ "center_001": [
+  "center"
+ ],
+ "center_girl_03_02": [
+  "center"
+ ],
+ "ch0_1": [
+  "black",
+  "room",
+  "center"
+ ],
+ "ch0_1_1": [
+  "center"
+ ],
+ "ch0_2": [
+  "center_evening"
+ ],
+ "ch0_3": [
+  "room",
+  "tang_mall"
+ ],
+ "ch0_3_1": [
+  "center_evening"
+ ],
+ "ch0_4": [
+  "backmountain2"
+ ],
+ "ch0_4_1": [
+  "backmountain2"
+ ],
+ "ch0_5": [
+  "center"
+ ],
+ "ch0_5_1": [
+  "center_evening"
+ ],
+ "ch0_6": [
+  "center_evening",
+  "black",
+  "white",
+  "room"
+ ],
+ "ch0_meeting": [
+  "tang_mall"
+ ],
+ "ch0_meeting_option_03_01": [
+  "black"
+ ],
+ "ch0_meeting_option_03_02": [
+  "black",
+  "inn1",
+  "inn2"
+ ],
+ "ch0_meeting_option_03_02_02": [
+  "inn2",
+  "black",
+  "inn1"
+ ],
+ "ch0_meeting_option_03_02_03": [
+  "black",
+  "inn2",
+  "road1"
+ ],
+ "ch0_meeting_option_04_01": [
+  "center",
+  "sky",
+  "center_evening"
+ ],
+ "ch0_meeting_option_04_01_01": [
+  "center"
+ ],
+ "ch0_meeting_option_04_01_02": [
+  "center"
+ ],
+ "ch1_1": [
+  "black",
+  "inn1",
+  "teashop",
+  "center_night"
+ ],
+ "ch1_1_1": [
+  "room_night"
+ ],
+ "ch1_1_2": [
+  "tang_mall_night",
+  "black"
+ ],
+ "ch1_1_break": [
+  "room_night"
+ ],
+ "ch1_2_1": [
+  "center",
+  "center_evening"
+ ],
+ "ch1_2_2": [
+  "center_evening",
+  "black"
+ ],
+ "ch1_2_3": [
+  "room_night",
+  "center_night"
+ ],
+ "ch1_2_4": [
+  "black"
+ ],
+ "ch1_2_5": [
+  "room"
+ ],
+ "ch2_2_1": [
+  "tang_mall"
+ ],
+ "ch2_2_2": [
+  "tang_mall",
+  "center"
+ ],
+ "ch2_2_3_1": [
+  "center"
+ ],
+ "ch2_2_3_1_travel": [
+  "forest"
+ ],
+ "ch2_2_3_1_travel_03_break_start_01": [
+  "forest_night"
+ ],
+ "ch2_2_3_1_travel_03_break_start_02": [
+  "forest_night"
+ ],
+ "ch2_2_3_2": [
+  "alchemy",
+  "black"
+ ],
+ "ch2_2_3_3": [
+  "alchemy"
+ ],
+ "ch2_2_3_4": [
+  "outsideshop"
+ ],
+ "ch2_2_3_4_1": [
+  "boat_night2"
+ ],
+ "ch2_2_3_4_1_1": [
+  "riverside_night1",
+  "boat_night2",
+  "black"
+ ],
+ "ch2_2_3_4_2": [
+  "boat_night2"
+ ],
+ "ch2_2_3_4_2_1": [
+  "riverside_night1"
+ ],
+ "ch2_2_3_4_3": [
+  "road2",
+  "inn_room1"
+ ],
+ "ch2_2_3_4_3_Break_01_03_01": [
+  "road2",
+  "black",
+  "house1"
+ ],
+ "ch2_2_3_4_3_break_01": [
+  "inn2"
+ ],
+ "ch2_2_3_4_3_break_01_01": [
+  "road2"
+ ],
+ "ch2_2_3_4_3_break_01_01_02": [
+  "prison",
+  "road2"
+ ],
+ "ch2_2_3_4_3_break_01_02": [
+  "pharmacy1",
+  "inn_room1"
+ ],
+ "ch2_2_3_4_3_break_01_03": [
+  "house1"
+ ],
+ "ch2_2_3_4_3_break_01_04": [
+  "ferry_day",
+  "black"
+ ],
+ "ch2_2_3_4_3_break_01_04_01": [
+  "ferry_day"
+ ],
+ "ch2_2_3_4_3_break_01_04_02": [
+  "ferry_day",
+  "house1",
+  "road2",
+  "inn_room1"
+ ],
+ "ch2_2_3_4_3_break_01_04_02_01": [
+  "prison",
+  "house1"
+ ],
+ "ch2_2_3_4_3_break_01_04_03": [
+  "ferry_day"
+ ],
+ "ch2_2_3_4_break": [
+  "outsideshop"
+ ],
+ "ch2_2_3_4_break_01": [
+  "outsideshop"
+ ],
+ "ch2_2_4_1": [
+  "center"
+ ],
+ "ch2_2_4_1_travel": [
+  "forest"
+ ],
+ "ch2_2_4_2": [
+  "road2"
+ ],
+ "ch2_2_5": [
+  "banquet",
+  "black"
+ ],
+ "ch2_2_5_1": [
+  "banquet",
+  "black"
+ ],
+ "ch2_2_5_2": [
+  "banquet"
+ ],
+ "ch2_2_5_2_break_start_01": [
+  "banquet"
+ ],
+ "ch2_2_5_3": [
+  "banquet"
+ ],
+ "ch2_2_5_3_1": [
+  "banquet"
+ ],
+ "ch2_2_5_4": [
+  "banquet",
+  "black"
+ ],
+ "ch2_2_6": [
+  "banquet",
+  "black"
+ ],
+ "ch2_2_6_2": [
+  "banquet"
+ ],
+ "ch2_2_6_3": [
+  "backyard1"
+ ],
+ "ch2_2_6_4": [
+  "backyard1",
+  "banquet"
+ ],
+ "ch2_2_6_4_break_start_01": [
+  "banquet"
+ ],
+ "ch2_2_6_5": [
+  "banquet",
+  "black",
+  "center"
+ ],
+ "ch2_3_1": [
+  "tang_mall"
+ ],
+ "ch2_3_2": [
+  "tang_mall"
+ ],
+ "ch2_3_3": [
+  "mountain_road1"
+ ],
+ "ch2_4_1": [
+  "center"
+ ],
+ "ch2_4_10_1": [
+  "center",
+  "center_morning"
+ ],
+ "ch2_4_10_2": [
+  "black",
+  "room",
+  "center",
+  "cellar"
+ ],
+ "ch2_4_10_2_2": [
+  "black"
+ ],
+ "ch2_4_10_3": [
+  "tang_mall",
+  "room"
+ ],
+ "ch2_4_1_1": [
+  "center"
+ ],
+ "ch2_4_2": [
+  "center_morning",
+  "tang_mall",
+  "road1",
+  "teashop",
+  "house1",
+  "inn1",
+  "black",
+  "road1_evening",
+  "inn_room1"
+ ],
+ "ch2_4_2_1": [
+  "temple_day"
+ ],
+ "ch2_4_2_break_start_01": [
+  "temple_day"
+ ],
+ "ch2_4_2_break_start_02": [
+  "inn_room1"
+ ],
+ "ch2_4_3_break_001": [
+  "mountain_stream"
+ ],
+ "ch2_4_3_break_002": [
+  "road1"
+ ],
+ "ch2_4_3_break_003": [
+  "house1"
+ ],
+ "ch2_4_3_break_start_01": [
+  "temple_day",
+  "inn_room1",
+  "paddy",
+  "forge2",
+  "inn1"
+ ],
+ "ch2_4_4_1": [
+  "inn1",
+  "black",
+  "road2",
+  "citygate",
+  "battlefield",
+  "forest",
+  "temple_day",
+  "inn_room1"
+ ],
+ "ch2_4_5_1": [
+  "inn_room1",
+  "inn2"
+ ],
+ "ch2_4_5_1_break_start_01": [
+  "inn2"
+ ],
+ "ch2_4_5_2": [
+  "inn2",
+  "black",
+  "pharmacy1",
+  "road1"
+ ],
+ "ch2_4_5_2_1": [
+  "inn2",
+  "black",
+  "pharmacy1",
+  "road1"
+ ],
+ "ch2_4_5_3": [
+  "black",
+  "inn_room1",
+  "inn2"
+ ],
+ "ch2_4_5_3_break_start_01": [
+  "inn2",
+  "black",
+  "center_night"
+ ],
+ "ch2_4_5_4_1": [
+  "black",
+  "mountain_road1",
+  "grassland",
+  "prison",
+  "road1",
+  "firewood_room",
+  "coastal",
+  "guest1",
+  "center"
+ ],
+ "ch2_4_5_4_2": [
+  "mountain_road1",
+  "ship",
+  "princess _room1"
+ ],
+ "ch2_4_6_1": [
+  "temple_day"
+ ],
+ "ch2_4_6_1_1": [
+  "temple_day",
+  "coastal"
+ ],
+ "ch2_4_6_2_2_1": [
+  "temple_day",
+  "road1",
+  "house1"
+ ],
+ "ch2_4_6_2_4": [
+  "center_night"
+ ],
+ "ch2_4_6_2_4_1": [
+  "center_night"
+ ],
+ "ch2_4_6_2_4_2": [
+  "center_night"
+ ],
+ "ch2_4_6_2_4_3": [
+  "center_night",
+  "forest_night",
+  "black"
+ ],
+ "ch2_4_6_2_5": [
+  "champaign"
+ ],
+ "ch2_4_6_2_5_1": [
+  "champaign",
+  "black",
+  "teashop"
+ ],
+ "ch2_4_6_2_break_start_01": [
+  "temple_day"
+ ],
+ "ch2_4_7_1": [
+  "fortress",
+  "mountain_road1"
+ ],
+ "ch2_4_7_1_1": [
+  "mountain_road1"
+ ],
+ "ch2_4_7_1_2": [
+  "mountain_road1"
+ ],
+ "ch2_4_7_2": [
+  "center_evening"
+ ],
+ "ch2_4_7_2_1": [
+  "center_evening"
+ ],
+ "ch2_4_7_2_2": [
+  "center_evening",
+  "black"
+ ],
+ "ch2_4_8_1": [
+  "black",
+  "room_night"
+ ],
+ "ch2_4_8_10": [
+  "study",
+  "tang_mall",
+  "room_night"
+ ],
+ "ch2_4_8_10_1": [
+  "study"
+ ],
+ "ch2_4_8_11": [
+  "forest_night",
+  "outsideshop_night",
+  "black",
+  "outsideshop",
+  "center_night"
+ ],
+ "ch2_4_8_2": [
+  "tang_mall_night",
+  "black"
+ ],
+ "ch2_4_8_3": [
+  "center_night"
+ ],
+ "ch2_4_8_4": [
+  "kitchen_night"
+ ],
+ "ch2_4_8_4_1": [
+  "kitchen_night"
+ ],
+ "ch2_4_8_4_2": [
+  "kitchen_night"
+ ],
+ "ch2_4_8_4_3": [
+  "kitchen_night"
+ ],
+ "ch2_4_8_5": [
+  "room_night"
+ ],
+ "ch2_4_8_6": [
+  "forge_night"
+ ],
+ "ch2_4_8_6_1": [
+  "center_night"
+ ],
+ "ch2_4_8_7": [
+  "backmountain_road2_night"
+ ],
+ "ch2_4_8_8": [
+  "room_night"
+ ],
+ "ch2_4_8_8_1": [
+  "room_night"
+ ],
+ "ch2_4_8_9": [
+  "alchemy_night"
+ ],
+ "ch2_4_8_9_1": [
+  "alchemy_night"
+ ],
+ "ch2_4_9_1": [
+  "center_night"
+ ],
+ "ch2_4_9_2": [
+  "black",
+  "center_night",
+  "tang_mall_night"
+ ],
+ "ch2_5_1": [
+  "mountain_road1",
+  "section_001_door",
+  "section_001_market",
+  "sky"
+ ],
+ "ch2_5_1_1": [
+  "section_001_market"
+ ],
+ "ch2_5_2_1": [
+  "section_001_cave",
+  "guest1"
+ ],
+ "ch2_5_2_2": [
+  "section_001_fist"
+ ],
+ "ch2_5_2_2_1": [
+  "section_001_fist",
+  "guest1"
+ ],
+ "ch2_5_2_2_2": [
+  "section_001_fist"
+ ],
+ "ch2_5_2_3": [
+  "section_001_temple_mall",
+  "guest1"
+ ],
+ "ch2_5_2_4": [
+  "section_001_temple_mall",
+  "guest1"
+ ],
+ "ch2_5_3_1": [
+  "room"
+ ],
+ "ch2_5_3_2": [
+  "guest1",
+  "section_001_market",
+  "section_001_fist",
+  "section_001_center",
+  "farm1",
+  "section_001_cave"
+ ],
+ "ch2_5_3_3_1": [
+  "guest1"
+ ],
+ "ch2_5_3_3_2": [
+  "guest1"
+ ],
+ "ch2_5_3_3_3": [
+  "guest1",
+  "white",
+  "black"
+ ],
+ "ch2_5_3_4_1": [
+  "section_001_cave"
+ ],
+ "ch2_5_3_4_4": [
+  "section_001_cave"
+ ],
+ "ch2_5_3_4_5": [
+  "section_001_cave"
+ ],
+ "ch2_6_1": [
+  "cellar"
+ ],
+ "ch2_6_2_1_1": [
+  "cellar",
+  "black",
+  "alchemy"
+ ],
+ "ch2_6_2_2": [
+  "black",
+  "cellar"
+ ],
+ "ch2_6_3_1": [
+  "black",
+  "cellar",
+  "guest1",
+  "mall1",
+  "road2",
+  "blossom",
+  "walled",
+  "center"
+ ],
+ "ch2_6_3_2": [
+  "alchemy"
+ ],
+ "ch2_6_3_3": [
+  "alchemy",
+  "cellar",
+  "center"
+ ],
+ "ch2_8_1": [
+  "alchemy",
+  "center",
+  "tang_mall",
+  "forest",
+  "black",
+  "grassland",
+  "section_003",
+  "room"
+ ],
+ "ch2_8_1_1": [
+  "section_003"
+ ],
+ "ch2_8_1_2": [
+  "mountain_road1",
+  "section_002",
+  "mountain1",
+  "section_001_market"
+ ],
+ "ch2_8_2": [
+  "center",
+  "tang_mall",
+  "battlefield",
+  "mall1",
+  "section_004"
+ ],
+ "ch3_10_1": [
+  "road2",
+  "citygate"
+ ],
+ "ch3_10_2": [
+  "battlefield",
+  "black"
+ ],
+ "ch3_10_3": [
+  "battlefield",
+  "black"
+ ],
+ "ch3_10_4": [
+  "battlefield",
+  "black"
+ ],
+ "ch3_11_1": [
+  "battlefield",
+  "black"
+ ],
+ "ch3_11_2": [
+  "battlefield",
+  "citygate"
+ ],
+ "ch3_11_3": [
+  "citygate",
+  "white"
+ ],
+ "ch3_11_4": [
+  "battlefield"
+ ],
+ "ch3_12_1": [
+  "black",
+  "citygate",
+  "battlefield",
+  "white",
+  "road2",
+  "sky_night"
+ ],
+ "ch3_12_2": [
+  "guest1"
+ ],
+ "ch3_13_1": [
+  "guest1"
+ ],
+ "ch3_13_break_start_01": [
+  "inn_room1",
+  "guest1"
+ ],
+ "ch3_14_1": [
+  "mall1",
+  "inn_room1",
+  "road2_night"
+ ],
+ "ch3_14_2": [
+  "road2_night",
+  "black",
+  "house1_night"
+ ],
+ "ch3_15_1": [
+  "citygate_night",
+  "champaign_night",
+  "black"
+ ],
+ "ch3_15_travel": [
+  "mountain_road1"
+ ],
+ "ch3_16_1": [
+  "center",
+  "tang_mall",
+  "black"
+ ],
+ "ch3_16_2": [
+  "center"
+ ],
+ "ch3_16_3_1": [
+  "alchemy"
+ ],
+ "ch3_16_3_2": [
+  "alchemy",
+  "black"
+ ],
+ "ch3_16_4": [
+  "backmountain2",
+  "black"
+ ],
+ "ch3_16_5": [
+  "center",
+  "tang_mall"
+ ],
+ "ch3_1_1": [
+  "section_room1",
+  "section_002",
+  "battlefield",
+  "mall1"
+ ],
+ "ch3_1_2_1": [
+  "section_room1",
+  "section_002_mall",
+  "section_002"
+ ],
+ "ch3_1_2_1_1": [
+  "section_002"
+ ],
+ "ch3_1_2_2": [
+  "section_room1"
+ ],
+ "ch3_1_2_3_break_start_01": [
+  "section_room1",
+  "sky",
+  "section_006",
+  "black"
+ ],
+ "ch3_1_3": [
+  "section_002",
+  "black",
+  "inn2",
+  "inn_room1",
+  "champaign"
+ ],
+ "ch3_1_4_1": [
+  "black",
+  "section_006",
+  "inn_room1",
+  "road3",
+  "mountain_road1",
+  "section_002",
+  "section_002_night"
+ ],
+ "ch3_1_4_2_break_start_01": [
+  "section_002_night"
+ ],
+ "ch3_1_4_3_2": [
+  "black",
+  "section_002",
+  "inn_room1"
+ ],
+ "ch3_1_5_1": [
+  "section_002",
+  "inn_room1_night"
+ ],
+ "ch3_1_5_2": [
+  "section_002"
+ ],
+ "ch3_1_5_2_1_1": [
+  "section_002"
+ ],
+ "ch3_1_5_2_2_1": [
+  "section_002"
+ ],
+ "ch3_1_5_3": [
+  "section_002",
+  "mountain_road1"
+ ],
+ "ch3_1_6_1": [
+  "mountain_road1"
+ ],
+ "ch3_1_6_2": [
+  "mountain_road1",
+  "black"
+ ],
+ "ch3_1_6_3": [
+  "mountain_road1"
+ ],
+ "ch3_1_6_4": [
+  "section_002"
+ ],
+ "ch3_1_6_4_4": [
+  "section_002",
+  "road3"
+ ],
+ "ch3_1_7_1": [
+  "champaign",
+  "carriage",
+  "mountain_road1",
+  "teashop",
+  "stream"
+ ],
+ "ch3_1_7_2": [
+  "mountain_road1_dusk"
+ ],
+ "ch3_1_7_2_01": [
+  "forest_night"
+ ],
+ "ch3_1_7_2_01_001_01": [
+  "forest_night"
+ ],
+ "ch3_1_7_2_01_002_01": [
+  "forest_night"
+ ],
+ "ch3_1_7_3": [
+  "forest_night"
+ ],
+ "ch3_1_7_3_1": [
+  "mountain_road1"
+ ],
+ "ch3_1_7_4": [
+  "mountain_road1"
+ ],
+ "ch3_1_7_4_1": [
+  "mountain_road1"
+ ],
+ "ch3_1_7_4_2": [
+  "mountain_road1"
+ ],
+ "ch3_1_7_4_3": [
+  "mountain_road1"
+ ],
+ "ch3_1_7_5": [
+  "mountain_road1",
+  "center",
+  "alchemy",
+  "room",
+  "black"
+ ],
+ "ch3_1_7_5_1": [
+  "mountain_road1",
+  "black"
+ ],
+ "ch3_1_7_6": [
+  "mountain_road1",
+  "road1_evening",
+  "inn_room1_night"
+ ],
+ "ch3_1_7_6_break_start_01": [
+  "inn_room1_night",
+  "temple_night",
+  "black",
+  "center"
+ ],
+ "ch3_2_1": [
+  "guest1",
+  "section_001_center"
+ ],
+ "ch3_2_2": [
+  "section_001_center",
+  "guest1",
+  "black"
+ ],
+ "ch3_2_3_1": [
+  "black"
+ ],
+ "ch3_2_3_1_break_start_01": [
+  "inn_room1"
+ ],
+ "ch3_2_3_1_travel": [
+  "mountain_road1"
+ ],
+ "ch3_2_3_2": [
+  "mountain_road1",
+  "inn1_night"
+ ],
+ "ch3_2_3_2_1": [
+  "inn1_night"
+ ],
+ "ch3_2_3_2_2": [
+  "road2_night"
+ ],
+ "ch3_2_3_2_2_1": [
+  "road2_night",
+  "yamen_night"
+ ],
+ "ch3_2_3_2_2_2": [
+  "temple_night"
+ ],
+ "ch3_2_3_2_3_1": [
+  "temple_night"
+ ],
+ "ch3_2_3_2_3_2": [
+  "road2_night"
+ ],
+ "ch3_2_3_2_3_break_start_01": [
+  "temple_night"
+ ],
+ "ch3_2_3_2_5": [
+  "club1"
+ ],
+ "ch3_2_3_2_5_1": [
+  "inn1_night"
+ ],
+ "ch3_2_3_2_5_2": [
+  "inn1_night"
+ ],
+ "ch3_2_3_2_5_3": [
+  "inn1_night"
+ ],
+ "ch3_2_3_2_break_start_01": [
+  "inn1_night",
+  "white",
+  "black"
+ ],
+ "ch3_3_1_1": [
+  "champaign"
+ ],
+ "ch3_3_1_1_break_start_01": [
+  "champaign",
+  "section_002_mall",
+  "section_005",
+  "section_004",
+  "section_006",
+  "section_003",
+  "section_001_temple_mall",
+  "guest1",
+  "mall1",
+  "road2",
+  "black"
+ ],
+ "ch3_3_1_2": [
+  "black",
+  "section_room1",
+  "section_002"
+ ],
+ "ch3_3_1_2_1": [
+  "section_002",
+  "black",
+  "mountain1",
+  "white"
+ ],
+ "ch3_3_1_2_2": [
+  "section_002"
+ ],
+ "ch3_3_2_1": [
+  "section_room1"
+ ],
+ "ch3_3_2_1_break_start_01": [
+  "section_room1",
+  "fortress"
+ ],
+ "ch3_3_2_1_break_start_02": [
+  "section_room1"
+ ],
+ "ch3_3_2_2": [
+  "black",
+  "section_room1",
+  "section_002",
+  "section_002_mall",
+  "mountain_road3",
+  "road3"
+ ],
+ "ch3_3_2_2_4": [
+  "road3_dusk",
+  "section_002_night"
+ ],
+ "ch3_5_1": [
+  "battlefield"
+ ],
+ "ch3_5_2": [
+  "battlefield"
+ ],
+ "ch3_5_3_1": [
+  "battlefield"
+ ],
+ "ch3_5_3_2": [
+  "forest"
+ ],
+ "ch3_5_3_3": [
+  "forest"
+ ],
+ "ch3_5_3_4": [
+  "road2_dust"
+ ],
+ "ch3_5_3_5": [
+  "battlefield"
+ ],
+ "ch3_5_3_6": [
+  "battlefield"
+ ],
+ "ch3_5_3_7_1": [
+  "inn1"
+ ],
+ "ch3_5_3_7_2": [
+  "road1"
+ ],
+ "ch3_5_3_7_3": [
+  "road2"
+ ],
+ "ch3_5_3_7_4": [
+  "inn1"
+ ],
+ "ch3_5_3_7_5": [
+  "inn1"
+ ],
+ "ch3_5_3_7_break_start_01": [
+  "inn1"
+ ],
+ "ch3_6_1": [
+  "guest1"
+ ],
+ "ch3_6_1_01_503_01": [
+  "road2"
+ ],
+ "ch3_6_1_01_504_01": [
+  "road2"
+ ],
+ "ch3_6_1_break_start_01": [
+  "mall1",
+  "road2"
+ ],
+ "ch3_6_1_break_start_02": [
+  "mall1"
+ ],
+ "ch3_6_2": [
+  "battlefield"
+ ],
+ "ch3_6_3": [
+  "guest1"
+ ],
+ "ch3_6_3_1_1": [
+  "guest1"
+ ],
+ "ch3_6_3_2": [
+  "guest1"
+ ],
+ "ch3_6_3_3_1": [
+  "guest1"
+ ],
+ "ch3_6_3_3_2": [
+  "guest1"
+ ],
+ "ch3_6_3_3_3": [
+  "guest1"
+ ],
+ "ch3_6_4": [
+  "inn_room1",
+  "guest1"
+ ],
+ "ch3_6_4_2": [
+  "boat2",
+  "black"
+ ],
+ "ch3_6_4_3_1": [
+  "guest1"
+ ],
+ "ch3_7_1": [
+  "mall1"
+ ],
+ "ch3_8_1": [
+  "inn_room1_night"
+ ],
+ "ch3_8_1_break_start_01": [
+  "inn_room1_night"
+ ],
+ "ch3_8_2": [
+  "forest_night",
+  "center"
+ ],
+ "ch3_8_2_1": [
+  "forest_night"
+ ],
+ "ch3_8_2_2": [
+  "forest_night"
+ ],
+ "ch3_8_3_01": [
+  "guest1"
+ ],
+ "ch3_8_3_1": [
+  "guest1"
+ ],
+ "ch3_8_4": [
+  "black"
+ ],
+ "ch3_8_4_1": [
+  "princess _room1"
+ ],
+ "ch3_8_4_2": [
+  "black",
+  "inn_room1_night",
+  "yamen"
+ ],
+ "ch3_8_4_3": [
+  "inn_room1_night",
+  "sky_night",
+  "guest1"
+ ],
+ "ch3_9_1": [
+  "walled",
+  "coastal",
+  "riverside1"
+ ],
+ "ch3_9_1_break_start_01": [
+  "riverside1"
+ ],
+ "ch3_9_2": [
+  "riverside1"
+ ],
+ "ch3_9_2_1": [
+  "riverside1"
+ ],
+ "ch3_9_3": [
+  "riverside1"
+ ],
+ "ch4_1_1": [
+  "tang_mall",
+  "black"
+ ],
+ "ch4_1_2": [
+  "tang_mall",
+  "black"
+ ],
+ "ch4_1_3": [
+  "road1",
+  "mountain_road1",
+  "black"
+ ],
+ "ch4_2_1": [
+  "tang_mall"
+ ],
+ "ch4_2_2": [
+  "center"
+ ],
+ "ch4_2_3_1": [
+  "mountain_road1",
+  "banquet"
+ ],
+ "ch4_2_3_2": [
+  "banquet"
+ ],
+ "ch4_2_3_3": [
+  "mountain_road1",
+  "house1",
+  "black"
+ ],
+ "ch4_2_3_4": [
+  "house1"
+ ],
+ "ch4_2_3_5": [
+  "house1"
+ ],
+ "ch4_2_3_6": [
+  "center"
+ ],
+ "ch4_2_4_1": [
+  "alchemy",
+  "center",
+  "black",
+  "kitchen",
+  "backmountain_road1"
+ ],
+ "ch4_3_1": [
+  "center"
+ ],
+ "ch4_3_2": [
+  "sky",
+  "center"
+ ],
+ "ch4_3_3": [
+  "center"
+ ],
+ "ch4_3_4": [
+  "center",
+  "sky"
+ ],
+ "ch4_3_5_1": [
+  "sky",
+  "center",
+  "center_evening",
+  "black"
+ ],
+ "ch4_3_6_1": [
+  "sky"
+ ],
+ "ch4_3_6_2": [
+  "sky",
+  "center",
+  "black",
+  "tang_mall",
+  "fortress"
+ ],
+ "ch4_3_7_1": [
+  "tang_mall"
+ ],
+ "ch4_3_8_1": [
+  "tang_mall"
+ ],
+ "ch4_3_8_2_break_start_01": [
+  "tang_mall"
+ ],
+ "ch4_3_8_4": [
+  "tang_mall",
+  "forest"
+ ],
+ "ch4_3_8_4_01": [
+  "black",
+  "room"
+ ],
+ "ch4_3_8_5_break_start_01": [
+  "room"
+ ],
+ "ch4_3_9": [
+  "tang_mall",
+  "center",
+  "forest",
+  "road1"
+ ],
+ "ch4_4_1": [
+  "tang_mall"
+ ],
+ "ch4_4_2_break_start_01": [
+  "tang_mall",
+  "center",
+  "battlefield",
+  "inn1_night",
+  "road1",
+  "white_tiger"
+ ],
+ "ch4_5_1": [
+  "tang_mall",
+  "center",
+  "white"
+ ],
+ "ch4_5_2": [
+  "center",
+  "mountain_road1",
+  "road1_evening",
+  "inn2"
+ ],
+ "ch4_5_3_break_start_01": [
+  "inn_room1",
+  "black",
+  "forest",
+  "road1_evening",
+  "inn2",
+  "sky_night",
+  "inn_room1_night"
+ ],
+ "ch4_5_5_1": [
+  "road1_night"
+ ],
+ "ch4_5_5_2": [
+  "road1_night"
+ ],
+ "ch4_5_5_3": [
+  "road1_night"
+ ],
+ "ch4_5_6_2": [
+  "road1_night",
+  "prison"
+ ],
+ "ch4_5_7": [
+  "inn_room1",
+  "mountain_road1"
+ ],
+ "ch4_6_1": [
+  "mountain1",
+  "mountain_road1",
+  "sky"
+ ],
+ "ch4_6_10": [
+  "alchemy_night"
+ ],
+ "ch4_6_12": [
+  "black",
+  "alchemy_night",
+  "sky_night"
+ ],
+ "ch4_6_13": [
+  "alchemy_night",
+  "black",
+  "mountain_stream",
+  "room"
+ ],
+ "ch4_6_13_1": [
+  "alchemy_night"
+ ],
+ "ch4_6_13_2": [
+  "alchemy_night"
+ ],
+ "ch4_6_13_3": [
+  "alchemy_night",
+  "center_night"
+ ],
+ "ch4_6_14": [
+  "alchemy_night",
+  "black",
+  "room"
+ ],
+ "ch4_6_15": [
+  "backmountain2"
+ ],
+ "ch4_6_16": [
+  "black",
+  "firewood_room",
+  "coastal",
+  "ferry_day",
+  "riverside1",
+  "center"
+ ],
+ "ch4_6_2": [
+  "mountain1",
+  "sky",
+  "black"
+ ],
+ "ch4_6_3": [
+  "mountain1",
+  "sky",
+  "black"
+ ],
+ "ch4_6_4_1": [
+  "room",
+  "center"
+ ],
+ "ch4_6_4_2": [
+  "center",
+  "mountain_road1"
+ ],
+ "ch4_6_4_2_1": [
+  "mountain_road1"
+ ],
+ "ch4_6_5_1": [
+  "mountain_road1"
+ ],
+ "ch4_6_5_3": [
+  "mountain_road1"
+ ],
+ "ch4_6_5_4": [
+  "mountain_road1"
+ ],
+ "ch4_6_5_5": [
+  "mountain_road1"
+ ],
+ "ch4_6_6": [
+  "alchemy"
+ ],
+ "ch4_6_7_break_start_01": [
+  "alchemy"
+ ],
+ "ch4_6_8": [
+  "alchemy",
+  "black"
+ ],
+ "ch4_6_9": [
+  "alchemy_night"
+ ],
+ "ch4_7_1": [
+  "mountain_road1",
+  "road1",
+  "inn_room1",
+  "black"
+ ],
+ "ch4_7_2_break_start_01": [
+  "inn_room1",
+  "black",
+  "forest"
+ ],
+ "ch4_7_3_2": [
+  "black"
+ ],
+ "ch4_7_4_1": [
+  "forest",
+  "black",
+  "road1",
+  "teashop",
+  "teashop_dust",
+  "road1_evening"
+ ],
+ "ch4_7_4_2": [
+  "forest"
+ ],
+ "ch4_7_5_1": [
+  "road1"
+ ],
+ "ch4_7_6_travel": [
+  "mountain_road1"
+ ],
+ "ch4_8_1": [
+  "mountain_road1",
+  "white"
+ ],
+ "ch4_8_10_1": [
+  "princess _room1",
+  "room",
+  "black",
+  "backmountain2"
+ ],
+ "ch4_8_2": [
+  "mountain_road1"
+ ],
+ "ch4_8_3": [
+  "mountain_road1",
+  "black"
+ ],
+ "ch4_8_5": [
+  "outsideshop"
+ ],
+ "ch4_8_6": [
+  "mountain_road1"
+ ],
+ "ch4_8_7_1": [
+  "mountain_road1"
+ ],
+ "ch4_8_7_2": [
+  "black"
+ ],
+ "ch4_8_7_3": [
+  "forest"
+ ],
+ "ch4_8_7_4": [
+  "forest"
+ ],
+ "ch4_8_7_5": [
+  "mountain_road1"
+ ],
+ "ch4_8_7_6": [
+  "mountain_road1"
+ ],
+ "ch4_8_8_2": [
+  "mountain_road1",
+  "forest"
+ ],
+ "ch4_8_8_3": [
+  "kitchen",
+  "black",
+  "backmountain2",
+  "center_evening",
+  "tang_mall",
+  "center",
+  "forest",
+  "mountain_road1"
+ ],
+ "ch4_8_8_4": [
+  "mountain_road1"
+ ],
+ "ch4_8_9_3": [
+  "mountain_road1",
+  "paddy",
+  "tang_mall",
+  "section_001_cave",
+  "forge2",
+  "martial",
+  "battlefield",
+  "black",
+  "citygate",
+  "white",
+  "backmountain2_night"
+ ],
+ "ch4_9_1": [
+  "sky_dust"
+ ],
+ "ch4_9_2": [
+  "sky_dust",
+  "tang_mall",
+  "black",
+  "alchemy",
+  "center",
+  "mountain_road1"
+ ],
+ "ch4_9_3_2": [
+  "center"
+ ],
+ "ch4_9_3_3": [
+  "room"
+ ],
+ "ch4_9_3_3_break_start_01": [
+  "room"
+ ],
+ "ch4_9_3_4": [
+  "room",
+  "center"
+ ],
+ "ch4_9_3_5": [
+  "room"
+ ],
+ "ch4_9_3_7": [
+  "tang_mall",
+  "mountain_road1"
+ ],
+ "ch4_9_3_8": [
+  "tang_mall",
+  "window",
+  "center",
+  "paddy",
+  "house",
+  "black"
+ ],
+ "ch4_9_3_8_1": [
+  "center",
+  "black",
+  "room"
+ ],
+ "ch5_1_1": [
+  "center"
+ ],
+ "ch5_2_1": [
+  "tang_mall"
+ ],
+ "ch5_2_2": [
+  "tang_mall"
+ ],
+ "ch5_2_3": [
+  "tang_mall"
+ ],
+ "ch5_2_4": [
+  "center"
+ ],
+ "ch5_2_5": [
+  "center_evening",
+  "room_night"
+ ],
+ "ch5_2_6_1": [
+  "room_night",
+  "center_night"
+ ],
+ "ch5_2_6_3": [
+  "center_night"
+ ],
+ "ch5_2_6_4": [
+  "center_night",
+  "center"
+ ],
+ "ch5_2_7_1": [
+  "room_night",
+  "forge_night",
+  "kitchen_night"
+ ],
+ "ch5_3_1": [
+  "tang_mall",
+  "center_evening"
+ ],
+ "ch5_3_2_break_start_01": [
+  "center_evening",
+  "room",
+  "fortress_night"
+ ],
+ "ch5_3_3": [
+  "forest_night"
+ ],
+ "ch5_3_4_1": [
+  "backmountain2_night",
+  "black"
+ ],
+ "ch5_3_4_2": [
+  "backmountain2_night"
+ ],
+ "ch5_4_1": [
+  "black",
+  "tang_mall_night",
+  "center",
+  "room",
+  "room_night"
+ ],
+ "ch5_4_2": [
+  "sky",
+  "center_evening",
+  "sky_dust",
+  "black",
+  "alchemy_night"
+ ],
+ "ch5_4_3": [
+  "center_party",
+  "forest_night"
+ ],
+ "ch5_4_4": [
+  "mountain_road1_night",
+  "prison"
+ ],
+ "ch5_4_5": [
+  "fortress_night"
+ ],
+ "ch5_4_5_3": [
+  "fortress_night"
+ ],
+ "ch5_4_6_break_start_01": [
+  "fortress_night"
+ ],
+ "ch5_4_7_2_1": [
+  "fortress_night",
+  "black"
+ ],
+ "ch5_4_7_2_2": [
+  "black",
+  "center_evening"
+ ],
+ "ch5_4_7_3_1": [
+  "fortress_night",
+  "foodstalls_night"
+ ],
+ "ch5_4_7_3_10": [
+  "fortress_night"
+ ],
+ "ch5_4_7_3_2": [
+  "foodstalls_night",
+  "black"
+ ],
+ "ch5_4_7_3_3": [
+  "road1_night"
+ ],
+ "ch5_4_7_3_4": [
+  "road1_night",
+  "black"
+ ],
+ "ch5_4_7_3_5": [
+  "road1_night"
+ ],
+ "ch5_4_7_3_6": [
+  "road1_night",
+  "black"
+ ],
+ "ch5_4_7_3_7": [
+  "inn1_night",
+  "inn2_night",
+  "black"
+ ],
+ "ch5_4_7_3_9": [
+  "inn2_night"
+ ],
+ "ch5_4_7_4_1": [
+  "center_evening"
+ ],
+ "ch5_4_7_4_2": [
+  "mountain_road1_night"
+ ],
+ "ch5_4_7_4_2_1": [
+  "mountain_road1_night"
+ ],
+ "ch5_4_7_4_2_2": [
+  "mountain_road1_night"
+ ],
+ "ch5_4_7_4_2_travel": [
+  "mountain_road1"
+ ],
+ "ch5_4_7_4_3": [
+  "section_001_market",
+  "black",
+  "mountain_road1",
+  "section_001_temple_mall"
+ ],
+ "ch5_4_7_4_3_1": [
+  "section_001_temple_mall",
+  "sky_dust",
+  "black"
+ ],
+ "ch5_4_8_1": [
+  "fortress_night"
+ ],
+ "ch5_4_8_10": [
+  "black"
+ ],
+ "ch5_4_8_2": [
+  "fortress_night"
+ ],
+ "ch5_4_8_4_3": [
+  "fortress_night",
+  "black"
+ ],
+ "ch5_4_8_4_4": [
+  "fortress_night",
+  "black",
+  "center",
+  "study"
+ ],
+ "ch5_4_8_4_5": [
+  "fortress_night",
+  "black"
+ ],
+ "ch5_4_8_5_1": [
+  "fortress_night",
+  "black"
+ ],
+ "ch5_4_8_5_2": [
+  "fortress_night"
+ ],
+ "ch5_4_8_5_3": [
+  "fortress_night",
+  "forest_night"
+ ],
+ "ch5_4_8_6": [
+  "tang_mall",
+  "black",
+  "room",
+  "road1",
+  "center",
+  "forge",
+  "backmountain2",
+  "white"
+ ],
+ "ch5_4_8_7_1": [
+  "center_night",
+  "backmountain_road1_night",
+  "black",
+  "center"
+ ],
+ "ch5_4_8_7_2": [
+  "black",
+  "center"
+ ],
+ "ch5_4_8_8_1": [
+  "fortress_night"
+ ],
+ "ch5_4_8_8_1_01": [
+  "road1_night",
+  "forest_night"
+ ],
+ "ch5_4_8_8_3": [
+  "fortress_night"
+ ],
+ "ch5_4_8_8_4": [
+  "fortress_night"
+ ],
+ "ch5_4_8_8_5": [
+  "fortress_night"
+ ],
+ "ch5_4_8_9": [
+  "fortress_night",
+  "black",
+  "center_night",
+  "backmountain_road1_night",
+  "backmountain2_night",
+  "backmountain2",
+  "center"
+ ],
+ "ch5_4_temp_end": [
+  "black"
+ ],
+ "ch5_5_1": [
+  "backmountain_road2",
+  "backmountain2_night",
+  "forest_night",
+  "tang_mall_night",
+  "center_night",
+  "backmountain_road2_night",
+  "black"
+ ],
+ "ch5_5_1_1": [
+  "center_night"
+ ],
+ "ch5_5_1_2": [
+  "black",
+  "center"
+ ],
+ "ch5_5_2_break_start_01": [
+  "backmountain2_night",
+  "black"
+ ],
+ "ch5_5_3": [
+  "center_morning",
+  "black",
+  "room"
+ ],
+ "ch5_6_1": [
+  "house",
+  "black",
+  "champaign",
+  "road2",
+  "section_001_market",
+  "forge2",
+  "section_001_fist",
+  "guest1",
+  "carriage_night",
+  "mountain_road1_night"
+ ],
+ "ch5_6_1_1": [
+  "tang_mall_night",
+  "center_morning"
+ ],
+ "ch5_6_2_1": [
+  "section_001_market",
+  "mountain_road1_night",
+  "forge2",
+  "black",
+  "prison"
+ ],
+ "ch5_6_2_6_1": [
+  "mountain_road1_night"
+ ],
+ "ch5_6_2_7": [
+  "black"
+ ],
+ "ch5_6_2_7_travel": [
+  "mountain_road1"
+ ],
+ "ch5_6_2_break_start_01": [
+  "mountain_road1_night"
+ ],
+ "ch5_6_3_1": [
+  "paddy"
+ ],
+ "ch5_6_3_1_1": [
+  "paddy",
+  "black"
+ ],
+ "ch5_6_3_2_1": [
+  "section_001_map_02",
+  "paddy_dusk"
+ ],
+ "ch5_6_3_2_break_start_01": [
+  "paddy_dusk"
+ ],
+ "ch5_6_3_3_2": [
+  "paddy_dusk",
+  "section_001_map_02"
+ ],
+ "ch5_6_4_1": [
+  "section_001_market_slay"
+ ],
+ "ch5_6_4_2": [
+  "section_001_market_slay",
+  "section_001_map_02"
+ ],
+ "ch5_6_4_3": [
+  "prison_outside",
+  "prison2",
+  "prison"
+ ],
+ "ch5_6_4_4_4": [
+  "prison_outside",
+  "prison",
+  "black",
+  "prison_nolight"
+ ],
+ "ch5_6_4_4_4_1": [
+  "black",
+  "prison_outside",
+  "prison"
+ ],
+ "ch5_6_4_4_break_start_01": [
+  "prison"
+ ],
+ "ch5_6_5_1": [
+  "section_001_market_slay"
+ ],
+ "ch5_6_5_2_break_start_01": [
+  "forge2_night"
+ ],
+ "ch5_6_5_3": [
+  "forge2_night",
+  "black",
+  "section_001_center_night",
+  "white",
+  "section_001_center2_night",
+  "section_001_fist_night",
+  "house2",
+  "section_001_cliff"
+ ],
+ "ch5_6_5_4": [
+  "section_001_center2_night",
+  "section_001_center_night",
+  "black"
+ ],
+ "ch5_6_5_5": [
+  "section_001_center_night",
+  "cliff_night",
+  "section_001_center2_night"
+ ],
+ "ch5_6_6_1": [
+  "section_001_center_night",
+  "section_001_cliff"
+ ],
+ "ch5_6_6_2": [
+  "section_001_center_night"
+ ],
+ "ch5_6_6_2_1": [
+  "section_001_center_night",
+  "black",
+  "champaign_dusk"
+ ],
+ "ch5_6_6_3": [
+  "black",
+  "inn2",
+  "kitchen",
+  "section_001_cave",
+  "stone_house",
+  "tang_tower",
+  "section_001_market",
+  "red",
+  "nightmarket",
+  "house1",
+  "section_001_temple_mall",
+  "white"
+ ],
+ "ch5_6_6_3_1": [
+  "white",
+  "black"
+ ],
+ "ch5_6_6_4": [
+  "section_001_center_night",
+  "section_001_center_top2",
+  "black",
+  "white",
+  "section_001_center2_night",
+  "cliff_night",
+  "section_001_center2",
+  "forest",
+  "blossom"
+ ],
+ "ch5_6_7_1": [
+  "section_001_center2_night",
+  "section_001_center_night"
+ ],
+ "ch5_6_7_2": [
+  "section_001_center_night",
+  "section_001_center2_night"
+ ],
+ "ch5_6_7_3": [
+  "section_001_center2_night",
+  "section_001_center_top2",
+  "black",
+  "section_001_center_night",
+  "section_001_center2",
+  "section_001_center",
+  "forest"
+ ],
+ "ch5_6_8_1": [
+  "section_001_fist",
+  "section_001_market",
+  "black",
+  "forge2",
+  "section_001_fist_dusk"
+ ],
+ "ch5_6_8_2": [
+  "section_001_market_morning",
+  "section_001_market",
+  "section_001_market_dusk"
+ ],
+ "ch5_6_8_3_3": [
+  "guest1_morning",
+  "guest1",
+  "guest1_dusk"
+ ],
+ "ch5_6_8_3_4": [
+  "guest1_morning",
+  "guest1",
+  "guest1_dusk",
+  "black",
+  "white",
+  "section_001_temple_mall",
+  "section_001_cave",
+  "forge2"
+ ],
+ "ch5_6_8_3_5": [
+  "guest1_morning",
+  "guest1",
+  "guest1_dusk",
+  "black",
+  "white",
+  "section_001_temple_mall"
+ ],
+ "ch5_6_8_3_6": [
+  "inn2_night",
+  "guest1_morning",
+  "guest1",
+  "guest1_dusk",
+  "section_001_center",
+  "black",
+  "section_001_market",
+  "martial",
+  "sixdao_scenic",
+  "section_200_center",
+  "tang_mall",
+  "center",
+  "firewood_room",
+  "stone_house"
+ ],
+ "ch5_6_8_3_break_start_01": [
+  "section_001_market_morning",
+  "section_001_market",
+  "section_001_market_dusk"
+ ],
+ "ch6_10_1": [
+  "inn1",
+  "road1"
+ ],
+ "ch6_10_1_part_2": [
+  "road1"
+ ],
+ "ch6_10_2": [
+  "mountain_road1",
+  "temple_night_rainy"
+ ],
+ "ch6_10_3_break_start_01": [
+  "temple_night_rainy"
+ ],
+ "ch6_10_4": [
+  "temple_night_rainy"
+ ],
+ "ch6_10_5": [
+  "temple_night",
+  "mountain_road1",
+  "center"
+ ],
+ "ch6_1_1": [
+  "tang_mall"
+ ],
+ "ch6_1_2": [
+  "tang_mall",
+  "kitchen",
+  "black",
+  "center",
+  "center_night",
+  "center_morning"
+ ],
+ "ch6_2_1": [
+  "tang_mall",
+  "center"
+ ],
+ "ch6_2_2_break_start_01": [
+  "tang_mall"
+ ],
+ "ch6_2_3": [
+  "tang_mall"
+ ],
+ "ch6_2_5": [
+  "tang_mall",
+  "center"
+ ],
+ "ch6_3_1": [
+  "center"
+ ],
+ "ch6_3_2_break_start_01": [
+  "mountain_road1"
+ ],
+ "ch6_3_2_travel": [
+  "mountain_road1"
+ ],
+ "ch6_3_3": [
+  "inn2",
+  "center_evening"
+ ],
+ "ch6_3_4": [
+  "outsideshop"
+ ],
+ "ch6_3_5": [
+  "outsideshop"
+ ],
+ "ch6_3_5_break_start_01": [
+  "outsideshop"
+ ],
+ "ch6_4_1": [
+  "black",
+  "boat2",
+  "mountain_road1",
+  "section_100",
+  "section_100_mall"
+ ],
+ "ch6_4_2": [
+  "inn_room1"
+ ],
+ "ch6_4_2_2": [
+  "black"
+ ],
+ "ch6_4_3_1": [
+  "section_100",
+  "guest1"
+ ],
+ "ch6_4_3_2": [
+  "guest1"
+ ],
+ "ch6_4_3_3": [
+  "section_100_mall2",
+  "black"
+ ],
+ "ch6_4_3_3_1": [
+  "section_100_mall2"
+ ],
+ "ch6_4_3_3_2": [
+  "section_100_mall2"
+ ],
+ "ch6_4_3_3_3_1": [
+  "section_100_mall2",
+  "black",
+  "inn_room1"
+ ],
+ "ch6_4_3_3_4_1": [
+  "section_100_mall2"
+ ],
+ "ch6_4_3_4": [
+  "section_100",
+  "forest_night"
+ ],
+ "ch6_4_3_4_1": [
+  "forest_night"
+ ],
+ "ch6_4_3_break_start_01": [
+  "inn_room1"
+ ],
+ "ch6_4_4_1": [
+  "section_100"
+ ],
+ "ch6_4_4_2": [
+  "section_100_mall",
+  "black",
+  "road1"
+ ],
+ "ch6_4_4_2_1": [
+  "section_100_mall"
+ ],
+ "ch6_4_4_4_1": [
+  "section_100_mall"
+ ],
+ "ch6_4_4_4_2": [
+  "section_100_mall",
+  "black",
+  "road1"
+ ],
+ "ch6_5_1": [
+  "martial"
+ ],
+ "ch6_5_2_1": [
+  "martial"
+ ],
+ "ch6_5_2_break_start_01": [
+  "martial"
+ ],
+ "ch6_5_3": [
+  "martial"
+ ],
+ "ch6_5_3_1": [
+  "martial"
+ ],
+ "ch6_5_3_2": [
+  "martial"
+ ],
+ "ch6_5_3_3": [
+  "martial"
+ ],
+ "ch6_5_4": [
+  "martial"
+ ],
+ "ch6_5_4_1": [
+  "martial",
+  "white"
+ ],
+ "ch6_6_1": [
+  "martial",
+  "section_100_mall"
+ ],
+ "ch6_6_2_1": [
+  "martial"
+ ],
+ "ch6_6_2_break_start_01": [
+  "martial"
+ ],
+ "ch6_7_1": [
+  "martial",
+  "mountain_road1"
+ ],
+ "ch6_7_2_break_start_01": [
+  "martial"
+ ],
+ "ch6_7_3": [
+  "martial"
+ ],
+ "ch6_7_3_1": [
+  "martial"
+ ],
+ "ch6_7_4": [
+  "martial",
+  "black"
+ ],
+ "ch6_7_4_1": [
+  "martial"
+ ],
+ "ch6_7_5": [
+  "martial",
+  "lake1",
+  "white"
+ ],
+ "ch6_8_1": [
+  "martial"
+ ],
+ "ch6_8_2_3_1": [
+  "mountain_road1"
+ ],
+ "ch6_8_2_3_3": [
+  "mountain_road1"
+ ],
+ "ch6_8_2_3_4": [
+  "mountain_road1"
+ ],
+ "ch6_8_2_3_5": [
+  "martial"
+ ],
+ "ch6_8_2_break_start_01": [
+  "martial"
+ ],
+ "ch6_8_3": [
+  "martial",
+  "sky"
+ ],
+ "ch6_8_4": [
+  "martial"
+ ],
+ "ch6_8_4_1": [
+  "champaign"
+ ],
+ "ch6_8_4_part_2": [
+  "mountain_road1",
+  "lake1"
+ ],
+ "ch6_8_5": [
+  "martial"
+ ],
+ "ch6_9_1": [
+  "mountain_road1",
+  "road1_evening",
+  "inn1",
+  "inn_room1"
+ ],
+ "ch6_9_2_1": [
+  "inn1_night",
+  "black",
+  "inn_room1_night"
+ ],
+ "ch6_9_2_3": [
+  "inn1_night",
+  "inn_room1_night",
+  "inn2_night"
+ ],
+ "ch6_9_2_4": [
+  "inn2_night",
+  "inn1_night"
+ ],
+ "ch6_9_2_break_start_01": [
+  "inn_room1",
+  "inn1_night",
+  "inn_room1_night",
+  "black"
+ ],
+ "ch7_0_1": [
+  "black",
+  "center_evening"
+ ],
+ "ch7_0_2": [
+  "white",
+  "princess _room1",
+  "black"
+ ],
+ "ch7_1_1": [
+  "room",
+  "center"
+ ],
+ "ch7_1_2": [
+  "center_evening"
+ ],
+ "ch7_1_3_1": [
+  "center_morning"
+ ],
+ "ch7_1_3_2": [
+  "center_morning"
+ ],
+ "ch7_2_1": [
+  "room",
+  "tang_mall"
+ ],
+ "ch7_3_1": [
+  "center"
+ ],
+ "ch7_3_2_1": [
+  "center"
+ ],
+ "ch7_3_2_2": [
+  "fortress"
+ ],
+ "ch7_3_2_2_1": [
+  "fortress"
+ ],
+ "ch7_3_2_3": [
+  "kitchen"
+ ],
+ "ch7_3_2_4": [
+  "forest"
+ ],
+ "ch7_3_2_5": [
+  "forge"
+ ],
+ "ch7_3_2_6": [
+  "study"
+ ],
+ "ch7_3_2_7": [
+  "inn1"
+ ],
+ "ch7_3_2_8": [
+  "room"
+ ],
+ "ch7_3_2_9": [
+  "backmountain2"
+ ],
+ "ch7_3_2_break_start_01": [
+  "center"
+ ],
+ "ch7_3_3": [
+  "room",
+  "tang_mall",
+  "temple_day"
+ ],
+ "ch7_4_1": [
+  "tang_mall"
+ ],
+ "ch7_4_2_break_start_01": [
+  "tang_mall"
+ ],
+ "ch7_4_3_5_1": [
+  "tang_mall"
+ ],
+ "ch7_4_4": [
+  "map",
+  "tang_mall"
+ ],
+ "ch7_5_2_1": [
+  "tang_mall",
+  "black"
+ ],
+ "ch7_5_2_10": [
+  "alchemy"
+ ],
+ "ch7_5_2_2": [
+  "study"
+ ],
+ "ch7_5_2_3": [
+  "kitchen"
+ ],
+ "ch7_5_2_4": [
+  "room"
+ ],
+ "ch7_5_2_5": [
+  "forge",
+  "black"
+ ],
+ "ch7_5_2_6": [
+  "center",
+  "room"
+ ],
+ "ch7_5_2_7": [
+  "center"
+ ],
+ "ch7_5_2_8": [
+  "backmountain2"
+ ],
+ "ch7_5_2_8_2": [
+  "backmountain2",
+  "black"
+ ],
+ "ch7_5_2_9": [
+  "center_evening",
+  "farm1",
+  "black",
+  "lake1",
+  "road2",
+  "coastal",
+  "inn_room1",
+  "forest",
+  "pharmacy1",
+  "paddy",
+  "forge2",
+  "battlefield",
+  "section_001_center",
+  "house2",
+  "inn1",
+  "study2",
+  "snow_mountain_sum",
+  "snow_mountain_night",
+  "center"
+ ],
+ "ch7_5_2_9_1": [
+  "section_001_center",
+  "tent1",
+  "black",
+  "battlefield",
+  "section_001_market",
+  "mountain_road1",
+  "section_001_cliff",
+  "forge2"
+ ],
+ "ch7_5_3_1": [
+  "center"
+ ],
+ "ch7_5_4_1": [
+  "tang_mall"
+ ],
+ "ch7_5_4_10": [
+  "center"
+ ],
+ "ch7_5_4_10_break_start_01": [
+  "center"
+ ],
+ "ch7_5_4_2_1": [
+  "tang_mall",
+  "black"
+ ],
+ "ch7_5_4_2_2_break_start_01": [
+  "tang_mall"
+ ],
+ "ch7_5_4_3": [
+  "fortress"
+ ],
+ "ch7_5_4_4_1": [
+  "kitchen",
+  "center"
+ ],
+ "ch7_5_4_4_2": [
+  "forge"
+ ],
+ "ch7_5_4_4_3": [
+  "study"
+ ],
+ "ch7_5_4_5": [
+  "study",
+  "black"
+ ],
+ "ch7_5_4_6": [
+  "study"
+ ],
+ "ch7_5_4_7": [
+  "study",
+  "center"
+ ],
+ "ch7_5_4_8": [
+  "center",
+  "forest",
+  "black",
+  "fortress"
+ ],
+ "ch7_5_4_9": [
+  "room",
+  "backmountain_road1"
+ ],
+ "ch7_5_4_9_1": [
+  "backmountain_road1",
+  "black",
+  "room"
+ ],
+ "ch7_5_4_9_2": [
+  "center",
+  "backmountain_road1"
+ ],
+ "ch7_5_4_9_3": [
+  "backmountain2",
+  "black",
+  "center_morning",
+  "center",
+  "center_evening",
+  "center_night",
+  "road1",
+  "inn1",
+  "inn_room1",
+  "road1_evening"
+ ],
+ "ch7_5_5_1": [
+  "center"
+ ],
+ "ch7_5_5_1_2": [
+  "center"
+ ],
+ "ch7_5_5_1_3": [
+  "center_evening"
+ ],
+ "ch7_5_5_2": [
+  "tang_mall"
+ ],
+ "ch7_5_5_2_2": [
+  "black"
+ ],
+ "ch7_5_5_3": [
+  "tang_mall",
+  "study",
+  "center"
+ ],
+ "ch7_5_5_3_4": [
+  "section_outside",
+  "tang_mall",
+  "backmountain2"
+ ],
+ "ch7_5_5_3_4_1": [
+  "backmountain2",
+  "black"
+ ],
+ "ch7_5_5_4": [
+  "tang_mall"
+ ],
+ "ch7_5_5_5": [
+  "tang_mall",
+  "forest"
+ ],
+ "ch7_5_5_6": [
+  "center",
+  "black",
+  "tang_mall",
+  "study"
+ ],
+ "ch7_5_5_7": [
+  "study"
+ ],
+ "ch7_5_6_1": [
+  "center_evening"
+ ],
+ "ch7_5_6_10": [
+  "kitchen_night"
+ ],
+ "ch7_5_6_11": [
+  "forge_night"
+ ],
+ "ch7_5_6_3": [
+  "center_night"
+ ],
+ "ch7_5_6_3_1": [
+  "center_night"
+ ],
+ "ch7_5_6_4": [
+  "room"
+ ],
+ "ch7_5_6_5": [
+  "room"
+ ],
+ "ch7_5_6_6": [
+  "backmountain2",
+  "black",
+  "temple_night",
+  "martial",
+  "lake1",
+  "backmountain2_night"
+ ],
+ "ch7_5_6_7": [
+  "forest"
+ ],
+ "ch7_5_6_9": [
+  "room_night",
+  "black",
+  "forest_night",
+  "backmountain2_night",
+  "forge_night",
+  "forge"
+ ],
+ "ch8_1_1_1": [
+  "center",
+  "black",
+  "snow_mountain"
+ ],
+ "ch8_1_1_2": [
+  "center"
+ ],
+ "ch8_1_1_2_1": [
+  "center"
+ ],
+ "ch8_1_1_2_2": [
+  "center"
+ ],
+ "ch8_1_1_2_2_1": [
+  "center"
+ ],
+ "ch8_1_1_2_3": [
+  "center"
+ ],
+ "ch8_1_1_2_3_1": [
+  "center"
+ ],
+ "ch8_1_1_2_4": [
+  "center"
+ ],
+ "ch8_1_1_2_break_start_01": [
+  "center"
+ ],
+ "ch8_1_1_4": [
+  "center"
+ ],
+ "ch8_1_2": [
+  "center"
+ ],
+ "ch8_1_2_2": [
+  "room",
+  "backmountain_road1",
+  "center"
+ ],
+ "ch8_1_2_4": [
+  "black",
+  "center"
+ ],
+ "ch8_2_1": [
+  "center",
+  "forest"
+ ],
+ "ch8_2_1_1": [
+  "center",
+  "black",
+  "sky",
+  "sky_dust"
+ ],
+ "ch8_2_3": [
+  "center"
+ ],
+ "ch8_2_4_break_start_01": [
+  "center"
+ ],
+ "ch8_2_5_1": [
+  "center"
+ ],
+ "ch8_2_5_10_break_start_01": [
+  "center"
+ ],
+ "ch8_2_5_1_1": [
+  "black"
+ ],
+ "ch8_2_5_2_1": [
+  "center"
+ ],
+ "ch8_2_5_3_1": [
+  "center"
+ ],
+ "ch8_2_5_4_1": [
+  "center"
+ ],
+ "ch8_2_5_6_1": [
+  "center"
+ ],
+ "ch8_2_5_6_2": [
+  "center",
+  "tang_mall"
+ ],
+ "ch8_2_5_7_1": [
+  "center"
+ ],
+ "ch8_2_5_8_1": [
+  "center"
+ ],
+ "ch8_2_5_9": [
+  "center",
+  "tang_mall"
+ ],
+ "ch8_2_5_9_1": [
+  "center"
+ ],
+ "ch8_2_5_9_2": [
+  "center",
+  "black"
+ ],
+ "ch8_2_6_1": [
+  "center",
+  "mall1"
+ ],
+ "ch8_2_6_2": [
+  "champaign",
+  "fortress"
+ ],
+ "ch8_2_6_2_1": [
+  "champaign",
+  "fortress"
+ ],
+ "ch8_2_6_2_2": [
+  "champaign",
+  "sky",
+  "fortress"
+ ],
+ "ch8_2_6_2_3": [
+  "champaign",
+  "sky",
+  "fortress"
+ ],
+ "ch8_2_6_2_4": [
+  "champaign",
+  "fortress"
+ ],
+ "ch8_2_6_2_5": [
+  "champaign",
+  "fortress"
+ ],
+ "ch8_2_6_2_5_1": [
+  "champaign"
+ ],
+ "ch8_2_6_2_6": [
+  "champaign"
+ ],
+ "ch8_2_6_2_7": [
+  "champaign"
+ ],
+ "ch8_2_6_3_1": [
+  "road1",
+  "teashop"
+ ],
+ "ch8_2_6_3_2": [
+  "champaign",
+  "fortress",
+  "coastal"
+ ],
+ "ch8_2_6_3_2_part_2": [
+  "road1",
+  "ferry_day",
+  "black",
+  "fortress"
+ ],
+ "ch8_2_6_3_3": [
+  "champaign"
+ ],
+ "ch8_2_6_3_3_1": [
+  "black",
+  "champaign"
+ ],
+ "ch8_2_6_4_break_start_01": [
+  "fortress",
+  "study",
+  "road3"
+ ],
+ "ch8_2_6_5": [
+  "fortress",
+  "black"
+ ],
+ "ch8_2_6_6_1": [
+  "champaign",
+  "black",
+  "snow_mountain",
+  "center_evening"
+ ],
+ "ch8_2_6_7": [
+  "champaign",
+  "mountain_road1",
+  "center"
+ ],
+ "ch8_2_6_7_1": [
+  "mountain_road1"
+ ],
+ "ch8_3_1_1": [
+  "center"
+ ],
+ "ch8_3_1_1_3": [
+  "center"
+ ],
+ "ch8_3_1_2": [
+  "center"
+ ],
+ "ch8_3_1_2_2": [
+  "sky",
+  "black",
+  "center"
+ ],
+ "ch8_3_1_2_3": [
+  "center"
+ ],
+ "ch8_3_1_3_1": [
+  "center"
+ ],
+ "ch8_3_1_4_1": [
+  "center",
+  "sky"
+ ],
+ "ch8_3_2_1": [
+  "center",
+  "tang_mall"
+ ],
+ "ch8_3_2_2_1": [
+  "white",
+  "center"
+ ],
+ "ch8_3_2_2_2": [
+  "center",
+  "black",
+  "forest",
+  "white"
+ ],
+ "ch8_3_2_2_3": [
+  "white",
+  "center"
+ ],
+ "ch8_3_2_3_2": [
+  "center",
+  "black"
+ ],
+ "ch8_3_2_3_3": [
+  "center"
+ ],
+ "ch8_3_4_1": [
+  "firewood_room",
+  "black"
+ ],
+ "ch8_4_10_1": [
+  "center",
+  "sky",
+  "champaign",
+  "fortress",
+  "white",
+  "road1"
+ ],
+ "ch8_4_11_1": [
+  "center"
+ ],
+ "ch8_4_12": [
+  "backmountain_road1",
+  "black"
+ ],
+ "ch8_4_13": [
+  "forge"
+ ],
+ "ch8_4_1_1": [
+  "mountain_road1",
+  "backmountain_road2",
+  "forest",
+  "center"
+ ],
+ "ch8_4_2_1": [
+  "backmountain_road2",
+  "forest",
+  "center"
+ ],
+ "ch8_4_3_1": [
+  "center"
+ ],
+ "ch8_4_3_4": [
+  "center",
+  "study",
+  "tang_mall",
+  "window",
+  "sky_dust",
+  "center_evening",
+  "white",
+  "backmountain2"
+ ],
+ "ch8_4_4_break_start_01": [
+  "room"
+ ],
+ "ch8_4_5_1": [
+  "center_evening",
+  "black"
+ ],
+ "ch8_4_6_1": [
+  "center_evening"
+ ],
+ "ch8_4_7_1": [
+  "center_evening",
+  "alchemy",
+  "alchemy_night",
+  "backmountain_road1",
+  "backmountain_road1_night",
+  "white"
+ ],
+ "ch8_4_8_1": [
+  "tang_mall_night",
+  "blossom",
+  "backmountain2",
+  "alchemy",
+  "outsideshop",
+  "mountain_road1"
+ ],
+ "ch8_4_9_2": [
+  "tang_mall_night",
+  "center_night"
+ ],
+ "ch8_5_1": [
+  "center_evening",
+  "black",
+  "forest",
+  "white",
+  "sky_dust",
+  "mountain_road1"
+ ],
+ "ch8_5_2": [
+  "center_evening",
+  "black"
+ ],
+ "ch8_5_3": [
+  "black"
+ ],
+ "ch8_6_1": [
+  "mountain_road1"
+ ],
+ "ch8_6_1_1_1": [
+  "black"
+ ],
+ "ch8_6_1_2_1": [
+  "mountain_road1"
+ ],
+ "ch8_6_2": [
+  "road1"
+ ],
+ "ch8_6_2_1": [
+  "road1",
+  "teashop"
+ ],
+ "ch8_6_2_2": [
+  "road1",
+  "black"
+ ],
+ "ch8_6_3": [
+  "road1",
+  "wild_dusk"
+ ],
+ "ch8_6_3_1": [
+  "wild_dusk",
+  "black"
+ ],
+ "ch8_6_3_2": [
+  "black",
+  "outsideshop",
+  "dead",
+  "blossom",
+  "backmountain2",
+  "alchemy",
+  "mountain_road1",
+  "inn1"
+ ],
+ "ch8_7_2_1": [
+  "black",
+  "paddy",
+  "room",
+  "window",
+  "tang_mall",
+  "center_morning",
+  "forest",
+  "teashop",
+  "stream",
+  "mountain_road1",
+  "mountain1",
+  "outsideshop"
+ ],
+ "ch8_7_2_2": [
+  "black",
+  "mountain1",
+  "white",
+  "fortress",
+  "mountain2",
+  "fortress_and_mountain"
+ ],
+ "ch8_7_2_2_2": [
+  "tree_top",
+  "black"
+ ],
+ "ch8_7_2_2_3": [
+  "white",
+  "guest1",
+  "prison",
+  "section_001_cliff",
+  "outsideshop",
+  "mountain1"
+ ],
+ "ch8_8_1": [
+  "black",
+  "tang_mall",
+  "white"
+ ],
+ "door_001": [
+  "road1"
+ ],
+ "door_01_01": [
+  "road1"
+ ],
+ "door_02_504_01": [
+  "road1"
+ ],
+ "door_02_505": [
+  "road1"
+ ],
+ "door_02_506": [
+  "teashop"
+ ],
+ "door_free_102_01": [
+  "road1"
+ ],
+ "door_free_103_01": [
+  "road1"
+ ],
+ "door_free_104_01": [
+  "road1"
+ ],
+ "door_free_201_01": [
+  "temple_day"
+ ],
+ "door_free_501": [
+  "road1",
+  "house1"
+ ],
+ "door_free_509_01": [
+  "road1"
+ ],
+ "door_free_512_01": [
+  "road1"
+ ],
+ "door_girl_05": [
+  "forest"
+ ],
+ "door_special_01_01": [
+  "teashop",
+  "road1"
+ ],
+ "door_work_101": [
+  "road1"
+ ],
+ "door_work_201": [
+  "road1"
+ ],
+ "farm_01_01": [
+  "farm1"
+ ],
+ "fish_01_201_01": [
+  "prison",
+  "mountain_stream"
+ ],
+ "forge_001": [
+  "forge"
+ ],
+ "fortress_01_01": [
+  "fortress"
+ ],
+ "fortress_work_101_01": [
+  "road1"
+ ],
+ "fortress_work_201_01": [
+  "road1"
+ ],
+ "girlroom_001": [
+  "room",
+  "room_night"
+ ],
+ "girlroom_free_201": [
+  "black"
+ ],
+ "girlroom_work_201": [
+  "black"
+ ],
+ "kitchen_001": [
+  "kitchen"
+ ],
+ "kitchen_work_903": [
+  "black",
+  "kitchen",
+  "center"
+ ],
+ "mall_001": [
+  "tang_mall"
+ ],
+ "meeting_01": [
+  "room",
+  "tang_mall",
+  "black"
+ ],
+ "meeting_option_01_01": [
+  "black"
+ ],
+ "meeting_option_01_02": [
+  "black"
+ ],
+ "meeting_option_01_20": [
+  "black",
+  "mountain_road1"
+ ],
+ "meeting_option_101_01": [
+  "forge"
+ ],
+ "meeting_option_102_01": [
+  "center"
+ ],
+ "meeting_option_103_01": [
+  "black",
+  "forge"
+ ],
+ "meeting_option_104_01": [
+  "alchemy",
+  "road1"
+ ],
+ "meeting_option_105_01": [
+  "alchemy"
+ ],
+ "meeting_option_106_01": [
+  "forge"
+ ],
+ "meeting_option_502_01": [
+  "center"
+ ],
+ "meeting_option_703_01": [
+  "black"
+ ],
+ "meeting_option_703_02": [
+  "mountain_road1"
+ ],
+ "meeting_option_704_01": [
+  "center"
+ ],
+ "meeting_option_704_02_01": [
+  "center"
+ ],
+ "meeting_option_704_02_02_00": [
+  "center_evening"
+ ],
+ "meeting_option_704_02_02_01": [
+  "center"
+ ],
+ "meeting_option_704_02_02_02": [
+  "center"
+ ],
+ "meeting_option_704_02_02_03": [
+  "center"
+ ],
+ "meeting_option_704_02_02_04": [
+  "center"
+ ],
+ "meeting_option_704_02_02_05": [
+  "center"
+ ],
+ "meeting_option_704_03_01": [
+  "center"
+ ],
+ "meeting_option_704_04": [
+  "sky",
+  "center_evening"
+ ],
+ "meeting_option_f_01_01": [
+  "black"
+ ],
+ "meeting_option_f_02_01": [
+  "black"
+ ],
+ "meeting_option_f_03_01": [
+  "black"
+ ],
+ "meeting_option_f_04_01": [
+  "black"
+ ],
+ "meeting_option_f_05_01": [
+  "black"
+ ],
+ "meeting_start_01": [
+  "tang_mall"
+ ],
+ "meeting_start_01_temp": [
+  "tang_mall"
+ ],
+ "pharmacy_01_01": [
+  "pharmacy1"
+ ],
+ "pv_03_01": [
+  "black",
+  "section_001_center",
+  "section_001_cave",
+  "center",
+  "guest1",
+  "battlefield"
+ ],
+ "pv_04_01": [
+  "wild_dusk",
+  "black"
+ ],
+ "pv_05_01": [
+  "road1",
+  "center",
+  "center_evening",
+  "center_night",
+  "center_morning",
+  "room",
+  "alchemy",
+  "black",
+  "white"
+ ],
+ "room_001": [
+  "room"
+ ],
+ "sample": [
+  "road1",
+  "black"
+ ],
+ "section_01_free_00_901_02": [
+  "guest1"
+ ],
+ "section_01_free_01": [
+  "section_001_temple_mall"
+ ],
+ "section_01_free_01_501_01": [
+  "section_001_temple_mall"
+ ],
+ "section_01_free_02": [
+  "forest"
+ ],
+ "section_01_free_03": [
+  "section_001_fist"
+ ],
+ "section_01_free_03_01": [
+  "forge2"
+ ],
+ "section_01_free_03_01_01": [
+  "forge2"
+ ],
+ "section_01_free_03_01_02": [
+  "forge2",
+  "guest1"
+ ],
+ "section_01_free_03_02": [
+  "forge2"
+ ],
+ "section_01_free_04": [
+  "section_001_cave"
+ ],
+ "section_01_free_05": [
+  "section_001_mountain"
+ ],
+ "section_01_free_06": [
+  "section_001_market"
+ ],
+ "section_01_free_06_02_301_01": [
+  "section_001_market",
+  "black",
+  "house1",
+  "inn_room1"
+ ],
+ "section_01_free_06_02_301_03": [
+  "house1"
+ ],
+ "section_01_free_06_02_301_04": [
+  "house1"
+ ],
+ "section_01_free_06_03_01": [
+  "section_001_market"
+ ],
+ "section_01_free_06_03_03": [
+  "section_001_market"
+ ],
+ "section_01_free_07_101_01": [
+  "section_001_door"
+ ],
+ "section_01_free_08": [
+  "section_001_cliff"
+ ],
+ "section_01_free_08_01": [
+  "section_001_cliff"
+ ],
+ "section_01_free_08_01_01": [
+  "section_001_cliff"
+ ],
+ "section_01_free_08_02": [
+  "section_001_cliff"
+ ],
+ "section_01_free_08_03": [
+  "section_001_cliff"
+ ],
+ "section_01_free_08_04": [
+  "section_001_cliff",
+  "black"
+ ],
+ "section_01_free_08_05": [
+  "section_001_cliff_dusk",
+  "section_001_cliff",
+  "black",
+  "section_001_cliff_night"
+ ],
+ "section_01_free_08_06_01": [
+  "section_001_cliff"
+ ],
+ "section_01_free_08_07": [
+  "section_001_cliff"
+ ],
+ "section_01_free_start_02": [
+  "section_001_map",
+  "guest1"
+ ],
+ "section_02_01": [
+  "section_002_mall",
+  "section_room1"
+ ],
+ "section_02_02": [
+  "section_002_mall",
+  "forest",
+  "black"
+ ],
+ "section_02_03": [
+  "section_002_mall",
+  "black",
+  "section_002"
+ ],
+ "section_02_free_01": [
+  "section_002"
+ ],
+ "section_02_free_01_02_501_01": [
+  "mountain_road1"
+ ],
+ "section_02_free_01_02_502_01": [
+  "black",
+  "mountain_road1"
+ ],
+ "section_02_free_01_02_901": [
+  "forest"
+ ],
+ "section_02_free_01_02_901_01": [
+  "prison",
+  "road3",
+  "black",
+  "forest"
+ ],
+ "section_02_free_01_02_902": [
+  "mountain_road1"
+ ],
+ "section_02_free_01_02_902_01": [
+  "mountain_road1"
+ ],
+ "section_02_free_01_02_902_03": [
+  "mountain_road1"
+ ],
+ "section_02_free_02": [
+  "section_002_mall"
+ ],
+ "section_02_free_02_00": [
+  "section_002_mall"
+ ],
+ "section_02_free_02_02_501_01": [
+  "road3"
+ ],
+ "section_02_free_02_02_502_01": [
+  "road3",
+  "black"
+ ],
+ "section_02_free_03": [
+  "road3"
+ ],
+ "section_02_free_start_02": [
+  "section_002_map",
+  "section_room1"
+ ],
+ "snow_01": [
+  "snow_mountain",
+  "black",
+  "snow_end"
+ ],
+ "spa_01_01": [
+  "spa"
+ ],
+ "study_001": [
+  "study"
+ ],
+ "talk_brother3_01": [
+  "study"
+ ],
+ "talk_brother3_01_01": [
+  "center"
+ ],
+ "talk_brother3_option_03": [
+  "black",
+  "tang_mall",
+  "white"
+ ],
+ "talk_brother3_option_05_01": [
+  "center"
+ ],
+ "talk_brother4_option_02_04_01": [
+  "center"
+ ],
+ "talk_brother4_option_02_05_01": [
+  "black",
+  "center"
+ ],
+ "talk_brother4_option_04": [
+  "room"
+ ],
+ "talk_girl4_10": [
+  "tang_mall"
+ ],
+ "talk_girl5": [
+  "forest"
+ ],
+ "talk_girl5_01": [
+  "black",
+  "forest"
+ ],
+ "talk_girl5_02": [
+  "black",
+  "forest"
+ ],
+ "talk_girl5_02_01": [
+  "forest_night",
+  "black"
+ ],
+ "talk_girl5_02_02": [
+  "forest"
+ ],
+ "talk_girl5_02_04": [
+  "forest"
+ ],
+ "talk_girl5_02_06": [
+  "forest"
+ ],
+ "talk_girl5_03": [
+  "black",
+  "forest"
+ ],
+ "talk_girl5_04": [
+  "forest"
+ ],
+ "talk_girl5_05": [
+  "forest"
+ ],
+ "talk_girl5_10_01": [
+  "forest"
+ ],
+ "talk_girl5_11_01": [
+  "forest"
+ ],
+ "talk_girl5_12": [
+  "forest"
+ ],
+ "talk_test_01": [
+  "road1"
+ ],
+ "teashop_01_01": [
+  "outsideshop"
+ ],
+ "teashop_work_101_01": [
+  "road1"
+ ],
+ "teashop_work_201_01": [
+  "road1"
+ ],
+ "teashop_work_202_01": [
+  "road1"
+ ],
+ "teashop_work_203_01": [
+  "road1"
+ ],
+ "test_load": [
+  "center",
+  "tang_mall"
+ ],
+ "travel_result_310_501": [
+  "mountain_road1"
+ ],
+ "travel_result_310_501_01": [
+  "mountain_road1"
+ ],
+ "travel_result_310_501_02": [
+  "mountain_road1"
+ ],
+ "travel_result_310_503": [
+  "outsideshop"
+ ],
+ "travel_result_310_503_break_start_01": [
+  "outsideshop",
+  "black"
+ ],
+ "travel_result_401_501_01": [
+  "mountain_road1"
+ ],
+ "travel_result_501_501_01": [
+  "mountain_road1"
+ ],
+ "travel_result_601_101_01": [
+  "forest"
+ ],
+ "travel_result_601_102_01": [
+  "forest"
+ ],
+ "travel_result_601_103_01": [
+  "forest"
+ ],
+ "travel_result_601_501": [
+  "champaign"
+ ],
+ "travel_result_601_502": [
+  "champaign"
+ ],
+ "travel_result_601_504": [
+  "road1"
+ ],
+ "travel_result_601_901": [
+  "mountain_road1"
+ ],
+ "travel_result_601_901_01": [
+  "mountain_road1"
+ ],
+ "travel_result_601_901_02": [
+  "mountain_road1"
+ ],
+ "travel_result_601_902_01": [
+  "forest"
+ ],
+ "travel_result_601_902_02": [
+  "forest"
+ ],
+ "travel_result_601_902_03": [
+  "forest"
+ ],
+ "travel_result_601_903": [
+  "champaign"
+ ],
+ "travel_result_601_903_01": [
+  "forest"
+ ],
+ "travel_result_601_904_01": [
+  "forest"
+ ],
+ "travel_result_601_904_02": [
+  "forest"
+ ],
+ "travel_result_601_905_01": [
+  "forest"
+ ],
+ "travel_result_601_906": [
+  "champaign"
+ ],
+ "travel_result_S2501_01_901_01": [
+  "mountain_road1"
+ ],
+ "travel_result_S2501_01_902_01": [
+  "mountain_road1"
+ ],
+ "travel_result_S2501_01_903_01": [
+  "mountain_road1"
+ ],
+ "travel_result_S2901_02_501_01": [
+  "mountain_road1"
+ ],
+ "travel_result_S2901_02_502_01": [
+  "mountain_road1"
+ ],
+ "travel_result_S2901_02_503_01": [
+  "mountain_road1"
+ ],
+ "travel_result_S2901_05_501_01": [
+  "mountain_road1"
+ ]
+}

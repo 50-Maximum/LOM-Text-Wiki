@@ -1,0 +1,6246 @@
+[
+ {
+  "name": "Alchemy_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E10001 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 40,
+    "cond": [
+     "心相 < 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E10001 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 40,
+    "cond": [
+     "心相 ≥ 80"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_E_01",
+  "dev": "不滿",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第二年二月下旬",
+   "目前時間 ≤ 第二年八月下旬",
+   "旗标M20009 ≥ 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_E_02",
+  "dev": "滿",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第二年二月下旬",
+   "目前時間 ≤ 第二年八月下旬",
+   "旗标M20009 = -1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_E_03",
+  "dev": "小梅翹課",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标E10001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "性情 ≥ 60"
+    ]
+   },
+   {
+    "rate": 40,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "性情 ≥ 60"
+    ]
+   },
+   {
+    "rate": 40,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_M_01",
+  "dev": "小梅",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标Alchemy_Work_M_01 = 0",
+   "旗标E10001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Alchemy_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 40,
+    "cond": [
+     "心相 ≥ 70"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_02_E_01",
+  "dev": "龍湘的挑戰",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "目前時間 ≥ 第三年十一月中旬",
+   "旗标G11003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_02_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_03_E_01",
+  "dev": "烤魚",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E10004 = 0",
+   "旗标M00029 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_03_E_02",
+  "dev": "教小竹練功",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1",
+   "旗标M00047 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_03_E_03",
+  "dev": "小梅練功",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "秘笈等级玄燭心經 ≥ 1",
+   "陰陽內功 < 40",
+   "旗标E12003 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_03_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Free_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E10004 = 1",
+   "心上人 = 0",
+   "心相 ≤ 40",
+   "旗标B00001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Free_M_01",
+  "dev": "小梅亂入",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 55,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标Back_Free_M_01 = 0",
+   "目前時間 ≤ 第二年十二月下旬",
+   "旗标B00001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Free_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 100,
+  "logic": "且",
+  "cond": [
+   "旗标B00001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_BF_02",
+  "dev": "",
+  "key": "大失敗_002",
+  "value": "202",
+  "rate": 5,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   },
+   {
+    "rate": 50,
+    "cond": [
+     "心相 ≤ 10"
+    ]
+   },
+   {
+    "rate": -50,
+    "cond": [
+     "輕功 ≥ 50"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_E_01",
+  "dev": "無敵號與一團廢紙",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标Back_Work_E_01 = 0",
+   "目前時間 ≥ Back_Work_E_01",
+   "旗标E12100 = 1",
+   "旗标E10004 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_E_02",
+  "dev": "馬富貴 獵人",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标S0025_01 = 1",
+   "旗标E12102 = 1",
+   "旗标G30013 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_E_03",
+  "dev": "馬富貴 獵人失敗",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标S0025_01 = 1",
+   "旗标E12102 = 1",
+   "旗标E12000 = 1",
+   "旗标E12100 = 1",
+   "旗标G30013 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_E_04",
+  "dev": "馬富貴 挖礦人",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标S0025_01 = 1",
+   "旗标E12102 = 1",
+   "旗标G30013 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_E_05",
+  "dev": "小竹 一起挑柴",
+  "key": "特殊_005",
+  "value": "505",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_E_06",
+  "dev": "小竹 修繕棧道",
+  "key": "特殊_006",
+  "value": "506",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_M_02",
+  "dev": "登崖眺望",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标Back_Work_M_02 = 0",
+   "目前時間 ≤ 第一年五月下旬"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_M_03",
+  "dev": "葉雲舟採藥",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E12100 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_M_05",
+  "dev": "",
+  "key": "其他_005",
+  "value": "905",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Back_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "輕功 ≥ 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Casino_01_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 5,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Casino_01_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Casino_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E10003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_E_01",
+  "dev": "糾紛1",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第二年三月上旬",
+   "目前時間 ≤ 第二年八月中旬",
+   "旗标M20009 ≥ 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_E_02",
+  "dev": "糾紛2",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第二年三月上旬",
+   "目前時間 ≤ 第二年八月中旬",
+   "旗标M20009 ≥ 0"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "旗标M20009 ≥ 1"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_E_03",
+  "dev": "超團結",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第二年三月上旬",
+   "目前時間 ≤ 第二年八月中旬",
+   "旗标M20009 = -1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E10001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E10005 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_F_03",
+  "dev": "",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E10000 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E10000 = 1",
+   "旗标E10001 = 1",
+   "旗标E10002 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E10000 = 1",
+   "旗标E10001 = 1",
+   "旗标E10002 = 1"
+  ],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "修養 ≤ 25"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_M_03",
+  "dev": "",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E10000 = 0",
+   "旗标E10004 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "修養 ≤ 25"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_M_04",
+  "dev": "解無塵帶操",
+  "key": "其他_004",
+  "value": "904",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E13012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_M_05",
+  "dev": "丹霞子帶操",
+  "key": "其他_005",
+  "value": "905",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E13013 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E10006 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Free_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E10004 = 0",
+   "旗标E10006 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Work_E_01",
+  "dev": "小竹一起刷地",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Work_E_02",
+  "dev": "小竹 有一口井",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1",
+   "旗标M00044 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Work_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "性情 ≤ 50"
+    ]
+   },
+   {
+    "rate": 5,
+    "cond": [
+     "性情 ≤ 25"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Center_Work_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "向心力 ≥ 50"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_1_7_2_01_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "性情 < 40"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_1_7_2_01_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_1_7_2_01_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_1_7_2_01_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_6_1_01_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_6_1_01_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_6_1_01_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_6_1_01_E_04",
+  "dev": "",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_3_6_1_01_E_06",
+  "dev": "小竹",
+  "key": "特殊_006",
+  "value": "506",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30068 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_6_4_3_2_01_E_01",
+  "dev": "龍湘吹簫",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_6_4_3_2_01_E_02",
+  "dev": "小梅奏你",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M60004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_6_4_3_2_01_E_03",
+  "dev": "雲裳彈琴",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M60007 = 1",
+   "旗标M60018 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Ch_6_4_3_2_01_E_04",
+  "dev": "龍湘吹簫小師妹崇拜",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M60003 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_01_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_01_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_02_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [
+   {
+    "rate": 50,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_02_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_03_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [
+   {
+    "rate": 50,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Chess_03_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_01",
+  "dev": "修繕崆峒山道",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3",
+   "旗标E11000 = 1",
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_02",
+  "dev": "修繕山道dead End",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3",
+   "旗标E11000 = 1",
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_03",
+  "dev": "精美的簪子",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_04",
+  "dev": "趙活磨喝樂",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_05",
+  "dev": "修葺地牢",
+  "key": "特殊_005",
+  "value": "505",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3",
+   "旗标E11000 = 1",
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_06",
+  "dev": "戰鬥陀螺殺人事件",
+  "key": "特殊_006",
+  "value": "506",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 7"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_07",
+  "dev": "牙控車殺人事件",
+  "key": "特殊_007",
+  "value": "507",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 7"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_08",
+  "dev": "大師兄的機關甲衣",
+  "key": "特殊_008",
+  "value": "508",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 7",
+   "逆鱗寶衣 = 0",
+   "大師兄塗鴉 ≥ 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_09",
+  "dev": "修葺飛天殿",
+  "key": "特殊_009",
+  "value": "509",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 7",
+   "旗标E11000 = 1",
+   "旗标M20008 = 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_E_10",
+  "dev": "修繕唐門",
+  "key": "特殊_010",
+  "value": "510",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 10",
+   "旗标E11000 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_F_01",
+  "dev": "被小竹趕出門",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "心相 < 30"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_F_02",
+  "dev": "補屋頂失敗",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_F_03",
+  "dev": "打魚",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E11000 = 0",
+   "旗标E12000 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_N_01",
+  "dev": "農具",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_N_02",
+  "dev": "廚具",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_N_03",
+  "dev": "獵具",
+  "key": "正常_003",
+  "value": "003",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_N_04",
+  "dev": "磨針",
+  "key": "正常_004",
+  "value": "004",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_N_05",
+  "dev": "補屋頂",
+  "key": "正常_005",
+  "value": "005",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_S_01",
+  "dev": "保養工具",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_S_02",
+  "dev": "香具",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Craft_Work_S_03",
+  "dev": "茶具",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "秘笈等级十八種奇兵鍛法 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_E_01",
+  "dev": "小梅亂入",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "目前時間 ≤ 第二年十二月下旬",
+   "旗标M00054 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_E_02",
+  "dev": "我有帶秘笈",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "旗标E12101 = 1",
+   "目前時間 ≤ 第二年十月下旬",
+   "旗标M00024 ≤ 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_E_03",
+  "dev": "龍之反省",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标S0022_01 = 1",
+   "目前時間 ≤ 第二年五月下旬",
+   "旗标S0023_01 ≤ 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_E_04",
+  "dev": "排隊的龍湘",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_E_05",
+  "dev": "馬富貴 大宋閒漢",
+  "key": "特殊_005",
+  "value": "505",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12102 = 1",
+   "旗标G30013 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_E_06",
+  "dev": "馬富貴 買飲料",
+  "key": "特殊_006",
+  "value": "506",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12102 = 1",
+   "旗标G30013 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_E_07",
+  "dev": "福韞 揍你",
+  "key": "特殊_007",
+  "value": "507",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1",
+   "旗标E20005 = 1",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_02_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "門派規模 ≥ 4"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_02",
+  "dev": "龍湘挑戰1",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "旗标A00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_03",
+  "dev": "龍湘挑戰2",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "旗标A00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_04",
+  "dev": "龍湘服務生1",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "銀兩 ≥ 500",
+   "旗标M00022 ≠ -1",
+   "旗标A00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_05",
+  "dev": "龍湘服務生2",
+  "key": "特殊_005",
+  "value": "505",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "銀兩 ≥ 500",
+   "旗标M00022 ≠ -1",
+   "旗标A00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_06",
+  "dev": "龍湘服務生3",
+  "key": "特殊_006",
+  "value": "506",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "銀兩 ≥ 500",
+   "旗标M00022 ≠ -1",
+   "旗标A00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_07",
+  "dev": "馬富貴 胸口碎大石",
+  "key": "特殊_007",
+  "value": "507",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12102 = 1",
+   "旗标A00002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_08",
+  "dev": "馬富貴 弄蛇成功",
+  "key": "特殊_008",
+  "value": "508",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12102 = 1",
+   "旗标A00002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_09",
+  "dev": "馬富貴 弄蛇失敗",
+  "key": "特殊_009",
+  "value": "509",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12102 = 1",
+   "旗标A00002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_10",
+  "dev": "馬富貴 弄蛇大成功",
+  "key": "特殊_010",
+  "value": "510",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E12102 = 1",
+   "旗标A00002 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   },
+   {
+    "rate": 10,
+    "cond": [
+     "處世 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_11",
+  "dev": "馬富貴 釣魚",
+  "key": "特殊_011",
+  "value": "511",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12102 = 1",
+   "旗标A00002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_12",
+  "dev": "福韞 化緣",
+  "key": "特殊_012",
+  "value": "512",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_13",
+  "dev": "小竹與飛石幫1",
+  "key": "特殊_013",
+  "value": "513",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_14",
+  "dev": "小竹與飛石幫2",
+  "key": "特殊_014",
+  "value": "514",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1",
+   "旗标M00046 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_15",
+  "dev": "小竹與飛石幫3",
+  "key": "特殊_015",
+  "value": "515",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1",
+   "旗标M00046 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_16",
+  "dev": "和小梅跑步",
+  "key": "特殊_016",
+  "value": "516",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标M00049 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_E_17",
+  "dev": "眉山探險隊",
+  "key": "特殊_017",
+  "value": "517",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标E12000 = 1",
+   "旗标E10004 = 0",
+   "旗标E22000 = 1",
+   "旗标E10001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200"
+  ],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_F_03",
+  "dev": "",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_F_04",
+  "dev": "",
+  "key": "失敗_004",
+  "value": "104",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200",
+   "掌門人 ≥ 20",
+   "旗标E10004 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "道德 ≥ 50"
+    ]
+   },
+   {
+    "rate": 10,
+    "cond": [
+     "道德 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标G11000 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_M_03",
+  "dev": "",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12000 = 1",
+   "銀兩 ≥ 500"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "銀兩 ≥ 2000"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_M_04",
+  "dev": "",
+  "key": "其他_004",
+  "value": "904",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12000 = 1",
+   "銀兩 ≥ 500",
+   "旗标E10004 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "銀兩 ≥ 2000"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_S_02",
+  "dev": "小師妹出嫁後消滅",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200",
+   "旗标E10004 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Free_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 5,
+  "logic": "且",
+  "cond": [
+   "旗标Door_Work_201 < 2",
+   "銀兩 ≥ 3000",
+   "旗标E10005 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 50,
+    "cond": [
+     "心相 ≤ 0"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Work_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标Door_Work_S_01 ≥ 2"
+  ],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "嘴力 ≥ 80"
+    ]
+   },
+   {
+    "rate": 5,
+    "cond": [
+     "嘴力 ≥ 90"
+    ]
+   },
+   {
+    "rate": 5,
+    "cond": [
+     "嘴力 ≥ 30"
+    ]
+   },
+   {
+    "rate": 20,
+    "cond": [
+     "道德 < 40"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Work_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "行動次數 ≥ 2"
+  ],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "嘴力 ≥ 80"
+    ]
+   },
+   {
+    "rate": 5,
+    "cond": [
+     "嘴力 ≥ 90"
+    ]
+   },
+   {
+    "rate": 5,
+    "cond": [
+     "嘴力 ≥ 30"
+    ]
+   },
+   {
+    "rate": 20,
+    "cond": [
+     "道德 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E10005 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "嘴力 ≥ 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Girl_05_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Girl_05_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Girl_05_S_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Girl_05_S_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Girl_05_S_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Door_Girl_05_S_04",
+  "dev": "",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Farm_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E12002 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Farm_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Farm_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12002 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fish_01_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fish_01_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fish_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_01_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "兵器損毀 ≥ 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_01_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "兵器損毀 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "處世 ≥ 60"
+    ]
+   },
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_Work_E_01",
+  "dev": "不滿",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第二年二月下旬",
+   "目前時間 ≤ 第二年八月下旬",
+   "旗标M20009 ≥ 0"
+  ],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_Work_E_02",
+  "dev": "滿",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第二年二月下旬",
+   "目前時間 ≤ 第二年八月下旬",
+   "旗标M20009 = -1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Forge_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≥ 50"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_02_E_01",
+  "dev": "龍湘與福韞",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "旗标E12103 = 1",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_02_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "名聲 ≥ 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_E_01",
+  "dev": "福韞 講法1",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1",
+   "旗标A00002 = 0",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_E_02",
+  "dev": "福韞 講法2",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1",
+   "旗标A00002 = 0",
+   "旗标E12100 = 1",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_E_03",
+  "dev": "福韞 講法3",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1",
+   "旗标A00002 = 0",
+   "旗标E12000 = 1",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_M_01",
+  "dev": "苦命葉雲舟",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12100 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_M_02",
+  "dev": "葉雲舟 木劍",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12100 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_M_03",
+  "dev": "葉雲舟 葉家劍法",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12100 = 1",
+   "旗标M00015 ≥ 5"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Fortress_Work_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "GirlRoom_Free_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "心相 ≤ 15"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "GirlRoom_Free_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "GirlRoom_Free_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 60,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "GirlRoom_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 3,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": -3,
+    "cond": [
+     "輕功 ≥ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "GirlRoom_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "GirlRoom_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "輕功 ≥ 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "性情 ≥ 60"
+    ]
+   },
+   {
+    "rate": 5,
+    "cond": [
+     "處世 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1",
+   "目前時間 ≥ 第三年十一月中旬"
+  ],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "廚藝 ≥ 5"
+    ]
+   },
+   {
+    "rate": 25,
+    "cond": [
+     "廚藝 ≥ 10"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_E_02",
+  "dev": "小梅的菜1",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_E_03",
+  "dev": "小梅的菜2",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标E10005 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_E_04",
+  "dev": "小梅的菜3",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标E10005 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "性情 ≥ 60"
+    ]
+   },
+   {
+    "rate": 10,
+    "cond": [
+     "廚藝 ≥ 5"
+    ]
+   },
+   {
+    "rate": 25,
+    "cond": [
+     "廚藝 ≥ 10"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标Kitchen_Work_M_02 = 0",
+   "目前時間 ≤ 第二年十二月下旬"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_M_03",
+  "dev": "假趙活 請客",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标E12101 = 1",
+   "旗标Kitchen_Work_M_03 = 0",
+   "目前時間 ≤ 第二年十月下旬"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_S_01",
+  "dev": "掌門米糊糊",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E10003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E10004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Kitchen_Work_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E10004 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "廚藝 ≥ 3"
+    ]
+   },
+   {
+    "rate": 25,
+    "cond": [
+     "廚藝 ≥ 10"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Free_Result_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Free_Result_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 5,
+    "cond": [
+     "修養 ≤ 50"
+    ]
+   },
+   {
+    "rate": 10,
+    "cond": [
+     "修養 ≤ 25"
+    ]
+   },
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Free_Result_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Free_Result_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Free_Result_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≥ 70"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Free_Result_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≥ 第三年十月上旬"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 40,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1",
+   "旗标E10003 = 0",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_E_02",
+  "dev": "小梅問安",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标E10003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_E_03",
+  "dev": "小梅問安2",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 40,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1",
+   "旗标G11004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_F_03",
+  "dev": "",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_M_03",
+  "dev": "",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E10002 = 0",
+   "旗标E10003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_M_04",
+  "dev": "",
+  "key": "其他_004",
+  "value": "904",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E10005 = 0",
+   "旗标E10003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_M_05",
+  "dev": "",
+  "key": "其他_005",
+  "value": "905",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "學問 ≥ 50",
+   "旗标E10002 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Mall_Work_Result_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "目前時間 ≤ 第一年五月下旬",
+   "旗标E10002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 5,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_F_03",
+  "dev": "",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标Pharmacy_Work_402_01 < 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标Pharmacy_Work_403_01 < 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Pharmacy_Work_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标Pharmacy_Work_404_01 < 2"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Room_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E10000 = 1",
+   "旗标E10001 = 1",
+   "旗标E10003 = 1",
+   "旗标E10004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Room_Work_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E10000 = 1",
+   "目前時間 ≥ 第三年十月上旬"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Room_Work_E_01",
+  "dev": "福韞 講法1",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Room_Work_E_02",
+  "dev": "福韞 講法2",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标E12103 = 1",
+   "旗标E10005 = 0",
+   "旗标G30012 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Room_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2321_04_03_02_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2321_04_03_02_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2321_04_03_02_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2321_04_03_02_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2321_04_03_03_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2321_04_03_03_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2800_02_Break_01_F_01",
+  "dev": "自暴自棄",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标H03003 ≥ 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2800_02_Break_01_N_01",
+  "dev": "打坐調息",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2800_02_Break_01_N_02",
+  "dev": "活動筋骨",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2800_02_Break_01_S_01",
+  "dev": "嘗試逃獄",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标H03003 ≥ 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2800_02_Break_01_S_02",
+  "dev": "聊天（瑞笙在場限定",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M00032 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2800_02_Break_01_S_03",
+  "dev": "聊天（瑞笙在場限定2",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M00032 = 1",
+   "旗标M00039 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "S2800_02_Break_01_S_04",
+  "dev": "有偷油婆",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标H03003 ≥ 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_00_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2",
+   "旗标M20012 = 1"
+  ],
+  "rates": [
+   {
+    "rate": 25,
+    "cond": [
+     "虞小梅 ≥ 15"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_00_M_01",
+  "dev": "欺負人",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标M20008 = 2"
+  ],
+  "rates": [
+   {
+    "rate": 40,
+    "cond": [
+     "心相 < 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_00_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_00_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_01_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "嘴力 ≥ 15"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_01_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "嘴力 ≥ 15"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_01_BS_03",
+  "dev": "",
+  "key": "大成功_003",
+  "value": "403",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "嘴力 ≥ 20"
+    ]
+   },
+   {
+    "rate": 20,
+    "cond": [
+     "道德 < 40"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_01_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 5,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 15,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   },
+   {
+    "rate": 15,
+    "cond": [
+     "嘴力 ≥ 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_01_M_01",
+  "dev": "飛天弟子找碴",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标M00031 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "嘴力 < 15"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": -25,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   },
+   {
+    "rate": -10,
+    "cond": [
+     "心相 ≤ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": -25,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   },
+   {
+    "rate": -10,
+    "cond": [
+     "心相 ≤ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_BS_03",
+  "dev": "",
+  "key": "大成功_003",
+  "value": "403",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": -10,
+    "cond": [
+     "心相 ≤ 40"
+    ]
+   },
+   {
+    "rate": -10,
+    "cond": [
+     "心相 ≤ 80"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "心相 ≤ 50"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≥ 50"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_Start_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标Talk_Girl_05_01_001 = 1",
+   "旗标Talk_Girl_05_01 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_Start_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标Talk_Girl_05_02_001 = 1",
+   "旗标Talk_Girl_05_02 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_Start_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "夏侯蘭 ≥ 20",
+   "旗标Talk_Girl_05_03 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_Start_E_04",
+  "dev": "",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "夏侯蘭 ≥ 20",
+   "旗标Talk_Girl_05_04 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_Start_E_05",
+  "dev": "",
+  "key": "特殊_005",
+  "value": "505",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "夏侯蘭 ≥ 15",
+   "旗标Talk_Girl_05_05 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_Start_E_06",
+  "dev": "",
+  "key": "特殊_006",
+  "value": "506",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标Talk_Girl_05_12_001 = 1",
+   "旗标Talk_Girl_05_12 = 0",
+   "夏侯蘭 ≥ 30"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_02_Start_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_03_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 5,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 75,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_03_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 5,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_03_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 5,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_03_E_01",
+  "dev": "被小竹無視",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 100,
+  "logic": "且",
+  "cond": [
+   "旗标E21005 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_03_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≤ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_03_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_03_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 35,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_04_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_04_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_04_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_01_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 40,
+    "cond": [
+     "四師兄 ≥ 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_01_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标M20012 = 1"
+  ],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "虞小梅 ≥ 15"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_01_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "郁竹 ≥ 15"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_02_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 40,
+    "cond": [
+     "心相 ≥ 90"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_02_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 25,
+    "cond": [
+     "心相 ≤ 60"
+    ]
+   },
+   {
+    "rate": 25,
+    "cond": [
+     "心相 ≤ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 25,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   },
+   {
+    "rate": 25,
+    "cond": [
+     "心相 ≥ 90"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_02_01_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_02_01_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_06_02_01_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_BS_03",
+  "dev": "",
+  "key": "大成功_003",
+  "value": "403",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标G30000 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_01_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_01_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_01_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_E_04",
+  "dev": "",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E22001 ≥ 4"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_07_02_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_08_06_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_08_06_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "旗标M20045 ≥ 1"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_08_06_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "旗标M20045 ≥ 1"
+    ]
+   },
+   {
+    "rate": 10,
+    "cond": [
+     "旗标M20045 ≥ 2"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_08_06_E_04",
+  "dev": "",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "旗标M20045 ≥ 1"
+    ]
+   },
+   {
+    "rate": 30,
+    "cond": [
+     "旗标M20045 ≥ 2"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_01_08_06_E_05",
+  "dev": "",
+  "key": "特殊_005",
+  "value": "505",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "旗标M20045 ≥ 1"
+    ]
+   },
+   {
+    "rate": 30,
+    "cond": [
+     "旗标M20045 ≥ 2"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_00_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_00_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_00_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标M30053 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "葉雲裳 ≥ 35"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_00_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_00_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_01_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "申屠龍 ≥ 15"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_01_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 100,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30041 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30041 ≥ 3"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 100,
+  "logic": "且",
+  "cond": [
+   "旗标M30054 = 0",
+   "目前時間 ≥ 第二年九月下旬"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 80,
+  "logic": "且",
+  "cond": [
+   "旗标M30063 = 0",
+   "申屠龍 ≥ 10"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30041 ≥ 3",
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_01_02_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标M30041 ≥ 3"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "旗标M30055 = 1"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_01_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标M30053 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 < 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_01_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "修養 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_01_BS_02",
+  "dev": "",
+  "key": "大成功_002",
+  "value": "402",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "嘴力 ≥ 40"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_01_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_01_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_01_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_02_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_02_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_02_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "葉雲裳 ≥ 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_02_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 40,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_01_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标M30046 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_01_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_01_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 1500",
+   "旗标M30053 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "銀兩 ≥ 2000"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_01_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 200"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_01_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 35,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 1000",
+   "修養 ≥ 60",
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_02_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 0,
+    "cond": [
+     "心相 < 30"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_02_E_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 15,
+    "cond": [
+     "全鍛造點數 ≥ 150"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_02_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "修養 < 40"
+    ]
+   },
+   {
+    "rate": 10,
+    "cond": [
+     "性情 < 40"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_02_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_02_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标H03003 ≥ 1"
+  ],
+  "rates": [
+   {
+    "rate": 20,
+    "cond": [
+     "旗标H03003 ≥ 3"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 15,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "醫術 < 3",
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "醫術 ≥ 3",
+   "旗标M30053 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Section_02_03_03_S_03",
+  "dev": "",
+  "key": "成功_003",
+  "value": "303",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Spa_Free_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 5,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Spa_Free_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标G11003 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Spa_Free_E_02",
+  "dev": "小梅偷窺",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E12003 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Spa_Free_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Spa_Free_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Study_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [
+   {
+    "rate": 50,
+    "cond": [
+     "道德 < 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Study_Work_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Study_Work_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "旗标E12004 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Study_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标E10006 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Study_Work_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标E10006 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_BF_01",
+  "dev": "",
+  "key": "大失敗_001",
+  "value": "201",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E12002 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_BF_02",
+  "dev": "",
+  "key": "大失敗_002",
+  "value": "202",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_BF_03",
+  "dev": "",
+  "key": "大失敗_003",
+  "value": "203",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_BS_01",
+  "dev": "",
+  "key": "大成功_001",
+  "value": "401",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标E12002 = 1"
+  ],
+  "rates": [
+   {
+    "rate": 10,
+    "cond": [
+     "魏菊 ≥ 15"
+    ]
+   },
+   {
+    "rate": 10,
+    "cond": [
+     "魏菊 ≥ 20"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标E12005 = 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Teashop_Work_S_02",
+  "dev": "",
+  "key": "成功_002",
+  "value": "302",
+  "rate": 30,
+  "logic": "且",
+  "cond": [
+   "銀兩 ≥ 100"
+  ],
+  "rates": [
+   {
+    "rate": 30,
+    "cond": [
+     "心相 ≥ 60"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_03",
+  "dev": "",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标M20001 = 1",
+   "銀兩 ≥ 100"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_N_02",
+  "dev": "",
+  "key": "正常_002",
+  "value": "002",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_01",
+  "dev": "",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_02",
+  "dev": "",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_03",
+  "dev": "",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_N_01",
+  "dev": "",
+  "key": "正常_001",
+  "value": "001",
+  "rate": 10,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A00001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A00002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A00001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A00002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A00003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_04",
+  "dev": "",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A00004 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标A00001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 50,
+  "logic": "且",
+  "cond": [
+   "旗标A00001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_01",
+  "dev": "官兵護航",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 15,
+  "logic": "且",
+  "cond": [
+   "旗标A10004 = 0",
+   "宋悲 ≥ 1"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_02",
+  "dev": "龍湘出來迎接你",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 100,
+  "logic": "且",
+  "cond": [
+   "旗标A10005 = 0",
+   "龍湘 ≥ 20"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_04",
+  "dev": "遭遇了火炎山劍閣",
+  "key": "特殊_004",
+  "value": "504",
+  "rate": 25,
+  "logic": "且",
+  "cond": [
+   "旗标M60095 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 70,
+    "cond": [
+     "旗标M60005 = 1"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_01",
+  "dev": "遭遇地獄道鬼卒攔路",
+  "key": "失敗_001",
+  "value": "101",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标A10001 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_02",
+  "dev": "遭遇畜生道乞丐攔路",
+  "key": "失敗_002",
+  "value": "102",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标A10002 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_F_03",
+  "dev": "遭遇餓鬼道海賊攔路",
+  "key": "失敗_003",
+  "value": "103",
+  "rate": 20,
+  "logic": "且",
+  "cond": [
+   "旗标A10003 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_01",
+  "dev": "遭遇峨嵋派",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A10007 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_02",
+  "dev": "遭遇青城派",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A10008 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_03",
+  "dev": "遭遇崆峒派",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A10009 = 0"
+  ],
+  "rates": [
+   {
+    "rate": 50,
+    "cond": [
+     "旗标M60015 = 1"
+    ]
+   }
+  ],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_04",
+  "dev": "遭遇點蒼派",
+  "key": "其他_004",
+  "value": "904",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A10010 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_05",
+  "dev": "遭遇全真派",
+  "key": "其他_005",
+  "value": "905",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A10011 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_06",
+  "dev": "遭遇嵩山派",
+  "key": "其他_006",
+  "value": "906",
+  "rate": 10,
+  "logic": "且",
+  "cond": [
+   "旗标A10012 = 0"
+  ],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_01",
+  "dev": "",
+  "key": "其他_001",
+  "value": "901",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_02",
+  "dev": "",
+  "key": "其他_002",
+  "value": "902",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_M_03",
+  "dev": "",
+  "key": "其他_003",
+  "value": "903",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_03",
+  "dev": "",
+  "key": "特殊_003",
+  "value": "503",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_01",
+  "dev": "",
+  "key": "特殊_001",
+  "value": "501",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Travel_E_02",
+  "dev": "",
+  "key": "特殊_002",
+  "value": "502",
+  "rate": 30,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ },
+ {
+  "name": "Walk_01_S_01",
+  "dev": "",
+  "key": "成功_001",
+  "value": "301",
+  "rate": 20,
+  "logic": "且",
+  "cond": [],
+  "rates": [],
+  "file": "sharedassets2.assets"
+ }
+]

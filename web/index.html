@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>活侠传 · 文本库</title>
+<style>
+:root{
+  --bg:#141619; --panel:#1b1e23; --line:#282c33; --fg:#d9dde3; --dim:#8a93a1;
+  --acc:#c8a06a; --narr:#7f8b99; --think:#6fa8dc; --center:#b58cd6;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font:14px/1.75 "Microsoft YaHei","PingFang SC",sans-serif;background:var(--bg);color:var(--fg)}
+#app{display:grid;grid-template-columns:320px 1fr;height:100vh}
+aside{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.brand{padding:14px 16px 10px;color:var(--acc);font-weight:600;letter-spacing:.06em;border-bottom:1px solid var(--line)}
+.search{padding:12px 14px;border-bottom:1px solid var(--line)}
+.search input{width:100%;padding:8px 10px;background:#111316;border:1px solid var(--line);color:var(--fg);border-radius:5px;outline:none}
+.search input:focus{border-color:var(--acc)}
+.tabs{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tabs div{flex:0 0 auto;text-align:center;padding:6px 9px;font-size:12.5px;color:var(--dim);cursor:pointer}
+.tabs div.on{color:var(--acc);box-shadow:inset 0 -2px 0 var(--acc)}
+#side{overflow:auto;padding:8px 8px 24px;flex:1;min-height:0}
+.grp{margin:12px 6px 4px;font-size:12px;color:#69707c;letter-spacing:.08em}
+.item{padding:5px 8px;border-radius:4px;cursor:pointer;color:var(--dim);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item:hover{background:#232830;color:var(--fg)}
+.item.on{background:#2b3038;color:var(--acc)}
+.item .n{float:right;color:#5b6270;font-size:11px}
+.chip{display:inline-block;padding:2px 9px;margin:3px 4px 3px 0;border:1px solid var(--line);border-radius:11px;font-size:12px;color:var(--dim);cursor:pointer}
+.chip.on{color:var(--acc);border-color:var(--acc);background:#241d14}
+.evrow{padding:9px 11px;border:1px solid var(--line);border-radius:5px;margin-bottom:8px;cursor:pointer}
+.evrow:hover{border-color:var(--acc)}
+.evrow .t{color:#e6d3ae;font-size:13px}
+.evrow .m{color:var(--dim);font-size:12px;margin-top:2px}
+.badge{display:inline-block;background:#3a2118;color:#e08a5a;border-radius:3px;padding:0 6px;font-size:11px;margin-left:6px}
+main{overflow:auto;padding:22px 30px 80px}
+h1{font-size:16px;margin:0 0 6px;color:var(--acc)}
+.meta{color:var(--dim);font-size:12px;margin-bottom:14px}
+.tag{display:inline-block;background:#2a2118;color:var(--acc);border-radius:3px;padding:1px 7px;font-size:12px;margin-right:6px}
+.line{display:grid;grid-template-columns:116px 1fr;gap:12px;padding:7px 8px 7px 10px;border-left:3px solid transparent;border-bottom:1px solid #1f2227}
+.line:hover{background:#191c21}
+.line .sp{font-size:13px;text-align:right;color:var(--acc);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.line .sp span{display:block;font-size:10px;color:#5b6270;letter-spacing:.08em}
+.line .tx{white-space:pre-wrap}
+.line.narr{border-left-color:#3a424d}
+.line.narr .sp{color:var(--narr)}
+.line.narr .tx{color:#b9c0c9}
+.line.think{border-left-color:var(--think)}
+.line.think .sp{color:var(--think)}
+.line.think .tx{color:#a9c4dc;font-style:italic}
+.line.center{border-left-color:var(--center)}
+.line.center .sp{color:var(--center)}
+.key{color:#4b5563;font-size:11px;margin-left:8px;cursor:default}
+.ttl{font-weight:700;color:#f0d9ae;letter-spacing:.1em}
+.punch{display:inline-block;animation:sh .45s infinite}
+@keyframes sh{0%,100%{transform:translate(0,0)}25%{transform:translate(1px,-1px)}75%{transform:translate(-1px,1px)}}
+.choice{margin:10px 0 14px;padding:10px 12px;background:#1a1d22;border:1px solid #33291c;border-left:3px solid var(--acc);border-radius:5px}
+.choice .ch{color:var(--acc);font-size:12px;margin-bottom:6px}
+.cond{display:block;color:#c9b391;font-size:12.5px;margin:2px 0}
+.opt{display:inline-block;background:#232830;border:1px solid var(--line);border-radius:4px;padding:2px 8px;margin:3px 6px 3px 0;font-size:12px;color:#9aa4b2}
+.opt b{color:#e0cba6;font-weight:500}
+details.br{margin:8px 0;border:1px solid #232830;border-left:3px solid #4a5568;border-radius:0 5px 5px 0;background:#171a1f}
+details.br>summary{cursor:pointer;padding:6px 10px;color:#9fb3c8;font-size:12.5px;list-style:none}
+details.br>summary::-webkit-details-marker{display:none}
+details.br>summary:before{content:"▸ ";color:#5b6270}
+details.br[open]>summary:before{content:"▾ "}
+details.br>summary .eff{color:#c9b391;margin-left:8px}
+details.br .body{padding:2px 6px 6px}
+.flagline{margin:6px 0 14px;color:#8fa0b8;font-size:12px}
+.flag{display:inline-block;background:#1e2833;border:1px solid #2b3a49;border-radius:3px;padding:1px 7px;margin:2px 5px 2px 0}
+.hit{padding:9px 11px;border:1px solid var(--line);border-radius:5px;margin-bottom:8px;cursor:pointer}
+.hit:hover{border-color:var(--acc)}
+.hit .h{color:var(--acc);font-size:12px}
+b{color:#f0d9ae;font-weight:600}
+.kvrow{display:grid;grid-template-columns:220px 1fr;gap:14px;padding:5px 0;border-bottom:1px solid #1f2227;font-size:13px}
+.kvrow .k{color:#8b93a1;word-break:break-all}
+.entry{background:#1a1d22;border:1px solid #262b33;border-radius:5px;padding:10px 12px;margin-bottom:10px}
+.entry .et{color:#f0d9ae;font-weight:600;margin-bottom:4px}
+.entry .eb{white-space:pre-wrap;color:#c6ccd4;font-size:13px}
+.entry .ek{color:#3f4650;font-size:11px;margin-top:6px}
+.legend{display:flex;gap:16px;font-size:12px;color:var(--dim);margin:6px 0 12px;flex-wrap:wrap}
+.legend i{display:inline-block;width:3px;height:12px;margin-right:5px;vertical-align:-1px}
+.bar{display:flex;gap:10px;margin:8px 0 2px}
+.bar button{background:#232830;border:1px solid var(--line);color:var(--dim);border-radius:4px;padding:3px 10px;font-size:12px;cursor:pointer}
+.bar button:hover{color:var(--acc);border-color:var(--acc)}
+</style>
+</head>
+<body>
+<div id="app">
+  <aside>
+    <div class="brand">活侠传 · 文本库</div>
+    <div class="search"><input id="q" placeholder="搜台词、人名，可只输入片段"></div>
+    <div class="tabs">
+      <div data-t="home" class="on">主页</div>
+      <div data-t="wk">百科</div>
+      <div data-t="ch">章节</div>
+      <div data-t="pp">人物</div>
+      <div data-t="fac">门派</div>
+      <div data-t="plc">地点</div>
+      <div data-t="kv">词条</div>
+      <div data-t="idx">索引</div>
+      <div data-t="led">台账</div>
+      <div data-t="ev">事件</div>
+      <div data-t="fl">旗标</div>
+    </div>
+    <div id="side"></div>
+  </aside>
+  <main id="main"><div class="meta">载入中…</div></main>
+</div>
+<script>
+const $=s=>document.querySelector(s), esc=s=>(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const api=p=>fetch(p).then(r=>r.json());
+let tab='ch', timer=null;
+
+function sz(n){ n=+n||20; return Math.max(12, Math.min(34, Math.round(n*0.6))); }
+function rich(s){
+  let t=esc(s||'');
+  t=t.replace(/\{size=?(\d+)\}/g,(m,n)=>'<span style="font-size:'+sz(n)+'px">')
+     .replace(/\{\/size\}/g,'</span>')
+     .replace(/\{color=(#[0-9a-fA-F]{3,8})\}/g,'<span style="color:$1">')
+     .replace(/\{\/color\}/g,'</span>')
+     .replace(/\{title\}/g,'<span class="ttl">')
+     .replace(/\{\/title\}/g,'</span>')
+     .replace(/\{punch=[^}]*\}/g,'<span class="punch">')
+     .replace(/\{\/punch\}/g,'</span>')
+     .replace(/\{\$[^}]*\}/g,'');
+  return t;
+}
+function mark(s,q){ let t=esc(s||''); if(!q) return t; const es=esc(q); return t.split(es).join('<b>'+es+'</b>'); }
+function badge(mode){ return {'narrative':'旁白','think':'心声','center':'居中','center2':'居中','character':'对白'}[mode]||'对白'; }
+function cls(mode){ return {'narrative':'narr','think':'think','center':'center center2'}[mode]||''; }
+function effText(list){
+  return (list||[]).map(e=> e.kind==='stat'
+    ? (e.name+' '+(e.value>0?'+':'')+e.value)
+    : (e.name+' = '+e.value)).join('，');
+}
+
+async function boot(){
+  const m=await api('/api/meta');
+  $('#main').innerHTML=`<h1>库概览</h1><div class="meta">
+    ${m.counts.lines} 条台词 · ${m.counts.scenes} 个场景 · ${m.counts.speakers} 位说话人 ·
+    ${m.counts.flags} 次旗标变更 · ${m.counts.choices} 组分支<br>
+    版本 ${m.meta.version} · 构建 ${m.meta.built_at}</div>
+    <div class="legend">
+      <span><i style="background:#c8a06a"></i>对白</span>
+      <span><i style="background:#3a424d"></i>旁白</span>
+      <span><i style="background:#6fa8dc"></i>心声</span>
+      <span><i style="background:#b58cd6"></i>居中</span>
+    </div>
+    <p class="meta">左侧按章节浏览，或搜索一句台词/一个人名。分支默认折叠，点开看该结果下的全部台词。</p>`;
+  loadTab('home');
+}
+
+async function loadTab(t){
+  tab=t;
+  document.querySelectorAll('.tabs div').forEach(d=>d.classList.toggle('on',d.dataset.t===t));
+  if(t==='home'){
+    const d=await api('/api/home');
+    let h=`<h1>活侠传 文本库</h1><div class="meta">
+      ${d.counts.lines} 条台词 · ${d.counts.scenes} 个场景 · ${d.counts.speakers} 位说话人 ·
+      ${d.counts.choices} 组选项 · ${d.counts.battles} 个含对决场景<br>
+      时间跨度：${esc(d.earliest||'?')} 起 ${esc(d.latest||'?')} 止</div>`;
+    h+='<h2>数值与旗标约定</h2><div class="meta" style="line-height:2">'+
+      '一般开关：0 = 无/未发生，1 = 有/已发生<br>'+
+      '对决结果：0 = 战败，1 = 战胜（Battle_Result / Combat_Result）<br>'+
+      '骰子：数字是骰值区间，不是开关，如 <33 / <66 / ≥66<br>'+
+      '性格五档：≤20 / ≤40 / 40~60 / ≥60 / ≥80<br>'+
+      '时间：第N年 + 月 + 上/中/下旬；每旬 3 个行动点</div>';
+    h+='<h2>地点</h2><div class="meta">'+d.places.map(p=>esc(p.place)+' '+p.n).join(' · ')+'</div>';
+    h+='<h2>时间轴</h2>';
+    const tl=await api('/api/timeline');
+    for(const e of tl.timed)
+      h+=`<div class="evrow" data-s="${esc(e.script)}"><div class="t">${esc(e.time_from||e.time_to)} · ${esc(e.title||e.script)}</div>
+        <div class="m">${esc(e.place||'未注明')} · ${e.line_count} 句${e.battles?' · 对决':''}</div></div>`;
+    h+='<h2>无时间信息</h2><div class="meta">按章节顺序排列，共 '+tl.untimed.length+' 个事件</div>';
+    for(const e of tl.untimed.slice(0,200))
+      h+=`<div class="evrow" data-s="${esc(e.script)}"><div class="t">${esc(e.title||e.script)}</div>
+        <div class="m">${esc(e.script)} · ${esc(e.chapter)}${e.place?' · '+esc(e.place):''} · ${e.line_count} 句</div></div>`;
+    h+='<h2>分类</h2><div class="meta">'+[['百科','wk'],['人物','pp'],['门派','fac'],['地点','plc'],['事件','ev'],['词条','kv'],['旗标','fl']].map(x=>`<span class="tag" data-go="${x[1]}" style="cursor:pointer">${x[0]}</span>`).join('')+'</div>';
+    $('#main').innerHTML=h;
+    $('#main').querySelectorAll('.evrow').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+    $('#main').querySelectorAll('.tag[data-go]').forEach(el=>el.onclick=()=>loadTab(el.dataset.go));
+    return;
+  }
+  if(t==='ch'){
+    const d=await api('/api/scenes');
+    const cn={}; d.chapters.forEach(c=>cn[c.chapter]=c.name);
+    let h='';
+    for(const c of d.chapters){
+      h+=`<div class="grp">${esc(c.chapter)}${c.name?' · '+esc(c.name):''} · ${c.n}</div>`;
+      for(const s of d.scenes.filter(x=>x.chapter===c.chapter))
+        h+=`<div class="item" data-s="${esc(s.script)}">${esc(s.script)}<span class="n">${s.line_count}</span></div>`;
+    }
+    $('#side').innerHTML=h;
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+  } else if(t==='wk'){
+    const d=await api('/api/wiki/list');
+    let h='<div class="grp">按类型</div>';
+    for(const r of d.types)
+      h+=`<div class="item" data-wkt="${esc(r.type)}">${esc(r.type)}<span class="n">${r.n}</span></div>`;
+    h+='<div class="grp">提及最多</div>';
+    for(const r of d.rows.slice(0,60))
+      h+=`<div class="item" data-wk="${esc(r.name)}" data-wktype="${esc(r.type)}">${esc(r.name)}<span class="n">${r.mentions}</span></div>`;
+    $('#side').innerHTML=h;
+    $('#side').querySelectorAll('.item[data-wkt]').forEach(el=>el.onclick=()=>wkList(el.dataset.wkt));
+    $('#side').querySelectorAll('.item[data-wk]').forEach(el=>el.onclick=()=>openWiki(el.dataset.wktype, el.dataset.wk));
+  } else if(t==='pp'){
+    const d=await api('/api/characters');
+    $('#side').innerHTML=d.characters.map(c=>
+      `<div class="item" data-c="${esc(c.id||'')}">${esc(c.name)}<span class="n">${c.n}</span></div>`).join('');
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>openChar(el.dataset.c));
+  } else if(t==='fac'){
+    const d=await api('/api/factions');
+    $('#side').innerHTML=d.factions.map(f=>`<div class="item" data-fac="${esc(f.name)}">${esc(f.name)}<span class="n">${f.n}</span></div>`).join('');
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>openFaction(el.dataset.fac));
+  } else if(t==='plc'){
+    const d=await api('/api/events');
+    let h='';
+    for(const r of d.roots){
+      h+=`<div class="grp">${esc(r.root)} · ${r.n}</div>`;
+      for(const p of d.places.filter(x=>x.place===r.root||x.place.startsWith(r.root+'-')))
+        h+=`<div class="item" data-plc="${esc(p.place)}">${esc(p.place)}<span class="n">${p.n}</span></div>`;
+    }
+    $('#side').innerHTML=h;
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>openPlace(el.dataset.plc));
+  } else if(t==='ev'){
+    const d=await api('/api/events');
+    const TIERS={'性情':['慞弱','谨慎','中庸','勇敢','莽夫'],
+                 '处世':['矫情','知礼','中庸','豪爽','粗鲁'],
+                 '道德':['恶棍','坏人','中庸','好人','侠客'],
+                 '修养':['疯狂','暴躁','中庸','沉着','君子']};
+    let h='<div class="grp">筛选</div>';
+    h+='<div class="item" data-ev="clear">清空筛选</div>';
+    h+='<div class="item" data-ev="battle">含对决</div>';
+    for(const [attr,ts] of Object.entries(TIERS)){
+      h+=`<div class="grp">${attr}</div><div style="padding:2px 6px">`;
+      for(const t of ts) h+=`<span class="chip" data-tier="${attr}:${t}">${t}</span>`;
+      h+='</div>';
+    }
+    h+='<div class="grp">地点</div>';
+    for(const p of d.places)
+      h+=`<div class="item" data-ev="place:${esc(p.place)}">${esc(p.place)}<span class="n">${p.n}</span></div>`;
+    $('#side').innerHTML=h;
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>evList(el.dataset.ev));
+    $('#side').querySelectorAll('.chip').forEach(el=>el.onclick=()=>{
+      const tk=el.dataset.tier;
+      if(evSel.has(tk)){evSel.delete(tk);el.classList.remove('on');}
+      else {evSel.add(tk);el.classList.add('on');}
+      evList('');
+    });
+    evList('');
+  } else if(t==='fl'){
+    const d=await api('/api/flaglist');
+    $('#side').innerHTML=d.flags.map(f=>
+      `<div class="item" data-f="${esc(f.flag)}">${f.label?esc(f.label):esc(f.flag)}<span class="n">${f.n}</span></div>`).join('');
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>openFlag(el.dataset.f));
+  } else if(t==='idx'){
+    const d=await api('/api/terms');
+    $('#side').innerHTML=d.rows.map(r=>`<div class="item" data-ty="${esc(r.type)}">${esc(r.type)}<span class="n">${r.n}</span></div>`).join('');
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>loadTerms(el.dataset.ty));
+  } else if(t==='led'){
+    const d=await api('/api/ledger');
+    $('#side').innerHTML=d.chapters.map(c=>`<div class="item" data-ch="${esc(c.chapter)}">${esc(c.chapter)}<span class="n">${c.n}</span></div>`).join('');
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>openLedger(el.dataset.ch));
+  } else {
+    $('#side').innerHTML=d.groups.map(g=>`<div class="item" data-grp="${esc(g.group)}">${esc(g.group)}<span class="n">${g.count}</span></div>`).join('');
+    $('#side').querySelectorAll('.item').forEach(el=>el.onclick=()=>openCategory(el.dataset.grp));
+  }
+}
+
+function lineHtml(l, cs, fl){
+  let extra='';
+  const c=cs[l.seq];
+  if(c){
+    let req='';
+    if(c.title) req+=`<span class="cond">判定：${esc(c.title)}</span>`;
+    if(c.requires&&c.requires.length) req+=c.requires.map(r=>`<span class="cond">出现条件：${esc(r)}</span>`).join('');
+    if(c.cond_text&&c.cond_text.length) req+=c.cond_text.map(r=>`<span class="cond">属性检定：${esc(r)}</span>`).join('');
+    const opts=(c.options||[]).map(o=>{
+      const name=o.text||o.label||o.key||'';
+      return `<span class="opt"><b>${esc(name)}</b>${o.cond?' → 掷骰 '+esc(o.cond):''}</span>`;
+    }).join('');
+    extra+=`<div class="choice"><div class="ch">◆ ${esc(c.checkpoint)}</div>${req}<div style="margin-top:6px">${opts||'<span class="cond">（此判定无预设选项文案）</span>'}</div></div>`;
+  }
+  if(fl[l.seq]) extra+=`<div class="flagline">⤷ 旗标 ${fl[l.seq].map(f=>`<span class="flag">${esc(f.flag)} = ${esc(f.value)}</span>`).join('')}</div>`;
+  return `<div class="line ${cls(l.mode)}" data-seq="${l.seq}">
+      <div class="sp">${esc(l.speaker)}<span>${badge(l.mode)}</span></div>
+      <div class="tx">${rich(l.text)||'<i style="color:#5b616b">（缺文本）</i>'}<span class="key">${esc(l.key)}</span></div>
+    </div>`+extra;
+}
+
+function shortBr(b){ const a=(b||'').split(' > '); return a.length>2 ? '… › '+a.slice(-2).join(' › ') : b; }
+let evSel=new Set(), evBattle=false, evPlace='', evChapter='';
+async function evList(key){
+  if(key==='battle'){ evBattle=!evBattle; }
+  else if(key==='clear'){ evSel=new Set(); evBattle=false; evPlace=''; evChapter=''; document.querySelectorAll('#side .chip').forEach(x=>x.classList.remove('on')); }
+  else if(key&&key.startsWith('chapter:')){ const p=key.slice(8); evChapter=(evChapter===p?'':p); }
+  else if(key&&key.startsWith('place:')){ const p=key.slice(6); evPlace=(evPlace===p?'':p); }
+  else if(key&&key.startsWith('trait:')){ evSel=new Set([key.slice(6)]); }
+  let url='/api/events?x=1';
+  if(evBattle) url+='&battle=1';
+  if(evPlace) url+='&place='+encodeURIComponent(evPlace);
+  if(evChapter) url+='&chapter='+encodeURIComponent(evChapter);
+  if(evSel.size) url+='&tier='+encodeURIComponent([...evSel].join(','));
+  const d=await api(url);
+  let h=`<h1>事件</h1><div class="meta">${d.scenes.length} 个场景`+
+    (evBattle?'｜含对决':'')+(evPlace?'｜'+esc(evPlace):'')+(evChapter?'｜'+esc(evChapter):'')+
+    (evSel.size?'｜'+[...evSel].map(esc).join(' + '):'')+`</div>`;
+  for(const s of d.scenes){
+    h+=`<div class="evrow" data-s="${esc(s.script)}">
+      <div class="t">${esc(s.title||s.script)}${s.battles?'<span class="badge">对决 '+s.battles+'</span>':''}</div>
+      <div class="m">${esc(s.script)} · ${esc(s.chapter)}${s.place?' · '+esc(s.place):''} · ${s.line_count} 句${s.time_from||s.time_to?' · '+esc(s.time_from||'')+'~'+esc(s.time_to||''):''}</div></div>`;
+  }
+  $('#main').innerHTML=h; $('#main').scrollTop=0;
+  $('#main').querySelectorAll('.evrow').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+}
+
+async function openFaction(name){
+  const d=await api('/api/faction?name='+encodeURIComponent(name));
+  if(d.error){ $('#main').innerHTML='<div class="meta">未找到</div>'; return; }
+  let h=`<h1>${esc(d.faction.name)}</h1><div class="meta">${esc(d.faction.kind||'')} · ${d.members.length} 位成员</div>`;
+  if(d.faction.desc) h+=`<p class="meta">${esc(d.faction.desc)}</p>`;
+  if(d.members.length) h+='<h2>成员</h2><div class="meta">'+d.members.map(m=>`<span class="tag" data-c="${esc(m.id||'')}" style="cursor:pointer">${esc(m.nm||m.id)} ${m.lines||0}</span>`).join('')+'</div>';
+  if(d.places.length) h+='<h2>活动地点</h2><div class="meta">'+d.places.map(p=>esc(p.place)+' '+p.n).join(' · ')+'</div>';
+  h+='<h2>相关事件</h2>';
+  for(const e of d.events) h+=`<div class="evrow" data-s="${esc(e.script)}"><div class="t">${esc(e.title||e.script)}</div><div class="m">${esc(e.place||'')} · ${e.n} 句</div></div>`;
+  $('#main').innerHTML=h;
+  $('#main').querySelectorAll('.tag[data-c]').forEach(el=>el.onclick=()=>openChar(el.dataset.c));
+  $('#main').querySelectorAll('.evrow').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+}
+
+async function openPlace(name){
+  const d=await api('/api/place?name='+encodeURIComponent(name));
+  let h=`<h1>${esc(d.name)}</h1><div class="meta">${d.subs.length} 个子地点 · ${d.characters.length} 位常客</div>`;
+  if(d.desc) h+=`<p class="meta">${esc(d.desc)}</p>`;
+  if(d.subs.length) h+='<h2>子地点</h2><div class="meta">'+d.subs.map(p=>`<span class="tag" data-plc="${esc(p.place)}" style="cursor:pointer">${esc(p.place)} ${p.n}</span>`).join('')+'</div>';
+  if(d.characters.length) h+='<h2>常客</h2><div class="meta">'+d.characters.map(p=>`<span class="tag">${esc(p.nm)} ${p.n}</span>`).join('')+'</div>';
+  h+='<h2>事件</h2>';
+  for(const e of d.events) h+=`<div class="evrow" data-s="${esc(e.script)}"><div class="t">${esc(e.title||e.script)}</div><div class="m">${e.line_count} 句${e.time_from||e.time_to?' · '+esc(e.time_from||'')+'~'+esc(e.time_to||''):''}</div></div>`;
+  $('#main').innerHTML=h;
+  $('#main').querySelectorAll('.tag[data-plc]').forEach(el=>el.onclick=()=>openPlace(el.dataset.plc));
+  $('#main').querySelectorAll('.tag[data-c]').forEach(el=>el.onclick=()=>openChar(el.dataset.c));
+  $('#main').querySelectorAll('.evrow').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+}
+
+async function openScene(sid, jump){
+  const d=await api('/api/scene?script='+encodeURIComponent(sid));
+  if(!d.scene) return;
+  const cs={}, fl={};
+  d.choices.forEach(c=>cs[c.seq]=c);
+  d.flags.forEach(f=>{(fl[f.seq]=fl[f.seq]||[]).push(f);});
+  const brs=d.branches||{};
+  let h=`<h1>${esc(d.scene.title||d.scene.script)}</h1><div class="meta">
+    <span class="tag">${esc(d.scene.script)}</span><span class="tag">${esc(d.scene.chapter)}</span>${d.scene.line_count} 句 · ${d.scene.cjk} 字</div>`;
+  if(d.scene.time_from||d.scene.time_to)
+    h+=`<div class="meta">时间：${esc(d.scene.time_from||'')}${d.scene.time_to?' ~ '+esc(d.scene.time_to):''}</div>`;
+  if(d.participants&&d.participants.length)
+    h+='<div class="meta">参与：'+d.participants.map(p=>`<span class="tag" data-c="${esc(p.id||'')}" style="cursor:pointer">${esc(p.nm)} ${p.n}</span>`).join('')+'</div>';
+  if(d.prereq&&d.prereq.length)
+    h+='<div class="meta">前置：'+d.prereq.slice(0,8).map(x=>`<span class="cond">${esc(x)}</span>`).join('')+'</div>';
+  h+=`<div class="bar"><button id="exp">展开全部分支</button><button id="col">全部折叠</button></div>`;
+  let i=0, out='';
+  while(i<d.lines.length){
+    const b=d.lines[i].branch||'';
+    let j=i; while(j<d.lines.length && (d.lines[j].branch||'')===b) j++;
+    const body=d.lines.slice(i,j).map(l=>lineHtml(l,cs,fl)).join('');
+    if(b){
+      const e=effText(brs[b]);
+      out+=`<details class="br"><summary title="${esc(b)}">${esc(shortBr(b))}${e?'<span class="eff">｜'+esc(e)+'</span>':''}</summary><div class="body">${body}</div></details>`;
+    } else out+=body;
+    i=j;
+  }
+  $('#main').innerHTML=h+out;
+  $('#main').scrollTop=0;
+  if(jump){
+    const el=$('#main').querySelector('.line[data-seq="'+jump+'"]');
+    if(el){
+      let p=el.parentElement;
+      while(p&&p!==$('#main')){ if(p.tagName==='DETAILS') p.open=true; p=p.parentElement; }
+      el.scrollIntoView({block:'center'});
+      el.style.background='#3a2f1d';
+    }
+  }
+  $('#exp').onclick=()=>document.querySelectorAll('details.br').forEach(x=>x.open=true);
+  $('#col').onclick=()=>document.querySelectorAll('details.br').forEach(x=>x.open=false);
+}
+
+async function openChar(cid){
+  const d=await api('/api/entity?id='+encodeURIComponent(cid||''));
+  if(d&&d.name){ return openWiki('人物', d.name, cid); }
+  $('#main').innerHTML='<div class="meta">未找到该人物</div>';
+}
+
+
+async function wkList(type){
+  const d=await api('/api/wiki/list?type='+encodeURIComponent(type));
+  let h=`<div class="item" data-back="1">← 返回类型</div><div class="grp">${esc(type)} · ${d.rows.length}</div>`;
+  for(const r of d.rows)
+    h+=`<div class="item" data-wk="${esc(r.name)}" data-wktype="${esc(r.type)}">${esc(r.name)}<span class="n">${r.mentions}</span></div>`;
+  $('#side').innerHTML=h;
+  $('#side').querySelector('.item[data-back]').onclick=()=>loadTab('wk');
+  $('#side').querySelectorAll('.item[data-wk]').forEach(el=>el.onclick=()=>openWiki(el.dataset.wktype, el.dataset.wk));
+}
+
+async function openWiki(type, name, charId){
+  const d=await api('/api/wiki?type='+encodeURIComponent(type||'')+'&name='+encodeURIComponent(name||''));
+  if(d.error){ $('#main').innerHTML='<div class="meta">未找到该条目</div>'; return; }
+  const e=d.entity;
+  let chs=[];
+  try{ chs=JSON.parse(e.chapters||'[]'); }catch(_){}
+  let al=[], tg=[];
+  try{ al=JSON.parse(e.aliases||'[]'); }catch(_){}
+  try{ tg=JSON.parse(e.tags||'[]'); }catch(_){}
+  let h=`<h1>${esc(e.name)}</h1><div class="meta">
+    <span class="tag">${esc(e.type)}</span>${e.mentions} 条原文笔记 · 见于 ${chs.length} 处章节</div>`;
+  const cid=charId||d.char_id||'';
+  if(e.type==='人物'&&cid)
+    h+=`<img src="/api/media/portrait?id=${encodeURIComponent(cid)}" style="max-width:220px;border-radius:6px;border:1px solid #262b33;margin:6px 0" onerror="this.style.display='none'">`;
+  if(al.length) h+=`<div class="meta">别称：${al.map(a=>`<span class="tag">${esc(a)}</span>`).join('')}</div>`;
+  if(tg.length) h+=`<div class="meta">标签：${tg.map(a=>`<span class="tag">${esc(a)}</span>`).join('')}</div>`;
+  h+=`<div class="entry"><div class="eb">${esc(e.intro)}</div></div>`;
+  if(d.members&&d.members.length){
+    h+='<h2>成员</h2><div class="meta">'+d.members.map(m=>`<span class="tag" data-wk="${esc(m.name)}" data-wktype="人物" style="cursor:pointer">${esc(m.name)} ${m.mentions}</span>`).join('')+'</div>';
+  }
+  if(d.relations&&d.relations.length){
+    h+='<h2>关系</h2>';
+    for(const r of d.relations)
+      h+=`<div class="kvrow"><div class="k"><span data-wk="${esc(r.other)}" style="cursor:pointer;color:#c8a06a">${esc(r.other)}</span></div>
+        <div>${esc(r.note)}<span class="key">${esc(r.chapter)}</span></div></div>`;
+  }
+  if(d.scenes&&d.scenes.length){
+    h+='<h2>相关场景</h2>';
+    for(const s of d.scenes.slice(0,12))
+      h+=`<div class="evrow" data-s="${esc(s.script)}"><div class="t">${esc(s.title||s.script)}</div>
+        <div class="m">${esc(s.chapter||'')}${s.place?' · '+esc(s.place):''} · ${s.n} 句</div></div>`;
+  }
+  if(d.mentions&&d.mentions.length){
+    h+='<h2>原文脉络</h2>';
+    const mk=m=>`<div class="entry"><div class="ek">${esc(m.chapter)}</div><div class="eb">${esc(m.note)}</div>`+
+      (m.evidence?`<div class="ek">原文：「${esc(m.evidence)}」</div>`:'')+'</div>';
+    h+=d.mentions.slice(0,12).map(mk).join('');
+    if(d.mentions.length>12)
+      h+=`<details class="br"><summary>其余 ${d.mentions.length-12} 条</summary><div class="body">`+
+         d.mentions.slice(12).map(mk).join('')+'</div></details>';
+  }
+  $('#main').innerHTML=h; $('#main').scrollTop=0;
+  $('#main').querySelectorAll('.evrow').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+  $('#main').querySelectorAll('[data-wk]').forEach(el=>el.onclick=()=>openWiki('', el.dataset.wk));
+}
+
+async function loadTerms(t){
+  const d=await api('/api/terms?type='+encodeURIComponent(t));
+  let h=`<h1>${esc(t)}索引</h1><div class="meta">${d.rows.length} 个名词</div>`;
+  for(const r of d.rows)
+    h+=`<div class="evrow" data-term="${esc(r.name)}" data-ty="${esc(t)}"><div class="t">${esc(r.name)}</div><div class="m">出现 ${r.n} 次</div></div>`;
+  $('#main').innerHTML=h;
+  $('#main').querySelectorAll('.evrow').forEach(el=>el.onclick=()=>openTerm(el.dataset.ty, el.dataset.term));
+}
+
+async function openTerm(t,name){
+  const d=await api('/api/term?type='+encodeURIComponent(t)+'&name='+encodeURIComponent(name));
+  let h=`<h1>${esc(name)}</h1><div class="meta">${esc(t)} · ${d.rows.length} 处提及</div>`;
+  for(const r of d.rows)
+    h+=`<div class="line" data-s="${esc(r.script)}"><div class="sp">${esc(r.speaker)}<span>${esc(r.script)}</span></div><div class="tx">${rich(r.text)}</div></div>`;
+  $('#main').innerHTML=h;
+  $('#main').querySelectorAll('.line[data-s]').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+}
+
+async function openLedger(ch){
+  const d=await api('/api/ledger'+(ch?'?chapter='+encodeURIComponent(ch):''));
+  let h=`<h1>${esc(ch||'全部')} · 通读台账</h1><div class="meta">${d.rows.length} 条 · 点名称看百科条目</div>`;
+  let last='';
+  for(const r of d.rows){
+    if(r.type!==last){ last=r.type; h+=`<div class="grp">${esc(r.type)}</div>`; }
+    h+=`<div class="entry"><div class="et"><span data-wk="${esc(r.name)}" data-wktype="${esc(r.type)}" style="cursor:pointer">${esc(r.name)}</span></div><div class="eb">${esc(r.note)}</div><div class="ek">${esc(r.evidence)}</div></div>`;
+  }
+  $('#main').innerHTML=h; $('#main').scrollTop=0;
+  $('#main').querySelectorAll('[data-wk]').forEach(el=>el.onclick=()=>openWiki(el.dataset.wktype, el.dataset.wk));
+}
+
+async function openCategory(grp){
+  const c=await api('/api/categories');
+  const g=c.groups.find(x=>x.group===grp);
+  if(!g){ return; }
+  let all=[];
+  for(const ns of g.ns){
+    const d=await api('/api/kv?ns='+encodeURIComponent(ns));
+    (d.entries||[]).forEach(e=>all.push({...e,ns}));
+  }
+  let h=`<h1>${esc(grp)}</h1><div class="meta">${all.length} 条目</div>`;
+  for(const e of all)
+    h+=`<div class="entry"><div class="et">${esc(e.title)}</div><div class="eb">${rich(e.body)}</div><div class="ek">${esc(e.eid)} · ${esc(e.ns)}</div></div>`;
+  $('#main').innerHTML=h; $('#main').scrollTop=0;
+}
+
+async function openKV(ns){
+  const d=await api('/api/kv?ns='+encodeURIComponent(ns));
+  const ents=d.entries||[], items=d.items||[];
+  let h=`<h1>${esc(d.ns)}</h1><div class="meta">${ents.length} 条目 · ${items.length} 字段</div>`;
+  for(const e of ents){
+    h+=`<div class="entry"><div class="et">${esc(e.title)}</div><div class="eb">${rich(e.body)}</div><div class="ek">${esc(e.eid)}</div></div>`;
+  }
+  if(items.length){
+    h+='<h2>其余字段</h2>';
+    for(const it of items) h+=`<div class="kvrow"><div class="k">${esc(it.key)}</div><div>${rich(it.value)}</div></div>`;
+  }
+  $('#main').innerHTML=h; $('#main').scrollTop=0;
+}
+
+async function openFlag(f){
+  const d=await api('/api/flag?f='+encodeURIComponent(f));
+  let h=`<h1>${d.label?esc(d.label):'旗标 '+esc(f)} <span style="color:#5b6270;font-size:12px">${esc(f)}</span></h1><div class="meta">${d.rows.length} 处改动</div>`;
+  for(const r of d.rows){
+    h+=`<div class="hit" data-s="${esc(r.script)}"><div class="h">${esc(r.chapter||'')} · ${esc(r.script)} #${r.seq} → 值 ${esc(r.value)}</div>
+      <div>${esc(r.text||'（此处分歧无台词）')}</div></div>`;
+  }
+  $('#main').innerHTML=h; $('#main').scrollTop=0;
+  $('#main').querySelectorAll('.hit').forEach(el=>el.onclick=()=>openScene(el.dataset.s));
+}
+
+async function doSearch(text){
+  text=text.trim(); if(!text) return;
+  const d=await api('/api/search?q='+encodeURIComponent(text));
+  let h=`<h1>搜索「${esc(text)}」</h1>`;
+  if(d.titles.length||d.characters.length){
+    h+='<div class="meta">人物：'+(d.titles.map(t=>`<span class="tag" data-c="${esc(t.id)}" style="cursor:pointer">${esc(t.name)}</span>`).join(''))+
+       d.characters.filter(c=>!d.titles.some(t=>t.name===c.speaker)).map(c=>`<span class="tag" data-c="${esc(c.speaker_id||'')}" style="cursor:pointer">${esc(c.speaker)}</span>`).join('')+'</div>';
+  }
+  if(d.ledger&&d.ledger.length){
+    h+='<h2>通读台账</h2>';
+    for(const r of d.ledger) h+=`<div class="entry"><div class="et"><span data-wk="${esc(r.name)}" data-wktype="${esc(r.type)}" style="cursor:pointer">${esc(r.name)}</span></div><div class="eb">${esc(r.note)}</div><div class="ek">${esc(r.chapter)} · ${esc(r.type)}</div></div>`;
+  }
+  if(d.factions&&d.factions.length) h+='<h2>门派</h2><div class="meta">'+d.factions.map(f=>`<span class="tag" data-fac="${esc(f.name)}" style="cursor:pointer">${esc(f.name)}</span>`).join('')+'</div>';
+  if(d.places&&d.places.length) h+='<h2>地点</h2><div class="meta">'+d.places.map(p=>`<span class="tag" data-plc="${esc(p.place)}" style="cursor:pointer">${esc(p.place)}</span>`).join('')+'</div>';
+  h+=`<div class="meta">${d.hits.length} 条台词</div>`;
+  if(d.scene_titles&&d.scene_titles.length){
+    h+='<h2>场景</h2>'+d.scene_titles.map(t=>`<div class="hit" data-s="${esc(t.script)}">
+      <div class="h">${esc(t.chapter)}${t.chapter_name?' · '+esc(t.chapter_name):''} · ${t.line_count} 句</div>
+      <div>${esc(t.script)}</div></div>`).join('');
+  }
+  if(d.event_titles&&d.event_titles.length){
+    h+='<h2>事件名</h2><div class="meta">'+d.event_titles.map(t=>`<span class="tag">${esc(t.title)}</span>`).join('')+'</div>';
+  }
+  h+=d.hits.map(x=>`<div class="hit" data-s="${esc(x.script)}" data-q="${x.seq}">
+      <div class="h">${esc(x.speaker)} · ${esc(x.script)} #${x.seq}</div>
+      <div>${mark(x.text,text)}</div></div>`).join('');
+  $('#main').innerHTML=h; $('#main').scrollTop=0;
+  $('#main').querySelectorAll('.hit').forEach(el=>el.onclick=()=>openScene(el.dataset.s, +el.dataset.q));
+  $('#main').querySelectorAll('.tag[data-c]').forEach(el=>el.onclick=()=>openChar(el.dataset.c));
+  $('#main').querySelectorAll('.tag[data-fac]').forEach(el=>el.onclick=()=>openFaction(el.dataset.fac));
+  $('#main').querySelectorAll('.tag[data-plc]').forEach(el=>el.onclick=()=>openPlace(el.dataset.plc));
+}
+
+$('#q').addEventListener('input',e=>{ clearTimeout(timer); timer=setTimeout(()=>{ if(e.target.value.trim().length>=1) doSearch(e.target.value); },220); });
+document.addEventListener('click',e=>{
+  const w=e.target.closest('[data-wk]');
+  if(w){ openWiki(w.dataset.wktype||'', w.dataset.wk); }
+});
+document.querySelectorAll('.tabs div').forEach(d=>d.onclick=()=>loadTab(d.dataset.t));
+document.addEventListener('keydown',e=>{ if(e.key==='/'&&document.activeElement!==$('#q')){ e.preventDefault(); $('#q').focus(); }});
+boot();
+</script>
+</body>
+</html>

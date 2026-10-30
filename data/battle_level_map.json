@@ -1,0 +1,2572 @@
+{
+"S0003_02_06_01|401": {
+"cls": "CombatLevel",
+"desc": "阎关三煞 高智能路线分歧",
+"id": "CL_1001_2"
+},
+"S0003_02_06_02|243": {
+"cls": "CombatLevel",
+"desc": "阎关三煞 抓包",
+"id": "CL_1001_3"
+},
+"S0003_02_06_02|85": {
+"cls": "CombatLevel",
+"desc": "阎关三煞 抓包",
+"id": "CL_1001_3"
+},
+"S0003_02_07|423": {
+"cls": "CombatLevel",
+"desc": "阎关三煞 一般路线",
+"id": "CL_1001_1"
+},
+"S0003_02_07|486": {
+"cls": "CombatLevel",
+"desc": "阎关三煞 一般路线",
+"id": "CL_1001_1"
+},
+"S0012_01_01|341": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_S0012_01"
+},
+"S0014_01_01|287": {
+"cls": "CombatLevel",
+"desc": "稻草人 被峨嵋弟子偷袭",
+"id": "CL_S0014_01"
+},
+"S0014_01_02|146": {
+"cls": "CombatLevel",
+"desc": "稻草人 被峨嵋弟子追杀",
+"id": "CL_S0014_02"
+},
+"S0014_01_05_break_start_01|131": {
+"cls": "CombatLevel",
+"desc": "稻草人 被小兰指导后",
+"id": "CL_S0014_03"
+},
+"S0017_01|811": {
+"cls": "CombatLevel",
+"desc": "惜花令 师姐过招",
+"id": "CL_S0017_01"
+},
+"S0017_02|1122": {
+"cls": "CombatLevel",
+"desc": "惜花令 帮助小道长",
+"id": "CL_S0017_02"
+},
+"S0017_02|1215": {
+"cls": "CombatLevel",
+"desc": "惜花令 巴结南宫世家",
+"id": "CL_S0017_03"
+},
+"S0017_02|1818": {
+"cls": "CombatLevel",
+"desc": "惜花令 帮助公子",
+"id": "CL_S0017_04"
+},
+"S0017_02|2576": {
+"cls": "CombatLevel",
+"desc": "惜花令 帮助小道长",
+"id": "CL_S0017_02"
+},
+"S0018_02_01|1154": {
+"cls": "CombatLevel",
+"desc": "藏宝图 选择上楼后",
+"id": "CL_S0018_01"
+},
+"S0018_02_01|771": {
+"cls": "CombatLevel",
+"desc": "藏宝图 选择上楼后",
+"id": "CL_S0018_01"
+},
+"S0018_03|2118": {
+"cls": "CombatLevel",
+"desc": "藏宝图 帮助叶云裳",
+"id": "CL_S0018_02"
+},
+"S0018_04|1524": {
+"cls": "CombatLevel",
+"desc": "藏宝图 帮助叶云裳",
+"id": "CL_S0018_02"
+},
+"S0020_02_03|359": {
+"cls": "CombatLevel",
+"desc": "龙之觉醒 龙湘",
+"id": "CL_S0020_01"
+},
+"S0020_02_03|746": {
+"cls": "CombatLevel",
+"desc": "龙之觉醒 龙湘",
+"id": "CL_S0020_01"
+},
+"S0021_01|1917": {
+"cls": "CombatLevel",
+"desc": "龙之团聚 黑衣人",
+"id": "CL_S0021_01"
+},
+"S0021_01|2023": {
+"cls": "CombatLevel",
+"desc": "龙之团聚 龙湘",
+"id": "CL_S0021_02"
+},
+"S0021_02_01|152": {
+"cls": "CombatLevel",
+"desc": "龙之团聚 全力龙渊",
+"id": "CL_S0021_03_01"
+},
+"S0021_02_01|161": {
+"cls": "CombatLevel",
+"desc": "龙之团聚 全力龙渊",
+"id": "CL_S0021_03_02"
+},
+"S0022_01|1392": {
+"cls": "CombatLevel",
+"desc": "龙之挑战 龙湘",
+"id": "CL_S0022_01"
+},
+"S0023_01_02|409": {
+"cls": "CombatLevel",
+"desc": "龙之反省 乞丐",
+"id": "CL_S0023_01"
+},
+"S0024_01_01|1363": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_S0024_01"
+},
+"S0024_01_01|1382": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_S0024_02"
+},
+"S0024_01_01|1391": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_S0024_01"
+},
+"S0026_01_01|939": {
+"cls": "CombatLevel",
+"desc": "上街偶遇 许大鲸",
+"id": "CL_S0026_03"
+},
+"S0026_01|1147": {
+"cls": "CombatLevel",
+"desc": "上街偶遇 许大鲸",
+"id": "CL_S0026_02"
+},
+"S0026_01|729": {
+"cls": "CombatLevel",
+"desc": "上街偶遇 福韫",
+"id": "CL_S0026_01"
+},
+"S0028_02_01|191": {
+"cls": "CombatLevel",
+"desc": "叶云舟从江陵回唐门 狼1",
+"id": "CL_1330_02"
+},
+"S0028_02_break_start_01|1418": {
+"cls": "CombatLevel",
+"desc": "叶云舟从江陵回唐门 叶云舟",
+"id": "CL_1330_01"
+},
+"S0100_01|560": {
+"cls": "CombatLevel",
+"desc": "风声 与女弟子吵架",
+"id": "CL_S0100_01"
+},
+"S0105_01_01|240": {
+"cls": "CombatLevel",
+"desc": "假赵活审判 揍晁和后",
+"id": "CL_S0105_02"
+},
+"S0105_01|1534": {
+"cls": "CombatLevel",
+"desc": "假赵活审判 揍晁和",
+"id": "CL_S0105_01"
+},
+"S0105_01|2158": {
+"cls": "CombatLevel",
+"desc": "假赵活审判 揍晁和",
+"id": "CL_S0105_01"
+},
+"S0106_01|1257": {
+"cls": "CombatLevel",
+"desc": "假赵活干娘 与师弟对练",
+"id": "CL_S0106_01"
+},
+"S0106_01|1585": {
+"cls": "CombatLevel",
+"desc": "假赵活干娘 与师弟对练",
+"id": "CL_S0106_01"
+},
+"S0106_01|1688": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_S0106_02"
+},
+"S0121_01|380": {
+"cls": "CombatLevel",
+"desc": "唐娇娇加入唐门 狄傲",
+"id": "CL_S0121_01"
+},
+"S0202_02_01|969": {
+"cls": "CombatLevel",
+"desc": "叶云裳下山 上官萤",
+"id": "CL_S0202_02_01"
+},
+"S0204_01_03|824": {
+"cls": "CombatLevel",
+"desc": "叶家兄妹的去留 叶云舟",
+"id": "CL_S0204_01_03"
+},
+"S0208_02_01|640": {
+"cls": "CombatLevel",
+"desc": "无相祖师 铁冠道人",
+"id": "CL_S0208_02_02"
+},
+"S0208_02|552": {
+"cls": "CombatLevel",
+"desc": "无相祖师 段智秀",
+"id": "CL_S0208_02_01"
+},
+"S0208_05_01|1120": {
+"cls": "CombatLevel",
+"desc": "诀别时 邹博",
+"id": "CL_S0208_05_01"
+},
+"S0208_05_02|120": {
+"cls": "CombatLevel",
+"desc": "诀别时 南宫远",
+"id": "CL_S0208_05_02"
+},
+"S0208_05_03|89": {
+"cls": "CombatLevel",
+"desc": "诀别时 段智秀",
+"id": "CL_S0208_05_03"
+},
+"S0208_05_04|129": {
+"cls": "CombatLevel",
+"desc": "诀别时 点苍双尊",
+"id": "CL_S0208_05_04"
+},
+"S0209_01_01|541": {
+"cls": "CombatLevel",
+"desc": "云裳之死 邹博",
+"id": "CL_S0209_01_01"
+},
+"S0209_01_02|23": {
+"cls": "CombatLevel",
+"desc": "诀别时 南宫远",
+"id": "CL_S0209_01_02"
+},
+"S0209_01_03|23": {
+"cls": "CombatLevel",
+"desc": "诀别时 段智秀",
+"id": "CL_S0209_01_03"
+},
+"S0209_01_04|31": {
+"cls": "CombatLevel",
+"desc": "诀别时 点苍双尊",
+"id": "CL_S0209_01_04"
+},
+"S0210_01|940": {
+"cls": "BattleLevel",
+"desc": "唐门",
+"id": "BL_S0210_01"
+},
+"S0301_01|422": {
+"cls": "CombatLevel",
+"desc": "黑衣人VS黑衣人 南宫浅切磋",
+"id": "CL_S0301_01"
+},
+"S0301_02|2610": {
+"cls": "CombatLevel",
+"desc": "黑衣人VS黑衣人 毛二壮开扁",
+"id": "CL_S0301_02"
+},
+"S0302_01|714": {
+"cls": "CombatLevel",
+"desc": "飞侠千里行 与大师兄切磋",
+"id": "CL_S0302_01"
+},
+"S0305_01|1559": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_S0305_01"
+},
+"S0305_02_04|729": {
+"cls": "CombatLevel",
+"desc": "小竹在江陵 虎战车",
+"id": "CL_S0305_02_04"
+},
+"S0603_02|2493": {
+"cls": "CombatLevel",
+"desc": "武林大会邀请叶云舟 惹怒叶云裳",
+"id": "CL_S0603_01"
+},
+"S0604_01|344": {
+"cls": "CombatLevel",
+"desc": "武林大会邀请小兰 选择袭击",
+"id": "CL_S0604_01"
+},
+"S0701_02|586": {
+"cls": "CombatLevel",
+"desc": "小师妹归来 决斗",
+"id": "CL_S0701_01"
+},
+"S0702_01|2101": {
+"cls": "CombatLevel",
+"desc": "瑞笙来访 围殴瑞笙",
+"id": "CL_S0702_01"
+},
+"S0802_02_break_start_01|106": {
+"cls": "CombatLevel",
+"desc": "决战前后山 小师妹1",
+"id": "CL_S0802_02_01_01"
+},
+"S0802_02_break_start_01|126": {
+"cls": "CombatLevel",
+"desc": "决战前后山 小师妹2",
+"id": "CL_S0802_02_01_02"
+},
+"S0802_02_break_start_01|167": {
+"cls": "CombatLevel",
+"desc": "决战前后山 大师兄",
+"id": "CL_S0802_02_02"
+},
+"S0802_02_break_start_01|225": {
+"cls": "CombatLevel",
+"desc": "决战前后山 龙湘1",
+"id": "CL_S0802_02_03_01"
+},
+"S0802_02_break_start_01|249": {
+"cls": "CombatLevel",
+"desc": "决战前后山 龙湘2",
+"id": "CL_S0802_02_03_02"
+},
+"S0802_02_break_start_01|256": {
+"cls": "CombatLevel",
+"desc": "决战前后山 龙湘3",
+"id": "CL_S0802_02_03_03"
+},
+"S0802_02_break_start_01|299": {
+"cls": "CombatLevel",
+"desc": "决战前后山 小兰",
+"id": "CL_S0802_02_04"
+},
+"S0802_02_break_start_01|338": {
+"cls": "CombatLevel",
+"desc": "决战前后山 叶云舟",
+"id": "CL_S0802_02_05"
+},
+"S0802_02_break_start_01|388": {
+"cls": "CombatLevel",
+"desc": "决战前后山 南溪",
+"id": "CL_S0802_02_06"
+},
+"S0802_02_break_start_01|427": {
+"cls": "CombatLevel",
+"desc": "决战前后山 邹博",
+"id": "CL_S0802_02_07"
+},
+"S0802_02_break_start_01|488": {
+"cls": "CombatLevel",
+"desc": "决战前后山 解无尘",
+"id": "CL_S0802_02_08"
+},
+"S0802_02_break_start_01|527": {
+"cls": "CombatLevel",
+"desc": "决战前后山 向无忧",
+"id": "CL_S0802_02_09"
+},
+"S0802_02_break_start_01|566": {
+"cls": "CombatLevel",
+"desc": "决战前后山 申屠龙",
+"id": "CL_S0802_02_10"
+},
+"S0802_02_break_start_01|598": {
+"cls": "CombatLevel",
+"desc": "决战前后山 丹霞子",
+"id": "CL_S0802_02_11"
+},
+"S2001_01|1322": {
+"cls": "CombatLevel",
+"desc": "欠债还钱1 想干掉先生的念头",
+"id": "CL_S2001_01"
+},
+"S2001_01|3068": {
+"cls": "CombatLevel",
+"desc": "欠债还钱1 追杀吕翁",
+"id": "CL_S2001_02"
+},
+"S2002_01|621": {
+"cls": "CombatLevel",
+"desc": "欠债还钱2 与弟子决斗",
+"id": "CL_S2002_01"
+},
+"S2002_03_break_start_01|1363": {
+"cls": "CombatLevel",
+"desc": "欠债还钱2 知道香方选择威胁",
+"id": "CL_S2002_02"
+},
+"S2100_01|358": {
+"cls": "CombatLevel",
+"desc": "段考 第一关",
+"id": "CL_S2100_01"
+},
+"S2100_01|376": {
+"cls": "CombatLevel",
+"desc": "段考 第一关弱化",
+"id": "CL_S2100_02"
+},
+"S2100_01|403": {
+"cls": "CombatLevel",
+"desc": "段考 第二关",
+"id": "CL_S2100_03"
+},
+"S2100_01|421": {
+"cls": "CombatLevel",
+"desc": "段考 第二关弱化",
+"id": "CL_S2100_04"
+},
+"S2100_01|473": {
+"cls": "CombatLevel",
+"desc": "段考 第三关",
+"id": "CL_S2100_05"
+},
+"S2200_02_01|315": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 南宫浅的胜利",
+"id": "CL_S2200_02_01"
+},
+"S2200_02_01|453": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 南宫浅战败",
+"id": "CL_S2200_02_02"
+},
+"S2200_03_01|1257": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 第三场",
+"id": "CL_S2200_04_01"
+},
+"S2200_03_01|1469": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 第三场",
+"id": "CL_S2200_04_02"
+},
+"S2200_03_01|1602": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 第三场",
+"id": "CL_S2200_04_03"
+},
+"S2200_03|103": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 第二场",
+"id": "CL_S2200_03_03"
+},
+"S2200_03|117": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 第二场",
+"id": "CL_S2200_03_04"
+},
+"S2200_03|75": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 第二场",
+"id": "CL_S2200_03_01"
+},
+"S2200_03|89": {
+"cls": "CombatLevel",
+"desc": "崆峒大试 第二场",
+"id": "CL_S2200_03_02"
+},
+"S2300_02|468": {
+"cls": "CombatLevel",
+"desc": "小梅在唐门 ",
+"id": "CL_S2300_01"
+},
+"S2310_01_03|3136": {
+"cls": "CombatLevel",
+"desc": "恶霸虞小梅 铁拳老弟子",
+"id": "CL_S2310_01"
+},
+"S2310_01_03|3233": {
+"cls": "CombatLevel",
+"desc": "恶霸虞小梅 铁拳老弟子",
+"id": "CL_S2310_01"
+},
+"S2310_01_04|59": {
+"cls": "CombatLevel",
+"desc": "恶霸虞小梅 铁拳老弟子",
+"id": "CL_S2310_01"
+},
+"S2321_02_05_04|1508": {
+"cls": "CombatLevel",
+"desc": "襄阳行 护卫",
+"id": "CL_S2321_02"
+},
+"S2321_04_03_01_02|24": {
+"cls": "CombatLevel",
+"desc": "襄阳行 小梅",
+"id": "CL_S2321_04_01"
+},
+"S2321_04_03_01_03|57": {
+"cls": "CombatLevel",
+"desc": "襄阳行 丁承烈",
+"id": "CL_S2321_04_02"
+},
+"S2321_04_03_02_101|30": {
+"cls": "BattleLevel",
+"desc": "官兵",
+"id": "BL_S2321_04"
+},
+"S2321_06_03_01|150": {
+"cls": "CombatLevel",
+"desc": "襄阳行 胡嵩",
+"id": "CL_S2321_06_01"
+},
+"S2502_01|790": {
+"cls": "CombatLevel",
+"desc": "雪山行 野猪",
+"id": "CL_S2502_01"
+},
+"S2504_02_06|1767": {
+"cls": "CombatLevel",
+"desc": "雪山行 攻略小兰",
+"id": "CL_S2504_02"
+},
+"S2504_02|1237": {
+"cls": "CombatLevel",
+"desc": "雪山行 主动请缨",
+"id": "CL_S2504_01"
+},
+"S2510_01|2177": {
+"cls": "CombatLevel",
+"desc": "夏侯兰锻炼唐门弟子 小兰",
+"id": "CL_S2510_01"
+},
+"S2510_01|2805": {
+"cls": "CombatLevel",
+"desc": "夏侯兰锻炼唐门弟子 弟子",
+"id": "CL_S2510_02"
+},
+"S2600_01_02|341": {
+"cls": "CombatLevel",
+"desc": "拜码头 颜疆",
+"id": "CL_S2600_01_01"
+},
+"S2600_02_01|689": {
+"cls": "CombatLevel",
+"desc": "拜码头 颜疆2",
+"id": "CL_S2600_02_01"
+},
+"S2600_02_03|143": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_S2600_02_03"
+},
+"S2600_02_04|19": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_S2600_04_01"
+},
+"S2600_02_04|26": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_S2600_04_02"
+},
+"S2700_02_03_01|730": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_S2700_02_03_01"
+},
+"S2700_02_03_01|997": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_S2700_02_03_02"
+},
+"S2700_02_03|389": {
+"cls": "CombatLevel",
+"desc": "铁拳门 情敌 夺魄弟子",
+"id": "CL_S2700_02_03"
+},
+"S2900_03|2254": {
+"cls": "CombatLevel",
+"desc": "小竹回家 余公子",
+"id": "CL_S2900_01"
+},
+"S2901_03_01_01_01|513": {
+"cls": "CombatLevel",
+"desc": "小竹回家 捕快",
+"id": "CL_S2901_03_01"
+},
+"S2901_03_01_01|307": {
+"cls": "CombatLevel",
+"desc": "小竹回家 余公子",
+"id": "CL_S2901_03_02"
+},
+"S2901_03_01_03|637": {
+"cls": "CombatLevel",
+"desc": "小竹回家 捕快",
+"id": "CL_S2901_03_01"
+},
+"S2901_03_01_08_01|914": {
+"cls": "CombatLevel",
+"desc": "小竹回家 揍小竹全家 小竹",
+"id": "CL_S2901_03_04"
+},
+"S2901_03_01_08|241": {
+"cls": "CombatLevel",
+"desc": "小竹回家 揍小竹全家 余公子",
+"id": "CL_S2901_03_03"
+},
+"S2910_01|2047": {
+"cls": "CombatLevel",
+"desc": "神兵帖 铁匠",
+"id": "CL_S2910_01"
+},
+"S2914_03|2154": {
+"cls": "CombatLevel",
+"desc": "神兵帖4 铁匠",
+"id": "CL_S2914_01"
+},
+"S2915_02|1985": {
+"cls": "CombatLevel",
+"desc": "可疑的行踪 玄功弟子",
+"id": "CL_S2915_01"
+},
+"S3004_01|1368": {
+"cls": "CombatLevel",
+"desc": "青城留学 四师兄",
+"id": "CL_S3004_01"
+},
+"S8200_01|406": {
+"cls": "CombatLevel",
+"desc": "决斗教学",
+"id": "CL_T0001"
+},
+"S8300_01_01|758": {
+"cls": "BattleLevel",
+"desc": "飞石帮",
+"id": "BL_1000"
+},
+"S8400_01|446": {
+"cls": "CombatLevel",
+"desc": "霸凌 选择跟你们拼了",
+"id": "CL_S8400_01"
+},
+"S9903_01|433": {
+"cls": "CombatLevel",
+"desc": "唐门会议前置 好啦好啦都我啦",
+"id": "CL_S9903_01"
+},
+"S9904_01_02|792": {
+"cls": "CombatLevel",
+"desc": "大师兄打劫山贼 闹小师妹后故作镇定",
+"id": "CL_S9904_01_02"
+},
+"S9904_01|1300": {
+"cls": "CombatLevel",
+"desc": "大师兄打劫山贼 选到吃喝嫖赌",
+"id": "CL_S9904_01_01"
+},
+"S9905_01|501": {
+"cls": "CombatLevel",
+"desc": "情书 蝴蝶双雄",
+"id": "CL_S9905_01_01"
+},
+"S9905_01|508": {
+"cls": "CombatLevel",
+"desc": "情书 蝴蝶双雄",
+"id": "CL_S9905_01_02"
+},
+"S9906_01_01|282": {
+"cls": "CombatLevel",
+"desc": "丐帮抢菜 切磋",
+"id": "CL_S9906_01"
+},
+"S9906_01_03_option|475": {
+"cls": "CombatLevel",
+"desc": "丐帮抢菜 切磋",
+"id": "CL_S9906_01"
+},
+"act2_1|188": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔挑战方第一关",
+"id": "CL_A0001_01"
+},
+"act2_1|318": {
+"cls": "BattleLevel",
+"desc": "点苍派",
+"id": "BL_A0001_02"
+},
+"act2_1|460": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_A0001_03"
+},
+"act2_2|296": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔挑战方第一关",
+"id": "CL_A0001_01"
+},
+"act2_3|648": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔挑战方第二关",
+"id": "CL_A0002_01"
+},
+"act2_3|702": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔挑战方第二关",
+"id": "CL_A0002_02"
+},
+"act2_3|811": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔挑战方第二关",
+"id": "CL_A0002_03"
+},
+"act3_1|183": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔挑战方第二关",
+"id": "CL_A0002_01"
+},
+"act3_2|486": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔防守方第一关",
+"id": "CL_A0003_01"
+},
+"act3_2|545": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔防守方第一关",
+"id": "CL_A0003_02"
+},
+"act3_2|687": {
+"cls": "CombatLevel",
+"desc": "活动 练功塔防守方第一关",
+"id": "CL_A0003_03"
+},
+"alchemy_work_901|257": {
+"cls": "CombatLevel",
+"desc": "小梅事件 关于四师兄",
+"id": "CL_2003_01"
+},
+"back_02_501|55": {
+"cls": "CombatLevel",
+"desc": "后山挑战龙湘",
+"id": "CL_5102_01"
+},
+"back_work_905|19": {
+"cls": "CombatLevel",
+"desc": "后山 挑柴遇敌 第一年下半",
+"id": "CL_B0001_02"
+},
+"back_work_905|26": {
+"cls": "CombatLevel",
+"desc": "后山 挑柴遇敌 第一年上半",
+"id": "CL_B0001_01"
+},
+"center_girl_03_01|302": {
+"cls": "CombatLevel",
+"desc": "练武场 小梅乱入",
+"id": "CL_2002_01"
+},
+"center_girl_03_01|459": {
+"cls": "CombatLevel",
+"desc": "练武场 小梅乱入",
+"id": "CL_2002_01"
+},
+"center_girl_03_01|541": {
+"cls": "CombatLevel",
+"desc": "练武场 小梅乱入",
+"id": "CL_2002_01"
+},
+"ch0_1_1|92": {
+"cls": "CombatLevel",
+"desc": "两年后醒来 觉醒",
+"id": "CL_0001_02"
+},
+"ch0_1|874": {
+"cls": "CombatLevel",
+"desc": "两年后醒来",
+"id": "CL_0001_01"
+},
+"ch0_4|1651": {
+"cls": "CombatLevel",
+"desc": "小师妹归来 决斗",
+"id": "CL_0002"
+},
+"ch0_5|571": {
+"cls": "CombatLevel",
+"desc": "DEMO尾声 100个人",
+"id": "CL_0003_01"
+},
+"ch0_5|616": {
+"cls": "CombatLevel",
+"desc": "DEMO尾声 3个高手",
+"id": "CL_0003_02"
+},
+"ch0_5|804": {
+"cls": "CombatLevel",
+"desc": "DEMO尾声 绝顶高手",
+"id": "CL_0003_03"
+},
+"ch0_meeting_option_03_01|357": {
+"cls": "BattleLevel",
+"desc": "飞石帮",
+"id": "BL_0001"
+},
+"ch0_meeting_option_03_02_01|565": {
+"cls": "CombatLevel",
+"desc": "DEMO 找石公远",
+"id": "CL_3002"
+},
+"ch0_meeting_option_04_01|218": {
+"cls": "CombatLevel",
+"desc": "DEMO 举行段考的对手",
+"id": "CL_3003_01"
+},
+"ch0_meeting_option_04_01|287": {
+"cls": "CombatLevel",
+"desc": "DEMO 举行段考的对手",
+"id": "CL_3003_02"
+},
+"ch1_2_1|682": {
+"cls": "CombatLevel",
+"desc": "主线段考 决斗",
+"id": "CL_T0002_01"
+},
+"ch1_2_1|687": {
+"cls": "CombatLevel",
+"desc": "主线段考 决斗",
+"id": "CL_T0002_02"
+},
+"ch1_2_1|692": {
+"cls": "CombatLevel",
+"desc": "主线段考 决斗",
+"id": "CL_T0002_03"
+},
+"ch2_2_3_4_1|842": {
+"cls": "CombatLevel",
+"desc": "讨伐谭霸刀",
+"id": "CL_1100_01"
+},
+"ch2_2_3_4_2|638": {
+"cls": "CombatLevel",
+"desc": "讨伐谭霸刀",
+"id": "CL_1101_01"
+},
+"ch2_2_3_4_3_break_01_01|198": {
+"cls": "CombatLevel",
+"desc": "提早至江陵。偷偷跟随毒打书生",
+"id": "CL_1102_01"
+},
+"ch2_2_3_4_3_break_01_03|305": {
+"cls": "CombatLevel",
+"desc": "提早至江陵，遇见辛儒师姐",
+"id": "CL_1103_01"
+},
+"ch2_2_3_4_3_break_01_03|452": {
+"cls": "CombatLevel",
+"desc": "提早至江陵，遇见辛儒师姐",
+"id": "CL_1103_01"
+},
+"ch2_2_3_4_3_break_01_04_02|1393": {
+"cls": "BattleLevel",
+"desc": "白鲨帮",
+"id": "BL_2000"
+},
+"ch2_2_3_4_3_break_01_04_02|877": {
+"cls": "BattleLevel",
+"desc": "官兵",
+"id": "BL_2001"
+},
+"ch2_2_3_4_3_break_01_04|572": {
+"cls": "BattleLevel",
+"desc": "白鲨帮",
+"id": "BL_2000"
+},
+"ch2_2_3_4_3_break_01_04|667": {
+"cls": "CombatLevel",
+"desc": "提早至江陵，遇见白鲨帮",
+"id": "CL_1104_01"
+},
+"ch2_2_5_3|459": {
+"cls": "CombatLevel",
+"desc": "南宫家宴与嵩山弟子抢座位",
+"id": "CL_1201_01"
+},
+"ch2_2_6_3|1041": {
+"cls": "CombatLevel",
+"desc": "南宫家宴 帮助南宫浅",
+"id": "CL_1202_01"
+},
+"ch2_4_1|1268": {
+"cls": "CombatLevel",
+"desc": "唐门留学期间得知小师妹被纠缠选择出手",
+"id": "CL_1205_01"
+},
+"ch2_4_5_2|685": {
+"cls": "CombatLevel",
+"desc": "客栈线 选择对决千面人魔",
+"id": "CL_1206_01"
+},
+"ch2_4_5_2|712": {
+"cls": "CombatLevel",
+"desc": "客栈线 选择对决龙渊",
+"id": "CL_1206_02"
+},
+"ch2_4_5_4_1|3011": {
+"cls": "CombatLevel",
+"desc": "客栈线 绑架小师妹 最终对决",
+"id": "CL_1207_01"
+},
+"ch2_4_6_1|231": {
+"cls": "CombatLevel",
+"desc": "破庙 点苍弟子",
+"id": "CL_1209_01"
+},
+"ch2_4_6_2_2|272": {
+"cls": "CombatLevel",
+"desc": "破庙 鬼卒1",
+"id": "CL_1210_01"
+},
+"ch2_4_6_2_2|677": {
+"cls": "CombatLevel",
+"desc": "破庙 鬼卒2",
+"id": "CL_1210_02"
+},
+"ch2_4_6_2_4_1|431": {
+"cls": "CombatLevel",
+"desc": "攻打唐门 二师兄",
+"id": "CL_1211_01"
+},
+"ch2_4_6_2_4_2|207": {
+"cls": "CombatLevel",
+"desc": "攻打唐门 唐芳",
+"id": "CL_1211_02"
+},
+"ch2_4_6_2_4|235": {
+"cls": "CombatLevel",
+"desc": "南宫家宴与嵩山弟子抢座位",
+"id": "CL_1201_01"
+},
+"ch2_4_6_2_5|142": {
+"cls": "CombatLevel",
+"desc": "跑路 江湖少侠",
+"id": "CL_1212_01"
+},
+"ch2_4_7_1|152": {
+"cls": "CombatLevel",
+"desc": "报讯 山猪",
+"id": "CL_1213_01"
+},
+"ch2_4_7_1|163": {
+"cls": "CombatLevel",
+"desc": "报讯 山贼",
+"id": "CL_1213_02"
+},
+"ch2_4_7_1|186": {
+"cls": "CombatLevel",
+"desc": "报讯 山猪",
+"id": "CL_1213_01"
+},
+"ch2_4_7_1|195": {
+"cls": "CombatLevel",
+"desc": "报讯 山贼",
+"id": "CL_1213_02"
+},
+"ch2_4_7_2_1|1278": {
+"cls": "CombatLevel",
+"desc": "报讯 唐大鲸2",
+"id": "CL_1214_02"
+},
+"ch2_4_7_2|523": {
+"cls": "CombatLevel",
+"desc": "报讯 唐大鲸1",
+"id": "CL_1214_01"
+},
+"ch2_4_8_10|1230": {
+"cls": "CombatLevel",
+"desc": "唐门大乱斗 讲经堂 峨嵋弟子",
+"id": "CL_1219_01"
+},
+"ch2_4_8_4_2|412": {
+"cls": "CombatLevel",
+"desc": "唐门大乱斗 伙房 嵩山弟子",
+"id": "CL_1215_02"
+},
+"ch2_4_8_4|222": {
+"cls": "CombatLevel",
+"desc": "唐门大乱斗 伙房 女弟子",
+"id": "CL_1215_01"
+},
+"ch2_4_8_6|927": {
+"cls": "CombatLevel",
+"desc": "唐门大乱斗 锻冶场 铁拳弟子",
+"id": "CL_1216_01"
+},
+"ch2_4_8_8|341": {
+"cls": "CombatLevel",
+"desc": "唐门大乱斗 女弟子房 女弟子",
+"id": "CL_1217_01"
+},
+"ch2_4_8_9|548": {
+"cls": "CombatLevel",
+"desc": "唐门大乱斗 炼丹房 全真弟子",
+"id": "CL_1218_01"
+},
+"ch2_4_9_1|485": {
+"cls": "CombatLevel",
+"desc": "南宫家宴 帮助南宫浅",
+"id": "CL_1202_01"
+},
+"ch2_4_9_1|516": {
+"cls": "CombatLevel",
+"desc": "南宫家宴 帮助南宫浅",
+"id": "CL_1202_01"
+},
+"ch2_4_9_1|557": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_1202_02"
+},
+"ch2_5_2_2|562": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_2002"
+},
+"ch2_5_3_3_2|418": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 小梅逃脱后 崆峒战队",
+"id": "CL_1301_01"
+},
+"ch2_5_3_4_4|294": {
+"cls": "CombatLevel",
+"desc": "崆峒留学玄功门 早点名切磋",
+"id": "CL_1302_01"
+},
+"ch2_6_2_1|44": {
+"cls": "CombatLevel",
+"desc": "拷问 南宫己",
+"id": "CL_1328_01"
+},
+"ch2_8_1|1451": {
+"cls": "CombatLevel",
+"desc": "离开唐门 改投峨嵋派",
+"id": "CL_1208_01"
+},
+"ch3_10_2|678": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3100"
+},
+"ch3_10_3|834": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3101"
+},
+"ch3_10_4|936": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_3102"
+},
+"ch3_13_break_start_01|2256": {
+"cls": "CombatLevel",
+"desc": "江陵大战后 获得铁琵琶功",
+"id": "CL_1310_01"
+},
+"ch3_16_3_1|361": {
+"cls": "CombatLevel",
+"desc": "回唐门后 被二师兄找",
+"id": "CL_1311_01"
+},
+"ch3_1_2_1|2685": {
+"cls": "CombatLevel",
+"desc": "留学青城 段智秀",
+"id": "CL_1319_01"
+},
+"ch3_1_5_2_1|294": {
+"cls": "CombatLevel",
+"desc": "青城段考 高和子",
+"id": "CL_1321_01"
+},
+"ch3_1_5_2_2|442": {
+"cls": "CombatLevel",
+"desc": "青城段考 停风子",
+"id": "CL_1321_02"
+},
+"ch3_1_6_1|339": {
+"cls": "CombatLevel",
+"desc": "赵逵上山 鬼卒",
+"id": "CL_1322_01"
+},
+"ch3_1_6_2|402": {
+"cls": "CombatLevel",
+"desc": "赵逵上山 鬼卒",
+"id": "CL_1323_01"
+},
+"ch3_1_7_2_01_001|24": {
+"cls": "CombatLevel",
+"desc": "逃离青城 站哨 狼",
+"id": "CL_1324_01"
+},
+"ch3_1_7_2_01_002|15": {
+"cls": "CombatLevel",
+"desc": "逃离青城 站哨 狼",
+"id": "CL_1324_02"
+},
+"ch3_1_7_4|1026": {
+"cls": "CombatLevel",
+"desc": "逃离青城 山猪跟鹦鹉",
+"id": "CL_1326_01"
+},
+"ch3_1_7_4|609": {
+"cls": "CombatLevel",
+"desc": "江陵大战见面毛二壮",
+"id": "CL_1307_01"
+},
+"ch3_1_7_4|837": {
+"cls": "CombatLevel",
+"desc": "逃离青城 仙姑",
+"id": "CL_1325_01"
+},
+"ch3_1_7_5|1401": {
+"cls": "CombatLevel",
+"desc": "逃离青城 唐门弟子",
+"id": "CL_1327_01"
+},
+"ch3_2_3_2_2|364": {
+"cls": "CombatLevel",
+"desc": "前往江陵大战 坐诊遇见樊啸天",
+"id": "CL_1304_01"
+},
+"ch3_2_3_2_3_break_start_01|668": {
+"cls": "CombatLevel",
+"desc": "用阿牛的性命威胁樊啸天",
+"id": "CL_1304_02"
+},
+"ch3_2_3_2_5|313": {
+"cls": "CombatLevel",
+"desc": "江陵闲逛",
+"id": "CL_1305_01"
+},
+"ch3_2_3_2_5|444": {
+"cls": "CombatLevel",
+"desc": "江陵闲逛",
+"id": "CL_1305_02"
+},
+"ch3_2_3_2_5|726": {
+"cls": "CombatLevel",
+"desc": "江陵闲逛",
+"id": "CL_1305_01"
+},
+"ch3_2_3_2_break_start_01|472": {
+"cls": "CombatLevel",
+"desc": "前往江陵大战 住宿与师弟切磋",
+"id": "CL_1303_01"
+},
+"ch3_3_1_2|416": {
+"cls": "CombatLevel",
+"desc": "留学青城 申屠龙",
+"id": "CL_1315_01"
+},
+"ch3_5_1|160": {
+"cls": "CombatLevel",
+"desc": "DEMO闲聊 与三师兄切磋",
+"id": "CL_3001"
+},
+"ch3_5_1|409": {
+"cls": "CombatLevel",
+"desc": "DEMO闲聊 与三师兄切磋",
+"id": "CL_3001"
+},
+"ch3_5_2|294": {
+"cls": "CombatLevel",
+"desc": "DEMO闲聊 与三师兄切磋",
+"id": "CL_3001"
+},
+"ch3_5_2|465": {
+"cls": "CombatLevel",
+"desc": "DEMO闲聊 与三师兄切磋",
+"id": "CL_3001"
+},
+"ch3_5_2|924": {
+"cls": "CombatLevel",
+"desc": "DEMO 找石公远",
+"id": "CL_3002"
+},
+"ch3_5_3_2|328": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3003"
+},
+"ch3_5_3_7_break_start_01|1363": {
+"cls": "CombatLevel",
+"desc": "江陵大战与丐帮在客栈僵持不下",
+"id": "CL_1306_01"
+},
+"ch3_5_3_7_break_start_01|2498": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3005"
+},
+"ch3_5_3_7_break_start_01|859": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3005"
+},
+"ch3_6_1_01_503|25": {
+"cls": "CombatLevel",
+"desc": "江陵闲逛",
+"id": "CL_1305_01"
+},
+"ch3_6_1_01_504|16": {
+"cls": "CombatLevel",
+"desc": "江陵闲逛",
+"id": "CL_1305_02"
+},
+"ch3_6_1_break_start_01|172": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3004"
+},
+"ch3_6_3_1|172": {
+"cls": "CombatLevel",
+"desc": "院中练武 南宫浅",
+"id": "CL_1312_01"
+},
+"ch3_6_3|256": {
+"cls": "CombatLevel",
+"desc": "院中练武 南宫家丁",
+"id": "CL_1312_02"
+},
+"ch3_6_3|321": {
+"cls": "CombatLevel",
+"desc": "院中练武 南宫家丁",
+"id": "CL_1312_02"
+},
+"ch3_6_3|416": {
+"cls": "CombatLevel",
+"desc": "院中练武 不友善对决南宫深",
+"id": "CL_1313_01"
+},
+"ch3_6_3|461": {
+"cls": "CombatLevel",
+"desc": "院中练武 友善对决南宫深",
+"id": "CL_1313_02"
+},
+"ch3_6_3|486": {
+"cls": "CombatLevel",
+"desc": "院中练武 南宫深",
+"id": "CL_1313_03"
+},
+"ch3_6_4_3|1666": {
+"cls": "CombatLevel",
+"desc": "院中练武 南宫远",
+"id": "CL_1314_01"
+},
+"ch3_8_2_3|162": {
+"cls": "CombatLevel",
+"desc": "江陵大战 野外散心打拳 女飞贼",
+"id": "CL_1309_01"
+},
+"ch3_8_2|1088": {
+"cls": "CombatLevel",
+"desc": "江陵大战 野外散心打拳 思想战",
+"id": "CL_1308_01"
+},
+"ch3_8_2|1559": {
+"cls": "CombatLevel",
+"desc": "江陵大战 野外散心打拳 女飞贼",
+"id": "CL_1309_01"
+},
+"ch3_9_2|1660": {
+"cls": "CombatLevel",
+"desc": "江陵大战见面毛二壮",
+"id": "CL_1307_01"
+},
+"ch4_1_2|595": {
+"cls": "BattleLevel",
+"desc": "飞石帮",
+"id": "BL_3300"
+},
+"ch4_1_2|713": {
+"cls": "BattleLevel",
+"desc": "飞石帮",
+"id": "BL_3300"
+},
+"ch4_2_3_1|361": {
+"cls": "CombatLevel",
+"desc": "下山找人 揍师兄",
+"id": "CL_1401_01"
+},
+"ch4_2_3_3|583": {
+"cls": "CombatLevel",
+"desc": "下山找人 揍峨嵋弟子",
+"id": "CL_1401_02"
+},
+"ch4_2_3_3|660": {
+"cls": "CombatLevel",
+"desc": "下山找人 揍峨嵋弟子",
+"id": "CL_1401_03"
+},
+"ch4_3_3|320": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_4001"
+},
+"ch4_3_4|1281": {
+"cls": "CombatLevel",
+"desc": "唐门内战 决斗唐衫",
+"id": "CL_1402_01"
+},
+"ch4_3_4|1382": {
+"cls": "CombatLevel",
+"desc": "唐门内战 决斗掌门人",
+"id": "CL_1402_02"
+},
+"ch4_3_6_1|184": {
+"cls": "CombatLevel",
+"desc": "唐门内战 决斗小师妹",
+"id": "CL_1402_03"
+},
+"ch4_5_3_break_start_01|3544": {
+"cls": "CombatLevel",
+"desc": "决战飞石帮 客栈休息",
+"id": "CL_1403_01"
+},
+"ch4_5_3_break_start_01|3680": {
+"cls": "CombatLevel",
+"desc": "决战飞石帮 客栈休息",
+"id": "CL_1403_02"
+},
+"ch4_5_3_break_start_01|3775": {
+"cls": "CombatLevel",
+"desc": "决战飞石帮 客栈休息",
+"id": "CL_1403_03"
+},
+"ch4_5_6_1|119": {
+"cls": "CombatLevel",
+"desc": "决战飞石帮 客栈休息第二战",
+"id": "CL_1403_04"
+},
+"ch4_6_13_1|365": {
+"cls": "CombatLevel",
+"desc": "治疗大师兄 遇见杀手",
+"id": "CL_1409_02"
+},
+"ch4_6_13_1|374": {
+"cls": "CombatLevel",
+"desc": "治疗大师兄 遇见杀手",
+"id": "CL_1409_03"
+},
+"ch4_6_13_2|386": {
+"cls": "CombatLevel",
+"desc": "治疗大师兄 遇见金乌上人",
+"id": "CL_1409_04"
+},
+"ch4_6_13|3419": {
+"cls": "CombatLevel",
+"desc": "治疗大师兄 遇见崆峒弟子",
+"id": "CL_1409_01"
+},
+"ch4_6_4_2|645": {
+"cls": "CombatLevel",
+"desc": "不跟随大师兄去卧云冈 遇见泥教弟子",
+"id": "CL_1408_01"
+},
+"ch4_6_5_1|305": {
+"cls": "CombatLevel",
+"desc": "下山找人 揍师兄",
+"id": "CL_1401_01"
+},
+"ch4_6_5_2|106": {
+"cls": "CombatLevel",
+"desc": "下山找人 揍峨嵋弟子",
+"id": "CL_1401_03"
+},
+"ch4_6_5_2|60": {
+"cls": "CombatLevel",
+"desc": "下山找人 揍师兄",
+"id": "CL_1401_01"
+},
+"ch4_6_5_2|82": {
+"cls": "CombatLevel",
+"desc": "下山找人 揍峨嵋弟子",
+"id": "CL_1401_02"
+},
+"ch4_7_2_break_start_01|1791": {
+"cls": "CombatLevel",
+"desc": "决斗飞石帮 返回唐门 客房修练",
+"id": "CL_1404_01"
+},
+"ch4_7_2_break_start_01|2141": {
+"cls": "CombatLevel",
+"desc": "决斗飞石帮 返回唐门 客房修练",
+"id": "CL_1404_02"
+},
+"ch4_8_1|1896": {
+"cls": "CombatLevel",
+"desc": "返回唐门 遇铁匠",
+"id": "CL_1406_01"
+},
+"ch4_8_6|2951": {
+"cls": "CombatLevel",
+"desc": "返回唐门 决斗金乌上人",
+"id": "CL_1407_01"
+},
+"ch4_8_6|3471": {
+"cls": "CombatLevel",
+"desc": "返回唐门 决斗女飞贼",
+"id": "CL_1407_03"
+},
+"ch4_8_7_2|39": {
+"cls": "CombatLevel",
+"desc": "返回唐门 决斗小梅",
+"id": "CL_1407_02"
+},
+"ch5_2_3|468": {
+"cls": "CombatLevel",
+"desc": "谈论小师妹婚事 与三师兄吵架",
+"id": "CL_1501_01"
+},
+"ch5_2_6_2|105": {
+"cls": "CombatLevel",
+"desc": "守夜换班 跟师弟要钱",
+"id": "CL_1502_01"
+},
+"ch5_3_4_1|316": {
+"cls": "CombatLevel",
+"desc": "小师妹出嫁 拜访解无尘",
+"id": "CL_1503_01"
+},
+"ch5_4_6_break_start_01|1296": {
+"cls": "CombatLevel",
+"desc": "谈论小师妹婚事 与三师兄吵架",
+"id": "CL_1501_01"
+},
+"ch5_4_7_3_1|483": {
+"cls": "CombatLevel",
+"desc": "金乌上人闹场 战役胜利后逃亡 四大护法第一关",
+"id": "CL_1504_01"
+},
+"ch5_4_7_3_3|509": {
+"cls": "CombatLevel",
+"desc": "金乌上人闹场 战役胜利后逃亡 四大护法第二关",
+"id": "CL_1504_02"
+},
+"ch5_4_7_3_5|387": {
+"cls": "CombatLevel",
+"desc": "金乌上人闹场 战役胜利后逃亡 四大护法第三关",
+"id": "CL_1504_03"
+},
+"ch5_4_7_3_8|139": {
+"cls": "CombatLevel",
+"desc": "金乌上人闹场 战役胜利后逃亡 四大护法第四关",
+"id": "CL_1504_04"
+},
+"ch5_4_7_4_2|184": {
+"cls": "CombatLevel",
+"desc": "屠灭崆峒 修练",
+"id": "CL_1507_01"
+},
+"ch5_4_7_4_2|204": {
+"cls": "CombatLevel",
+"desc": "屠灭崆峒 修练",
+"id": "CL_1507_02"
+},
+"ch5_4_7_4_3|584": {
+"cls": "CombatLevel",
+"desc": "屠灭崆峒 决斗金乌上人",
+"id": "CL_1507_03"
+},
+"ch5_4_8_1|232": {
+"cls": "CombatLevel",
+"desc": "金乌上人闹场 第一次决斗金乌上人",
+"id": "CL_1505_01"
+},
+"ch5_4_8_4_1|367": {
+"cls": "CombatLevel",
+"desc": "金乌上人闹场 第二次决斗金乌上人",
+"id": "CL_1505_02"
+},
+"ch5_5_1|2308": {
+"cls": "CombatLevel",
+"desc": "唐门女婿 被弟子们围攻",
+"id": "CL_1506_01"
+},
+"ch5_6_2_6|671": {
+"cls": "CombatLevel",
+"desc": "崆峒行前置 丹霞子",
+"id": "CL_1508_01"
+},
+"ch5_6_3_1|2494": {
+"cls": "CombatLevel",
+"desc": "崆峒神威 刺客",
+"id": "CL_1510_01"
+},
+"ch5_6_3_1|2641": {
+"cls": "CombatLevel",
+"desc": "崆峒神威 刺客",
+"id": "CL_1510_01"
+},
+"ch5_6_4_1|477": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_1510_02"
+},
+"ch5_6_4_4_4|3297": {
+"cls": "CombatLevel",
+"desc": "崆峒神威 荆红",
+"id": "CL_1511_01"
+},
+"ch5_6_5_4|1212": {
+"cls": "CombatLevel",
+"desc": "崆峒神威 童大虫",
+"id": "CL_1512_01"
+},
+"ch5_6_6_1|373": {
+"cls": "CombatLevel",
+"desc": "小梅之章 魔小梅",
+"id": "CL_1513_01"
+},
+"ch5_6_6_2|978": {
+"cls": "CombatLevel",
+"desc": "小梅之章 魔小梅2",
+"id": "CL_1513_02"
+},
+"ch5_6_7_1|904": {
+"cls": "CombatLevel",
+"desc": "小竹之章 崆峒弟子众",
+"id": "CL_1514_01"
+},
+"ch5_6_7_2|1713": {
+"cls": "CombatLevel",
+"desc": "小竹之章 金乌上人",
+"id": "CL_1515_01"
+},
+"ch6_4_3_3_3|104": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小竹吃醋",
+"id": "CL_1616_03"
+},
+"ch6_4_3_3_4|495": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小梅病娇",
+"id": "CL_1616_04"
+},
+"ch6_4_3_3|361": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_01"
+},
+"ch6_4_3_3|386": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_02"
+},
+"ch6_4_3_4|1681": {
+"cls": "CombatLevel",
+"desc": "千面传承 选择领教",
+"id": "CL_1618_01"
+},
+"ch6_4_4_2|2148": {
+"cls": "CombatLevel",
+"desc": "在锦香宫赖著不走",
+"id": "CL_1617_01"
+},
+"ch6_4_4_4|270": {
+"cls": "CombatLevel",
+"desc": "离开锦香宫被温夫人留住",
+"id": "CL_1617_02"
+},
+"ch6_5_2_break_start_01|8970": {
+"cls": "CombatLevel",
+"desc": "武林大会 遇见瑞笙",
+"id": "CL_1619_01"
+},
+"ch6_5_2_break_start_01|8975": {
+"cls": "CombatLevel",
+"desc": "武林大会 遇见瑞笙",
+"id": "CL_1619_02"
+},
+"ch6_5_3_1_01|225": {
+"cls": "CombatLevel",
+"desc": "武林大会 挑战上官隼",
+"id": "CL_1619_03"
+},
+"ch6_5_3_1|744": {
+"cls": "CombatLevel",
+"desc": "武林大会 挑战上官隼",
+"id": "CL_1619_03"
+},
+"ch6_6_2_break_start_01|1978": {
+"cls": "CombatLevel",
+"desc": "武林大会 武林交际时清理门户",
+"id": "CL_1620_01"
+},
+"ch6_7_2_break_start_01|1202": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见全真派",
+"id": "CL_1615_01"
+},
+"ch6_7_2_break_start_01|1209": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_1615_02"
+},
+"ch6_7_2_break_start_01|2485": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见全真派",
+"id": "CL_1615_01"
+},
+"ch6_7_2_break_start_01|2492": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_1615_03"
+},
+"ch6_7_2_break_start_01|3566": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见全真派",
+"id": "CL_1615_01"
+},
+"ch6_7_2_break_start_01|3573": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_1615_02"
+},
+"ch6_7_3|2197": {
+"cls": "CombatLevel",
+"desc": "武林大会 帮助锦香宫 对决南宫深",
+"id": "CL_1621_01"
+},
+"ch6_7_4|807": {
+"cls": "CombatLevel",
+"desc": "武林大会 帮助锦香宫 对决上官隼",
+"id": "CL_1622_01"
+},
+"ch6_8_2_3_1|914": {
+"cls": "CombatLevel",
+"desc": "武林大会 追南宫浅",
+"id": "CL_1623_01"
+},
+"ch6_8_2_3_3|869": {
+"cls": "CombatLevel",
+"desc": "武林大会 追南宫浅",
+"id": "CL_1624_01"
+},
+"ch6_8_4_part_2|2600": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_01"
+},
+"ch6_8_4_part_2|2605": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_02"
+},
+"ch6_8_4_part_2|2610": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小竹吃醋",
+"id": "CL_1616_03"
+},
+"ch6_8_4_part_2|2615": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小梅病娇",
+"id": "CL_1616_04"
+},
+"ch6_8_4_part_2|2648": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_01"
+},
+"ch6_8_4_part_2|2653": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_02"
+},
+"ch6_8_4_part_2|2658": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小竹吃醋",
+"id": "CL_1616_03"
+},
+"ch6_8_4_part_2|2663": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小梅病娇",
+"id": "CL_1616_04"
+},
+"ch6_8_4_part_2|2719": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_01"
+},
+"ch6_8_4_part_2|2724": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_02"
+},
+"ch6_8_4_part_2|2729": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小竹吃醋",
+"id": "CL_1616_03"
+},
+"ch6_8_4_part_2|2734": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小梅病娇",
+"id": "CL_1616_04"
+},
+"ch6_8_4_part_2|3143": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_01"
+},
+"ch6_8_4_part_2|3148": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿对手",
+"id": "CL_1616_02"
+},
+"ch6_8_4_part_2|3153": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小竹吃醋",
+"id": "CL_1616_03"
+},
+"ch6_8_4_part_2|3158": {
+"cls": "CombatLevel",
+"desc": "拜访锦香宫 武英殿决斗 小梅病娇",
+"id": "CL_1616_04"
+},
+"ch7_1_1|846": {
+"cls": "CombatLevel",
+"desc": "坏结局路线 三师兄",
+"id": "CL_1625_01"
+},
+"ch7_1_3_1|203": {
+"cls": "CombatLevel",
+"desc": "正常路线 弟子离开唐门 ",
+"id": "CL_1701_01"
+},
+"ch7_3_2_2|401": {
+"cls": "CombatLevel",
+"desc": "访问叶云舟 决斗",
+"id": "CL_1703_01"
+},
+"ch7_4_3_5|118": {
+"cls": "CombatLevel",
+"desc": "唐门大对决 三师兄",
+"id": "CL_1704_01"
+},
+"ch7_5_2_8_1|461": {
+"cls": "CombatLevel",
+"desc": "决裂 龙湘",
+"id": "CL_1705_01"
+},
+"ch7_5_4_9_1|1264": {
+"cls": "CombatLevel",
+"desc": "收买沧帮 唐门弟子",
+"id": "CL_1706_01"
+},
+"ch7_5_4_9_1|1689": {
+"cls": "CombatLevel",
+"desc": "收买沧帮 上官萤",
+"id": "CL_1706_02"
+},
+"ch7_5_5_1_2|781": {
+"cls": "CombatLevel",
+"desc": "段考 四师兄",
+"id": "CL_1702_01"
+},
+"ch7_5_5_3_4|868": {
+"cls": "CombatLevel",
+"desc": "出使峨嵋派 唐衫",
+"id": "CL_1707_01"
+},
+"ch7_5_6_3|1758": {
+"cls": "CombatLevel",
+"desc": "修罗场 小兰",
+"id": "CL_1708_01"
+},
+"ch7_5_6_3|1765": {
+"cls": "CombatLevel",
+"desc": "修罗场 龙湘",
+"id": "CL_1708_02"
+},
+"ch7_5_6_3|1772": {
+"cls": "CombatLevel",
+"desc": "修罗场 上官萤",
+"id": "CL_1708_03"
+},
+"ch7_5_6_3|1779": {
+"cls": "CombatLevel",
+"desc": "修罗场 小师妹",
+"id": "CL_1708_04"
+},
+"ch8_1_1_2_2|31": {
+"cls": "CombatLevel",
+"desc": "围攻唐门 谭霸刀",
+"id": "CL_1806_01"
+},
+"ch8_1_1_2_2|40": {
+"cls": "CombatLevel",
+"desc": "围攻唐门 余公子",
+"id": "CL_1806_02"
+},
+"ch8_1_1_2_2|49": {
+"cls": "CombatLevel",
+"desc": "围攻唐门 木仙姑",
+"id": "CL_1806_03"
+},
+"ch8_1_1_2|1260": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 谭霸刀",
+"id": "CL_1802_01"
+},
+"ch8_1_1_2|1501": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 谭霸刀",
+"id": "CL_1802_01"
+},
+"ch8_1_1_2|1888": {
+"cls": "CombatLevel",
+"desc": "围攻唐门 武林盟群侠",
+"id": "CL_1805_01"
+},
+"ch8_1_1_2|4757": {
+"cls": "CombatLevel",
+"desc": "围攻唐门 万里鹏程",
+"id": "CL_1807_02"
+},
+"ch8_1_1_2|4779": {
+"cls": "CombatLevel",
+"desc": "围攻唐门 万里鹏程",
+"id": "CL_1807_01"
+},
+"ch8_1_1_2|4792": {
+"cls": "CombatLevel",
+"desc": "围攻唐门 万里鹏程",
+"id": "CL_1807_01"
+},
+"ch8_1_1_2|565": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 方震天",
+"id": "CL_1802_02"
+},
+"ch8_1_1_2|934": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 谭霸刀",
+"id": "CL_1802_01"
+},
+"ch8_2_1|4386": {
+"cls": "CombatLevel",
+"desc": "小梅 大师兄",
+"id": "CL_1801_01"
+},
+"ch8_2_5_2|180": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 谭霸刀",
+"id": "CL_1802_01"
+},
+"ch8_2_5_3|116": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 方震天",
+"id": "CL_1802_02"
+},
+"ch8_2_5_4|259": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 唐衫",
+"id": "CL_1802_03"
+},
+"ch8_2_5_6|167": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 金乌上人",
+"id": "CL_1803_01"
+},
+"ch8_2_5_6|337": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 火龙仙君",
+"id": "CL_1803_02"
+},
+"ch8_2_5_7|375": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 释明",
+"id": "CL_1803_03"
+},
+"ch8_2_5_8|574": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 店小二",
+"id": "CL_1803_04"
+},
+"ch8_2_5_9_1|695": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 无相祖师",
+"id": "CL_1814_02"
+},
+"ch8_2_5_9|1580": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 无相祖师",
+"id": "CL_1814_01"
+},
+"ch8_2_6_2_5|958": {
+"cls": "CombatLevel",
+"desc": "唐门出击 万里鹏程",
+"id": "CL_1804_01"
+},
+"ch8_2_6_3_1|302": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_1801_04"
+},
+"ch8_2_6_3_1|311": {
+"cls": "CombatLevel",
+"desc": "小梅 大师兄",
+"id": "CL_1801_01"
+},
+"ch8_2_6_3_3|691": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 丐帮长老",
+"id": "CL_1815_01"
+},
+"ch8_2_6_6|38": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_1801_02"
+},
+"ch8_2_6_7|3764": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_1801_03"
+},
+"ch8_3_1_2_1|11": {
+"cls": "CombatLevel",
+"desc": "在山上等 上官隼",
+"id": "CL_1810_01"
+},
+"ch8_3_1_2|1009": {
+"cls": "CombatLevel",
+"desc": "唐门出击 万里鹏程",
+"id": "CL_1804_01"
+},
+"ch8_3_1_2|1120": {
+"cls": "CombatLevel",
+"desc": "唐门出击 万里鹏程",
+"id": "CL_1804_01"
+},
+"ch8_3_1_2|1261": {
+"cls": "CombatLevel",
+"desc": "唐门出击 万里鹏程",
+"id": "CL_1804_01"
+},
+"ch8_3_1_2|2394": {
+"cls": "CombatLevel",
+"desc": "唐门出击 万里鹏程",
+"id": "CL_1804_01"
+},
+"ch8_3_1_2|2425": {
+"cls": "CombatLevel",
+"desc": "在山上等 向无忧",
+"id": "CL_1811_01"
+},
+"ch8_3_1_2|2827": {
+"cls": "CombatLevel",
+"desc": "唐门出击 万里鹏程",
+"id": "CL_1804_01"
+},
+"ch8_3_1_3_1|346": {
+"cls": "CombatLevel",
+"desc": "唐门出击 万里鹏程",
+"id": "CL_1804_01"
+},
+"ch8_3_2_2_1|1069": {
+"cls": "CombatLevel",
+"desc": "赶回山上 南宫深",
+"id": "CL_1812_01"
+},
+"ch8_3_2_3_1|493": {
+"cls": "CombatLevel",
+"desc": "赶回山上 上官隼",
+"id": "CL_1812_02"
+},
+"ch8_6_1_1|363": {
+"cls": "CombatLevel",
+"desc": "刺杀盟主 武林群侠",
+"id": "CL_1808_01"
+},
+"ch8_6_1_2|294": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 金乌上人",
+"id": "CL_1803_01"
+},
+"ch8_6_2|367": {
+"cls": "CombatLevel",
+"desc": "护卫三师兄 火龙仙君",
+"id": "CL_1803_02"
+},
+"ch8_6_3|3010": {
+"cls": "CombatLevel",
+"desc": "刺杀盟主 瑞笙",
+"id": "CL_1809_01"
+},
+"ch8_7_2_1|7150": {
+"cls": "CombatLevel",
+"desc": "眉山之颠 瑞笙",
+"id": "CL_1813_01"
+},
+"door_02_504|95": {
+"cls": "CombatLevel",
+"desc": "姜记肉包 砸店 江湖拳师",
+"id": "CL_5006_01"
+},
+"door_free_102|33": {
+"cls": "CombatLevel",
+"desc": "大门 门市 遇见飞石帮",
+"id": "CL_5001_01"
+},
+"door_free_103|16": {
+"cls": "CombatLevel",
+"desc": "大门 门市 遇见锦香宫",
+"id": "CL_5002_01"
+},
+"door_free_104|60": {
+"cls": "CombatLevel",
+"desc": "大门 门市 看武师表演",
+"id": "CL_5003_01"
+},
+"door_free_201|19": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_5001"
+},
+"door_free_509|36": {
+"cls": "CombatLevel",
+"desc": "马富贵 弄蛇失败",
+"id": "CL_5103_01"
+},
+"door_free_509|43": {
+"cls": "CombatLevel",
+"desc": "马富贵 弄蛇失败",
+"id": "CL_5103_02"
+},
+"door_free_509|50": {
+"cls": "CombatLevel",
+"desc": "马富贵 弄蛇失败",
+"id": "CL_5103_03"
+},
+"door_free_512|45": {
+"cls": "CombatLevel",
+"desc": "福韫 化缘",
+"id": "CL_5104_01"
+},
+"door_free_514|16": {
+"cls": "BattleLevel",
+"desc": "飞石帮",
+"id": "BL_5004"
+},
+"door_girl_05_501|12": {
+"cls": "CombatLevel",
+"desc": "夏侯兰唐门养成 切磋",
+"id": "CL_3005_01"
+},
+"door_girl_05_502|12": {
+"cls": "CombatLevel",
+"desc": "夏侯兰唐门养成 切磋",
+"id": "CL_3005_01"
+},
+"door_girl_05_504|12": {
+"cls": "CombatLevel",
+"desc": "夏侯兰唐门养成 搭讪",
+"id": "CL_3005_02"
+},
+"fish_01_201|16": {
+"cls": "CombatLevel",
+"desc": "钓鱼事件",
+"id": "CL_2001_01"
+},
+"fortress_work_101|16": {
+"cls": "CombatLevel",
+"desc": "外堡 被袭击",
+"id": "CL_5004_01"
+},
+"fortress_work_201|16": {
+"cls": "BattleLevel",
+"desc": "混战",
+"id": "BL_5002"
+},
+"meeting_option_703_01|601": {
+"cls": "CombatLevel",
+"desc": "正常路线 弟子离开唐门 ",
+"id": "CL_1701_01"
+},
+"meeting_option_704_02_02_01|112": {
+"cls": "CombatLevel",
+"desc": "段考 唐衫",
+"id": "CL_1702_04"
+},
+"meeting_option_704_02_02_01|135": {
+"cls": "CombatLevel",
+"desc": "段考 唐娇娇",
+"id": "CL_1702_05"
+},
+"meeting_option_704_02_02_01|158": {
+"cls": "CombatLevel",
+"desc": "段考 小梅",
+"id": "CL_1702_06"
+},
+"meeting_option_704_02_02_01|89": {
+"cls": "CombatLevel",
+"desc": "段考 唐大惊",
+"id": "CL_1702_03"
+},
+"meeting_option_704_02_02_02|105": {
+"cls": "CombatLevel",
+"desc": "段考 唐娇娇",
+"id": "CL_1702_05"
+},
+"meeting_option_704_02_02_02|128": {
+"cls": "CombatLevel",
+"desc": "段考 小梅",
+"id": "CL_1702_06"
+},
+"meeting_option_704_02_02_02|82": {
+"cls": "CombatLevel",
+"desc": "段考 唐衫",
+"id": "CL_1702_04"
+},
+"meeting_option_704_02_02_03|75": {
+"cls": "CombatLevel",
+"desc": "段考 唐娇娇",
+"id": "CL_1702_05"
+},
+"meeting_option_704_02_02_03|98": {
+"cls": "CombatLevel",
+"desc": "段考 小梅",
+"id": "CL_1702_06"
+},
+"meeting_option_704_02_02_04|66": {
+"cls": "CombatLevel",
+"desc": "段考 小梅",
+"id": "CL_1702_06"
+},
+"meeting_option_704_02|119": {
+"cls": "CombatLevel",
+"desc": "段考 唐门弟子",
+"id": "CL_1702_02"
+},
+"meeting_option_704_02|88": {
+"cls": "CombatLevel",
+"desc": "段考 四师兄",
+"id": "CL_1702_01"
+},
+"meeting_option_704_03|103": {
+"cls": "CombatLevel",
+"desc": "段考 三师兄",
+"id": "CL_1702_07"
+},
+"section_01_free_00_901_01|101": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度2",
+"id": "CL_5000_07"
+},
+"section_01_free_00_901_01|110": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度2",
+"id": "CL_5000_08"
+},
+"section_01_free_00_901_01|135": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度3",
+"id": "CL_5000_50"
+},
+"section_01_free_00_901_01|144": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度3",
+"id": "CL_5000_51"
+},
+"section_01_free_00_901_01|153": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度3",
+"id": "CL_5000_52"
+},
+"section_01_free_00_901_01|30": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度1",
+"id": "CL_5000_01"
+},
+"section_01_free_00_901_01|39": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度1",
+"id": "CL_5000_02"
+},
+"section_01_free_00_901_01|48": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度1",
+"id": "CL_5000_03"
+},
+"section_01_free_00_901_01|57": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度1",
+"id": "CL_5000_04"
+},
+"section_01_free_00_901_01|83": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度2",
+"id": "CL_5000_05"
+},
+"section_01_free_00_901_01|92": {
+"cls": "CombatLevel",
+"desc": "崆峒留学 休息 和别派打架 难度2",
+"id": "CL_5000_06"
+},
+"section_01_free_01_501|12": {
+"cls": "CombatLevel",
+"desc": "飞天弟子找碴",
+"id": "CL_5105_01"
+},
+"section_01_free_03_01|813": {
+"cls": "CombatLevel",
+"desc": "崆峒铁拳门 介入小竹纠纷",
+"id": "CL_1204_01"
+},
+"section_01_free_06_02_301_02|164": {
+"cls": "CombatLevel",
+"desc": "崆峒 赌博被抢",
+"id": "CL_5101_02"
+},
+"section_01_free_06_03_02|16": {
+"cls": "CombatLevel",
+"desc": "崆峒擂台 难度1",
+"id": "CL_1203_01"
+},
+"section_01_free_06_03_02|21": {
+"cls": "CombatLevel",
+"desc": "崆峒擂台 难度1",
+"id": "CL_1203_02"
+},
+"section_01_free_06_03_02|26": {
+"cls": "CombatLevel",
+"desc": "崆峒擂台 难度1",
+"id": "CL_1203_03"
+},
+"section_01_free_08_01|469": {
+"cls": "CombatLevel",
+"desc": "鹤崖 火闪电",
+"id": "CL_2004_01"
+},
+"section_01_free_08_06_501|16": {
+"cls": "CombatLevel",
+"desc": "鹤崖 火闪电1",
+"id": "CL_2005_01"
+},
+"section_01_free_08_06_502|16": {
+"cls": "CombatLevel",
+"desc": "鹤崖 火闪电1",
+"id": "CL_2005_02"
+},
+"section_01_free_08_06_503|16": {
+"cls": "CombatLevel",
+"desc": "鹤崖 火闪电1",
+"id": "CL_2005_03"
+},
+"section_01_free_08_06_504|12": {
+"cls": "CombatLevel",
+"desc": "鹤崖 火闪电1",
+"id": "CL_2005_04"
+},
+"section_01_free_08_06_505|16": {
+"cls": "CombatLevel",
+"desc": "鹤崖 火闪电1",
+"id": "CL_2005_05"
+},
+"section_02_free_01_02_501|16": {
+"cls": "CombatLevel",
+"desc": "留学青城 野猪",
+"id": "CL_1316_01"
+},
+"section_02_free_01_02_502|12": {
+"cls": "CombatLevel",
+"desc": "留学青城 武林人",
+"id": "CL_1317_01"
+},
+"section_02_free_01_02_901|1289": {
+"cls": "CombatLevel",
+"desc": "留学青城 武师",
+"id": "CL_1320_01"
+},
+"section_02_free_01_02_902|582": {
+"cls": "CombatLevel",
+"desc": "青城道长的地位 山猪",
+"id": "CL_1329_01"
+},
+"section_02_free_02_02_501|14": {
+"cls": "CombatLevel",
+"desc": "江陵大战与丐帮在客栈僵持不下",
+"id": "CL_1306_01"
+},
+"section_02_free_02_02_502|14": {
+"cls": "CombatLevel",
+"desc": "留学青城 青城弟子",
+"id": "CL_1318_01"
+},
+"talk_brother3_01|82": {
+"cls": "CombatLevel",
+"desc": "与三师兄切磋",
+"id": "CL_3001_01"
+},
+"talk_brother3_option_05|31": {
+"cls": "CombatLevel",
+"desc": "DEMO闲聊 与三师兄切磋",
+"id": "CL_3001"
+},
+"talk_brother4_option_02_04|58": {
+"cls": "CombatLevel",
+"desc": "四师兄切磋 全力",
+"id": "CL_3004_01"
+},
+"talk_brother4_option_02_05|146": {
+"cls": "CombatLevel",
+"desc": "四师兄切磋",
+"id": "CL_3004_02"
+},
+"talk_girl5_02|1200": {
+"cls": "CombatLevel",
+"desc": "闲聊 小兰 捍卫魏掌门",
+"id": "CL_G0005_02_01"
+},
+"talk_girl5_02|1597": {
+"cls": "CombatLevel",
+"desc": "闲聊 小兰 绑架樊啸天",
+"id": "CL_G0005_02_02"
+},
+"talk_girl5_02|3072": {
+"cls": "CombatLevel",
+"desc": "闲聊 小兰 绑架上官萤",
+"id": "CL_G0005_02_03"
+},
+"talk_girl5_10|42": {
+"cls": "CombatLevel",
+"desc": "闲聊 小兰 切磋武功1",
+"id": "CL_G0005_10_01"
+},
+"talk_girl5_11|42": {
+"cls": "CombatLevel",
+"desc": "闲聊 小兰 切磋武功2",
+"id": "CL_G0005_11_01"
+},
+"teashop_work_101|36": {
+"cls": "CombatLevel",
+"desc": "茶舖 被挑衅",
+"id": "CL_5005_01"
+},
+"teashop_work_201|16": {
+"cls": "CombatLevel",
+"desc": "大门 门市 看武师表演",
+"id": "CL_5003_01"
+},
+"teashop_work_202|16": {
+"cls": "BattleLevel",
+"desc": "飞石帮",
+"id": "BL_5003_02"
+},
+"teashop_work_203|16": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_5003_03"
+},
+"travel_result_001_901|15": {
+"cls": "CombatLevel",
+"desc": "外出路途 遇见绿林好汉",
+"id": "CL_9000_01"
+},
+"travel_result_302_901|18": {
+"cls": "CombatLevel",
+"desc": "外出路途 遇见绿林好汉",
+"id": "CL_9000_01"
+},
+"travel_result_310_501|147": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3200"
+},
+"travel_result_310_501|20": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_3200"
+},
+"travel_result_401_501|47": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_01"
+},
+"travel_result_401_501|87": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_01"
+},
+"travel_result_401_502|105": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_01"
+},
+"travel_result_401_502|57": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_01"
+},
+"travel_result_401_503|43": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_02"
+},
+"travel_result_401_503|88": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_02"
+},
+"travel_result_401_504|46": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_01"
+},
+"travel_result_401_504|84": {
+"cls": "CombatLevel",
+"desc": "返回唐门途中遇敌",
+"id": "CL_1405_01"
+},
+"travel_result_501_501|12": {
+"cls": "CombatLevel",
+"desc": "崆峒行前置 大山贼",
+"id": "CL_1509_01"
+},
+"travel_result_601_101|145": {
+"cls": "BattleLevel",
+"desc": "地狱道",
+"id": "BL_1601_01"
+},
+"travel_result_601_101|172": {
+"cls": "BattleLevel",
+"desc": "地狱道",
+"id": "BL_1601_02"
+},
+"travel_result_601_101|231": {
+"cls": "BattleLevel",
+"desc": "地狱道",
+"id": "BL_1601_02"
+},
+"travel_result_601_102|145": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_1602_01"
+},
+"travel_result_601_102|172": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_1602_02"
+},
+"travel_result_601_102|243": {
+"cls": "BattleLevel",
+"desc": "丐帮",
+"id": "BL_1602_02"
+},
+"travel_result_601_103|145": {
+"cls": "BattleLevel",
+"desc": "白鲨帮",
+"id": "BL_1603_01"
+},
+"travel_result_601_103|172": {
+"cls": "BattleLevel",
+"desc": "白鲨帮",
+"id": "BL_1603_02"
+},
+"travel_result_601_103|233": {
+"cls": "BattleLevel",
+"desc": "白鲨帮",
+"id": "BL_1603_02"
+},
+"travel_result_601_103|252": {
+"cls": "BattleLevel",
+"desc": "白鲨帮",
+"id": "BL_1603_03"
+},
+"travel_result_601_901|302": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见峨嵋派",
+"id": "CL_1611_01"
+},
+"travel_result_601_901|500": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见峨嵋派",
+"id": "CL_1611_01"
+},
+"travel_result_601_901|87": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见峨嵋派",
+"id": "CL_1611_01"
+},
+"travel_result_601_902|69": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见青城派",
+"id": "CL_1612_01"
+},
+"travel_result_601_903|55": {
+"cls": "BattleLevel",
+"desc": "崆峒派",
+"id": "BL_1613_01"
+},
+"travel_result_601_904|104": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见点苍派",
+"id": "CL_1614_01"
+},
+"travel_result_601_904|124": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见点苍派",
+"id": "CL_1614_01"
+},
+"travel_result_601_905|106": {
+"cls": "CombatLevel",
+"desc": "前往武林大会路途 遇见全真派",
+"id": "CL_1615_01"
+},
+"travel_result_S2501_01_901|14": {
+"cls": "CombatLevel",
+"desc": "雪山行 回程 遇见情敌",
+"id": "CL_S2501_01"
+},
+"travel_result_S2501_01_901|19": {
+"cls": "CombatLevel",
+"desc": "雪山行 回程 遇见情敌",
+"id": "CL_S2501_02"
+},
+"travel_result_S2501_01_902|21": {
+"cls": "CombatLevel",
+"desc": "雪山行 回程 遇见强奸犯",
+"id": "CL_S2501_03"
+},
+"travel_result_S2501_01_903|14": {
+"cls": "CombatLevel",
+"desc": "雪山行 回程 遇见少侠",
+"id": "CL_S2501_04"
+},
+"travel_result_S2501_01_903|19": {
+"cls": "CombatLevel",
+"desc": "雪山行 回程 遇见少侠",
+"id": "CL_S2501_05"
+},
+"travel_result_S2901_02_501|12": {
+"cls": "CombatLevel",
+"desc": "小竹回家 路途 书生",
+"id": "CL_S2901_02_01"
+},
+"travel_result_S2901_02_502|12": {
+"cls": "CombatLevel",
+"desc": "小竹回家 路途 锦香宫弟子",
+"id": "CL_S2901_02_02"
+},
+"travel_result_S2901_02_503|12": {
+"cls": "CombatLevel",
+"desc": "小竹回家 路途 捕快",
+"id": "CL_S2901_02_03"
+},
+"travel_result_S2901_05_501|12": {
+"cls": "CombatLevel",
+"desc": "小竹回家 路途 捕快",
+"id": "CL_S2901_02_03"
+}
+}

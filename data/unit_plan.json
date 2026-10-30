@@ -1,0 +1,818 @@
+{
+ "units": [
+  {
+   "name": "炼丹房的活计",
+   "patterns": [
+    "alchemy_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-炼丹房",
+   "role": "日常",
+   "order": 1000
+  },
+  {
+   "name": "锻冶场的活计",
+   "patterns": [
+    "forge_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-锻冶场",
+   "role": "日常",
+   "order": 1001
+  },
+  {
+   "name": "伙房掌厨",
+   "patterns": [
+    "kitchen_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-伙房",
+   "role": "日常",
+   "order": 1002
+  },
+  {
+   "name": "药铺行医",
+   "patterns": [
+    "pharmacy_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-药铺",
+   "role": "日常",
+   "order": 1003
+  },
+  {
+   "name": "茶肆看店",
+   "patterns": [
+    "teashop_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-茶肆",
+   "role": "日常",
+   "order": 1004
+  },
+  {
+   "name": "外堡收租",
+   "patterns": [
+    "fortress_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-外堡",
+   "role": "日常",
+   "order": 1005
+  },
+  {
+   "name": "正心堂打坐",
+   "patterns": [
+    "mall_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-正心堂",
+   "role": "日常",
+   "order": 1006
+  },
+  {
+   "name": "讲经堂庶务",
+   "patterns": [
+    "study_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-讲经堂",
+   "role": "日常",
+   "order": 1007
+  },
+  {
+   "name": "弟子房日常",
+   "patterns": [
+    "room_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-弟子房",
+   "role": "日常",
+   "order": 1008
+  },
+  {
+   "name": "女弟子房",
+   "patterns": [
+    "girlroom_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-女弟子房",
+   "role": "日常",
+   "order": 1009
+  },
+  {
+   "name": "练功场团练",
+   "patterns": [
+    "center_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-练功场",
+   "role": "日常",
+   "order": 1010
+  },
+  {
+   "name": "龙湘后山练剑",
+   "patterns": [
+    "back_02_501*"
+   ],
+   "arc": "其他",
+   "place": "唐门-后山",
+   "role": "路线",
+   "order": 1011
+  },
+  {
+   "name": "后山烤鱼与点拨小竹",
+   "patterns": [
+    "back_03_50*"
+   ],
+   "arc": "其他",
+   "place": "唐门-后山",
+   "role": "日常",
+   "order": 1012
+  },
+  {
+   "name": "后山日常",
+   "patterns": [
+    "back_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-后山",
+   "role": "日常",
+   "order": 1013
+  },
+  {
+   "name": "大门口街事",
+   "patterns": [
+    "door_02_50*"
+   ],
+   "arc": "其他",
+   "place": "唐门-大门",
+   "role": "日常",
+   "order": 1014
+  },
+  {
+   "name": "大门口日常",
+   "patterns": [
+    "door_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-大门",
+   "role": "日常",
+   "order": 1015
+  },
+  {
+   "name": "温泉日常",
+   "patterns": [
+    "spa_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-温泉",
+   "role": "日常",
+   "order": 1016
+  },
+  {
+   "name": "菜田耕作",
+   "patterns": [
+    "farm_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-义田",
+   "role": "日常",
+   "order": 1017
+  },
+  {
+   "name": "溪边钓鱼",
+   "patterns": [
+    "fish_*"
+   ],
+   "arc": "其他",
+   "place": "溪边",
+   "role": "日常",
+   "order": 1018
+  },
+  {
+   "name": "棋室对弈",
+   "patterns": [
+    "chess_*"
+   ],
+   "arc": "其他",
+   "place": "棋室",
+   "role": "日常",
+   "order": 1019
+  },
+  {
+   "name": "赌坊",
+   "patterns": [
+    "casino_*"
+   ],
+   "arc": "其他",
+   "place": "赌坊",
+   "role": "日常",
+   "order": 1020
+  },
+  {
+   "name": "赶路",
+   "patterns": [
+    "travel_*"
+   ],
+   "arc": "其他",
+   "place": "路上",
+   "role": "日常",
+   "order": 1021
+  },
+  {
+   "name": "家会建言",
+   "patterns": [
+    "meeting_option_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-正心堂",
+   "role": "支线",
+   "order": 1022
+  },
+  {
+   "name": "唐门家会",
+   "patterns": [
+    "meeting_01*"
+   ],
+   "arc": "其他",
+   "place": "唐门-正心堂",
+   "role": "主线",
+   "order": 1023
+  },
+  {
+   "name": "崆峒养成",
+   "patterns": [
+    "section_01_*"
+   ],
+   "arc": "其他",
+   "place": "崆峒山",
+   "role": "日常",
+   "order": 1024
+  },
+  {
+   "name": "青城养成",
+   "patterns": [
+    "section_02_*"
+   ],
+   "arc": "其他",
+   "place": "青城山",
+   "role": "日常",
+   "order": 1025
+  },
+  {
+   "name": "玄功门前辈点穴",
+   "patterns": [
+    "S0014_*"
+   ],
+   "arc": "其他",
+   "place": "崆峒山",
+   "role": "支线",
+   "order": 1030
+  },
+  {
+   "name": "唐仙儿比试与送鸡",
+   "patterns": [
+    "S0017_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1031
+  },
+  {
+   "name": "叶云舟面馆解围",
+   "patterns": [
+    "S0018_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1032
+  },
+  {
+   "name": "乞丐与割包贼",
+   "patterns": [
+    "S0023_*"
+   ],
+   "arc": "其他",
+   "place": "街头",
+   "role": "支线",
+   "order": 1033
+  },
+  {
+   "name": "福韫与许大鲸",
+   "patterns": [
+    "S0026_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1034
+  },
+  {
+   "name": "叶云舟与段智秀旧怨",
+   "patterns": [
+    "S0028_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1035
+  },
+  {
+   "name": "晁和冒名招摇撞骗",
+   "patterns": [
+    "S0105_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1036
+  },
+  {
+   "name": "唐门弟子诈败与晁和受考",
+   "patterns": [
+    "S0106_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1037
+  },
+  {
+   "name": "峨嵋狄傲挑战",
+   "patterns": [
+    "S0121_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1038
+  },
+  {
+   "name": "上官萤入唐门",
+   "patterns": [
+    "S0202_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1039
+  },
+  {
+   "name": "冒牌叶云舟求亲",
+   "patterns": [
+    "S0208_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1040
+  },
+  {
+   "name": "养命丹与云裳病危",
+   "patterns": [
+    "S0209_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1041
+  },
+  {
+   "name": "与唐门弟子约战",
+   "patterns": [
+    "S2100_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1042
+  },
+  {
+   "name": "夺魄门小偷",
+   "patterns": [
+    "S2700_*"
+   ],
+   "arc": "其他",
+   "place": "崆峒山",
+   "role": "支线",
+   "order": 1043
+  },
+  {
+   "name": "狱中与瑞笙",
+   "patterns": [
+    "S2800_*"
+   ],
+   "arc": "其他",
+   "place": "崆峒山",
+   "role": "支线",
+   "order": 1044
+  },
+  {
+   "name": "修装备与铁飞龙",
+   "patterns": [
+    "S2914_*",
+    "S2910_*"
+   ],
+   "arc": "其他",
+   "place": "崆峒山",
+   "role": "支线",
+   "order": 1045
+  },
+  {
+   "name": "玄功洞遭擒",
+   "patterns": [
+    "S2915_*"
+   ],
+   "arc": "其他",
+   "place": "崆峒山",
+   "role": "支线",
+   "order": 1046
+  },
+  {
+   "name": "唐惟元辞别赴青城",
+   "patterns": [
+    "S3004_*",
+    "S3006_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1047
+  },
+  {
+   "name": "娶妻幻想",
+   "patterns": [
+    "S8500_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1048
+  },
+  {
+   "name": "向天下英雄讨教",
+   "patterns": [
+    "S0802_*"
+   ],
+   "arc": "其他",
+   "place": "武林大会",
+   "role": "支线",
+   "order": 1049
+  },
+  {
+   "name": "大娘上门讨说法",
+   "patterns": [
+    "S0801_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1050
+  },
+  {
+   "name": "猴儿酒",
+   "patterns": [
+    "S0502_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-后山",
+   "role": "支线",
+   "order": 1051
+  },
+  {
+   "name": "正心堂疗伤",
+   "patterns": [
+    "S0503_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1052
+  },
+  {
+   "name": "教训污吏官兵",
+   "patterns": [
+    "S0603_*"
+   ],
+   "arc": "其他",
+   "place": "街头",
+   "role": "支线",
+   "order": 1053
+  },
+  {
+   "name": "瑞笙恩断义绝",
+   "patterns": [
+    "S0702_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1054
+  },
+  {
+   "name": "飞石帮请罪",
+   "patterns": [
+    "S0703_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-茶肆",
+   "role": "支线",
+   "order": 1055
+  },
+  {
+   "name": "夜忆小师妹",
+   "patterns": [
+    "S9901_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1056
+  },
+  {
+   "name": "暴言被逐",
+   "patterns": [
+    "S9903_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1057
+  },
+  {
+   "name": "蝴蝶双盗",
+   "patterns": [
+    "S9905_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1058
+  },
+  {
+   "name": "乞丐赠跑路秘籍",
+   "patterns": [
+    "S9906_*"
+   ],
+   "arc": "其他",
+   "place": "街头",
+   "role": "支线",
+   "order": 1059
+  },
+  {
+   "name": "指点弟子发镖",
+   "patterns": [
+    "S9907_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1060
+  },
+  {
+   "name": "蒙面人送秘籍",
+   "patterns": [
+    "S8400_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1061
+  },
+  {
+   "name": "唐门弟子论暗器",
+   "patterns": [
+    "S9001_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1062
+  },
+  {
+   "name": "唐惟元外堡抓公差",
+   "patterns": [
+    "S0022_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-外堡",
+   "role": "支线",
+   "order": 1063
+  },
+  {
+   "name": "李富贵扛包",
+   "patterns": [
+    "S0025_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1064
+  },
+  {
+   "name": "独逛街头",
+   "patterns": [
+    "walk_*"
+   ],
+   "arc": "其他",
+   "place": "街头",
+   "role": "日常",
+   "order": 1065
+  },
+  {
+   "name": "演示片段",
+   "patterns": [
+    "pv_*"
+   ],
+   "arc": "其他",
+   "place": "",
+   "role": "日常",
+   "order": 1066
+  },
+  {
+   "name": "生辰赠礼",
+   "patterns": [
+    "birth_*",
+    "brith_*"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "日常",
+   "order": 1067
+  },
+  {
+   "name": "龙湘说不出口的心意",
+   "patterns": [
+    "S0020_02_04_part_2"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "路线",
+   "order": 1068
+  },
+  {
+   "name": "龙渊玄剑掌",
+   "patterns": [
+    "S0021_02_01"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1069
+  },
+  {
+   "name": "炼丹房爆炉",
+   "patterns": [
+    "S0108_01"
+   ],
+   "arc": "其他",
+   "place": "唐门-炼丹房",
+   "role": "支线",
+   "order": 1070
+  },
+  {
+   "name": "唐和旷职与纵马",
+   "patterns": [
+    "S0109_01",
+    "S0111_01"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1071
+  },
+  {
+   "name": "唐芳迟归",
+   "patterns": [
+    "S0203_01"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1072
+  },
+  {
+   "name": "同门追杀",
+   "patterns": [
+    "S0210_01_01",
+    "S0210_01_02"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1073
+  },
+  {
+   "name": "王二壮掌伤赵活",
+   "patterns": [
+    "S0301_02_02"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1074
+  },
+  {
+   "name": "虎战车与鹦鹉",
+   "patterns": [
+    "S0305_02_04_01"
+   ],
+   "arc": "其他",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1075
+  },
+  {
+   "name": "锻造订单",
+   "patterns": [
+    "craft_*"
+   ],
+   "arc": "其他",
+   "place": "唐门-锻冶场",
+   "role": "日常",
+   "order": 1077
+  },
+  {
+   "name": "采药",
+   "patterns": [
+    "fungus*"
+   ],
+   "arc": "其他",
+   "place": "山野",
+   "role": "日常",
+   "order": 1078
+  },
+  {
+   "name": "晁和冒名顶替",
+   "patterns": [
+    "S0102_01",
+    "S0103_01",
+    "S0104_01",
+    "S0105_01"
+   ],
+   "arc": "唐门",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1080
+  },
+  {
+   "name": "唐衫跪门投师",
+   "patterns": [
+    "S0120_01"
+   ],
+   "arc": "唐门",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1081
+  },
+  {
+   "name": "吕翁索债与字画失窃",
+   "patterns": [
+    "S2001_01_02",
+    "S2001_01_03"
+   ],
+   "arc": "唐门",
+   "place": "唐门",
+   "role": "支线",
+   "order": 1082
+  },
+  {
+   "name": "外堡失火",
+   "patterns": [
+    "S0024_01_02"
+   ],
+   "arc": "唐门",
+   "place": "唐门-外堡",
+   "role": "支线",
+   "order": 1083
+  },
+  {
+   "name": "王二壮自陈围城",
+   "patterns": [
+    "S0301_03"
+   ],
+   "arc": "江陵围城",
+   "place": "江陵",
+   "role": "支线",
+   "order": 1084
+  },
+  {
+   "name": "系统与道具",
+   "patterns": [
+    "food_menu_*",
+    "sample",
+    "test_load",
+    "S2301_01",
+    "meeting_start_01_temp",
+    "meeting_option_01_temp"
+   ],
+   "arc": "其他",
+   "place": "",
+   "role": "其他",
+   "order": 1090
+  }
+ ]
+}

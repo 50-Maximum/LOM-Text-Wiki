@@ -1,0 +1,8 @@
+{
+ "github": {
+  "owner": "50-Maximum",
+  "repo": "LOM-Text-Wiki"
+ },
+ "manifest": "",
+ "note": "填 owner/repo（例：luoroland/LegendOfMortal-Wiki）即可用 GitHub Releases 自动更新；也可改用 manifest 直链。"
+}

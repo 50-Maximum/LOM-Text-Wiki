@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>活侠传追踪Wiki</title>
+<style>
+:root{
+  --bg:#141619; --panel:#1b1e23; --line:#282c33; --fg:#d9dde3; --dim:#8a93a1;
+  --acc:#c8a06a; --narr:#7f8b99; --think:#6fa8dc; --center:#b58cd6;
+  --link:#9fc4e8;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font:15px/1.8 "Microsoft YaHei","PingFang SC",sans-serif;background:var(--bg);color:var(--fg)}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+header{display:flex;align-items:center;gap:18px;padding:12px 26px;background:var(--panel);
+  border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header .brand{font-size:16px;color:var(--acc);font-weight:600;letter-spacing:.06em;white-space:nowrap}
+header .brand a{color:var(--acc)}
+#q{width:340px;max-width:42vw;padding:7px 12px;background:#111316;border:1px solid var(--line);
+  color:var(--fg);border-radius:5px;outline:none}
+#q:focus{border-color:var(--acc)}
+nav{display:flex;gap:14px;flex-wrap:wrap;font-size:13.5px;color:var(--dim)}
+nav a{color:var(--dim)}
+nav a:hover{color:var(--acc)}
+#layout{display:grid;grid-template-columns:250px 1fr;min-height:calc(100vh - 57px)}
+aside{background:var(--panel);border-right:1px solid var(--line);padding:16px 10px 40px;overflow:auto}
+main{overflow:auto;padding:26px 40px 100px}
+.wrap{max-width:940px;margin:0 auto}
+aside .grp{font-size:12px;color:#69707c;letter-spacing:.08em;margin:14px 8px 6px}
+aside .item{display:block;padding:4px 9px;border-radius:4px;color:var(--dim);font-size:13.5px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+aside .item:hover{background:#232830;color:var(--fg);text-decoration:none}
+aside .item.on{background:#2b3038;color:var(--acc)}
+aside .item .n{float:right;color:#5b6270;font-size:11px}
+aside .search-sm{width:100%;padding:6px 9px;background:#111316;border:1px solid var(--line);
+  color:var(--fg);border-radius:4px;margin-bottom:6px;outline:none;font-size:13px}
+h1{font-size:26px;margin:0 0 4px;color:#f0e6d2;font-weight:600;letter-spacing:.02em}
+.sub{color:var(--dim);font-size:13px;margin-bottom:16px}
+.sub .tag{display:inline-block;background:#2a2118;color:var(--acc);border-radius:3px;
+  padding:1px 8px;font-size:12px;margin-right:8px}
+.lead{font-size:15.5px;line-height:1.95;margin:12px 0 20px;color:#e3e7ec}
+.lead sup.fn{cursor:pointer;color:#e8b04b;font-size:10.5px;vertical-align:super;line-height:0;margin:0 1px;font-weight:600}
+.note sup.fn{color:#e8b04b;font-size:11px;vertical-align:super;margin-right:3px;font-weight:600}
+h2{font-size:18px;color:var(--acc);border-bottom:1px solid var(--line);padding-bottom:6px;
+  margin:34px 0 14px;font-weight:600}
+h3{font-size:15px;color:#d9c9a8;margin:18px 0 8px}
+.infobox{float:right;width:300px;margin:0 0 18px 26px;background:var(--panel);
+  border:1px solid var(--line);border-radius:6px;overflow:hidden;font-size:13.5px}
+.infobox .ttl{background:#232830;padding:8px 12px;color:var(--acc);font-weight:600;font-size:14px}
+.infobox .row{display:grid;grid-template-columns:78px 1fr;gap:8px;padding:6px 12px;
+  border-top:1px solid #20242a}
+.infobox .k{color:#8b93a1}
+.infobox .v{color:#d5dbe2;word-break:break-word}
+@media (max-width:900px){.infobox{float:none;width:auto;margin:0 0 18px}#layout{grid-template-columns:1fr}aside{display:block;position:fixed;left:0;top:0;bottom:0;width:250px;z-index:30;transform:translateX(-102%);transition:transform .18s}aside.open{transform:none;box-shadow:0 0 24px #000}#tocbtn{display:flex}}
+#tocbtn{display:none;position:fixed;left:14px;bottom:24px;width:40px;height:40px;border-radius:50%;background:#1d1a22;border:1px solid var(--line);color:var(--acc);align-items:center;justify-content:center;z-index:31;cursor:pointer;text-decoration:none;font-size:15px}
+.note{border-left:3px solid #3a424d;padding:6px 0 6px 12px;margin:9px 0}
+.note .ch{display:inline-block;background:#232830;color:#9aa4b2;border-radius:3px;
+  padding:0 7px;font-size:11.5px;margin-right:8px;vertical-align:1px}
+.note .ev{color:#6f7783;font-size:12.5px;margin-top:4px}
+.brwrap{overflow-x:auto;margin:10px 0}
+table.br{width:100%;border-collapse:collapse;font-size:13px}
+table.br th{text-align:left;color:#8b93a1;font-weight:500;padding:6px 10px;
+border-bottom:1px solid var(--line);white-space:nowrap}
+table.br td{padding:7px 10px;border-bottom:1px solid #232830;vertical-align:top;color:#c8d0da}
+table.br b{color:#e3e7ec;font-weight:600}
+table.br .eff{display:inline-block;color:#c9a86a;margin-right:8px;font-size:12.5px}
+.chip{display:inline-block;background:#232830;border:1px solid var(--line);border-radius:12px;
+  padding:2px 10px;margin:3px 5px 3px 0;font-size:12.5px;color:#aab4c0}
+.chip:hover{border-color:var(--acc);color:var(--acc);text-decoration:none}
+.chip .n{color:#5b6270;font-size:11px;margin-left:5px}
+.rel{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:6px 0;border-bottom:1px solid #1f2227}
+.rel .k{color:#d9c9a8}
+.rel .v{color:#b9c0c9;font-size:13.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:14px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.card h3{margin:0 0 6px;color:var(--acc);font-size:15px}
+.card .m{color:var(--dim);font-size:12.5px}
+.card .ex{color:#aeb6c0;font-size:13px;margin-top:8px;line-height:1.7}
+.listrow{display:flex;justify-content:space-between;padding:7px 2px;border-bottom:1px solid #1f2227}
+.listrow .nm{color:#d5dbe2}
+.listrow .nm a{color:#d5dbe2}
+.listrow .mt{color:#5b6270;font-size:12.5px}
+.hero{background:linear-gradient(135deg,#1e2228,#171a1f);border:1px solid var(--line);
+  border-radius:8px;padding:26px 28px;margin-bottom:22px}
+.hero h1{font-size:30px}
+.hero p{color:#aeb6c0;margin:8px 0 0;font-size:14.5px}
+.toc{background:var(--panel);border:1px solid var(--line);border-radius:6px;
+  padding:12px 18px;margin:16px 0;font-size:13.5px;columns:2}
+.toc a{display:block;color:#a9b6c4;padding:2px 0}
+.cats{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-size:12.5px;color:var(--dim)}
+.cats .tag{display:inline-block;background:#1e2833;border:1px solid #2b3a49;border-radius:3px;
+  padding:1px 8px;margin:2px 5px 2px 0;color:#8fa0b8}
+.wl{color:var(--link);border-bottom:1px dotted #3f5470}
+.wl:hover{text-decoration:none;border-bottom-color:var(--acc)}
+.redlink{color:#c47b7b;border-bottom:1px dotted #5c3b3b}
+details.br{margin:10px 0;border:1px solid #232830;border-left:3px solid #4a5568;
+  border-radius:0 5px 5px 0;background:#171a1f}
+details.br>summary{cursor:pointer;padding:7px 11px;color:#9fb3c8;font-size:12.5px;list-style:none}
+details.br>summary::-webkit-details-marker{display:none}
+details.br>summary:before{content:"▸ ";color:#5b6270}
+details.br[open]>summary:before{content:"▾ "}
+details.br .body{padding:2px 8px 8px}
+.line{display:grid;grid-template-columns:118px 1fr;gap:12px;padding:7px 8px 7px 10px;
+  border-left:3px solid transparent;border-bottom:1px solid #1f2227}
+.line:hover{background:#191c21}
+.line .sp{font-size:13px;text-align:right;color:var(--acc);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.line .sp span{display:block;font-size:10px;color:#5b6270;letter-spacing:.08em}
+.line .tx{white-space:pre-wrap}
+.line.narr{border-left-color:#3a424d}
+.line.narr .sp{color:var(--narr)}
+.line.narr .tx{color:#b9c0c9}
+.line.think{border-left-color:var(--think)}
+.line.think .sp{color:var(--think)}
+.line.think .tx{color:#a9c4dc;font-style:italic}
+.line.center{border-left-color:var(--center)}
+.line.center .sp{color:var(--center)}
+.key{color:#4b5563;font-size:11px;margin-left:8px}
+.ttl{font-weight:700;color:#f0d9ae;letter-spacing:.1em}
+.punch{display:inline-block;animation:sh .45s infinite}
+@keyframes sh{0%,100%{transform:translate(0,0)}25%{transform:translate(1px,-1px)}75%{transform:translate(-1px,1px)}}
+.choice{margin:10px 0 14px;padding:10px 12px;background:#1a1d22;border:1px solid #33291c;
+  border-left:3px solid var(--acc);border-radius:5px}
+.choice .ch{color:var(--acc);font-size:12px;margin-bottom:6px}
+.cond{display:block;color:#c9b391;font-size:12.5px;margin:2px 0}
+.opt{display:inline-block;background:#232830;border:1px solid var(--line);border-radius:4px;
+  padding:2px 8px;margin:3px 6px 3px 0;font-size:12px;color:#9aa4b2}
+.opt b{color:#e0cba6;font-weight:500}
+.bar{display:flex;gap:10px;margin:8px 0 2px;flex-wrap:wrap}
+.bar button,.pager button{background:#232830;border:1px solid var(--line);color:var(--dim);
+  border-radius:4px;padding:4px 12px;font-size:12.5px;cursor:pointer}
+.bar button:hover,.pager button:hover{color:var(--acc);border-color:var(--acc)}
+.pager{display:flex;gap:10px;justify-content:center;margin:22px 0;align-items:center;color:var(--dim);font-size:13px}
+.hit{padding:9px 11px;border:1px solid var(--line);border-radius:5px;margin-bottom:8px;cursor:pointer}
+.hit:hover{border-color:var(--acc)}
+.hit .h{color:var(--acc);font-size:12.5px}
+b{color:#f0d9ae;font-weight:600}
+.empty{color:var(--dim);padding:30px 0}
+.backbar{display:none;align-items:center;gap:10px;padding:8px 22px;font-size:13px;background:#151317;border-bottom:1px solid #2a2530}
+.backbar a{color:var(--acc);text-decoration:none}
+.ttl-badge{color:#c9a86a;font-size:12.5px;letter-spacing:3px;margin:0 0 4px;opacity:.95}
+.ttl{color:#c9a86a;font-size:12px;border:1px solid #3a3326;border-radius:3px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.spt{display:block;font-style:normal;font-size:11px;color:#c9a86a;letter-spacing:1.5px;opacity:.9}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 12px}
+.chips .clbl{color:var(--dim);font-size:12.5px;margin-right:2px}
+.fchip{display:inline-flex;gap:5px;align-items:center;padding:2px 9px;border:1px solid var(--line);
+  border-radius:12px;font-size:12.5px;color:var(--fg);background:#1a1d22}
+.fchip:hover{border-color:var(--acc);text-decoration:none}
+.fchip.on{background:#2a2320;border-color:var(--acc);color:var(--acc)}
+.fchip .n{color:var(--dim);font-size:11.5px}
+.fchip.on .n{color:var(--acc)}
+.backbar a:hover{text-decoration:underline}
+#rf{color:var(--dim);font-size:18px;line-height:1;padding:2px 6px;border:1px solid var(--line);border-radius:4px;text-decoration:none}
+#rf:hover{color:var(--acc);border-color:var(--acc);text-decoration:none}
+#rf.new{color:#111;background:var(--acc);border-color:var(--acc);font-size:12px;padding:4px 8px}
+#rf.new::after{content:' 内容已更新'}
+#totop{position:fixed;right:24px;bottom:24px;width:38px;height:38px;border-radius:50%;background:#1d1a22;border:1px solid var(--line);color:var(--acc);display:none;align-items:center;justify-content:center;text-decoration:none;font-size:16px;z-index:20}
+#totop.on{display:flex}
+#tobottom{position:fixed;right:24px;bottom:70px;width:38px;height:38px;border-radius:50%;background:#1d1a22;border:1px solid var(--line);color:var(--acc);display:none;align-items:center;justify-content:center;text-decoration:none;font-size:16px;z-index:20}
+#tobottom.on{display:flex}
+
+.mapbox{position:relative;margin:12px 0 10px;border:1px solid #d8cfbc;border-radius:8px;
+  overflow:hidden;background:#f6f1e5;line-height:0}
+.mapbox img{display:block;width:100%;height:auto}
+.mnode{position:absolute;width:13px;height:13px;border-radius:50%;background:#b4281e;
+  border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.35);
+  transform:translate(-50%,-50%);transition:transform .12s ease,background .12s ease}
+.mnode:hover{background:#e0341f;transform:translate(-50%,-50%) scale(1.4);z-index:5}
+.mlab{position:absolute;line-height:1.15;font-size:13px;padding:2px 6px;white-space:nowrap;
+  background:rgba(255,255,255,.92);border:1px solid #d8cfbc;border-radius:4px;
+  color:#2a2118;pointer-events:none}
+.mway{position:absolute;width:5px;height:5px;border-radius:50%;
+  background:rgba(96,64,32,.5);transform:translate(-50%,-50%);line-height:0}
+.mapnote{font-size:12px;color:#7a6a55;margin:2px 0 14px}
+
+.portrait{float:right;width:208px;max-width:32%;margin:0 0 14px 18px;border:1px solid #d8cfbc;
+  border-radius:8px;background:#f6f1e5;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.cover{float:right;width:150px;max-width:26%;margin:0 0 12px 16px;border:1px solid #d8cfbc;
+  border-radius:6px;background:#f6f1e5}
+
+#updchip{position:fixed;right:14px;bottom:12px;z-index:60;padding:5px 11px;border-radius:14px;background:#1b1e23;border:1px solid #282c33;color:#8a93a1;font-size:12px;cursor:pointer;user-select:none}
+#updchip:hover{color:#c8a06a;border-color:#c8a06a}
+
+.hero .meta{margin-top:6px;color:#8a93a1;font-size:12.5px;letter-spacing:.03em}
+.sgbtn{position:fixed;left:14px;bottom:12px;z-index:60;padding:6px 12px;border-radius:14px;
+  background:#1b1e23;border:1px solid #282c33;color:#8a93a1;font-size:12px;cursor:pointer;user-select:none}
+.sgbtn:hover{color:#c8a06a;border-color:#c8a06a}
+#sgmask{position:fixed;inset:0;background:rgba(8,9,11,.72);z-index:99;display:flex;
+  align-items:center;justify-content:center}
+#sgbox{width:min(620px,92vw);background:#1b1e23;border:1px solid #2b2f36;border-radius:8px;padding:18px 20px}
+#sgbox h3{margin:0 0 4px;font-size:15px;color:#c8a06a}
+#sgbox .who{color:#8a93a1;font-size:12px;margin-bottom:10px;word-break:break-all}
+#sgbox textarea{width:100%;height:150px;background:#111316;color:#d9dde3;border:1px solid #282c33;
+  border-radius:5px;padding:10px;font:14px/1.7 inherit;resize:vertical;outline:none}
+#sgbox textarea:focus{border-color:#c8a06a}
+#sgbox .row{display:flex;gap:10px;align-items:center;margin-top:10px}
+#sgbox button{padding:7px 16px;border-radius:5px;border:1px solid #2b2f36;background:#22262c;
+  color:#d9dde3;cursor:pointer;font-size:13px}
+#sgbox button.p{background:#c8a06a;border-color:#c8a06a;color:#141619;font-weight:600}
+#sgbox .hint{color:#6f7885;font-size:12px;margin-left:auto}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><a href="#/">活侠传追踪Wiki</a></div>
+  <a id="rf" href="javascript:void 0" onclick="location.reload();return false" title="刷新内容">⟳</a>
+  <input id="q" placeholder="搜索条目 / 人物 / 地点 / 事件…">
+  <nav id="nav">
+    <a href="#/">首页</a><a href="#/list/人物">人物</a><a href="#/list/势力">势力</a>
+    <a href="#/list/地点">地点</a><a href="#/list/事件">事件</a><a href="#/list/剧情单元">剧情单元</a><a href="#/list/剧情段">剧情段</a><a href="#/list/地图事件">地图事件</a><a href="#/list/物品">物品</a>
+    <a href="#/list/武学">武学</a><a href="#/list/数值">数值</a><a href="#/list/成就">成就</a><a href="#/chapters">原文</a>
+  </nav>
+</header>
+<div id="backbar" class="backbar"></div>
+<div id="layout">
+  <aside id="side"></aside>
+  <main id="main"><div class="wrap"><div class="empty">载入中…</div></div></main>
+</div>
+<a id="tocbtn" href="javascript:void 0" onclick="document.getElementById('side').classList.toggle('open');return false" title="目录">☰</a>
+<a id="totop" href="javascript:void 0" onclick="jumpTop();return false" title="回到页面最顶端">↑</a>
+<a id="tobottom" href="javascript:void 0" onclick="jumpBottom();return false" title="到页面最底端">↓</a>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const api=p=>fetch(p).then(r=>r.json());
+const enc=s=>encodeURIComponent(s);
+
+let NAME_LIST=[], NAME_MAP={}, NAME_RE=null, TITLES={};
+// 纯身份称呼不自动链接（这些页是群像：「江湖·掌门」「市井·妇人」），点进去没有具体所指
+const GENERIC_ROLES=['掌门','长老','师兄','师姐','师弟','师妹','师父','弟子','妇人','路人','乞丐',
+  '店小二','大妈','少年','官兵','掌柜','少侠','家丁','护卫','差役','客人','众人','旁白','汉子',
+  '老板','小厮','侍女','丫寰','仆役','老丈','姑娘','老汉','青年'];
+async function loadIndex(){
+  const d=await api('/api/nameindex');
+  NAME_LIST=d.names||[];
+  NAME_MAP={};
+  for(const x of NAME_LIST) if(!NAME_MAP[x.name]) NAME_MAP[x.name]=x.slug;
+  for(const s of GENERIC_ROLES) delete NAME_MAP[s];
+  const names=Object.keys(NAME_MAP)
+    .sort((a,b)=>b.length-a.length).map(n=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+  if(names.length) NAME_RE=new RegExp('('+names.join('|')+')','g');
+}
+function brief(s,n){
+  s=String(s||'').replace(/\s+/g,' ').trim();
+  n=n||44;
+  if(s.length<=n) return s;
+  const head=s.slice(0,n);
+  const cut=Math.max(head.lastIndexOf('。'),head.lastIndexOf('！'),head.lastIndexOf('？'),head.lastIndexOf('；'));
+  if(cut>=n*0.5) return s.slice(0,cut+1);
+  const soft=Math.max(head.lastIndexOf('，'),head.lastIndexOf('、'),head.lastIndexOf('：'));
+  if(soft>=n*0.6) return s.slice(0,soft)+'…';
+  return head+'…';
+}
+function linkify(text){
+  if(!text) return '';
+  if(!NAME_RE) return esc(text);
+  NAME_RE.lastIndex=0;
+  let out='', last=0, m;
+  while((m=NAME_RE.exec(text))!==null){
+    out+=esc(text.slice(last,m.index));
+    const slug=NAME_MAP[m[0]];
+    out+=slug?`<a class="wl" href="#/p/${enc(slug)}">${esc(m[0])}</a>`:esc(m[0]);
+    last=m.index+m[0].length;
+    if(m[0].length===0) NAME_RE.lastIndex++;
+  }
+  out+=esc(text.slice(last));
+  return out;
+}
+function fnmark(h){
+  if(!h) return h;
+  return h.replace(/（(\d+)）/g,(m,n)=>`<sup class="fn" data-fn="${n}" onclick="jumpFn(this)" title="跳转脚注 ${n}">${n}</sup>`);
+}
+function jumpFn(el){
+  const t=document.getElementById('fn-'+el.dataset.fn);
+  if(t){ t.scrollIntoView({block:'center'}); t.style.background='#33291a'; setTimeout(()=>t.style.background='',1600); }
+}
+function secHtml(t){
+  return String(t||'').replace(/\n/g,'<br>').split(/<br\s*\/?>/i).map(x=>fnmark(linkify(x))).join('<br>');
+}
+function rich(s){
+  let t=esc(s||'');
+  t=t.replace(/\{size=?(\d+)\}/g,(m,n)=>'<span style="font-size:'+Math.max(12,Math.min(34,Math.round(+n*0.6)))+'px">')
+     .replace(/\{\/size\}/g,'</span>')
+     .replace(/\{color=(#[0-9a-fA-F]{3,8})\}/g,'<span style="color:$1">')
+     .replace(/\{\/color\}/g,'</span>')
+     .replace(/\{title\}/g,'<span class="ttl">').replace(/\{\/title\}/g,'</span>')
+     .replace(/\{punch=[^}]*\}/g,'<span class="punch">').replace(/\{\/punch\}/g,'</span>')
+     .replace(/\{\$[^}]*\}/g,'');
+  return t;
+}
+const badge=mode=>({narrative:'旁白',think:'心声',center:'居中',center2:'居中',character:'对白'})[mode]||'对白';
+const cls=mode=>({narrative:'narr',think:'think',center:'center center2'})[mode]||'';
+
+/* ---------- 路由 ---------- */
+window.addEventListener('hashchange',route);
+function go(h){ location.hash=h; }
+
+/* ---------- 返回上一页（站内历史） ---------- */
+const NAV=[]; let curHash='', navSuppress=false, navRestore=false;
+const POS=new Map();
+function labelOf(h){
+  if(!h||h==='/') return '首页';
+  const p=decodeURIComponent(h).replace(/^#/,'').split('?')[0].replace(/^#/,'').split('/');
+  const kind=p[1]||'', arg=p.slice(2).join('/').split('?')[0];
+  if(kind==='p') return (arg.split('/').pop()||'条目');
+  if(kind==='list') return (arg||'全部')+' 列表';
+  if(kind==='scene') return '场景 '+arg.split('?')[0];
+  if(kind==='search') return '搜索「'+arg+'」';
+  if(kind==='chapters') return '原文';
+  return '首页';
+}
+function updateBack(){
+  const el=document.getElementById('backbar');
+  if(!el) return;
+  const t=NAV[NAV.length-1];
+  if(t && t.h!==curHash){
+    el.style.display='flex';
+    el.innerHTML=`<a href="javascript:void 0" onclick="goBack();return false">← 返回「${esc(t.label)}」</a>`;
+  }else{
+    el.style.display='none'; el.innerHTML='';
+  }
+}
+function goBack(){
+  const t=NAV.pop();
+  if(!t){ history.back(); return; }
+  navSuppress=true;
+  navRestore=true;
+  location.hash=t.h.replace(/^#/,'');
+  updateBack();
+}
+
+async function route(){
+  const h=decodeURIComponent(location.hash.replace(/^#/,''))||'/';
+  if(h!==curHash){
+    if(curHash) POS.set(curHash, window.scrollY||window.pageYOffset||0);
+    if(curHash && !navSuppress) NAV.push({h:curHash,label:labelOf(curHash)});
+    navSuppress=false;
+    curHash=h;
+  }
+  updateBack();
+  const [_,kind,...rest]=h.split('/');
+  const rawArg=rest.join('/');
+  const _q=(rawArg.split('?')[1]||'');
+  const arg=rawArg.split('?')[0];
+  window.scrollTo(0,0); $('#main').scrollTop=0;
+  try{
+    if(!kind||kind==='') await home();
+    else if(kind==='p' && arg==='关于本站') await home();
+    else if(kind==='p') await renderPage(arg);
+    else if(kind==='list'){
+      const qs=new URLSearchParams(_q);
+      await renderList(arg,qs.get('q')||'',parseInt(qs.get('o')||'0',10)||0,qs.get('f')||'',qs.get('f2')||'');
+    }
+    else if(kind==='search') await renderSearch(arg);
+    else if(kind==='scene') await renderScene(arg + (_q ? ('?' + _q) : ''));
+    else if(kind==='chapters') await renderChapters();
+    else await home();
+  } catch(err){
+    $('#main').innerHTML='<div class="wrap"><div class="empty">这一页没能载入：'
+      +esc(String((err&&err.message)||err))+'<br><br><a href="#/">回首页</a></div></div>';
+    console.error(err);
+  } finally {
+    if(navRestore){
+      navRestore=false;
+      const y=POS.get(curHash)||0;
+      const put=()=>window.scrollTo(0,y);
+      requestAnimationFrame(()=>{ requestAnimationFrame(put); setTimeout(put,60); });
+    }
+    document.title = (labelOf(curHash)||'活侠传') + ' · 活侠传百科';
+  }
+}
+
+/* ---------- 首页 ---------- */
+const QQ_GROUP='914717666';
+async function home(){
+  $('#side').innerHTML='';
+  const t=await api('/api/types');
+  const types=(t.types||[]).filter(x=>x.type!=='世界观');
+  const order=['地图','人物','势力','地点','事件','剧情单元','剧情段','地图事件','场景','书物','物品',
+    '武学','装备','天赋','战技','成就','数值','路线','结局','时间线','背景资源'];
+  const cards=types.filter(x=>order.includes(x.type))
+                   .sort((a,b)=>order.indexOf(a.type)-order.indexOf(b.type));
+  let ver='';
+  try{ ver=(await api('/api/appver')).version; }catch(e){}
+  let h='<div class="wrap">';
+  h+=`<div class="hero"><h1>活侠传追踪Wiki</h1>
+    <div class="lead">把《活侠传》的游戏原文拆成可查的条目：人物、势力、地点、事件、武学、物品与场景。
+    每条叙述都能点回具体场景，原文按句保留，不做转述改写。</div>
+    <div class="meta">单机离线 · v${esc(ver||'')} · 全部内容来自游戏资源与攻略资料</div></div>`;
+
+  h+='<h2>从这里开始</h2><div class="grid">';
+  const quick=[
+    ['#/search/', '全文检索', '按名字、台词、脚本编号片段查'],
+    ['/static/why.html', '触发链查询', '查事件/条件/旗标：谁让它成立、上游是什么'],
+    ['#/chapters', '原文阅读', '按章节逐场读全量剧本'],
+    ['#/p/'+encodeURIComponent('地图/大地图'), '大地图', '游戏原版地图，点地名进条目'],
+    ['#/p/'+encodeURIComponent('时间线/总览'), '时间线', '按年月旬看剧情推进']
+  ];
+  for(const [u,n,d] of quick)
+    h+=`<a class="card" href="${u}"><h3>${esc(n)}</h3><div class="m">${esc(d)}</div></a>`;
+  h+='</div>';
+
+  if(cards.length){
+    h+='<h2>全部条目</h2><div class="grid">';
+    for(const c of cards)
+      h+=`<a class="card" href="#/list/${enc(c.type)}"><h3>${esc(c.type)}</h3>
+          <div class="m">${c.n} 条</div></a>`;
+    h+='</div>';
+  }
+
+  h+='<h2>触发链查询怎么用</h2>'
+   + '<div class="lead">想知道某个事件为什么没出现、或要满足什么才会发生，用<a href="/static/why.html">触发链查询</a>。'
+   + '输入事件名、判定编号或旗标编号，它会把条件那一层拆开，告诉你读它的场景、写它的剧本行号，再往上一层层追。<br><br>'
+   + '三步就够：<br>'
+   + '一、输入关键词。事件名能只输一半，例如「吃醋」「破例」；判定编号如 Ch_6_4_3_3_1_002；旗标如 M60005，或者它的中文名「小竹同行武林大会」。<br>'
+   + '二、看「要发生这件事，先满足」这一段。每个条件后面都标了对应旗标在哪一场戏、哪一行被写进去，以及是「置为」还是「在原值上加」。<br>'
+   + '三、点场景名打开「上游」，看谁跳到这一场、跳转时附带什么条件。'
+   + '页面上写「剧本里没有写入点」的，是引擎或存档在写，剧本里确实找不到，不是漏查。</div>';
+
+  h+='<h2>页面上的标注怎么读</h2>'
+   + '<div class="lead">「时间」是攻略标注的剧情时间；「推断时间」由上一场或地图事件时间窗推出，条目里写明依据。'
+   + '「入境判定」是从上一场跳进来时必须满足的判定；「开场判定」是本场台词开始前的检查。'
+   + '「地图事件」是养成地图上随机刷出的事件，条件与基础概率取自游戏资源。'
+   + '「原文摘录」是资源库里提到该条的句子，未经改写。</div>';
+
+  h+='<details><summary>已知局限</summary><div class="lead">'
+   + '一、地图事件只有部分带明确起止时间，其余靠旗标控制，时间窗口无法给出。<br>'
+   + '二、部分地图事件不唯一对应某场戏（赶路、章节随机、大门这类族），页面改为列出同码剧本。<br>'
+   + '三、「关闭条件」仍在核验，未发布，避免误导。<br>'
+   + '四、人物简介里「原文中出现 N 处」类的短导语，已补原文摘录，仍待逐条重写。<br>'
+   + '五、仍有部分场景未确定地点，条目里不写地点。</div></details>';
+
+  h+='<h2>维护与反馈</h2><div class="lead">'
+   + `版本 <b>v${esc(ver||'')}</b>。发现条目有误、地点不对、简介别扭，点左下角「修订建议」提交，`
+   + '内容会存到本地并复制到剪贴板，直接发到开发者 QQ 群即可。<br>'
+   + `开发者 QQ 群：<b>${QQ_GROUP}</b></div>`;
+
+  h+='</div>';
+  $('#main').innerHTML=h;
+}
+
+/* ---------- 提交当前页修订建议 ---------- */
+function suggestOpen(){
+  if($('#sgmask')) return;
+  const page=decodeURIComponent(location.hash.replace(/^#/,''))||'/';
+  const title=(typeof labelOf==='function'&&labelOf(page))||page;
+  const m=document.createElement('div');
+  m.id='sgmask';
+  m.innerHTML=`<div id="sgbox">
+    <h3>提交修订建议</h3>
+    <div class="who">当前页：${esc(title)}（${esc(page)}）</div>
+    <textarea id="sgtxt" placeholder="哪里不对？请写清条目、原句与你认为正确的内容。"></textarea>
+    <div class="row">
+      <button class="p" onclick="suggestSend()">保存并复制</button>
+      <button onclick="document.getElementById('sgmask').remove()">取消</button>
+      <span class="hint">保存后发到 QQ 群 ${QQ_GROUP}</span>
+    </div></div>`;
+  document.body.appendChild(m);
+  setTimeout(()=>{ const x=$('#sgtxt'); if(x) x.focus(); }, 30);
+}
+async function suggestSend(){
+  const t=($('#sgtxt')&&$('#sgtxt').value||'').trim();
+  if(!t){ alert('请先写点内容'); return; }
+  const page=decodeURIComponent(location.hash.replace(/^#/,''))||'/';
+  const title=(typeof labelOf==='function'&&labelOf(page))||page;
+  const body={page:page,title:title,text:t};
+  try{
+    await fetch('/api/suggest',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)});
+  }catch(e){}
+  const txt='【修订建议】\n页面：'+title+'（'+page+'）\n内容：'+t+'\n版本：'+(window.__VER||'');
+  try{ await navigator.clipboard.writeText(txt); }catch(e){}
+  const mk=$('#sgmask'); if(mk) mk.remove();
+  alert('已保存到本地，内容也已复制到剪贴板。\n可直接发到开发者 QQ 群 '+QQ_GROUP+'。');
+}
+
+/* ---------- 列表 ---------- */
+function listHash(type,q,offset,facet,facet2){
+  let s='#/list/'+enc(type||'');
+  const ps=[];
+  if(q) ps.push('q='+encodeURIComponent(q));
+  if(facet) ps.push('f='+encodeURIComponent(facet));
+  if(facet2) ps.push('f2='+encodeURIComponent(facet2));
+  if(offset) ps.push('o='+offset);
+  return s+(ps.length?('?'+ps.join('&')):'');
+}
+function ja(s){return String(s==null?'':s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');}
+function listGo(type,q,offset,facet,facet2){
+  const h=listHash(type,q,offset,facet,facet2);
+  if(decodeURIComponent(location.hash.replace(/^#/,''))===decodeURIComponent(h.slice(1))){
+    renderList(type,q,offset,facet,facet2); return;
+  }
+  go(h);
+}
+
+const FACET2_LABEL={'事件':'主线','地点':'类型'};
+const FACET_LABEL={'人物':'身份','地点':'区域','势力':'上级势力','事件':'剧情阶段',
+  '场景':'剧情阶段','地图事件':'地点','书物':'出现阶段','物品':'出现阶段',
+  '武学':'出现阶段','装备':'出现阶段','天赋':'出现阶段','成就':'出现阶段',
+  '战技':'出现阶段','战斗角色':'出现阶段','战斗效果':'出现阶段','设施':'出现阶段',
+  '数值':'类型','关系':'类型','路线':'类型'};
+
+async function renderList(type,q,offset,facet,facet2){
+  const d=await api(`/api/pages?type=${enc(type||'')}&q=${enc(q||'')}&offset=${offset||0}&limit=100&facet=${enc(facet||'')}&facet2=${enc(facet2||'')}`);
+  const t=await api('/api/types');
+  const fc=await api('/api/facets?type='+enc(type||''));
+  const fc2=await api('/api/facets?type='+enc(type||'')+'&dim=2');
+  if(window.LIST_SORT===undefined) window.LIST_SORT='default';
+  const hadFocus=(document.activeElement&&document.activeElement.id==='lf');
+  const caret=hadFocus?document.activeElement.selectionStart:0;
+  let side=`<input class="search-sm" id="lf" placeholder="在本类中筛选" value="${esc(q||'')}">`;
+  for(const x of (t.types||[]))
+    side+=`<a class="item ${x.type===type?'on':''}" href="#/list/${enc(x.type)}">${esc(x.type)}<span class="n">${x.n}</span></a>`;
+  $('#side').innerHTML=side;
+  const lf=$('#lf');
+  if(lf){
+    let tm=null;
+    lf.oninput=()=>{ clearTimeout(tm); tm=setTimeout(()=>{
+      const nh=listHash(type,lf.value,0,facet,facet2);
+      history.replaceState(null,'',nh);
+      const hv=decodeURIComponent(nh.slice(1));
+      curHash=hv;
+      document.title=(labelOf(nh)||'活侠传')+' · 活侠传百科';
+      renderList(type,lf.value,0,facet,facet2);
+    },300); };
+    lf.onkeydown=e=>{ if(e.key==='Enter'){ e.preventDefault();
+      const nh=listHash(type,lf.value,0,facet,facet2);
+      history.replaceState(null,'',nh); curHash=decodeURIComponent(nh.slice(1));
+      renderList(type,lf.value,0,facet,facet2); } };
+    if(hadFocus){ lf.focus(); try{ lf.setSelectionRange(caret,caret); }catch(e){} }
+  }
+  let h=`<div class="wrap"><h1>${esc(type||'全部')}</h1>
+    <div class="sub">${d.total} 个条目${q?' · 筛「'+esc(q)+'」':''}${facet?' · '+(FACET_LABEL[type]||'分类')+'「'+esc(facet)+'」':''}</div>`;
+  if(fc.facets&&fc.facets.length>1){
+    h+=`<div class="chips"><span class="clbl">${esc(FACET_LABEL[type]||'分类')}</span>`;
+    h+=`<a class="fchip ${!facet?'on':''}" href="javascript:void 0" onclick="listGo('${ja(type)}','${ja(q)}',0,'','${ja(facet2)}');return false">全部<span class="n">${fc.total}</span></a>`;
+    for(const f of (fc.facets||[]).filter(x=>x.v).sort((a,b)=>((a.v==='其他')-(b.v==='其他'))||(b.n-a.n)))
+      h+=`<a class="fchip ${facet===f.v?'on':''}" href="javascript:void 0" onclick="listGo('${ja(type)}','${ja(q)}',0,'${ja(f.v)}','${ja(facet2)}');return false">${esc(f.v.includes('-')?f.v.split('-').pop():f.v)}<span class="n">${f.n}</span></a>`;
+    h+='</div>';
+  }
+  if(fc2.facets&&fc2.facets.length>0){
+    h+=`<div class="chips"><span class="clbl">${esc(FACET2_LABEL[type]||'分类')}</span>`;
+    h+=`<a class="fchip ${!facet2?'on':''}" href="javascript:void 0" onclick="listGo('${ja(type)}','${ja(q)}',0,'${ja(facet)}','');return false">全部<span class="n">${fc.total}</span></a>`;
+    for(const f of (fc2.facets||[]).filter(x=>x.v).sort((a,b)=>b.n-a.n))
+      h+=`<a class="fchip ${facet2===f.v?'on':''}" href="javascript:void 0" onclick="listGo('${ja(type)}','${ja(q)}',0,'${ja(facet)}','${ja(f.v)}');return false">${esc(f.v)}<span class="n">${f.n}</span></a>`;
+    h+='</div>';
+  }
+  if(facet||facet2)
+    h+=`<div class="sub"><a class="ch" href="javascript:void 0" onclick="listGo('${ja(type)}','${ja(q)}',0,'','');return false">清除筛选</a></div>`;
+  h+=`<div class="bar">
+      <button onclick="setListSort('default')"${window.LIST_SORT==='default'?' disabled':''}>默认</button>
+      <button onclick="setListSort('name')"${window.LIST_SORT==='name'?' disabled':''}>按名称</button>
+      <button onclick="setListSort('mentions')"${window.LIST_SORT==='mentions'?' disabled':''}>按引用数</button>
+    </div>`;  let rows=d.rows.slice();
+  if(window.LIST_SORT==='name') rows.sort((a,b)=>String(a.name).localeCompare(String(b.name),'zh-Hans-CN'));
+  else if(window.LIST_SORT==='mentions') rows.sort((a,b)=>(b.mentions||0)-(a.mentions||0));
+  for(const r of rows)
+    h+=`<div class="listrow"><div class="nm">${r.title?`<span class="ttl">${esc(r.title)}</span>`:''}<a href="#/p/${enc(r.slug)}">${esc(r.name)}</a>
+        <span class="mt">　${esc(brief(r.lead,44))}</span></div>
+        <div class="mt">${r.mentions||''}</div></div>`;
+  if(!d.rows.length) h+='<div class="empty">没有条目</div>';
+  h+='<div class="pager">';
+  if(offset>0) h+=`<button onclick="listGo('${esc(type)}','${esc(q)}',${Math.max(0,offset-100)},'${esc(facet||'')}','${esc(facet2||'')}')">上一页</button>`;
+  h+=`<span>${offset+1} - ${Math.min(offset+d.rows.length,d.total)} / ${d.total}</span>`;
+  if(offset+d.rows.length<d.total) h+=`<button onclick="listGo('${esc(type)}','${esc(q)}',${offset+100},'${esc(facet||'')}','${esc(facet2||'')}')">下一页</button>`;
+  h+='</div></div>';
+  $('#main').innerHTML=h;
+}
+
+/* ---------- 搜索 ---------- */
+function setListSort(k){
+  window.LIST_SORT=k;
+  const h=decodeURIComponent(location.hash.replace(/^#/,''));
+  const p=h.split('/');
+  if(p[1]==='list'){
+    const arg=(p.slice(2).join('/').split('?')[0]||'');
+    const qs=new URLSearchParams(h.split('?')[1]||'');
+    listGo(arg,qs.get('q')||'',parseInt(qs.get('o')||'0',10)||0,qs.get('f')||'',qs.get('f2')||'');
+  }
+  else if(p[1]==='p' || p[1]==='search'){ route(); }
+  else route();
+}
+
+let FLAGS=null;
+async function loadFlags(){
+  if(FLAGS) return FLAGS;
+  try{ const r=await fetch('/static/flags.json'); FLAGS=await r.json(); }
+  catch(e){ FLAGS=[]; }
+  return FLAGS;
+}
+
+let SCMAP=null;
+async function loadSceneMap(){
+  if(SCMAP) return SCMAP;
+  SCMAP={};
+  try{
+    const r=await api('/api/scenes');
+    for(const s of (r.scenes||[])) SCMAP[s.script]=s;
+  }catch(e){}
+  return SCMAP;
+}
+
+async function renderSearch(q){
+  const d=await api('/api/search2?q='+enc(q));
+  const SM=await loadSceneMap();
+  const fq=(q||'').trim().toLowerCase();
+  let fhits=[];
+  if(fq){
+    const F=await loadFlags();
+    fhits=F.filter(x=>x.f.toLowerCase().includes(fq)||String(x.v||'')===fq).slice(0,40);
+  }
+  let h=`<div class="wrap"><h1>搜索「${esc(q)}」</h1>`;
+  const qq=(q||'').trim();
+  if(qq && SM[qq]){
+    const s=SM[qq];
+    h+=`<h2>脚本直接命中</h2><div class="hit" onclick="go('#/scene/${enc(s.script)}')">
+        <div class="h">${esc(s.chapter||'')} · ${s.line_count||0} 句${s.place?` · ${esc(s.place)}`:''}</div>
+        <div><b>${esc(s.title||s.script)}</b>　<span class="mt">${esc(s.script)}</span></div></div>`;
+  } else if(qq && /^[A-Za-z][A-Za-z0-9_]{2,}$/.test(qq)){
+    try{
+      const sd=await api('/api/scene?script='+enc(qq));
+      if(sd&&sd.scene){
+        const s0=sd.scene; const n=sd.lines?sd.lines.length:0;
+        h+=`<h2>脚本直接命中</h2><div class="hit" onclick="go('#/scene/${enc(qq)}')">
+            <div class="h">${esc(s0.chapter||'')} · ${n} 句</div>
+            <div><b>${esc(s0.title||qq)}</b>${n?'':'（转场脚本，无台词）'}　<span class="mt">${esc(qq)}</span></div></div>`;
+      }
+    }catch(e){}
+  }
+  if(qq && qq.length>=2 && /[0-9_]/.test(qq)){
+    const ql=qq.toLowerCase();
+    const ks=Object.keys(SM).filter(k=>k.toLowerCase()!==ql && k.toLowerCase().includes(ql)).slice(0,30);
+    if(ks.length){
+      h+=`<h2>脚本编号包含「${esc(qq)}」</h2>`;
+      for(const k of ks){const s=SM[k]||{};
+        h+=`<div class="hit" onclick="go('#/scene/${enc(k)}')">
+            <div class="h">${esc(s.chapter||'')} · ${s.line_count||0} 句${s.place?' · '+esc(s.place):''}</div>
+            <div><b>${esc(s.title||k)}</b>　<span class="mt">${esc(k)}</span></div></div>`;}
+    }
+  }
+  if(d.pages&&d.pages.length){
+    h+='<h2>条目</h2>';
+    for(const r of d.pages)
+      h+=`<div class="listrow"><div class="nm">${r.title?`<span class="ttl">${esc(r.title)}</span>`:''}<a href="#/p/${enc(r.slug)}">${esc(r.name)}</a>
+          <span class="mt">　${esc(r.type)}</span></div><div class="mt">${r.mentions||''}</div></div>`;
+  }
+  if(d.scenes&&d.scenes.length){
+    h+='<h2>场景</h2>';
+    for(const s of d.scenes)
+      h+=`<div class="hit" onclick="go('#/scene/${enc(s.script)}')">
+          <div class="h">${esc(s.chapter)} · ${s.line_count} 句</div><div>${esc(s.title||s.script)}</div></div>`;
+  }
+  if(d.lines&&d.lines.length){
+    h+='<h2>原文</h2>';
+    for(const l of d.lines){
+      const s=SM[l.script]||{};
+      h+=`<div class="hit" onclick="go('#/scene/${enc(l.script)}?seq=${l.seq}')">
+          <div class="h"><b>${esc(s.title||l.script)}</b> · ${esc(s.chapter||'')} · 第${l.seq}句 · ${esc(l.speaker||'')}</div>
+          <div>${esc((l.text||'').replace(/\n/g,' '))}</div></div>`;
+    }
+  }
+  if(fhits.length){
+    h+='<h2>旗标与条件</h2>';
+    for(const x of fhits)
+      h+=`<div class="hit" onclick="go('#/scene/${enc(x.s)}${x.q?'?seq='+x.q:''}')">
+          <div class="h">${esc(x.k||'旗标')} ${esc(x.f)} = ${esc(x.v)}　${esc(x.b||'')}</div>
+          <div>${esc(x.t||x.s)}　<span class="mt">${esc(x.s)}</span></div></div>`;
+  }
+  if(!(d.pages||[]).length && !(d.scenes||[]).length && !(d.lines||[]).length && !fhits.length) h+='<div class="empty">没有结果</div>';
+  h+='</div>';
+  $('#main').innerHTML=h;
+  $('#side').innerHTML='';
+}
+
+/* ---------- 条目页 ---------- */
+
+
+let ART=null;
+async function loadArt(){
+  if(ART) return ART;
+  ART={p:{},c:{}};
+  try{ ART.p=await api('/static/portraits.json'); }catch(e){}
+  try{ ART.c=await api('/static/covers.json'); }catch(e){}
+  return ART;
+}
+
+async function mapWidget(){
+  let m=null;
+  try{ m=await api('/static/map_nodes.json'); }catch(e){}
+  if(!m||!m.nodes) return '<div class="empty">地图数据缺失（web/map_nodes.json）</div>';
+  let h='<div class="mapbox"><img src="'+m.img+'" alt="大地图">';
+  for(const w of (m.ways||[]))
+    h+=`<i class="mway" style="left:${w.x}%;top:${w.y}%"></i>`;
+  for(const n of m.nodes){
+    const pos=n.side==='left'?'transform:translate(-100%,-50%) translateX(-11px);text-align:right'
+      :n.side==='up'?'transform:translate(-50%,-100%) translateY(-11px)'
+      :n.side==='down'?'transform:translate(-50%,0) translateY(11px)'
+      :'transform:translateY(-50%) translateX(11px)';
+    h+=`<a class="mnode" href="#/p/${enc(n.slug)}" style="left:${n.x}%;top:${n.y}%" title="${esc(n.name)}"></a>`;
+    h+=`<span class="mlab" style="left:${n.x}%;top:${n.y}%;${pos}">${esc(n.name)}</span>`;
+  }
+  h+='</div><div class="mapnote">底图为游戏内行程地图（'+m.w+'×'+m.h+'）。红点为图中可前往之地，'
+    +'小点为途程节点。标签位置按图面避让调整，与方位无关。</div>';
+  return h;
+}
+
+async function renderPage(slug){
+  const d=await api('/api/page?slug='+enc(slug));
+  const _sd=document.getElementById('side'); if(_sd) _sd.classList.remove('open');
+  if(d.error){ $('#main').innerHTML=`<div class="wrap"><div class="empty">未找到条目「${esc(slug)}」<br><br><a href="#/search/${enc(slug.split('/').pop())}">搜索这个词</a> 或 <a href="#/">回首页</a></div></div>`; return; }
+  const inf=d.infobox||{};
+  let h='<div class="wrap">';
+  h+=`<div class="sub" style="margin:0 0 8px">`;
+  if(inf["上级"]) h+=`<a href="#/p/${enc(d.type+'/'+inf['上级'])}">← 返回${esc(inf['上级'])}</a>　`;
+  h+=`<a href="#/list/${enc(d.type)}">全部${esc(d.type)}</a></div>`;
+  if(d.title) h+=`<div class="ttl-badge">${esc(d.title)}</div>`;
+  h+=`<h1>${esc(d.name)}</h1><div class="sub"><span class="tag">${esc(d.type)}</span>
+      ${d.mentions?d.mentions+' 处提及':''}${d.chapters&&d.chapters.length?' · 首见 '+esc(d.chapters[0]):''}</div>`;
+  const _art=await loadArt();
+  if(d.type==='人物'&&_art.p[slug]) h+=`<img class="portrait" src="/static/${_art.p[slug]}" alt="${esc(d.name)}">`;
+  if(d.type==='书物'&&_art.c[slug]) h+=`<img class="cover" src="/static/${_art.c[slug]}" alt="${esc(d.name)}">`;
+  if(Object.keys(inf).length){
+    h+='<div class="infobox"><div class="ttl">'+esc(d.name)+'</div>';
+    for(const [k,v] of Object.entries(inf))
+      h+=`<div class="row"><div class="k">${esc(k)}</div><div class="v">${linkify(String(v))}</div></div>`;
+    h+='</div>';
+  }
+  if(d.lead) h+=`<div class="lead">${fnmark(linkify(d.lead))}</div>`;
+  if(d.type==='地图') h+=await mapWidget();
+  const SECS=[];
+  let _si=0;
+  for(const s of (d.sections||[])){
+    if(s.h==='简介'){ h+=`<div class="lead">${secHtml(s.html||'')}</div>`; continue; }
+    const sid='sec-'+(++_si);
+    if(s.h!=='脚注') SECS.push({h:s.h,id:sid});
+    h+=`<h2 id="${sid}">${esc(s.h)}</h2>`;
+    if(s.notes){
+      for(const n of s.notes)
+        h+=`<div class="note"><span class="ch">${esc(n.ch)}</span>${linkify(n.text)}
+            ${n.ev?`<div class="ev">原文：「${esc(n.ev)}」</div>`:''}</div>`;
+    }
+    if(s.rows){
+      for(const r of s.rows){
+        const _sj=(!r.slug && r.script && r.seq)?`?seq=${r.seq}`:'';
+        const t=r.slug?`<a class="ch" href="#/p/${enc(r.slug)}">${esc(r.title||r.slug)}</a>`:(r.script?`<a class="ch" href="#/scene/${enc(r.script)}${_sj}">${esc(r.title||r.script)}</a>`:'');
+        let nm=r.note||'', fnnum='';
+        if(s.h==='脚注'){
+          const m=nm.match(/^(\d+)\.\s*/);
+          if(m){ fnnum=m[1]; nm=nm.slice(m[0].length); }
+        }
+        h+=`<div class="note"${fnnum?` id="fn-${fnnum}"`:''}>${t}`;
+        if(fnnum) h+=`<sup class="fn">${fnnum}</sup> `;
+        h+=linkify(nm);
+        if(r.quote){
+          h+=`<div class="ev">原文：「${linkify(r.quote)}」`;
+          if(r.script){
+            const j=r.seq?`?seq=${r.seq}`:'';
+            h+=` <a class="ch" href="#/scene/${enc(r.script)}${j}">→ 原文</a>`;
+          }
+          h+='</div>';
+        }
+        if(r.routes&&r.routes.length) h+=`<div class="ev">路线：${esc(r.routes.join('、'))}</div>`;
+        h+='</div>';
+      }
+    }
+    if(s.choices){
+      h+='<div class="brwrap"><table class="br"><thead><tr><th>抉择</th><th>条件</th><th>后果</th></tr></thead><tbody>';
+      for(const c of s.choices){
+        const fl=(c.flags||[]).map(x=>`${x.f}=${x.v}`).join('、');
+        const sc=(c.scenes||[]).join('、');
+        const link=c.seq?`<a href="#/scene/${enc(d.infobox&&d.infobox['脚本']||'')}?seq=${c.seq}">第${c.seq}句</a>`:'';
+        h+=`<tr><td><b>${esc(c.text||('#'+c.idx))}</b> ${link}</td>
+            <td>${esc(c.cond||'')}</td>
+            <td>${fl?`<span class="eff">${esc(fl)}</span>`:''}${sc?`<span class="eff">→ ${esc(sc)}</span>`:''}</td></tr>`;
+      }
+      h+='</tbody></table></div>';
+    }
+    if(s.choice_rows){
+      h+='<div class="brwrap"><table class="br"><thead><tr><th>选项</th><th>解锁条件</th><th>结果</th></tr></thead><tbody>';
+      for(const b of s.choice_rows){
+        if(b.prompt) h+=`<tr><td colspan="3"><i>${esc(b.prompt).replace(/\\n/g,'<br>')}</i> <span class="sc">${esc(b.scene||'')}</span></td></tr>`;
+        if(b.free) h+='<tr><td colspan="3" class="mt">本处选项无附加条件，全部可选</td></tr>';
+        for(const o of b.options){
+          const _nx=(o.next && !o.terminal)?` <a class="ch" href="#/scene/${enc(o.next)}">→ ${esc(o.next_title||o.next)}</a>`:'';
+          h+=`<tr><td><b>${esc(o.text)}</b></td><td>${o.cond?esc(o.cond):'—'}</td><td>${esc(o.result)}${_nx}</td></tr>`;
+        }
+      }
+      h+='</tbody></table></div>';
+    }
+    if(s.people){
+      h+='<div>';
+      for(const p of s.people)
+        h+=`<a class="chip" href="#/p/${enc('人物/'+p.name)}">${esc(p.name)}<span class="n">${p.n}</span></a>`;
+      h+='</div>';
+    }
+    if(s.html && s.h!=='简介') h+=`<div>${secHtml(s.html)}</div>`;
+  }
+  const L=d.links||[], groups={};
+  for(const x of L) (groups[x.kind]=groups[x.kind]||[]).push(x);
+  if(groups['关系']){
+    h+='<h2>关系</h2>';
+    for(const r of groups['关系'])
+      h+=`<div class="rel"><div class="k"><a href="#/p/${enc(r.dst)}">${esc(r.name||r.dst.split('/').pop())}</a></div>
+          <div class="v">${esc(r.label||'')}</div></div>`;
+  }
+  if(groups['归属']){
+    h+='<h2>归属</h2><div>';
+    for(const r of groups['归属'])
+      h+=`<a class="chip" href="#/p/${enc(r.dst)}">${esc(r.name||r.dst.split('/').pop())}</a>`;
+    h+='</div>';
+  }
+  for(const [kind,label,cap] of [['成员','成员',60],
+                                 ['发生地','发生地',5],['出场','出场场景',30],['出场场景','出场场景',30]]){
+    if(!groups[kind]) continue;
+    h+=`<h2>${label}</h2><div>`;
+    groups[kind].slice(0,cap).forEach(r=>{
+      const nm=r.name||r.dst.split('/').pop();
+      h+=`<a class="chip" href="#/p/${enc(r.dst)}">${esc(nm)}${r.label?`<span class="n">${esc(r.label)}</span>`:''}</a>`;
+    });
+    if(groups[kind].length>cap) h+=`<span class="chip">…共 ${groups[kind].length} 条</span>`;
+    h+='</div>';
+  }
+  if(d.type==='场景' && d.infobox && d.infobox['脚本']){
+    h+='<h2>对话</h2><div class="bar"><button onclick="document.querySelectorAll(\'#pgd details.br\').forEach(x=>x.open=true)">展开全部分支</button><button onclick="document.querySelectorAll(\'#pgd details.br\').forEach(x=>x.open=false)">全部折叠</button></div><div id="pgd">';
+    try{
+      const sc=await api('/api/scene?script='+enc(d.infobox['脚本']));
+      if(sc&&sc.lines&&sc.lines.length){
+        const cs={};sc.choices.forEach(x=>cs[x.seq]=x);
+        const fl={};sc.flags.forEach(f=>{(fl[f.seq]=fl[f.seq]||[]).push(f);});
+        let i=0;
+        while(i<sc.lines.length){
+          const b=sc.lines[i].branch||'';
+          let j=i; while(j<sc.lines.length&&(sc.lines[j].branch||'')===b) j++;
+          const body=sc.lines.slice(i,j).map(l=>lineHtml(l,cs,fl)).join('');
+          if(b) h+=`<details class="br"><summary title="${esc(b)}">${esc(shortBr(b))}</summary><div class="body">${body}</div></details>`;
+          else h+=body;
+          i=j;
+        }
+      }
+    }catch(e){}
+    h+='</div>';
+    h+=`<div class="bar"><button onclick="go('#/scene/${enc(d.infobox['脚本'])}')">读这一场原文</button></div>`;
+  }
+  const back=(d.backlinks||[]).filter(x=>x.kind!=='出场场景');
+  if(back.length){
+    h+='<h2>链入页面</h2><div>';
+    const seen=new Set();
+    for(const b of back){
+      const nm=b.name||b.src.split('/').pop();
+      const key=b.src;
+      if(seen.has(key)) continue;
+      seen.add(key);
+      if(seen.size>40) break;
+      h+=`<a class="chip" href="#/p/${enc(b.src)}">${esc(nm)}<span class="n">${esc(b.kind)}</span></a>`;
+    }
+    if(back.length>40) h+=`<span class="chip">…共 ${back.length} 条</span>`;
+    h+='</div>';
+  }
+  if(d.cats&&d.cats.length){
+    h+='<div class="cats">分类：';
+    for(const c of d.cats){
+      const typ=['人物','势力','地点','事件','地图事件','书物','物品','武学','成就','装备','场景'].includes(c);
+      h+=typ?`<a class="tag" href="#/list/${enc(c)}">${esc(c)}</a>`:`<span class="tag">${esc(c)}</span>`;
+    }
+    h+='</div>';
+  }
+  h+='</div>';
+  $('#main').innerHTML=h;
+  renderSideFor(d,SECS);
+}
+
+async function randomPage(){
+  try{
+    const a=await api('/api/pages?type=&q=&offset=0&limit=1');
+    const total=a.total||0;
+    if(!total) return;
+    const off=Math.floor(Math.random()*total);
+    const b=await api('/api/pages?type=&q=&offset='+off+'&limit=1');
+    const row=(b.rows||[])[0];
+    if(row) go('#/p/'+enc(row.slug));
+  }catch(e){}
+}
+
+function jumpSec(id){
+  const el=document.getElementById(id);
+  if(el){ el.scrollIntoView({behavior:'smooth',block:'start'}); }
+}
+
+function renderSideFor(d,secs){
+  let s='';
+  if(secs && secs.length>2){
+    s+='<div class="grp">本页目录</div>';
+    for(const x of secs)
+      s+=`<a class="item" href="javascript:void 0" onclick="jumpSec('${x.id}');return false">${esc(x.h)}</a>`;
+  }
+  const L=d.links||[];
+  const rel=L.filter(x=>x.kind==='关系').slice(0,40);
+  if(rel.length){
+    s+='<div class="grp">关系</div>';
+    for(const r of rel)
+      s+=`<a class="item" href="#/p/${enc(r.dst)}">${esc(r.name||r.dst.split('/').pop())}</a>`;
+  }
+  const sc=L.filter(x=>x.kind==='出场'||x.kind==='出场场景').slice(0,40);
+  if(sc.length){
+    s+='<div class="grp">出场场景</div>';
+    for(const r of sc)
+      s+=`<a class="item" href="#/p/${enc(r.dst)}">${esc(r.name||r.dst.split('/').pop())}</a>`;
+  }
+  const mem=L.filter(x=>x.kind==='成员').slice(0,60);
+  if(mem.length){
+    s+='<div class="grp">成员</div>';
+    for(const r of mem)
+      s+=`<a class="item" href="#/p/${enc(r.dst)}">${esc(r.name||r.dst.split('/').pop())}</a>`;
+  }
+  $('#side').innerHTML=s||'<div class="grp">条目</div><a class="item" href="#/">返回首页</a>';
+}
+
+/* ---------- 章节与场景原文 ---------- */
+async function renderChapters(){
+  const d=await api('/api/scenes');
+  let h='<div class="wrap"><h1>原文</h1><div class="sub">按章节浏览全部场景</div>';
+  for(const c of d.chapters){
+    h+=`<h2>${esc(c.chapter)}${c.name?' · '+esc(c.name):''} <span class="mt">${c.n} 场</span></h2><div>`;
+    for(const s of d.scenes.filter(x=>x.chapter===c.chapter))
+      h+=`<a class="chip" href="#/scene/${enc(s.script)}">${esc(s.title||s.script)}<span class="n">${s.line_count}</span></a>`;
+    h+='</div>';
+  }
+  h+='</div>';
+  $('#main').innerHTML=h;
+  $('#side').innerHTML='';
+}
+
+function lineHtml(l,cs,fl){
+  let extra='';
+  const c=cs[l.seq];
+  if(c){
+    let req='';
+    if(c.title) req+=`<span class="cond">判定：${esc(c.title)}</span>`;
+    if(c.requires&&c.requires.length) req+=c.requires.map(r=>`<span class="cond">出现条件：${esc(r)}</span>`).join('');
+    if(c.cond_text&&c.cond_text.length) req+=c.cond_text.map(r=>`<span class="cond">属性检定：${esc(r)}</span>`).join('');
+    const opts=(c.options||[]).map(o=>{
+      const name=o.text||o.label||o.key||'';
+      return `<span class="opt"><b>${esc(name)}</b>${o.cond?' → 掷骰 '+esc(o.cond):''}</span>`;
+    }).join('');
+    extra+=`<div class="choice"><div class="ch">◆ ${esc(c.checkpoint)}</div>${req}
+      <div style="margin-top:6px">${opts||'<span class="cond">（此判定无预设选项文案）</span>'}</div></div>`;
+  }
+  if(fl[l.seq]) extra+=`<div class="flagline">⤷ ${fl[l.seq].map(f=>`<span class="opt">${esc(f.flag)} = ${esc(f.value)}</span>`).join('')}</div>`;
+  return `<div class="line ${cls(l.mode)}" data-seq="${l.seq}">
+      <div class="sp">${TITLES[l.speaker]?`<i class="spt">${esc(TITLES[l.speaker])}</i>`:''}${esc(l.speaker)}<span>${badge(l.mode)}</span></div>
+      <div class="tx">${rich(l.text)||'<i style="color:#5b616b">（缺文本）</i>'}<span class="key">${esc(l.key)}</span></div>
+    </div>`+extra;
+}
+function shortBr(b){ const a=(b||'').split(/\s+(?:›|>)\s+/); return a.length>2?'… › '+a.slice(-2).join(' › '):b; }
+
+async function renderScene(sid,jump){
+  const [script,qs]=String(sid).split('?');
+  if(!jump && qs){ const m=new URLSearchParams(qs).get('seq'); if(m) jump=m; }
+  const d=await api('/api/scene?script='+enc(script));
+  if(!d.scene) { $('#main').innerHTML='<div class="wrap"><div class="empty">场景不存在</div></div>'; return; }
+  const cs={},fl={};
+  d.choices.forEach(c=>cs[c.seq]=c);
+  d.flags.forEach(f=>{(fl[f.seq]=fl[f.seq]||[]).push(f);});
+  const brs=d.branches||{};
+  TITLES=d.titles||{};
+  let h=`<div class="wrap"><h1>${esc(d.scene.title||d.scene.script)}</h1>
+    <div class="sub"><span class="tag">${esc(d.scene.chapter)}</span>
+    <a href="#/p/${enc('场景/'+d.scene.script)}">场景条目</a> · ${d.scene.line_count} 句 · ${d.scene.cjk} 字</div>`;
+  if(d.scene.place) h+=`<div class="sub">地点：<a href="#/p/${enc('地点/'+d.scene.place)}">${esc(d.scene.place)}</a></div>`;
+  if(d.participants&&d.participants.length)
+    h+='<div class="sub">参与：'+d.participants.map(p=>`<span class="chip">${esc(p.nm)} ${p.n}</span>`).join('')+'</div>';
+  h+=`<div class="bar"><button id="exp">展开全部分支</button><button id="col">全部折叠</button></div>`;
+  let i=0,out='';
+  while(i<d.lines.length){
+    const b=d.lines[i].branch_h||d.lines[i].branch||'';
+    let j=i; while(j<d.lines.length && (d.lines[j].branch_h||d.lines[j].branch||'')===b) j++;
+    const body=d.lines.slice(i,j).map(l=>lineHtml(l,cs,fl)).join('');
+    if(b){
+      out+=`<details class="br"><summary title="${esc(b)}">${esc(shortBr(b))}</summary><div class="body">${body}</div></details>`;
+    } else out+=body;
+    i=j;
+  }
+  $('#main').innerHTML=h+out+'</div>';
+  $('#side').innerHTML='';
+  if(jump){
+    const el=$('#main').querySelector('.line[data-seq="'+jump+'"]');
+    if(el){ let p=el.parentElement; while(p&&p!==$('#main')){ if(p.tagName==='DETAILS') p.open=true; p=p.parentElement; }
+      el.scrollIntoView({block:'center'}); el.style.background='#3a2f1d'; }
+  }
+  $('#exp').onclick=()=>document.querySelectorAll('details.br').forEach(x=>x.open=true);
+  $('#col').onclick=()=>document.querySelectorAll('details.br').forEach(x=>x.open=false);
+}
+
+/* ---------- 内容版本检查（单机程序内刷新） ---------- */
+(function(){
+  let v0=null;
+  async function chk(){
+    try{
+      const r=await fetch('/api/version',{cache:'no-store'});
+      const d=await r.json();
+      const b=document.getElementById('rf');
+      if(v0 && d.v!==v0 && b){ b.classList.add('new'); b.title='内容已更新，点一下重新加载'; }
+      v0=d.v;
+    }catch(e){}
+  }
+  setTimeout(chk,1200); setInterval(chk,15000);
+})();
+
+/* ---------- 搜索框（只在回车时搜索） ---------- */
+$('#q').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); const v=e.target.value.trim(); if(v) go('#/search/'+enc(v)); }});
+
+(async()=>{ await loadIndex(); route(); })();
+
+/* 快捷键与回到顶部／最底端 */
+function jumpTop(){
+  window.scrollTo({top:0,behavior:'smooth'});
+  const m=document.getElementById('main');
+  if(m) m.scrollTo({top:0,behavior:'smooth'});
+}
+function jumpBottom(){
+  const h=Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+  window.scrollTo({top:h,behavior:'smooth'});
+  const m=document.getElementById('main');
+  if(m) m.scrollTo({top:m.scrollHeight,behavior:'smooth'});
+}
+window.addEventListener('scroll',()=>{
+  const b=document.getElementById('totop');
+  const d=document.getElementById('tobottom');
+  const y=(window.scrollY||window.pageYOffset||0);
+  const m=document.getElementById('main');
+  const my=m?(m.scrollTop||0):0;
+  const on=(y>600)||(my>600);
+  if(b) b.classList.toggle('on',on);
+  if(d) d.classList.toggle('on',on);
+});
+const _mainEl=document.getElementById('main');
+if(_mainEl) _mainEl.addEventListener('scroll',()=>{
+  const b=document.getElementById('totop');
+  const d=document.getElementById('tobottom');
+  const on=(_mainEl.scrollTop||0)>600;
+  if(b) b.classList.toggle('on',on);
+  if(d) d.classList.toggle('on',on);
+});
+document.addEventListener('keydown',e=>{
+  const tag=(e.target.tagName||'').toUpperCase();
+  if(e.key==='/' && tag!=='INPUT' && tag!=='TEXTAREA'){ e.preventDefault(); const q=$('#q'); q.focus(); q.select(); }
+  if(e.key==='Escape' && document.activeElement && document.activeElement.id==='q'){
+    document.activeElement.value=''; document.activeElement.blur();
+  }
+  if(e.key==='Backspace' && e.altKey){ e.preventDefault(); goBack(); }
+});
+</script>
+
+<div id="updchip">v<span id="uver">?</span> · 检查更新</div>
+<script>
+(async function(){
+  try{const v=await api('/api/appver'); if(v&&v.version) document.getElementById('uver').textContent=v.version;}catch(e){}
+  const chip=document.getElementById('updchip');
+  if(!chip) return;
+  chip.onclick=async function(){
+    const old=chip.innerHTML; chip.textContent='检查中…';
+    try{
+      const d=await api('/api/update/check');
+      if(d&&d.newer){
+        if(confirm('发现新版本 '+d.version+'（当前 '+d.current+'）\n\n'+(d.notes||d.version)+'\n\n现在下载并更新？')){
+          chip.textContent='正在下载…';
+          const r=await api('/api/update/apply');
+          chip.textContent=(r&&r.ok)?'更新中，程序会自动重启':'更新失败';
+        }else{ chip.innerHTML=old; }
+      }else if(d&&d.ok){
+        alert('已是最新版本 '+d.current); chip.innerHTML=old;
+      }else{
+        alert('暂时无法检查更新（未配置清单或网络不通）'); chip.innerHTML=old;
+      }
+    }catch(e){ alert('检查更新失败：'+e); chip.innerHTML=old; }
+  };
+})();
+</script>
+<div class="sgbtn" onclick="suggestOpen()">修订建议</div>
+</body>
+</html>
