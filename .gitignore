@@ -124,3 +124,6 @@ _updtest/
 Thumbs.db
 
 data/portraits/
+
+# 阶段分类工作区（脚本与中间表，不发布）
+stage/

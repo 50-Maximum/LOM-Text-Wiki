@@ -844,7 +844,7 @@ except Exception:
 def arc_of_date(y, mo):
     if not y or not mo:
         return ""
-    if (y, mo) <= (1, 11):
+    if (y, mo) <= (1, 9):
         return "外姓弟子"
     if (y, mo) <= (2, 8):
         return "南宫寿宴"
@@ -1218,7 +1218,7 @@ DROP TABLE IF EXISTS redirects;
 CREATE TABLE pages(slug TEXT PRIMARY KEY, type TEXT, name TEXT, lead TEXT,
                    infobox TEXT, sections TEXT, cats TEXT, mentions INT,
                    chapters TEXT, sort_key TEXT, title TEXT, hidden INT, facet TEXT,
-                   facet2 TEXT);
+                   facet2 TEXT, facet3 TEXT);
 CREATE TABLE links(src TEXT, dst TEXT, kind TEXT, label TEXT);
 CREATE TABLE redirects(alias TEXT PRIMARY KEY, slug TEXT);
 DROP TABLE IF EXISTS aliases;
@@ -1290,12 +1290,12 @@ def noz(s):
 
 
 def add_page(slug, typ, name, lead, inf, secs, cats, mentions, chapters, sort_key="",
-             title="", hidden=0, facet="", facet2=""):
+             title="", hidden=0, facet="", facet2="", facet3=""):
     name, title = _t2s(name), _t2s(title)
     pages.append((slug, typ, name, lead or "", json.dumps(inf, ensure_ascii=False),
                   json.dumps(secs, ensure_ascii=False), json.dumps(cats, ensure_ascii=False),
                   mentions, json.dumps(chapters, ensure_ascii=False), sort_key,
-                  title or "", hidden, facet or "", facet2 or ""))
+                  title or "", hidden, facet or "", facet2 or "", facet3 or ""))
 
 def source_rows(srcs):
     out = []
@@ -3831,7 +3831,20 @@ if _FIXSC:
 
 pages = [tuple(_p) for _p in _pl]
 
-c.executemany("insert or replace into pages values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)", pages)
+c.executemany("insert or replace into pages values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", pages)
+
+# 二级「幕」（留学 / 无家可归等）：按脚本挂到条目上，不改主阶段
+try:
+    _acts_p = os.path.join(BASE, "data", "acts.json")
+    if os.path.exists(_acts_p):
+        _acts = json.load(open(_acts_p, encoding="utf-8"))
+        _n = 0
+        for _s, _v in _acts.items():
+            cur = c.execute("update pages set facet3=? where sort_key=?", (_v, _s))
+            _n += cur.rowcount if cur.rowcount and cur.rowcount > 0 else 0
+        print("二级阶段写入", _n, "页")
+except Exception as _e:
+    print("二级阶段跳过:", _e)
 valid = {p[0] for p in pages}
 _seen = set()
 _lk = []

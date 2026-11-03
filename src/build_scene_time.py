@@ -34,7 +34,7 @@ c.commit()
 def arc_of_time(y, mo):
     if not y or not mo:
         return ""
-    if (y, mo) <= (1, 11):
+    if (y, mo) <= (1, 9):
         return "外姓弟子"
     if (y, mo) <= (2, 8):
         return "南宫寿宴"
