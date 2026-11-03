@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """P3 本地服务：零依赖 HTTP + SQLite 查询接口。"""
-import os, sys, json, sqlite3, urllib.parse, mimetypes, threading, webbrowser
+import os, re, sys, json, sqlite3, urllib.parse, mimetypes, threading, webbrowser
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 
 if getattr(sys, "frozen", False):
@@ -10,6 +10,15 @@ else:
 DB = os.path.join(ROOT, "data", "wiki.db")
 WEB = os.path.join(ROOT, "web")
 PORT = int(os.environ.get("LOM_PORT", "8765"))
+
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from qfilter import build_where, FilterError, FIELDS as FILTER_FIELDS
+except Exception:
+    build_where = None
+    FilterError = Exception
+    FILTER_FIELDS = []
+
 
 
 def _app_version():
@@ -63,6 +72,56 @@ def branch_human():
         except Exception:
             _BH_CACHE = {}
     return _BH_CACHE
+
+
+_BL_CACHE = None
+_O_RE = re.compile(r"(?<![A-Za-z0-9_])O_[A-Za-z0-9_]+(?![A-Za-z0-9_])")
+_NODE_RE = re.compile(r"\b(?:talk|exit|event|move|default)\+([A-Za-z0-9_]+)\+\d+\+\d+")
+_COND1 = re.compile(r"条件\s*([A-Za-z0-9_]+)\s*｜\s*")
+_COND2 = re.compile(r"【条件\s*([A-Za-z0-9_]+)】\s*")
+_COND3 = re.compile(r"（([A-Za-z0-9_]{4,})：")
+_BARE_RE = re.compile(r"(?<![^\s>+›（])([A-Za-z_][A-Za-z0-9_]*)\s*｜\s*")
+_SWITCH_RE = re.compile(r"switch(\d+)_(\d+)_result=(\d+)")
+_PAREN_RE = re.compile(r"\s*\([A-Za-z][A-Za-z0-9_]{4,}\)")
+_VARS = [
+    (re.compile(r"TalkOption_0*(\d+)"), r"该处选项\1"),
+    (re.compile(r"Facility_0*(\d+)"), r"设施\1"),
+    (re.compile(r"好感度_([\u4e00-\u9fff]+)"), r"好感度·\1"),
+    (re.compile(r"技能_([\u4e00-\u9fff]+)"), r"技能·\1"),
+]
+
+
+def branch_labels():
+    """选项代号 → 中文选项名，第一次用时读入。"""
+    global _BL_CACHE
+    if _BL_CACHE is None:
+        try:
+            _BL_CACHE = json.load(open(os.path.join(ROOT, "data", "branch_labels.json"), encoding="utf-8"))
+        except Exception:
+            _BL_CACHE = {}
+    return _BL_CACHE
+
+
+def code_to_label(b):
+    """分支串人话化：选项代号→选项名，条件代号→中文条件名，内部开关→分支N。"""
+    if not b:
+        return ""
+    bl = branch_labels()
+    t = _NODE_RE.sub(r"\1", b)
+    t = _SWITCH_RE.sub(r"分支\3", t)
+    t = _COND1.sub("条件 ", t)
+    t = _COND2.sub("条件 ", t)
+    t = _COND3.sub("（", t)
+    t = _O_RE.sub(lambda m: bl.get(m.group(0)) or m.group(0), t)
+    t = _BARE_RE.sub("", t)
+    for _p, _r in _VARS:
+        t = _p.sub(_r, t)
+    t = _PAREN_RE.sub("", t)
+    t = re.sub(r"\s+>\s+(?![=])", " > ", t)
+    t = re.sub(r"\s{2,}", " ", t)
+    return t.strip()
+
+
 
 
 def phrase(text):
@@ -195,6 +254,12 @@ class H(BaseHTTPRequestHandler):
                                             qs.get("name", [""])[0]))
             if p == "/api/page":
                 return self._json(self.page(qs.get("slug", [""])[0]))
+            if p == "/api/stats":
+                return self._json(self.stats())
+            if p == "/api/filter":
+                return self._json(self.filter_scenes(
+                    qs.get("q", [""])[0],
+                    int(qs.get("limit", ["300"])[0])))
             if p == "/api/pages":
                 return self._json(self.pages_list(qs.get("type", [""])[0],
                                                   qs.get("q", [""])[0],
@@ -364,7 +429,7 @@ class H(BaseHTTPRequestHandler):
         for _l in lines:
             _b = _l.get("branch") or ""
             if _b:
-                _l["branch_h"] = _bh.get(script + "\x1f" + _b) or ""
+                _l["branch_h"] = code_to_label(_bh.get(script + "\x1f" + _b) or _b)
         brs = {r["branch"]: json.loads(r["effects"]) for r in
                q("SELECT branch, effects FROM branches WHERE script=?", (script,))}
         chs = q("SELECT seq,checkpoint,options FROM choices WHERE script=? ORDER BY seq", (script,))
@@ -387,7 +452,7 @@ class H(BaseHTTPRequestHandler):
                 "branches": brs, "titles": _tmap,
                 "participants": q("SELECT speaker nm, COUNT(*) n FROM lines WHERE script=? AND speaker<>'旁白' GROUP BY speaker ORDER BY n DESC LIMIT 12", (script,)),
                 "prereq": [r for c in chs for r in (c.get("requires") or []) + (c.get("cond_text") or [])],
-                "flags": q("SELECT seq,flag,value,after_key,branch FROM flags WHERE script=? ORDER BY seq", (script,))}
+                "flags": q("SELECT f.seq,f.flag,f.value,f.after_key,f.branch,COALESCE(i.label,'') AS flag_cn FROM flags f LEFT JOIN flaginfo i ON i.flag=f.flag WHERE f.script=? ORDER BY f.seq", (script,))}
     def ledger(self, qs):
         ch = qs.get("chapter", [""])[0]
         ty = qs.get("type", [""])[0]
@@ -677,6 +742,44 @@ class H(BaseHTTPRequestHandler):
         rows = q("select %s v, count(*) n from pages where " % col + " and ".join(where) +
                 " group by 1 order by 2 desc, 1", tuple(args))
         return {"facets": rows, "total": sum(r["n"] for r in rows)}
+
+    def stats(self):
+        """按章节、按剧情阶段统计场景数与文本量。"""
+        by_chapter = q(
+            "select chapter, count(*) n, sum(line_count) lines, sum(cjk) cjk "
+            "from scenes where line_count>0 group by chapter order by chapter")
+        by_arc = q(
+            "select coalesce(p.facet,'(未分阶段)') arc, count(*) n, "
+            "sum(s.line_count) lines, sum(s.cjk) cjk "
+            "from scenes s join pages p on p.slug='场景/'||s.script "
+            "group by arc order by cjk desc")
+        tot = q("select count(*) n, sum(line_count) lines, sum(cjk) cjk "
+                "from scenes where line_count>0")[0]
+        try:
+            pages_n = q("select count(*) n from pages where hidden=0")[0]["n"]
+        except Exception:
+            pages_n = 0
+        return {"total": tot, "chapters": by_chapter, "arcs": by_arc, "pages": pages_n}
+
+    def filter_scenes(self, expr, limit=300):
+        """布尔表达式筛选场景。"""
+        if build_where is None:
+            return {"error": "筛选模块未加载", "rows": [], "count": 0}
+        try:
+            where, params = build_where(expr)
+        except FilterError as e:
+            return {"error": str(e), "rows": [], "count": 0, "fields": FILTER_FIELDS,
+                    "expr": expr}
+        sql = "select script,title,chapter,place,line_count from scenes"
+        if where:
+            sql += " where " + where
+        sql += " order by chapter, script limit ?"
+        try:
+            rows = q(sql, tuple(params) + (limit,))
+        except Exception as e:
+            return {"error": "查询失败: %s" % e, "rows": [], "count": 0, "expr": expr}
+        return {"rows": rows, "count": len(rows), "expr": expr,
+                "fields": FILTER_FIELDS, "limited": len(rows) >= limit}
 
     def pages_list(self, typ, text, offset=0, limit=80, facet="", facet2=""):
         where, args = ["hidden=0"], []

@@ -205,7 +205,7 @@ b{color:#f0d9ae;font-weight:600}
 <header>
   <div class="brand"><a href="#/">活侠传追踪Wiki</a></div>
   <a id="rf" href="javascript:void 0" onclick="location.reload();return false" title="刷新内容">⟳</a>
-  <input id="q" placeholder="搜索条目 / 人物 / 地点 / 事件…">
+  <input id="q" placeholder="搜索，或输入 speaker:郁竹 AND flag:E00017 这类条件…">
   <nav id="nav">
     <a href="#/">首页</a><a href="#/list/人物">人物</a><a href="#/list/势力">势力</a>
     <a href="#/list/地点">地点</a><a href="#/list/事件">事件</a><a href="#/list/剧情单元">剧情单元</a><a href="#/list/剧情段">剧情段</a><a href="#/list/地图事件">地图事件</a><a href="#/list/物品">物品</a>
@@ -353,6 +353,7 @@ async function route(){
       await renderList(arg,qs.get('q')||'',parseInt(qs.get('o')||'0',10)||0,qs.get('f')||'',qs.get('f2')||'');
     }
     else if(kind==='search') await renderSearch(arg);
+    else if(kind==='stats') await renderStats();
     else if(kind==='scene') await renderScene(arg + (_q ? ('?' + _q) : ''));
     else if(kind==='chapters') await renderChapters();
     else await home();
@@ -393,7 +394,8 @@ async function home(){
   const quick=[
     ['#/search/', '全文检索', '按名字、台词、脚本编号片段查'],
     ['/static/why.html', '触发链查询', '查事件/条件/旗标：谁让它成立、上游是什么'],
-    ['#/chapters', '原文阅读', '按章节逐场读全量剧本'],
+    ['#/stats', '文本统计', '按阶段与章节看场景、台词与字数'],
+     ['#/chapters', '原文阅读', '按章节逐场读全量剧本'],
     ['#/p/'+encodeURIComponent('地图/大地图'), '大地图', '游戏原版地图，点地名进条目'],
     ['#/p/'+encodeURIComponent('时间线/总览'), '时间线', '按年月旬看剧情推进']
   ];
@@ -601,7 +603,57 @@ async function loadSceneMap(){
   return SCMAP;
 }
 
+function isFilterExpr(q){
+  const t=(q||'').trim();
+  if(!/[a-z]+:/i.test(t)) return false;
+  // 必须命中已知字段名，避免把普通搜索当表达式
+  return /(^|[\s(])(speaker|text|flag|opt|check|place|chapter|title|arc|id):/i.test(t);
+}
+
+async function renderFilter(expr){
+  const d=await api('/api/filter?q='+enc(expr));
+  let h=`<div class="wrap"><h1>条件筛选</h1>`;
+  h+=`<div class="meta">表达式：<code>${esc(expr||'')}</code></div>`;
+  if(d.error){
+    h+=`<div class="empty">${esc(d.error)}</div>`;
+  }else{
+    h+=`<h2>命中 ${d.count} 场${d.limited?'（已达上限，可加条件收窄）':''}</h2>`;
+    if(!(d.rows||[]).length) h+='<div class="empty">没有符合条件的场景</div>';
+    for(const r of (d.rows||[])){
+      h+=`<div class="hit" onclick="go('#/scene/${enc(r.script)}')">
+        <div class="h">${esc(r.chapter||'')}${r.place?` · ${esc(r.place)}`:''} · ${r.line_count||0} 句</div>
+        <div><b>${esc(r.title||r.script)}</b>　<span class="mt">${esc(r.script)}</span></div></div>`;
+    }
+  }
+  h+=`<h2>写法</h2><div class="meta">字段：${esc((d.fields||[]).join('、'))}</div>`;
+  h+=`<div class="meta">连接：AND、OR、NOT，可用括号。裸词会同时匹配场景名、说话人与台词。</div>`;
+  h+=`<div class="meta">例：speaker:郁竹 AND flag:E00017 ／ (speaker:郁竹 OR speaker:唐布衣) AND NOT arc:不限时间 ／ title:献策</div>`;
+  h+=`<div class="meta"><a href="#" onclick="go('#/search/'+enc(''));return false">回普通搜索</a></div>`;
+  $('#main').innerHTML=h+'</div>';
+}
+
+async function renderStats(){
+  const d=await api('/api/stats');
+  const t=d.total||{};
+  const fm=n=>(n||0).toLocaleString();
+  let h=`<div class="wrap"><h1>文本统计</h1>
+    <div class="meta">共 ${fm(t.n)} 场 · ${fm(t.lines)} 句 · ${fm(t.cjk)} 字 · ${fm(d.pages)} 个条目</div>`;
+  h+='<h2>按剧情阶段</h2><div class="brwrap"><table class="br"><thead><tr><th>阶段</th><th>场景</th><th>台词</th><th>字数</th></tr></thead><tbody>';
+  for(const r of (d.arcs||[])){
+    h+=`<tr><td>${esc(r.arc)}</td><td>${fm(r.n)}</td><td>${fm(r.lines)}</td><td>${fm(r.cjk)}</td></tr>`;
+  }
+  h+='</tbody></table></div>';
+  h+='<h2>按章节</h2><div class="brwrap"><table class="br"><thead><tr><th>章节</th><th>场景</th><th>台词</th><th>字数</th></tr></thead><tbody>';
+  for(const r of (d.chapters||[])){
+    h+=`<tr><td>${esc(r.chapter||'(空)')}</td><td>${fm(r.n)}</td><td>${fm(r.lines)}</td><td>${fm(r.cjk)}</td></tr>`;
+  }
+  h+='</tbody></table></div>';
+  h+='<div class="meta">字数按台词正文的字符数统计，含标点。</div>';
+  $('#main').innerHTML=h+'</div>';
+}
+
 async function renderSearch(q){
+  if(isFilterExpr(q)) return renderFilter(q);
   const d=await api('/api/search2?q='+enc(q));
   const SM=await loadSceneMap();
   const fq=(q||'').trim().toLowerCase();
@@ -943,10 +995,11 @@ function lineHtml(l,cs,fl){
       const name=o.text||o.label||o.key||'';
       return `<span class="opt"><b>${esc(name)}</b>${o.cond?' → 掷骰 '+esc(o.cond):''}</span>`;
     }).join('');
-    extra+=`<div class="choice"><div class="ch">◆ ${esc(c.checkpoint)}</div>${req}
+    const head=(c.title||c.checkpoint)?`<div class="ch">◆ ${esc(c.title||c.checkpoint)}</div>`:'';
+    extra+=`<div class="choice">${head}${req}
       <div style="margin-top:6px">${opts||'<span class="cond">（此判定无预设选项文案）</span>'}</div></div>`;
   }
-  if(fl[l.seq]) extra+=`<div class="flagline">⤷ ${fl[l.seq].map(f=>`<span class="opt">${esc(f.flag)} = ${esc(f.value)}</span>`).join('')}</div>`;
+  if(fl[l.seq]) extra+=`<div class="flagline">⤷ ${fl[l.seq].map(f=>`<span class="opt">${esc(f.flag_cn?f.flag_cn+'（'+f.flag+'）':f.flag)} = ${esc(f.value)}</span>`).join('')}</div>`;
   return `<div class="line ${cls(l.mode)}" data-seq="${l.seq}">
       <div class="sp">${TITLES[l.speaker]?`<i class="spt">${esc(TITLES[l.speaker])}</i>`:''}${esc(l.speaker)}<span>${badge(l.mode)}</span></div>
       <div class="tx">${rich(l.text)||'<i style="color:#5b616b">（缺文本）</i>'}<span class="key">${esc(l.key)}</span></div>

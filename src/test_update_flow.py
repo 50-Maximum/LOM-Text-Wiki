@@ -6,7 +6,7 @@
 import io, json, os, shutil, subprocess, sys, time, zipfile, urllib.request
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 BASE = r"D:\LegendOfMortal Wiki"
-SRC = os.path.join(BASE, "dist_build_v06", "活侠传追踪Wiki")
+SRC = os.path.join(BASE, "dist_build_v07", "活侠传追踪Wiki")
 TMP = r"D:\LegendOfMortal Wiki\_updtest"
 SRV = os.path.join(TMP, "srv")
 APP = os.path.join(TMP, "app")

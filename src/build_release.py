@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""打发布包：压缩 dist_build_v06 目录 → release/，并生成 update.json 清单骨架。"""
+"""打发布包：压缩 dist_build_v07 目录 → release/，并生成 update.json 清单骨架。"""
 import hashlib, io, json, os, shutil, sys, zipfile
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 BASE = r"D:\LegendOfMortal Wiki"

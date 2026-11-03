@@ -17,6 +17,7 @@ __pycache__/
 *.rar
 *.7z
 版本/
+_archive/
 
 # 游戏资源与解包中间产物（体积大，不入库）
 data/raw/
@@ -127,3 +128,8 @@ data/portraits/
 
 # 阶段分类工作区（脚本与中间表，不发布）
 stage/
+
+# 过程备份与旧副本
+*.bak_*
+*.bak[0-9]*
+upload_src/
