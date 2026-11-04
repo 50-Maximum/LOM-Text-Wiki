@@ -56,7 +56,7 @@ def fetch_remote(timeout=6):
     info = None
     try:
         import urllib.request
-        req = urllib.request.Request(url, headers={"User-Agent": "LoMWiki/%s" % local_version()})
+        req = urllib.request.Request(url, headers={"User-Agent": "LOM-Text-Wiki/%s" % local_version()})
         with urllib.request.urlopen(req, timeout=timeout) as r:
             data = json.loads(r.read().decode("utf-8"))
         if isinstance(data, dict) and data.get("version"):
@@ -68,7 +68,7 @@ def fetch_remote(timeout=6):
 
 def download(url, dest, sha256="", timeout=60):
     import urllib.request
-    req = urllib.request.Request(url, headers={"User-Agent": "LoMWiki/%s" % local_version()})
+    req = urllib.request.Request(url, headers={"User-Agent": "LOM-Text-Wiki/%s" % local_version()})
     with urllib.request.urlopen(req, timeout=timeout) as r, open(dest, "wb") as f:
         shutil.copyfileobj(r, f)
     if sha256:
@@ -187,7 +187,7 @@ def fetch_github(timeout=8):
     api = "https://api.github.com/repos/%s/%s/releases/latest" % (owner, repo)
     try:
         req = urllib.request.Request(api, headers={
-            "User-Agent": "LoMWiki/%s" % local_version(),
+            "User-Agent": "LOM-Text-Wiki/%s" % local_version(),
             "Accept": "application/vnd.github+json",
         })
         with urllib.request.urlopen(req, timeout=timeout) as r:
