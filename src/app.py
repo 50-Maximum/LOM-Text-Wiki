@@ -145,6 +145,15 @@ class H(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b)
 
+    def _text(self, s, code=200):
+        b = (s or "").encode("utf-8")
+        self.send_response(code)
+        self.send_header("Content-Type", "text/plain; charset=utf-8")
+        self.send_header("Content-Length", str(len(b)))
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        self.wfile.write(b)
+
     def _file(self, path):
         if not os.path.isfile(path):
             self.send_error(404)
@@ -180,6 +189,11 @@ class H(BaseHTTPRequestHandler):
                 return self._json({"ok": True})
             except Exception as e:
                 return self._json({"ok": False, "err": str(e)})
+        if u.path == "/api/yehua/install":
+            try:
+                return self._json(self.yehua_install(urllib.parse.parse_qs(u.query)))
+            except Exception as e:
+                return self._json({"ok": False, "msg": str(e)})
         return self.send_error(404)
 
     def do_GET(self):
@@ -254,6 +268,8 @@ class H(BaseHTTPRequestHandler):
                                             qs.get("name", [""])[0]))
             if p == "/api/page":
                 return self._json(self.page(qs.get("slug", [""])[0]))
+            if p == "/api/filter2":
+                return self._json(self.filter_fields(qs))
             if p == "/api/stats":
                 return self._json(self.stats())
             if p == "/api/filter":
@@ -286,6 +302,10 @@ class H(BaseHTTPRequestHandler):
                 return self._json({"types": types})
             if p == "/api/appver":
                 return self._json({"name": "活侠传追踪Wiki", "version": _app_version()})
+            if p == "/api/yehua":
+                return self._json(self.yehua(qs))
+            if p == "/api/yehua/brief":
+                return self._text(self.yehua_brief(qs))
             if p == "/api/update/check":
                 return self._json(update_check())
             if p == "/api/update/apply":
@@ -442,14 +462,152 @@ class H(BaseHTTPRequestHandler):
             c["title"] = (row or {}).get("title", "")
             row2 = one("SELECT attrs FROM cond WHERE id=?", (c["checkpoint"] + "@cond",))
             c["cond_text"] = json.loads(row2["attrs"]) if row2 else []
+        _STAT = {"money": "银两", "life": "体力", "stamina": "内力", "dexterity": "轻功",
+                 "charisma": "魅力", "literacy": "学问", "mental": "心相", "fate": "命运",
+                 "disposition": "性情", "behaviour": "处世", "training": "修养", "karma": "道德",
+                 "talking": "嘴力", "fame": "名声", "people": "门人", "team": "向心",
+                 "faction": "门派规模", "weapon": "锻造", "poison": "炼丹", "contribution": "贡献度",
+                 "internal": "阴阳", "change-heart": "变心", "action": "行动次数", "action2": "行动",
+                 "poison-resistance": "抗毒", "paralysis-resistance": "抗麻",
+                 "martial-point": "武学", "assets": "门派资产",
+                 "cook": "厨艺", "m-sword": "刀剑", "m-projectile": "暗器", "m-fist": "拳掌",
+                 "m-leg": "腿法", "m-odd": "奇门", "m-soft": "软兵器", "m-stick": "枪棍",
+                 "m-internal": "内功", "default-battle-hp": "门人血量", "relationship": "好感度",
+                 "battle-people": "门人数量", "lover": "心上人"}
+        _fx = {}
+        try:
+            for r in q("SELECT seq, idx, flags, stats FROM branch_nodes WHERE script=?", (script,)):
+                if not r["idx"]:
+                    continue
+                try:
+                    fl = json.loads(r["flags"] or "[]")
+                except Exception:
+                    fl = []
+                try:
+                    st = json.loads(r["stats"] or "[]")
+                except Exception:
+                    st = []
+                _fx[(r["seq"], r["idx"])] = (fl, st)
+        except Exception:
+            _fx = {}
+        try:
+            for r in q("SELECT seq, idx, flags, stats FROM choice_fx WHERE script=?", (script,)):
+                if not r["idx"]:
+                    continue
+                try:
+                    fl2 = json.loads(r["flags"] or "[]")
+                except Exception:
+                    fl2 = []
+                try:
+                    st2 = json.loads(r["stats"] or "[]")
+                except Exception:
+                    st2 = []
+                if st2 or fl2:
+                    _fx[(r["seq"], r["idx"])] = (fl2, st2)
+        except Exception:
+            pass
+        _CH = {}
+        try:
+            for r in q("SELECT DISTINCT speaker_id, speaker FROM lines "
+                       "WHERE coalesce(speaker_id,'')<>'' AND coalesce(speaker,'')<>''"):
+                _CH[r["speaker_id"]] = r["speaker"]
+        except Exception:
+            _CH = {}
+        for c in chs:
+            for _i, o in enumerate(c["options"], 1):
+                got = _fx.get((c["seq"], _i))
+                if not got:
+                    continue
+                fl, st = got
+                agg = {}
+                for x in st:
+                    nm = (x.get("s") or "").strip()
+                    if not nm:
+                        continue
+                    nm = _STAT.get(nm, nm)
+                    if nm.startswith("好感·"):
+                        nm = "好感·" + _CH.get(nm[3:], nm[3:])
+                    try:
+                        agg[nm] = agg.get(nm, 0.0) + float(x.get("v") or 0)
+                    except Exception:
+                        pass
+                o["stat_delta"] = [{"s": k, "v": v} for k, v in agg.items() if v]
+                o["flag_delta"] = [{"f": (x.get("f") or ""), "v": x.get("v")}
+                                   for x in fl if x.get("f")]
         _tmap = {}
         try:
             for r in q("select name,title from pages where type='人物' and title<>''"):
                 _tmap[r["name"].split("·")[-1]] = r["title"]
         except Exception:
             _tmap = {}
+        # ---- 选项与判定的去处（正文内跳转用）----
+        _jumps = {}
+        _next = []
+        try:
+            _ENGINE = {"Free": "自由行动", "Combat": "战斗", "Battle": "战斗",
+                       "Title": "标题画面", "GameOver": "游戏结束", "Story": "主线", "Ending": "结局"}
+
+            def _jump_target(dst):
+                if dst in _ENGINE:
+                    return {"script": dst, "slug": "", "name": _ENGINE[dst], "kind": "engine"}
+                _r = q("SELECT title FROM scenes WHERE script=?", (dst,))
+                _t = (_r[0]["title"] if _r and _r[0]["title"] else "")
+                _p = q("SELECT name FROM pages WHERE slug=?", ("场景/" + dst,))
+                _nm = _t or (_p[0]["name"] if _p else dst)
+                return {"script": dst, "slug": "场景/" + dst, "name": _nm, "kind": "scene"}
+
+            _nodes = q("SELECT seq,kind,idx,text FROM branch_nodes "
+                       "WHERE script=? AND kind IN ('dice','choose') ORDER BY seq,idx", (script,))
+            _seqs, _lab = [], {}
+            for _r in _nodes:
+                _s0 = _r["seq"]
+                if _s0 not in _seqs:
+                    _seqs.append(_s0)
+                _lab.setdefault(_s0, {})[_r["idx"]] = (_r["text"] or "").strip()
+            _varmap = {}
+            for _r in q("SELECT dst,cond FROM scene_edges WHERE src=?", (script,)):
+                _cond = (_r["cond"] or "").strip()
+                if not _cond.startswith("choice"):
+                    continue
+                _first = _cond.split("/")[0].strip()
+                if "==" not in _first:
+                    continue
+                _var, _, _num = _first.partition("==")
+                _var = _var.strip()
+                try:
+                    _k = int(_num.strip())
+                except Exception:
+                    continue
+                _dst = (_r["dst"] or "").strip()
+                if not _dst:
+                    continue
+                _varmap.setdefault(_var, {}).setdefault(_k, [])
+                if _dst not in _varmap[_var][_k]:
+                    _varmap[_var][_k].append(_dst)
+            for _var, _rm in _varmap.items():
+                _m = re.search(r"choice_[a-z]+(\d+)", _var)
+                _n = int(_m.group(1)) if _m else 1
+                if not (1 <= _n <= len(_seqs)):
+                    continue
+                _labs = _lab.get(_seqs[_n - 1], {})
+                for _k, _dsts in _rm.items():
+                    _lb = _labs.get(_k)
+                    if not _lb:
+                        continue
+                    _arr = _jumps.setdefault(_lb, [])
+                    for _d in _dsts:
+                        _t = _jump_target(_d)
+                        if _t and _t["name"] not in [_x["name"] for _x in _arr]:
+                            _arr.append(_t)
+            for _r in q("SELECT dst FROM scene_edges WHERE src=? AND type IN ('story','branch') "
+                       "AND coalesce(cond,'')=''", (script,)):
+                _t = _jump_target(_r["dst"])
+                if _t and _t["name"] not in [_x["name"] for _x in _next]:
+                    _next.append(_t)
+        except Exception:
+            _jumps = {}
         return {"scene": s, "lines": lines, "choices": chs,
-                "branches": brs, "titles": _tmap,
+                "branches": brs, "titles": _tmap, "jumps": _jumps, "next": _next,
                 "participants": q("SELECT speaker nm, COUNT(*) n FROM lines WHERE script=? AND speaker<>'旁白' GROUP BY speaker ORDER BY n DESC LIMIT 12", (script,)),
                 "prereq": [r for c in chs for r in (c.get("requires") or []) + (c.get("cond_text") or [])],
                 "flags": q("SELECT f.seq,f.flag,f.value,f.after_key,f.branch,COALESCE(i.label,'') AS flag_cn FROM flags f LEFT JOIN flaginfo i ON i.flag=f.flag WHERE f.script=? ORDER BY f.seq", (script,))}
@@ -621,6 +779,263 @@ class H(BaseHTTPRequestHandler):
             "SELECT speaker name, speaker_id id, COUNT(*) n FROM lines "
             "GROUP BY speaker ORDER BY n DESC")}
 
+    def yehua(self, qs):
+        """江湖夜话（MortalTalk）状态与存档摘要。只读，不改动游戏目录。"""
+        import glob
+        import datetime
+        game = (qs.get("game", [""])[0] or "").strip().strip('"')
+        if not game:
+            try:
+                r = one("SELECT value FROM meta WHERE key='game'")
+                game = (r or {}).get("value") or ""
+            except Exception:
+                pass
+        out = {"game": game, "installed": False, "version": "", "plugin": "",
+               "config": False, "config_path": "", "saves_dir": "", "saves": [],
+               "bridge": False, "error": ""}
+        if not game or not os.path.isdir(game):
+            out["error"] = "no-game-dir"
+            return out
+        plug = os.path.join(game, "BepInEx", "plugins", "MortalTalk")
+        out["plugin"] = plug
+        out["installed"] = os.path.exists(os.path.join(plug, "MortalTalk.dll"))
+        out["bridge"] = os.path.exists(os.path.join(game, "BepInEx", "plugins", "MortalTalk.WikiBridge.dll"))
+        vt = os.path.join(plug, "version.txt")
+        if os.path.exists(vt):
+            try:
+                out["version"] = open(vt, encoding="utf-8-sig").read().strip()
+            except Exception:
+                pass
+        cfg = os.path.join(game, "BepInEx", "config", "yumina.mortal.yehua.cfg")
+        out["config"] = os.path.exists(cfg)
+        out["config_path"] = cfg
+        sdir = os.path.join(game, "BepInEx", "config", "JianghuYehua")
+        out["saves_dir"] = sdir
+        names = {}
+        try:
+            names = {r["id"]: r["name"] for r in q("SELECT id, name FROM names")}
+        except Exception:
+            pass
+
+        def rt(rd):
+            if not rd or rd < 1:
+                return ""
+            y = (rd - 1) // 36 + 1
+            m = (rd - 1) % 36 // 3 + 1
+            x = (rd - 1) % 3 + 1
+            return "第%d年%d月%s" % (y, m, ("", "上旬", "中旬", "下旬")[x])
+
+        # 游戏自己的存档槽位：用落盘时间把插件的随机档号对到 Save_XXX.dat
+        slot_root = ""
+        try:
+            _ll = os.path.join(os.path.expanduser("~"), "AppData", "LocalLow", "Obb Studio", "Mortal")
+            _best = ("", 0)
+            for _d in glob.glob(os.path.join(_ll, "*")):
+                if os.path.isdir(_d):
+                    _n = len(glob.glob(os.path.join(_d, "Save_*.dat")))
+                    if _n > _best[1]:
+                        _best = (_d, _n)
+            slot_root = _best[0]
+        except Exception:
+            slot_root = ""
+
+        def slot_of(tsv):
+            if not slot_root:
+                return ""
+            best = None
+            for sp in glob.glob(os.path.join(slot_root, "Save_*.dat")):
+                nm = os.path.basename(sp)
+                if nm.startswith("Save_universe"):
+                    continue
+                dt = abs(os.path.getmtime(sp) - tsv)
+                if best is None or dt < best[0]:
+                    best = (dt, nm)
+            if not best or best[0] > 120:
+                return ""
+            nm = best[1]
+            m = re.match(r"Save_(\d{3})\.dat$", nm)
+            if m:
+                return "存档 " + m.group(1)
+            m = re.match(r"Save_auto_battle_?(\d*)\.dat$", nm)
+            if m:
+                return "战斗自动" + (m.group(1) or "")
+            m = re.match(r"Save_auto_free_?(\d*)\.dat$", nm)
+            if m:
+                return "自由自动" + (m.group(1) or "")
+            m = re.match(r"Save_auto_?(\d*)\.dat$", nm)
+            if m:
+                return "自动" + (m.group(1) or "")
+            if nm == "Save_replay.dat":
+                return "回放"
+            return ""
+
+        for fp in sorted(glob.glob(os.path.join(sdir, "save_*.json"))):
+            base = os.path.basename(fp)
+            ts = os.path.getmtime(fp)
+            try:
+                d = json.load(open(fp, encoding="utf-8-sig"))
+            except Exception as e:
+                out["saves"].append({"file": base, "error": str(e)})
+                continue
+            ents = d.get("Entries") or []
+            ppl = {}
+            miles = []
+            kinds = {}
+            rounds = []
+            for e in ents:
+                who = e.get("Who") or ""
+                k = e.get("Kind") or ""
+                kinds[k] = kinds.get(k, 0) + 1
+                rd = e.get("Round") or 0
+                if rd:
+                    rounds.append(rd)
+                if not who:
+                    continue
+                p = ppl.setdefault(who, {"id": who, "name": names.get(who, who),
+                                         "n": 0, "last": "", "milestones": 0})
+                p["n"] += 1
+                if rd and (not p["last"] or rd > 0):
+                    p["last"] = rt(rd)
+                txt = (e.get("Text") or "").strip()
+                if k == "milestone" and txt:
+                    p["milestones"] += 1
+                    miles.append({"who": p["name"], "when": rt(rd), "text": txt[:140]})
+            sid = base[len("save_"):-len(".json")]
+            out["saves"].append({
+                "file": base,
+                "id": sid,
+                "slot": slot_of(ts),
+                "bytes": os.path.getsize(fp),
+                "mtime": datetime.datetime.fromtimestamp(os.path.getmtime(fp)).strftime("%Y-%m-%d %H:%M"),
+                "entries": len(ents),
+                "kinds": kinds,
+                "people": sorted(ppl.values(), key=lambda x: -x["n"]),
+                "milestones": miles[-40:],
+                "from": rt(min(rounds)) if rounds else "",
+                "to": rt(max(rounds)) if rounds else "",
+                "version": d.get("Version"),
+            })
+        return out
+
+    def yehua_brief(self, qs):
+        """给某个角色一份「他见过的人」清单（纯文本，插件直接读）。"""
+        cid = (qs.get("char", [""])[0] or "").strip()
+        if not cid:
+            return ""
+        try:
+            import yehua_pack as yp
+            fs = yp.first_sentence
+        except Exception:
+            fs = lambda t: (str(t or "").strip()[:120])
+        row = one("SELECT name FROM names WHERE id=?", (cid,))
+        name = (row or {}).get("name") or cid
+        out = ["#" + name]
+        seen = {name}
+        generic = set(["少侠", "众人", "弟子", "少女", "妇人", "老丈", "汉子", "掌柜", "小贖",
+                       "侍女", "路人", "乞丐", "官兵", "客人", "少年", "孩童", "老头", "大汉",
+                       "唐门弟子", "唐门女弟子", "宋兵", "镖师", "贼人",
+                       "掌门", "弟子们", "女侠", "女弟子", "师兄", "师弟", "师姐", "师妹",
+                       "长老", "帮主", "教主", "掌门人", "主上", "大人", "姑娘", "女子", "男子",
+                       "百姓", "村民", "商贩", "大侠", "黑衣人", "蒙面人", "小贩", "侍女们",
+                       "先生", "山贼", "僧人", "道人", "官员", "将军"])
+        BAD = ("后来", "最终", "结局", "死后", "临死", "传位", "上述", "补的发言", "游戏里名字显示")
+
+        def ok_entry(nm, t):
+            if not nm or len(nm) < 2 or nm in seen or nm in generic:
+                return False
+            t = t or ""
+            if len(t) < 8:
+                return False
+            return not any(w in t for w in BAD)
+
+        self_row = one("SELECT lead FROM pages WHERE slug=? AND lead IS NOT NULL", ("人物/" + name,))
+        if self_row and self_row.get("lead"):
+            t = fs(self_row["lead"])
+            if t:
+                out.append("SELF\t" + t)
+        try:
+            peers = q("SELECT peer, n FROM char_peers WHERE sid=? ORDER BY n DESC LIMIT 30", (cid,))
+        except Exception:
+            peers = []
+        for p in peers:
+            pid = p["peer"]
+            if not pid or pid == "player":
+                continue
+            nr = one("SELECT name FROM names WHERE id=?", (pid,))
+            pname = (nr or {}).get("name") or pid
+            pr = one("SELECT lead FROM pages WHERE slug=? AND lead IS NOT NULL", ("人物/" + pname,))
+            if not pr or not pr.get("lead"):
+                continue
+            t = fs(pr["lead"])
+            if not ok_entry(pname, t):
+                continue
+            out.append(pname + "\t" + t)
+            seen.add(pname)
+        try:
+            famous = q("SELECT name, mentions, selfdef FROM char_fame WHERE mentions>=3 ORDER BY mentions DESC LIMIT 80")
+        except Exception:
+            famous = []
+        added = 0
+        for f in famous:
+            nm = f["name"]
+            t = fs(f["selfdef"])
+            if not ok_entry(nm, t):
+                continue
+            out.append(nm + "\t" + t)
+            seen.add(nm)
+            added += 1
+            if added >= 20:
+                break
+        return "\n".join(out)
+
+    def yehua_install(self, qs):
+        """把 wiki 读取器装进夜话：复制插件、生成数据包。只写这两个位置。"""
+        import shutil
+        game = (qs.get("game", [""])[0] or "").strip().strip('"')
+        if not game:
+            try:
+                r = one("SELECT value FROM meta WHERE key='game'")
+                game = (r or {}).get("value") or ""
+            except Exception:
+                pass
+        out = {"ok": False, "dll": "", "pack": "", "rows": 0, "msg": ""}
+        if not game or not os.path.isdir(game):
+            out["msg"] = "找不到游戏目录"
+            return out
+        src = os.path.join(ROOT, "assets", "yehua", "MortalTalk.WikiBridge.dll")
+        if not os.path.exists(src):
+            out["msg"] = "缺少读取器文件 MortalTalk.WikiBridge.dll"
+            return out
+        dst = os.path.join(game, "BepInEx", "plugins", "MortalTalk.WikiBridge.dll")
+        try:
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            shutil.copy2(src, dst)
+        except Exception as e:
+            out["msg"] = "插件复制失败：" + str(e)
+            return out
+        out["dll"] = dst
+        pack = os.path.join(game, "夜话设定", "wiki", "pack.txt")
+        try:
+            os.makedirs(os.path.dirname(pack), exist_ok=True)
+            import yehua_pack
+            yehua_pack.main(pack)
+        except Exception as e:
+            out["msg"] = "数据包生成失败：" + str(e)
+            return out
+        rows = 0
+        try:
+            with open(pack, encoding="utf-8") as f:
+                for line in f:
+                    if line and not line.startswith("#") and not line.startswith("@"):
+                        rows += 1
+        except Exception:
+            pass
+        out["pack"] = pack
+        out["rows"] = rows
+        out["ok"] = True
+        out["msg"] = "已装好，下次进游戏生效"
+        return out
+
     def flags(self, text):
         if text:
             return {"flags": q("SELECT * FROM flags WHERE flag LIKE ? ORDER BY flag LIMIT 500",
@@ -743,6 +1158,46 @@ class H(BaseHTTPRequestHandler):
                 " group by 1 order by 2 desc, 1", tuple(args))
         return {"facets": rows, "total": sum(r["n"] for r in rows)}
 
+    def filter_fields(self, qs):
+        """表单式筛选：多个字段各一个值，按 all/any 组合。"""
+        def g(k):
+            return (qs.get(k, [""])[0] or "").strip()
+
+        conds = []
+        params = []
+        mapping = [
+            ("speaker", "script IN (SELECT script FROM lines WHERE speaker LIKE ?)"),
+            ("text", "script IN (SELECT script FROM lines WHERE text LIKE ?)"),
+            ("flag", "script IN (SELECT script FROM flags WHERE flag LIKE ?)"),
+            ("opt", "script IN (SELECT script FROM choices WHERE options LIKE ?)"),
+            ("place", "place LIKE ?"),
+            ("chapter", "chapter LIKE ?"),
+            ("title", "title LIKE ?"),
+            ("arc", "'场景/' || script IN (SELECT slug FROM pages WHERE type='场景' AND coalesce(facet,'') LIKE ?)"),
+            ("id", "script LIKE ?"),
+        ]
+        used = {}
+        for key, sql in mapping:
+            v = g(key)
+            if v:
+                conds.append(sql)
+                params.append("%" + v + "%")
+                used[key] = v
+        if not conds:
+            return {"error": "至少填一个条件", "rows": [], "count": 0, "used": used}
+        joiner = " OR " if g("match").lower() == "any" else " AND "
+        where = "(" + joiner.join(conds) + ")" if len(conds) > 1 else conds[0]
+        limit = int(qs.get("limit", ["300"])[0] or 300)
+        sql = "select script,title,chapter,place,line_count from scenes where " + where
+        sql += " order by chapter, script limit ?"
+        try:
+            rows = q(sql, tuple(params) + (limit,))
+        except Exception as e:
+            return {"error": "查询失败: %s" % e, "rows": [], "count": 0, "used": used}
+        return {"rows": rows, "count": len(rows), "used": used,
+                "match": "any" if g("match").lower() == "any" else "all",
+                "limited": len(rows) >= limit}
+
     def stats(self):
         """按章节、按剧情阶段统计场景数与文本量。"""
         by_chapter = q(
@@ -800,7 +1255,8 @@ class H(BaseHTTPRequestHandler):
             args += ["%" + text + "%", "%" + text + "%", "%" + text + "%"]
         w = (" where " + " and ".join(where)) if where else ""
         total = one("select count(*) n from pages where " + " and ".join(where), tuple(args))["n"]
-        rows = q("select slug,type,name,mentions,title,substr(lead,1,80) lead from pages where " +
+        rows = q("select slug,type,name,mentions,title,coalesce(facet,'') facet,"
+                 "coalesce(facet2,'') facet2,substr(lead,1,80) lead from pages where " +
                  " and ".join(where) +
                  " order by mentions desc, name limit ? offset ?", tuple(args) + (limit, offset))
         return {"total": total, "rows": rows, "offset": offset, "limit": limit}
@@ -808,7 +1264,7 @@ class H(BaseHTTPRequestHandler):
     def search2(self, text):
         text = text.strip()
         if not text:
-            return {"pages": [], "scenes": [], "lines": []}
+            return {"pages": [], "scenes": [], "lines": [], "flags": []}
         pages_ = q("""select slug,type,name,mentions,title from pages
                       where hidden=0 and (name LIKE ? or lead LIKE ?
                          or slug in (select slug from aliases where alias LIKE ?))
@@ -836,7 +1292,22 @@ class H(BaseHTTPRequestHandler):
             for r in rows:
                 if (r["script"], r["seq"]) not in seen:
                     lines_.append(r)
-        return {"pages": pages_, "scenes": scenes_, "lines": lines_[:60]}
+        flags_ = []
+        try:
+            flags_ = q("""select d.flag, d.label,
+                                (select count(*) from pages p
+                                 where p.type='事件' and p.sections LIKE '%'||d.flag||'%') n
+                          from flag_dict d
+                          where d.flag LIKE ? or d.label LIKE ? or d.label_tw LIKE ?
+                          order by n desc, d.flag limit 30""",
+                        ("%" + text + "%", "%" + text + "%", "%" + text + "%"))
+            if not flags_:
+                flags_ = q("""select f.flag, f.label, 0 n from flaginfo f
+                              where f.flag LIKE ? or f.label LIKE ? limit 30""",
+                            ("%" + text + "%", "%" + text + "%"))
+        except Exception:
+            flags_ = []
+        return {"pages": pages_, "scenes": scenes_, "lines": lines_[:60], "flags": flags_}
 
     def kv(self, ns):
         if not ns:
